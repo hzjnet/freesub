@@ -1,0 +1,54 @@
+# Add result subscription URLs to result_pools. GitHub repositories below are
+# crawled recursively for likely subscription files on every scheduled run.
+result_pools:
+  - "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/all_extracted_configs.txt"
+  - "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vless_configs.txt"
+  - "https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt"
+  - "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt"
+  - "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls"
+  - "https://raw.githubusercontent.com/Alirewa/V2ray-Configs/main/config.txt"
+  - "https://raw.githubusercontent.com/free-nodes/v2rayfree/main/sub"
+  - "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/V2Ray-Config-By-EbraSha.txt"
+  - "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt"
+  - "https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/top.txt"
+  - "https://raw.githubusercontent.com/10ium/HiN-VPN/main/subscription/base64/mix"
+  - "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt"
+  - "https://www.ermao.net/sub/v2ray/ermao.net"
+  - "https://wild-cloud-9893.heleimail.workers.dev"
+  - "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/super-sub.txt"
+  - "https://open.heleimail.workers.dev/"
+  - "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY.txt"
+  - "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/top100.txt"
+  - "https://raw.githubusercontent.com/Alirewa/V2ray-Configs/main/sub1.txt"
+  - "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt"
+  - "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/protocols/hysteria"
+  - "https://raw.githubusercontent.com/freefq/free/master/v2"
+  - "https://raw.githubusercontent.com/WLget/V2Ray_configs_64/refs/heads/master/ConfigSub_list.txt"
+  # Stable generated feeds from configured source-code repositories.
+  - "https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/main/sub/V2Ray.yml"
+  - "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"
+  - "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/airport_merge_base64.txt"
+# These three repositories publish result pools. Their subscription files are
+# discovered from the Git tree and README links, so rotating feed URLs can be
+# followed automatically without editing this file.
+result_pool_repositories:
+  - repo: cbusifabcap/daily_free_vpn
+    max_files: 20
+  - repo: toshare5/toshare5.github.io
+    max_files: 20
+  - repo: mkshare3/mkshare3.github.io
+    max_files: 20
+
+# Source repositories are also crawled for generated subscriptions and node lists.
+source_code_repositories:
+  - repo: peasoft/NoMoreWalls
+    max_files: 20
+  - repo: mahdibland/V2RayAggregator
+    max_files: 20
+  - repo: clashv2rayc/clashv2rayc.github.io
+    max_files: 20
+
+# Import OgdenThomas/freesub's generated result pool last, then merge it with
+# the sources above. Do not add this repository to either crawler list.
+final_result_pools:
+  - "https://raw.githubusercontent.com/OgdenThomas/freesub/main/output/v2ray.txt"
