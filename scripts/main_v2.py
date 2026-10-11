@@ -11,6 +11,7 @@
      - 阶段A 端口预检: TCP/QUIC 直连握手, 快速丢弃死端口 (削减 90% 无效工作)
      - 阶段B 真实探测: 多 URL 探测 (gstatic 204 / cloudflare trace) 
        + 经代理取真实出口 IP (api.ip.sb/geoip → 一次拿 country+asn+isp)
+       + 经节点隧道查询四川 DNS (61.139.2.69 / 61.139.2.1), RTT > 800ms 不入库
        + Cloudflare 限时下载测速 → 断流节点识别 (吞吐量不足)
        + cloudflare trace tls=VERIFIED → MITM/劫持节点识别
   3. 分类与导出:
@@ -38,6 +39,7 @@ import subprocess
 import ipaddress
 import urllib.parse
 import urllib.request
+import html
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -53,36 +55,6 @@ except ImportError as e:
 # 配置
 # ══════════════════════════════════════════════════════════════════
 
-SOURCE_URLS = [
-    "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/all_extracted_configs.txt",      # 36926 节点
-    "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vless_configs.txt",           # 21299 节点
-    "https://github.com/Epodonios/v2ray-configs/raw/main/All_Configs_Sub.txt",                                       # 5544 节点
-    "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",           # 3913 节点
-    "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls",                          # 2139 节点
-    "https://raw.githubusercontent.com/Alirewa/V2ray-Configs/main/config.txt",                                       # 2000 节点
-    "https://raw.githubusercontent.com/free-nodes/v2rayfree/main/sub",                                              # 1648 节点
-    "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/V2Ray-Config-By-EbraSha.txt", # 1558 节点
-    "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",                             # 1541 节点
-    "https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/top.txt",                                           # 1000 节点
-    "https://raw.githubusercontent.com/10ium/HiN-VPN/main/subscription/base64/mix",                                 # 574 节点
-    "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",                           # 504 节点
-    "https://node.freeclashnode.com/uploads/2026/09/1-20260915.txt",                                                # 280 节点
-    "https://node.freeclashnode.com/uploads/2026/09/0-20260915.txt",                                                # 273 节点
-    "https://node.freeclashnode.com/uploads/2026/09/0-20260914.txt",                                                # 271 节点
-    "https://node.freeclashnode.com/uploads/2026/09/1-20260914.txt",                                                # 268 节点
-    "https://www.ermao.net/sub/v2ray/ermao.net",                                                                    # 253 节点
-    "https://wild-cloud-9893.heleimail.workers.dev",                                                                # 199 节点
-    "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/super-sub.txt",         # 199 节点
-    "https://open.heleimail.workers.dev/",                                                                          # 150 节点
-    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/V2RAY.txt",                                    # 149 节点
-    "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/top100.txt",                               # 100 节点
-    "https://raw.githubusercontent.com/Alirewa/V2ray-Configs/main/sub1.txt",                                        # 100 节点
-    "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",              # 70 节点
-    "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/protocols/hysteria",                    # 23 节点
-    "https://raw.githubusercontent.com/freefq/free/master/v2",                                                      # 15 节点
-    "https://raw.githubusercontent.com/WLget/V2Ray_configs_64/refs/heads/master/ConfigSub_list.txt",                # 3 节点
-]
-
 OUTPUT_DIR = "output"
 COUNTRY_DIR = os.path.join(OUTPUT_DIR, "by-country")
 RESIDENTIAL_COUNTRY_DIR = os.path.join(OUTPUT_DIR, "residential-by-country")
@@ -90,6 +62,7 @@ RESIDENTIAL_COUNTRY_DIR = os.path.join(OUTPUT_DIR, "residential-by-country")
 SINGBOX_VERSION = "v1.14.0"
 WORKDIR = os.path.dirname(os.path.abspath(__file__))          # scripts/
 BASEDIR = os.path.dirname(WORKDIR)                              # repo root
+SOURCE_CONFIG = os.path.join(BASEDIR, "config", "sources.yml")
 RUNTIME_DIR = os.path.join(BASEDIR, "runtime")                  # kernels & db
 SINGBOX_BIN = os.path.join(RUNTIME_DIR, "sing-box")
 
@@ -106,6 +79,9 @@ SPEED_TEST_BUDGET      = 3.5
 SPEED_MIN_BYTES_PER_S  = 70_000
 SPEED_IDLE_TIMEOUT     = 1.8
 MAX_ACCEPT_LATENCY_MS  = 2500
+MAX_SICHUAN_RTT_MS     = 800
+SICHUAN_DNS_SERVERS    = ("61.139.2.69", "61.139.2.1")
+SICHUAN_DNS_TIMEOUT    = 2.5
 REQUIRE_EXIT_IP        = True
 DROP_PORT_KNOCK_FAIL   = True
 DROP_INSECURE_TLS      = True
@@ -387,17 +363,20 @@ def get_country_flag(country_code: str) -> str:
 
 def b64_decode(data: str) -> str:
     """容错 base64 解码 (支持 URL-safe / 缺失 padding)"""
-    data = data.strip()
+    data = "".join(data.strip().split())
+    if not data or not re.fullmatch(r"[A-Za-z0-9_+/=-]+", data):
+        return ""
     try:
         pad = -len(data) % 4
         if data and data[-1] not in "=":
             data += "=" * pad
-        raw = base64.urlsafe_b64decode(data)
+        standard_data = data.translate(str.maketrans("-_", "+/"))
+        raw = base64.b64decode(standard_data, validate=True)
         return raw.decode("utf-8", errors="ignore")
     except Exception:
         pass
     try:
-        raw = base64.b64decode(data + "=" * (-len(data) % 4))
+        raw = base64.b64decode(data + "=" * (-len(data) % 4), validate=True)
         return raw.decode("utf-8", errors="ignore")
     except Exception:
         return ""
@@ -1022,20 +1001,193 @@ def parse_node_uri(uri: str):
     return None
 
 
+def clash_proxy_to_outbound(proxy: dict):
+    proxy_type = str(proxy.get("type", "")).lower()
+    type_map = {
+        "ss": "shadowsocks",
+        "hy2": "hysteria2",
+    }
+    outbound_type = type_map.get(proxy_type, proxy_type)
+    if outbound_type not in ("vless", "vmess", "trojan", "shadowsocks",
+                             "hysteria2", "tuic", "anytls"):
+        return None
+
+    server = str(proxy.get("server", "")).strip()
+    try:
+        port = int(proxy.get("port"))
+    except (TypeError, ValueError):
+        return None
+    if not server or not 1 <= port <= 65535:
+        return None
+
+    outbound = {
+        "type": outbound_type,
+        "server": server,
+        "server_port": port,
+    }
+    if outbound_type in ("vless", "vmess", "tuic"):
+        outbound["uuid"] = str(proxy.get("uuid") or proxy.get("id") or "")
+    if outbound_type in ("trojan", "shadowsocks", "hysteria2", "tuic", "anytls"):
+        outbound["password"] = str(proxy.get("password") or "")
+    if outbound_type == "shadowsocks":
+        if proxy.get("plugin"):
+            return None
+        outbound["method"] = str(proxy.get("cipher") or proxy.get("method") or "")
+    if outbound_type == "vmess":
+        try:
+            outbound["alter_id"] = int(proxy.get("alterId", proxy.get("alter_id", 0)))
+        except (TypeError, ValueError):
+            outbound["alter_id"] = 0
+    if outbound_type == "vless" and proxy.get("flow"):
+        outbound["flow"] = str(proxy["flow"])
+
+    tls_enabled = bool(proxy.get("tls")) or outbound_type in (
+        "trojan", "hysteria2", "tuic", "anytls")
+    tls = {
+        "enabled": tls_enabled,
+        "server_name": str(proxy.get("servername") or proxy.get("sni") or ""),
+        "insecure": bool(proxy.get("skip-cert-verify", False)),
+    }
+    fingerprint = proxy.get("client-fingerprint") or proxy.get("fingerprint")
+    if fingerprint:
+        tls["utls"] = {"fingerprint": str(fingerprint)}
+    alpn = proxy.get("alpn")
+    if isinstance(alpn, str):
+        alpn = [value.strip() for value in alpn.split(",") if value.strip()]
+    if isinstance(alpn, list) and alpn:
+        tls["alpn"] = [str(value) for value in alpn]
+    reality = proxy.get("reality-opts") or {}
+    if isinstance(reality, dict) and reality.get("public-key"):
+        tls["enabled"] = True
+        tls["reality"] = {
+            "public_key": str(reality["public-key"]),
+            "short_id": str(reality.get("short-id") or ""),
+        }
+    outbound["tls"] = tls
+
+    network = str(proxy.get("network") or "tcp").lower()
+    if network in ("ws", "grpc", "http", "httpupgrade"):
+        transport = {"type": network}
+        if network == "ws":
+            options = proxy.get("ws-opts") or {}
+            if isinstance(options, dict):
+                if options.get("path"):
+                    transport["path"] = str(options["path"])
+                headers = options.get("headers") or {}
+                if isinstance(headers, dict):
+                    host = headers.get("Host") or headers.get("host")
+                    if host:
+                        transport["headers"] = {"Host": str(host)}
+                if options.get("max-early-data"):
+                    transport["max_early_data"] = int(options["max-early-data"])
+        elif network == "grpc":
+            options = proxy.get("grpc-opts") or {}
+            if isinstance(options, dict) and options.get("grpc-service-name"):
+                transport["service_name"] = str(options["grpc-service-name"])
+        elif network in ("http", "httpupgrade"):
+            options = proxy.get(f"{network}-opts") or {}
+            if isinstance(options, dict):
+                if options.get("path"):
+                    transport["path"] = str(options["path"])
+                hosts = options.get("headers", {}).get("Host") if isinstance(
+                    options.get("headers"), dict) else None
+                if hosts:
+                    transport["host"] = hosts if isinstance(hosts, list) else [str(hosts)]
+        outbound["transport"] = transport
+
+    if outbound_type == "hysteria2" and proxy.get("ports"):
+        ports = proxy["ports"]
+        if isinstance(ports, str):
+            ports = ports.split(",")
+        outbound["server_ports"] = [
+            str(value).strip().replace("-", ":") for value in ports if str(value).strip()
+        ]
+    if outbound_type == "hysteria2" and proxy.get("obfs"):
+        obfs = proxy["obfs"]
+        outbound["obfs"] = ({"type": str(obfs.get("type") or "salamander"),
+                             "password": str(obfs.get("password") or
+                                             proxy.get("obfs-password") or "")}
+                            if isinstance(obfs, dict) else
+                            {"type": str(obfs),
+                             "password": str(proxy.get("obfs-password") or "")})
+    if outbound_type == "tuic":
+        outbound["congestion_control"] = str(
+            proxy.get("congestion-controller") or "bbr")
+        outbound["udp_relay_mode"] = str(proxy.get("udp-relay-mode") or "native")
+    required_fields = {
+        "vless": ("uuid",),
+        "vmess": ("uuid",),
+        "trojan": ("password",),
+        "shadowsocks": ("method", "password"),
+        "hysteria2": ("password",),
+        "tuic": ("uuid", "password"),
+        "anytls": ("password",),
+    }
+    if any(not outbound.get(field) for field in required_fields[outbound_type]):
+        return None
+    return outbound
+
+
+def extract_structured_nodes(text: str) -> set:
+    stripped = text.lstrip()
+    if not (stripped.startswith("{") or
+            re.search(r"(?m)^\s*(?:proxies|outbounds)\s*:", text)):
+        return set()
+    try:
+        config = yaml.safe_load(text)
+    except yaml.YAMLError as e:
+        print_once("structured-source-yaml-error",
+                   f"[!] 忽略无法解析的 YAML/JSON 订阅配置: {str(e)[:100]}")
+        return set()
+    if not isinstance(config, dict):
+        return set()
+
+    imported = set()
+    singbox_types = {"vless", "vmess", "trojan", "shadowsocks",
+                     "hysteria2", "tuic", "anytls"}
+    for outbound in config.get("outbounds") or []:
+        if not isinstance(outbound, dict) or outbound.get("type") not in singbox_types:
+            continue
+        try:
+            link = outbound_to_v2ray_link(
+                outbound, str(outbound.get("tag") or "Imported"))
+            if link:
+                imported.add(link)
+        except (KeyError, TypeError, ValueError):
+            continue
+
+    for proxy in config.get("proxies") or []:
+        if not isinstance(proxy, dict):
+            continue
+        try:
+            outbound = clash_proxy_to_outbound(proxy)
+            if outbound:
+                link = outbound_to_v2ray_link(
+                    outbound, str(proxy.get("name") or "Imported"))
+                if link:
+                    imported.add(link)
+        except (KeyError, TypeError, ValueError):
+            continue
+    return imported
+
+
 def extract_nodes_from_text(text: str) -> set:
     results = set()
     if not text:
         return results
     probe = text.strip()
+    is_structured = (probe.startswith("{") or
+                     re.search(r"(?m)^\s*(?:proxies|outbounds)\s*:", probe))
     # 最多三层 base64 解包 (订阅常见整体 base64)
-    for _ in range(3):
-        if any(p in probe for p in ("vmess://", "vless://", "ss://", "trojan://",
-                                     "hy2://", "hysteria2://", "tuic://", "anytls://")):
-            break
-        decoded = b64_decode(probe)
-        if not decoded or decoded == probe:
-            break
-        probe = decoded
+    if not is_structured:
+        for _ in range(3):
+            if any(p in probe for p in ("vmess://", "vless://", "ss://", "trojan://",
+                                         "hy2://", "hysteria2://", "tuic://", "anytls://")):
+                break
+            decoded = b64_decode(probe)
+            if not decoded or decoded == probe:
+                break
+            probe = decoded
     # 直接文本也可能混杂 base64 行
     lines_blob = probe
     pattern = (r'((?:vmess|vless|trojan|ss|hy2|hysteria2|tuic|anytls|ssh)://'
@@ -1044,38 +1196,259 @@ def extract_nodes_from_text(text: str) -> set:
         clean = m.strip().rstrip(".,;'\"")
         if len(clean) > 12:
             results.add(clean)
+    results.update(extract_structured_nodes(probe))
     return results
+
+
+def load_source_config() -> dict:
+    with open(SOURCE_CONFIG, "r", encoding="utf-8") as f:
+        config = yaml.safe_load(f) or {}
+    if not isinstance(config, dict):
+        raise ValueError(f"订阅源配置格式错误: {SOURCE_CONFIG}")
+    for key in ("result_pools", "result_pool_repositories",
+                "source_code_repositories", "final_result_pools"):
+        if not isinstance(config.get(key, []), list):
+            raise ValueError(f"订阅源配置 {key} 必须是列表")
+    return config
+
+
+def extract_subscription_urls(text: str, limit: int = 12) -> list:
+    """Find feed links only when their nearby public text identifies them as subscriptions."""
+    document = html.unescape(text or "")
+    stripped = document.lstrip()
+    if stripped.startswith("["):
+        try:
+            manifest = json.loads(stripped)
+        except json.JSONDecodeError:
+            manifest = None
+        if isinstance(manifest, list):
+            urls = []
+            for entry in manifest:
+                if not isinstance(entry, dict) or entry.get("enabled") is False:
+                    continue
+                if not any(key in entry for key in ("enabled", "update_method", "remarks")):
+                    continue
+                candidate = str(entry.get("url") or "").strip()
+                try:
+                    parsed = urllib.parse.urlsplit(candidate)
+                    if (parsed.scheme in ("http", "https") and parsed.hostname and
+                            not parsed.username and not parsed.password and
+                            candidate not in urls):
+                        urls.append(candidate)
+                except ValueError:
+                    continue
+                if len(urls) >= limit:
+                    break
+            if urls:
+                return urls
+
+    pattern = re.compile(r"https?://[^\s<>\"'`]+", re.IGNORECASE)
+    subscription_context = re.compile(
+        r"(?:订阅|subscription|v2ray|clash|sing[- ]?box|shadowrocket|"
+        r"小火箭|节点(?:链接|地址))", re.IGNORECASE)
+    ignored_extensions = (".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp",
+                          ".css", ".js", ".ico")
+    is_html = bool(re.search(r"(?i)<(?:!doctype\s+html|html\b|body\b)", document))
+    feed_extensions = (".txt", ".yaml", ".yml", ".json", ".sub", ".list")
+    urls = []
+    seen = set()
+    for match in pattern.finditer(document):
+        candidate = match.group(0).rstrip(".,;:!?)]}>")
+        try:
+            parsed = urllib.parse.urlsplit(candidate)
+            if parsed.scheme not in ("http", "https") or not parsed.hostname:
+                continue
+            if parsed.username or parsed.password:
+                continue
+        except ValueError:
+            continue
+        if parsed.path.lower().endswith(ignored_extensions):
+            continue
+        if is_html and not parsed.path.lower().endswith(feed_extensions):
+            continue
+        context = re.sub(r"<[^>]*>", " ", document[max(0, match.start() - 350):match.start()])
+        context = urllib.parse.unquote(context)
+        if not subscription_context.search(context):
+            continue
+        normalized = urllib.parse.urlunsplit(parsed)
+        if normalized not in seen:
+            seen.add(normalized)
+            urls.append(normalized)
+            if len(urls) >= limit:
+                break
+    return urls
+
+
+def discover_repository_sources(repository_entries: list) -> list:
+    """扫描配置的 GitHub 仓库树，发现并抓取可能承载节点 URI 的订阅文件。"""
+    extensions = {"", ".txt", ".sub", ".list", ".yaml", ".yml", ".json", ".conf",
+                  ".html", ".htm", ".md"}
+    keywords = ("sub", "subscription", "proxy", "node", "v2ray", "clash",
+                "singbox", "config", "all", "merge", "base64", "free", "list", "date")
+    excluded_parts = {".github", "assets", "images", "docs", "test", "tests", "vendor"}
+    headers = {"Accept": "application/vnd.github+json"}
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    if token:
+        headers["Authorization"] = "Bearer " + token
+
+    discovered = []
+    for entry in repository_entries:
+        if isinstance(entry, str):
+            repo, branch, max_files = entry, None, 20
+        elif isinstance(entry, dict):
+            repo = str(entry.get("repo", "")).strip()
+            branch = str(entry.get("branch", "")).strip() or None
+            try:
+                max_files = min(100, max(0, int(entry.get("max_files", 20))))
+            except (TypeError, ValueError):
+                print(f"[!] 忽略 max_files 无效的仓库源配置: {entry!r}")
+                continue
+        else:
+            print(f"[!] 忽略格式错误的仓库源配置: {entry!r}")
+            continue
+
+        if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repo):
+            print(f"[!] 忽略无效 GitHub 仓库名: {repo!r}")
+            continue
+        try:
+            metadata_response = http_get(
+                f"https://api.github.com/repos/{repo}", timeout=20, headers=headers)
+            if metadata_response.status_code != 200:
+                print(f"[!] 仓库元数据读取失败 {repo} → HTTP {metadata_response.status_code}")
+                continue
+            metadata = metadata_response.json()
+            branch = branch or metadata.get("default_branch")
+            if not branch:
+                print(f"[!] 仓库未返回默认分支: {repo}")
+                continue
+
+            tree_url = (f"https://api.github.com/repos/{repo}/git/trees/"
+                        f"{urllib.parse.quote(branch, safe='')}?recursive=1")
+            tree_response = http_get(tree_url, timeout=30, headers=headers)
+            if tree_response.status_code != 200:
+                print(f"[!] 仓库文件树读取失败 {repo} → HTTP {tree_response.status_code}")
+                continue
+            tree_data = tree_response.json()
+            if tree_data.get("truncated"):
+                print(f"[!] 仓库文件树被 GitHub 截断: {repo}")
+
+            candidates = []
+            for item in tree_data.get("tree", []):
+                path = item.get("path", "")
+                if item.get("type") != "blob" or not path:
+                    continue
+                parts = path.lower().split("/")
+                filename = parts[-1]
+                stem, ext = os.path.splitext(filename)
+                if ext not in extensions or excluded_parts.intersection(parts):
+                    continue
+                named_candidate = any(
+                    keyword in component for keyword in keywords for component in parts)
+                if not named_candidate and ext not in (".txt", ".sub", ".list", ".md"):
+                    continue
+                score = (4 if "sub" in stem or "subscription" in stem else 0)
+                score += 3 if any(part in ("output", "subscription", "subscriptions", "sub")
+                                  for part in parts[:-1]) else 0
+                score += 3 if any(part in ("free-nodes", "newly-discovered-nodes", "date")
+                                  for part in parts[:-1]) else 0
+                score += 2 if ext in (".txt", ".sub", ".list") else 0
+                date_match = re.search(
+                    r"(20\d{2})[-_/](\d{1,2})(?:[-_/](\d{1,2}))?", path)
+                date_score = 0
+                if date_match:
+                    year = int(date_match.group(1))
+                    month = int(date_match.group(2))
+                    day = int(date_match.group(3) or 0)
+                    date_score = year * 10000 + month * 100 + day
+                candidates.append((score, date_score, path))
+
+            candidates.sort(key=lambda item: (-item[0], -item[1], item[2].lower()))
+            for _, _, path in candidates[:max_files]:
+                raw_path = urllib.parse.quote(path, safe="/")
+                raw_branch = urllib.parse.quote(branch, safe="")
+                discovered.append(
+                    f"https://raw.githubusercontent.com/{repo}/{raw_branch}/{raw_path}")
+            print(f"[+] 自动扫描仓库 {repo}: 发现 {min(len(candidates), max_files)} 个候选订阅文件")
+        except (requests.RequestException, ValueError, KeyError, TypeError) as e:
+            print(f"[!] 仓库扫描失败 {repo} → {str(e)[:120]}")
+    return discovered
 
 
 def fetch_raw_nodes() -> list:
     nodes = set()
-    print("[*] 抓取全部订阅源 ...")
+    config = load_source_config()
 
-    def _fetch(url):
+    def get_urls(entries):
+        urls = []
+        for entry in entries:
+            if isinstance(entry, str):
+                urls.append(entry.strip())
+            elif isinstance(entry, dict):
+                values = entry.get("urls", [])
+                if isinstance(values, list):
+                    urls.extend(str(url).strip() for url in values if str(url).strip())
+                else:
+                    print(f"[!] 忽略缺少 urls 列表的订阅源: {entry!r}")
+            else:
+                print(f"[!] 忽略格式错误的订阅源配置: {entry!r}")
+        return [url for url in urls if url]
+
+    def _fetch(url, follow_subscription_links=False):
         last_err = None
-        # 重试 2 次 (网络抖动/GFW 间歇性重置; 退避 3s)
         for attempt in range(3):
             try:
                 r = http_get(url, timeout=30)
                 if r.status_code == 200:
-                    got = extract_nodes_from_text(r.text)
-                    return url, got, None
+                    found = extract_nodes_from_text(r.text)
+                    linked_urls = (extract_subscription_urls(r.text)
+                                   if follow_subscription_links else [])
+                    return url, found, None, linked_urls
                 last_err = f"HTTP {r.status_code}"
-            except Exception as e:
+            except (requests.RequestException, OSError, ValueError) as e:
                 last_err = str(e)[:70]
             if attempt < 2:
                 time.sleep(3)
-        return url, set(), last_err
+        return url, set(), last_err, []
 
-    with ThreadPoolExecutor(MAX_WORKERS_FETCH) as ex:
-        futs = [ex.submit(_fetch, u) for u in SOURCE_URLS]
-        for f in as_completed(futs):
-            url, got, err = f.result()
-            if err:
-                print(f"[!] 拉取失败 {url} → {err}")
-            else:
-                print(f"[+] {url} → {len(got)} 节点")
-            nodes.update(got)
+    def fetch_group(urls, label):
+        urls = list(dict.fromkeys(urls))
+        print(f"[*] 抓取{label}: {len(urls)} 个文件 ...")
+        linked_urls = []
+        with ThreadPoolExecutor(MAX_WORKERS_FETCH) as ex:
+            futures = [ex.submit(_fetch, url, True) for url in urls]
+            for future in as_completed(futures):
+                url, found, error, links = future.result()
+                if error:
+                    print(f"[!] 拉取失败 {url} → {error}")
+                else:
+                    print(f"[+] {url} → {len(found)} 节点")
+                nodes.update(found)
+                linked_urls.extend(links)
+
+        linked_urls = list(dict.fromkeys(linked_urls))[:60]
+        if linked_urls:
+            print(f"[*] 从 {label} 自动发现 {len(linked_urls)} 个订阅链接")
+            with ThreadPoolExecutor(MAX_WORKERS_FETCH) as ex:
+                futures = [ex.submit(_fetch, url) for url in linked_urls]
+                for future in as_completed(futures):
+                    url, found, error, _ = future.result()
+                    if error:
+                        print(f"[!] 自动发现订阅拉取失败 {url} → {error}")
+                    else:
+                        print(f"[+] 自动发现订阅 {url} → {len(found)} 节点")
+                    nodes.update(found)
+
+    manual_urls = get_urls(config.get("result_pools", []))
+    repository_urls = discover_repository_sources(
+        config.get("result_pool_repositories", []))
+    repository_urls.extend(discover_repository_sources(
+        config.get("source_code_repositories", [])))
+    fetch_group(manual_urls + repository_urls, "已配置及自动发现订阅源")
+
+    # OgdenThomas/freesub 是本仓库的基础结果池，按要求最后抓取并合并。
+    final_urls = get_urls(config.get("final_result_pools", []))
+    fetch_group(final_urls, "基础结果池 (最后合并)")
+
     print(f"[*] 初始抓取总量: {len(nodes)}")
     return list(nodes)
 
@@ -1222,6 +1595,168 @@ def print_once(key: str, msg: str):
         print(msg)
 
 
+def _recv_exact(sock, size: int) -> bytes:
+    data = bytearray()
+    while len(data) < size:
+        chunk = sock.recv(size - len(data))
+        if not chunk:
+            raise OSError("SOCKS5 relay closed during UDP association")
+        data.extend(chunk)
+    return bytes(data)
+
+
+def _dns_query_packet() -> tuple:
+    transaction_id = int.from_bytes(os.urandom(2), "big")
+    labels = b"".join(bytes((len(label),)) + label.encode("ascii")
+                      for label in "example.com".split("."))
+    question = labels + b"\x00" + b"\x00\x01\x00\x01"
+    header = (transaction_id.to_bytes(2, "big") + b"\x01\x00" +
+              b"\x00\x01\x00\x00\x00\x00\x00\x00")
+    return transaction_id, header + question
+
+
+def _validate_dns_response(dns_response: bytes, transaction_id: int) -> None:
+    if (len(dns_response) < 12 or
+            int.from_bytes(dns_response[:2], "big") != transaction_id or
+            not (dns_response[2] & 0x80) or dns_response[3] & 0x0f):
+        raise OSError("Invalid or unsuccessful DNS response")
+    if int.from_bytes(dns_response[6:8], "big") == 0:
+        raise OSError("DNS response contains no answers")
+
+
+def _query_dns_through_socks(socks_port: int, dns_server: str) -> int:
+    """Return DNS round-trip time in milliseconds through sing-box's SOCKS5 UDP relay."""
+    transaction_id, query = _dns_query_packet()
+    with socket.create_connection(("127.0.0.1", socks_port),
+                                 timeout=SICHUAN_DNS_TIMEOUT) as control:
+        control.settimeout(SICHUAN_DNS_TIMEOUT)
+        control.sendall(b"\x05\x01\x00")
+        if _recv_exact(control, 2) != b"\x05\x00":
+            raise OSError("SOCKS5 proxy rejected no-authentication")
+
+        control.sendall(b"\x05\x03\x00\x01\x00\x00\x00\x00\x00\x00")
+        response = _recv_exact(control, 4)
+        if response[0] != 5 or response[1] != 0:
+            raise OSError(f"SOCKS5 UDP association failed: {response!r}")
+        if response[3] == 1:
+            relay_host = socket.inet_ntoa(_recv_exact(control, 4))
+        elif response[3] == 3:
+            relay_host = _recv_exact(control, _recv_exact(control, 1)[0]).decode("ascii")
+        elif response[3] == 4:
+            relay_host = socket.inet_ntop(socket.AF_INET6, _recv_exact(control, 16))
+        else:
+            raise OSError("SOCKS5 returned an unsupported UDP relay address")
+        relay_port = int.from_bytes(_recv_exact(control, 2), "big")
+        if relay_host in ("0.0.0.0", "::"):
+            relay_host = "127.0.0.1"
+
+        server_address = ipaddress.ip_address(dns_server)
+        if server_address.version != 4:
+            raise ValueError(f"DNS resolver must be IPv4: {dns_server}")
+        datagram = (b"\x00\x00\x00\x01" + server_address.packed +
+                    (53).to_bytes(2, "big") + query)
+        relay_family = socket.AF_INET6 if ":" in relay_host else socket.AF_INET
+        relay_address = ((relay_host, relay_port, 0, 0) if relay_family == socket.AF_INET6
+                         else (relay_host, relay_port))
+        with socket.socket(relay_family, socket.SOCK_DGRAM) as udp:
+            udp.settimeout(SICHUAN_DNS_TIMEOUT)
+            started = time.monotonic()
+            udp.sendto(datagram, relay_address)
+            packet, _ = udp.recvfrom(4096)
+            elapsed_ms = (time.monotonic() - started) * 1000
+
+        if len(packet) < 4 or packet[:3] != b"\x00\x00\x00":
+            raise OSError("Invalid SOCKS5 UDP relay response")
+        address_type = packet[3]
+        offset = 4
+        if address_type == 1:
+            offset += 4
+        elif address_type == 3:
+            if len(packet) <= offset:
+                raise OSError("Truncated SOCKS5 UDP domain response")
+            offset += 1 + packet[offset]
+        elif address_type == 4:
+            offset += 16
+        else:
+            raise OSError("Unsupported SOCKS5 UDP response address")
+        dns_response = packet[offset + 2:]
+        _validate_dns_response(dns_response, transaction_id)
+        return elapsed_ms
+
+
+def _query_dns_over_tcp_through_socks(socks_port: int, dns_server: str) -> int:
+    """Return DNS-over-TCP round-trip time through sing-box's SOCKS5 proxy."""
+    transaction_id, query = _dns_query_packet()
+    server_address = ipaddress.ip_address(dns_server)
+    if server_address.version != 4:
+        raise ValueError(f"DNS resolver must be IPv4: {dns_server}")
+
+    started = time.monotonic()
+    with socket.create_connection(("127.0.0.1", socks_port),
+                                  timeout=SICHUAN_DNS_TIMEOUT) as control:
+        control.settimeout(SICHUAN_DNS_TIMEOUT)
+        control.sendall(b"\x05\x01\x00")
+        if _recv_exact(control, 2) != b"\x05\x00":
+            raise OSError("SOCKS5 proxy rejected no-authentication")
+
+        control.sendall(
+            b"\x05\x01\x00\x01" + server_address.packed + (53).to_bytes(2, "big")
+        )
+        response = _recv_exact(control, 4)
+        if response[0] != 5 or response[1] != 0:
+            raise OSError(f"SOCKS5 TCP connection failed: {response!r}")
+        if response[3] == 1:
+            _recv_exact(control, 4)
+        elif response[3] == 3:
+            _recv_exact(control, _recv_exact(control, 1)[0])
+        elif response[3] == 4:
+            _recv_exact(control, 16)
+        else:
+            raise OSError("SOCKS5 returned an unsupported bound address")
+        _recv_exact(control, 2)
+
+        control.sendall(len(query).to_bytes(2, "big") + query)
+        response_length = int.from_bytes(_recv_exact(control, 2), "big")
+        dns_response = _recv_exact(control, response_length)
+        elapsed_ms = (time.monotonic() - started) * 1000
+
+    _validate_dns_response(dns_response, transaction_id)
+    return elapsed_ms
+
+
+def measure_sichuan_dns_rtt(socks_port: int):
+    best_rtt_ms = None
+    for index, dns_server in enumerate(SICHUAN_DNS_SERVERS):
+        try:
+            try:
+                rtt_ms = _query_dns_through_socks(socks_port, dns_server)
+            except (OSError, ValueError, socket.timeout) as udp_error:
+                print_once(
+                    f"dns-udp-fallback-{dns_server}",
+                    f"[*] 四川 DNS UDP {dns_server} 不可用，改用 TCP: "
+                    f"{str(udp_error)[:100]}")
+                rtt_ms = _query_dns_over_tcp_through_socks(socks_port, dns_server)
+            best_rtt_ms = rtt_ms if best_rtt_ms is None else min(best_rtt_ms, rtt_ms)
+            if is_sichuan_rtt_acceptable(best_rtt_ms):
+                return best_rtt_ms
+            if index + 1 < len(SICHUAN_DNS_SERVERS):
+                print_once(
+                    "sichuan-rtt-primary-slow",
+                    f"[*] 四川 DNS 主地址 RTT 高于 {MAX_SICHUAN_RTT_MS}ms，"
+                    "继续测试备用网关地址")
+        except (OSError, ValueError, socket.timeout) as e:
+            next_step = ("改用备用地址" if index + 1 < len(SICHUAN_DNS_SERVERS)
+                         else "所有地址均不可用")
+            print_once(
+                f"dns-probe-{dns_server}",
+                f"[*] 四川 DNS 探测 {dns_server} 失败，{next_step}: {str(e)[:100]}")
+    return best_rtt_ms
+
+
+def is_sichuan_rtt_acceptable(rtt_ms) -> bool:
+    return rtt_ms is not None and rtt_ms <= MAX_SICHUAN_RTT_MS
+
+
 def test_single_node(item, keep_alive_check=True):
     """单节点真实测活：先淘汰慢/死/无出口/高风险，再做测速。"""
     raw,outbound,server,port,proto=item
@@ -1290,6 +1825,16 @@ def test_single_node(item, keep_alive_check=True):
                 except requests.RequestException:
                     pass
             if not alive or latency_ms>MAX_ACCEPT_LATENCY_MS:
+                return None
+
+            sichuan_rtt_ms = measure_sichuan_dns_rtt(socks_port)
+            if not is_sichuan_rtt_acceptable(sichuan_rtt_ms):
+                if sichuan_rtt_ms is None:
+                    return None
+                print_once(
+                    "sichuan-rtt-filter",
+                    f"[*] 四川 DNS RTT 超过 {MAX_SICHUAN_RTT_MS}ms 的节点将被过滤"
+                    f" (示例: {sichuan_rtt_ms:.1f}ms)")
                 return None
 
             # 2) 出口 IP
@@ -1376,6 +1921,7 @@ def test_single_node(item, keep_alive_check=True):
 
             return {"raw":raw,"server":server,"port":port,"proto":proto,"outbound":outbound,
                     "alive":True,"latency_ms":latency_ms,"exit_ip":exit_ip,
+                    "sichuan_rtt_ms":sichuan_rtt_ms,
                     "exit_country_online":exit_country,"exit_asn_online":exit_asn,
                     "exit_asn_org_online":(exit_asn_org or "")[:120],
                     "exit_isp_online":(exit_isp or "")[:120],"mitm_risk":False,
@@ -2340,13 +2886,12 @@ def export_singbox_json(sb_nodes, filepath):
 # ═══════════════════════════════════════════N═══════════════════════
 
 def update_readme(total_count, res_count):
-    repo_name = os.environ.get("GITHUB_REPOSITORY", "OgdenThomas/freesub").strip()
-    cache_bust = str(int(time.time()))
+    repo_name = os.environ.get("GITHUB_REPOSITORY", "hzjnet/freesub").strip()
     # 私有化部署 Worker 脚本里的仓库参数 (默认值兜底)
     try:
         owner, repo = repo_name.split("/", 1)
     except ValueError:
-        owner, repo = "OgdenThomas", "freesub"
+        owner, repo = "hzjnet", "freesub"
 
     def count_file(path):
         if not os.path.exists(path):
@@ -2376,9 +2921,9 @@ def update_readme(total_count, res_count):
             flag = get_country_flag(cc)
             name = COUNTRY_NAMES.get(cc, cc)
             cnt = counts[cc]
-            v2 = f"[CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/{sub}/{cc}.txt?v={cache_bust}) · [Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/{sub}/{cc}.txt?v={cache_bust})"
-            cl = f"[CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/{sub}/clash-{cc}.yaml?v={cache_bust}) · [Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/{sub}/clash-{cc}.yaml?v={cache_bust})"
-            sb = f"[CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/{sub}/singbox-{cc}.json?v={cache_bust}) · [Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/{sub}/singbox-{cc}.json?v={cache_bust})"
+            v2 = f"[CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/{sub}/{cc}.txt) · [Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/{sub}/{cc}.txt)"
+            cl = f"[CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/{sub}/clash-{cc}.yaml) · [Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/{sub}/clash-{cc}.yaml)"
+            sb = f"[CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/{sub}/singbox-{cc}.json) · [Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/{sub}/singbox-{cc}.json)"
             rows.append(f"| {flag} {name} | {cnt} | {v2} | {cl} | {sb} |")
         return "\n".join(rows) if rows else "| 暂无可用节点 | 0 | - | - | - |"
 
@@ -2397,9 +2942,9 @@ def update_readme(total_count, res_count):
 
 | 客户端 / 格式类型 | 节点总数 | 免翻 CDN 订阅直链 (国内直连) | 官方原生 Raw 直链 (开启代理) |
 | :--- | :---: | :--- | :--- |
-| 🚀 **Clash (YAML 格式)** | `{total_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/clash.yaml?v={cache_bust}) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/clash.yaml?v={cache_bust}) |
-| ⚡ **V2RayN (Base64 格式)** | `{total_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/v2ray.txt?v={cache_bust}) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/v2ray.txt?v={cache_bust}) |
-| 📦 **sing-box (JSON 格式)** | `{total_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/singbox.json?v={cache_bust}) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/singbox.json?v={cache_bust}) |
+| 🚀 **Clash (YAML 格式)** | `{total_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/clash.yaml) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/clash.yaml) |
+| ⚡ **V2RayN (Base64 格式)** | `{total_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/v2ray.txt) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/v2ray.txt) |
+| 📦 **sing-box (JSON 格式)** | `{total_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/singbox.json) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/singbox.json) |
 
 ---
 
@@ -2484,9 +3029,11 @@ export default {{
 ---
 
 ## 🛠️ 项目使用说明
-1. **自动更新机制**：GitHub Actions 每 6 小时全自动运行并刷新上述全部订阅与数据。
-2. **测活标准**：节点必须通过 ① 端口预检 ② sing-box 实际隧道 3 个 generate_204 探测 ③ 真实出口 IP 穿透获取 ④ Cloudflare 5MB 限时下载 (吞吐 ≥ 70KB/s) ⑤ TLS 证书校验非 MITM, 方可入库。
-3. **多客户端兼容**：Clash / v2rayN / sing-box 全格式订阅。
+1. **自动更新机制**：GitHub Actions 每天北京时间 06:00、12:00、18:00 自动运行，也支持手动触发。
+2. **来源配置**：编辑 `config/sources.yml` 可手动添加结果订阅 URL 或 GitHub 仓库；配置的仓库会自动扫描节点文件，并跟随 README/网页与 JSON 清单中的订阅链接。OgdenThomas/freesub 结果池在其它来源之后导入并合并。
+3. **四川 DNS RTT 筛选**：通过每个候选节点的代理隧道查询 `61.139.2.69`，失败时改用 `61.139.2.1`；RTT 高于 800ms 或无法完成查询的节点不入库。
+4. **测活标准**：节点必须通过端口预检、sing-box 实际隧道、出口 IP 穿透、限速下载与 TLS 证书校验后方可入库。
+5. **多客户端兼容**：Clash / v2rayN / sing-box 全格式订阅；订阅地址固定，不随每次更新改变。
 """
     atomic_write_text(os.path.join(BASEDIR, "README.md"), readme)
     print(f"[+] README.md 更新完毕: 总节点 {total_count}, 家宽 {res_count}")
