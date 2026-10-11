@@ -6,22 +6,24 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01",
-      "server": "fi.pythonsetupbib.online",
-      "server_port": 443,
-      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
-      "flow": "xtls-rprx-vision",
+      "server": "170.168.4.59",
+      "server_port": 17170,
+      "uuid": "3eec23c1-2a0d-4d53-afa5-62745a1f5ffe",
       "tls": {
         "enabled": true,
-        "server_name": "fi.pythonsetupbib.online",
+        "server_name": "northerntrail.gazette.help",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg",
-          "short_id": "bdf5852d1423e694"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "trail-grpc"
       }
     },
     {
@@ -34,28 +36,13 @@
     {
       "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 03",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 04",
-      "server": "finkawwwbroy5.qcloud.surf",
+      "server": "177.3.218.191",
       "server_port": 20326,
-      "password": "f83ce3c4-07d9-4895-bd14-cb74abbcab37",
+      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
       "tls": {
         "enabled": true,
         "server_name": "finkawwwbroy5.qcloud.surf",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
+        "insecure": false
       }
     },
     {
@@ -65,8 +52,7 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04"
+        "🇫🇮 芬兰 (Finland) 03"
       ]
     },
     {
@@ -75,8 +61,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04"
+        "🇫🇮 芬兰 (Finland) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

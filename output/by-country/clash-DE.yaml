@@ -5,47 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01
-  server: 172.67.147.125
+  server: 50.7.87.122
   port: 443
   udp: true
   type: vless
-  uuid: 2a19a994-314c-4caa-bff8-e2b51b777ef8
-  tls: true
-  servername: 27fzvUrmcSyeXgyZY0.manihaGHgoei.wORKERs.DEv
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/laffD3xDvmAhaPfb2tfZBaFUqM?ed=2560
-    headers:
-      Host: 27fzvurmcsyexgyzy0.manihaghgoei.workers.dev
-- name: 🇩🇪 德国 (Germany) 02
-  server: 163.245.43.50
-  port: 443
-  udp: true
-  type: vless
-  uuid: 203d434a-2a92-45df-8973-ca80434ecf73
-  tls: true
-  servername: se-twitch.global-cdn.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: content.v1.Feed
-- name: 🇩🇪 德国 (Germany) 03
-  server: 2.27.69.117
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  uuid: 9c104116-b231-4626-94cb-6d8fc4d2b000
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 04
+    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
+    short-id: ba4b2afa9e7193ea
+  servername: edge-fr.extazy.net
+  client-fingerprint: qq
+- name: 🇩🇪 德国 (Germany) 02
   server: 150.241.79.232
   port: 443
   udp: true
@@ -58,61 +30,7 @@ proxies:
     short-id: 4be4110078ebed4a
   servername: de2.srv.vbuste.ru
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 05
-  server: 31.70.111.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 06
-  server: 172.64.150.43
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  network: ws
-  ws-opts:
-    path: /rain1226
-    headers:
-      Host: eu02.123450908.xyz
-- name: 🇩🇪 德国 (Germany) 07
-  server: 178.105.168.171
-  port: 2110
-  udp: true
-  type: vmess
-  uuid: 06d4d001-4168-4876-9416-7caecf578f40
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 08
-  server: 91.107.169.224
-  port: 80
-  udp: true
-  type: vmess
-  uuid: d4b69108-f756-48af-a331-e8356bc95eb4
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
-- name: 🇩🇪 德国 (Germany) 09
-  server: 2.27.35.55
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 10
+- name: 🇩🇪 德国 (Germany) 03
   server: 189.24.82.195
   port: 443
   udp: true
@@ -129,39 +47,120 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇩🇪 德国 (Germany) 11
-  server: geow3.nomush.ir
-  port: 666
-  udp: true
-  type: vless
-  uuid: 2c5f2d6e-d683-49f7-a12b-a95460b90a92
-  tls: true
-  reality-opts:
-    public-key: C9AIgcAGpHr97gE1bRAGZzq1ZhsQByTcoArjJMjuBis
-    short-id: 436bd46854a888b8
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 12
-  server: 91.233.8.141
+- name: 🇩🇪 德国 (Germany) 04
+  server: 31.70.111.146
   port: 443
   udp: true
   type: vless
-  uuid: 81d8f575-a9c3-03e7-be6b-c0e1dc1d2e20
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k76Ze8R0E5NyZwvBZT1A4n0zlVXxTeHQDAs0bBqiGQw
-    short-id: 6e5f2a3b
-  servername: tnt-cloud.ru
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 13
-  server: cuddly-sheepdog.rooster465.autos
+- name: 🇩🇪 德国 (Germany) 05
+  server: 2.27.35.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 06
+  server: 2.27.69.117
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇩🇪 德国 (Germany) 07
+  server: 140.225.208.50
+  port: 2083
+  udp: true
+  type: vless
+  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  tls: true
+  servername: speedtestmark.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /vless-ws
+- name: 🇩🇪 德国 (Germany) 08
+  server: 185.244.28.177
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3e0c1fbf-467a-49d7-abd2-3a158628f3d0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ
+    short-id: ef7c4e4302bd52d7
+  servername: de3.gigobingo.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 09
+  server: 91.107.169.224
+  port: 80
+  udp: true
+  type: vmess
+  uuid: d4b69108-f756-48af-a331-e8356bc95eb4
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
+- name: 🇩🇪 德国 (Germany) 10
+  server: ge-s-1.pythonmakemigreat.wiki
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  servername: ge-s-1.pythonmakemigreat.wiki
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 11
+  server: 3.120.109.26
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: cuddly-sheepdog.rooster465.autos
+  sni: actual-squid.rooster465.autos
   skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 12
+  server: meet-goshawk.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: meet-goshawk.rooster465.autos
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 13
+  server: 104.21.5.128
+  port: 2052
+  udp: true
+  type: vless
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 - name: 🇩🇪 德国 (Germany) 14
   server: 63.178.198.94
   port: 443
@@ -171,14 +170,6 @@ proxies:
   sni: pleased-albacore.rooster465.autos
   skip-cert-verify: false
 - name: 🇩🇪 德国 (Germany) 15
-  server: meet-goshawk.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: meet-goshawk.rooster465.autos
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 16
   server: 144.31.215.227
   port: 443
   udp: true
@@ -191,91 +182,6 @@ proxies:
     short-id: c885e8f8
   servername: cdn-de.bulkavpn.top
   client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 17
-  server: 91.107.154.55
-  port: 5485
-  udp: true
-  type: vless
-  uuid: b7942662-e581-4bee-ab52-02a1bf34e4c4
-  tls: true
-  reality-opts:
-    public-key: uGYj7gkQdNaabDVQZdbHeSVizGPrzj8YD5jdYm7stG0
-    short-id: 3a622700e73c6642
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 18
-  server: de3.gigobingo.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3e0c1fbf-467a-49d7-abd2-3a158628f3d0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ
-    short-id: ef7c4e4302bd52d7
-  servername: de3.gigobingo.ru
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 19
-  server: cctvhikvision.center
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 20
-  server: sino.bestsellers1.site
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  tls: true
-  servername: sino.bestsellers1.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 21
-  server: defrnode.xyy123.bid
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8af93649-403b-46d8-9966-923d4c58402c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
-    short-id: 0fa4a0e2493392
-  servername: p-y3-www-amazon-com-kalias.amazon.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 22
-  server: 94.156.114.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-  servername: ge-s-1.pythonmakemigreat.wiki
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 23
-  server: qcloudge1.exitvpn.shop
-  port: 20270
-  udp: true
-  type: hysteria2
-  password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-  sni: qcloudge1.exitvpn.shop
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -296,14 +202,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 13
   - 🇩🇪 德国 (Germany) 14
   - 🇩🇪 德国 (Germany) 15
-  - 🇩🇪 德国 (Germany) 16
-  - 🇩🇪 德国 (Germany) 17
-  - 🇩🇪 德国 (Germany) 18
-  - 🇩🇪 德国 (Germany) 19
-  - 🇩🇪 德国 (Germany) 20
-  - 🇩🇪 德国 (Germany) 21
-  - 🇩🇪 德国 (Germany) 22
-  - 🇩🇪 德国 (Germany) 23
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -324,13 +222,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 13
   - 🇩🇪 德国 (Germany) 14
   - 🇩🇪 德国 (Germany) 15
-  - 🇩🇪 德国 (Germany) 16
-  - 🇩🇪 德国 (Germany) 17
-  - 🇩🇪 德国 (Germany) 18
-  - 🇩🇪 德国 (Germany) 19
-  - 🇩🇪 德国 (Germany) 20
-  - 🇩🇪 德国 (Germany) 21
-  - 🇩🇪 德国 (Germany) 22
-  - 🇩🇪 德国 (Germany) 23
 rules:
 - MATCH,PROXIES

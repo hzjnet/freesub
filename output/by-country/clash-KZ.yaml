@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01
-  server: edge.cloudtechone.org
-  port: 443
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
+  server: 109.248.170.119
+  port: 13447
   udp: true
   type: vless
-  uuid: 5036de9b-1a18-40e2-97f6-9cbb4a4753e4
-  flow: xtls-rprx-vision
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
   tls: true
   reality-opts:
-    public-key: _IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo
-    short-id: f93c9d5127e622e4
-  servername: edge.cloudtechone.org
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
+  servername: yahoo.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
 rules:
 - MATCH,PROXIES
