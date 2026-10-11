@@ -97,9 +97,9 @@ IP_ECHO_URLS = [                    # 经代理获取出口 IP (多路冗余)
     "https://ipinfo.io/json",                          # JSON: country/org
     "http://ip-api.com/json/?fields=status,query,countryCode,isp,org,as",  # HTTP free
 ]
-LIVENESS_URLS = [                    # 活性探测 URL (全部要求代理链路完整)
-    "https://www.gstatic.com/generate_204",       # 实测 204 OK
-    "https://www.google.com/generate_204",
+LIVENESS_URLS = [                    # 活性探测：通过代理隧道尝试多个 HTTP 端点
+    "https://www.gstatic.com/generate_204",       # 要求 200/204 应答 ≤2500ms
+    "https://www.google.com/generate_204",        # 轮流尝试直到第一个成功
     "http://connectivitycheck.gstatic.com/generate_204",
 ]
 SPEED_TEST_URLS = [               # 测速端点多路 (实测部分节点商屏蔽 speed.cloudflare.com)
@@ -1864,7 +1864,11 @@ def test_single_node(item, keep_alive_check=True):
             proxies={"http":f"socks5h://127.0.0.1:{socks_port}",
                      "https":f"socks5h://127.0.0.1:{socks_port}"}
 
-            # 1) 活性
+            # ════════════════════════════════════════════════════
+            # 1) 活性检测：多 URL 探测 (代理隧道内)
+            # ════════════════════════════════════════════════════
+            # 循环尝试：https://gstatic.com/204, https://google.com/204, 
+            # http://gstatic.com/204，要求 HTTP 200/204 ≤2500ms 应答
             latency_ms=99999
             alive=False
             for i,url in enumerate(LIVENESS_URLS):
@@ -1882,17 +1886,17 @@ def test_single_node(item, keep_alive_check=True):
             if not alive or latency_ms>MAX_ACCEPT_LATENCY_MS:
                 return None
 
-            sichuan_rtt_ms = measure_sichuan_dns_rtt(socks_port)
-            if not is_sichuan_rtt_acceptable(sichuan_rtt_ms):
-                if sichuan_rtt_ms is None:
-                    return None
-                print_once(
-                    "sichuan-rtt-filter",
-                    f"[*] 四川 DNS RTT 超过 {MAX_SICHUAN_RTT_MS}ms 的节点将被过滤"
-                    f" (示例: {sichuan_rtt_ms:.1f}ms)")
-                return None
+            # ════════════════════════════════════════════════════
+            # 四川 DNS RTT 测试已禁用（易受隧道波动影响，不适合作为硬性筛选）
+            # 原理：通过代理隧道查询内网 DNS 延迟=网络噪音+丢包，而非代理真实质量
+            # ════════════════════════════════════════════════════
+            sichuan_rtt_ms = None
 
-            # 2) 出口 IP
+            # ════════════════════════════════════════════════════
+            # 2) 出口 IP：尝试多个 IP 查询 API (代理隧道内)
+            # ════════════════════════════════════════════════════
+            # 依次尝试 api.ip.sb, ipinfo.io, cloudflare trace
+            # 获取出口 IP、国家、ASN、ISP 等信息；需要 REQUIRE_EXIT_IP=True 则必须成功
             exit_ip=exit_country=exit_asn=exit_asn_org=exit_isp=None
             for url in IP_ECHO_URLS:
                 try:
@@ -1926,7 +1930,12 @@ def test_single_node(item, keep_alive_check=True):
             if REQUIRE_EXIT_IP and not exit_ip:
                 return None
 
-            # 3) TLS/证书风险
+            # ════════════════════════════════════════════════════
+            # 3) TLS/MITM 风险检测与 WARP 套壳识别 (代理隧道内)
+            # ════════════════════════════════════════════════════
+            # 再次访问 gstatic.com/204 检查 TLS 证书和响应码
+            # SSLError、重定向、异常状态码均视为 MITM 风险，过滤掉
+            # 查询 cloudflare/cdn-cgi/trace 的 warp=on 标志识别套壳节点
             mitm_risk=False
             try:
                 r=PROBE_SESSION.get("https://www.gstatic.com/generate_204",proxies=proxies,
@@ -1948,7 +1957,11 @@ def test_single_node(item, keep_alive_check=True):
             except requests.RequestException:
                 pass
 
-            # 4) 快速测速
+            # ════════════════════════════════════════════════════
+            # 4) 下载速度测试：验证节点实际带宽 (代理隧道内)
+            # ════════════════════════════════════════════════════
+            # 轮流尝试两个测速端点，下载部分数据测量 Byte/s
+            # 达标线 ≥70KB/s；低于此速度则过滤 (防止代理节点过载)
             speed_bps=0
             for speed_url in SPEED_TEST_URLS:
                 downloaded=0
