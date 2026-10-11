@@ -1209,6 +1209,15 @@ def load_source_config() -> dict:
                 "source_code_repositories", "final_result_pools"):
         if not isinstance(config.get(key, []), list):
             raise ValueError(f"订阅源配置 {key} 必须是列表")
+    exclusions = config.get("candidate_region_exclusions", {})
+    if not isinstance(exclusions, dict):
+        raise ValueError("订阅源配置 candidate_region_exclusions 必须是地区到国家代码列表的映射")
+    for region, countries in exclusions.items():
+        if not isinstance(countries, list) or any(
+                not isinstance(code, str) or not re.fullmatch(r"[A-Za-z]{2}", code)
+                for code in countries):
+            raise ValueError(
+                f"订阅源配置 candidate_region_exclusions.{region} 必须是 ISO 两位国家代码列表")
     return config
 
 
@@ -1516,6 +1525,52 @@ def prefilter_candidates(candidates: list) -> list:
             (passed if ok else failed).append(item)
     print(f"[+] 预检通过: {len(passed)} | DNS/TCP 不通: {len(failed)}")
     return passed if DROP_PORT_KNOCK_FAIL else passed+failed
+
+
+def filter_candidates_by_server_region(
+        candidates: list, region_exclusions: dict, country_reader) -> list:
+    """Exclude configured regions using endpoint-server IP geolocation."""
+    country_regions = {
+        str(code).upper(): region
+        for region, countries in region_exclusions.items()
+        for code in countries
+    }
+    if not candidates or not country_regions:
+        return candidates
+
+    excluded = []
+    retained = []
+    unknown = 0
+    location_cache = {}
+    for item in candidates:
+        server = item[2]
+        if server not in location_cache:
+            server_ip = resolve_host(server)
+            country_code = None
+            if server_ip:
+                record = country_reader.get(server_ip) or {}
+                country_code = (record.get("country") or {}).get("iso_code")
+            location_cache[server] = (
+                str(country_code).upper() if country_code else None
+            )
+        country_code = location_cache[server]
+        region = country_regions.get(country_code)
+        if region:
+            excluded.append((region, item))
+        else:
+            if not country_code:
+                unknown += 1
+            retained.append(item)
+
+    excluded_by_region = {}
+    for region, _ in excluded:
+        excluded_by_region[region] = excluded_by_region.get(region, 0) + 1
+    print(
+        f"[*] 候选地区预筛 (按节点入口服务器 IP): {len(candidates)} → "
+        f"{len(retained)}; 排除 {excluded_by_region}; "
+        f"位置未知保留 {unknown}"
+    )
+    return retained
 
 
 
@@ -3031,9 +3086,10 @@ export default {{
 ## 🛠️ 项目使用说明
 1. **自动更新机制**：GitHub Actions 每天北京时间 06:00、12:00、18:00 自动运行，也支持手动触发。
 2. **来源配置**：编辑 `config/sources.yml` 可手动添加结果订阅 URL 或 GitHub 仓库；配置的仓库会自动扫描节点文件，并跟随 README/网页与 JSON 清单中的订阅链接。OgdenThomas/freesub 结果池在其它来源之后导入并合并。
-3. **四川 DNS RTT 筛选**：通过每个候选节点的代理隧道查询 `61.139.2.69`，失败时改用 `61.139.2.1`；RTT 高于 800ms 或无法完成查询的节点不入库。
-4. **测活标准**：节点必须通过端口预检、sing-box 实际隧道、出口 IP 穿透、限速下载与 TLS 证书校验后方可入库。
-5. **多客户端兼容**：Clash / v2rayN / sing-box 全格式订阅；订阅地址固定，不随每次更新改变。
+3. **地区预筛**：`candidate_region_exclusions` 可配置测活前排除的大区国家代码。当前排除东欧、非洲、西亚候选，按节点入口服务器 IP 的 GeoLite2 国家代码判断；无法定位的候选保留并继续测活。
+4. **四川 DNS RTT 筛选**：通过每个候选节点的代理隧道查询 `61.139.2.69`，UDP 失败时回退 DNS/TCP；主地址不可用或 RTT 高于 800ms 时再试 `61.139.2.1`。RTT 高于 800ms 或无法完成查询的节点不入库。
+5. **测活标准**：节点必须通过端口预检、sing-box 实际隧道、出口 IP 穿透、限速下载与 TLS 证书校验后方可入库。
+6. **多客户端兼容**：Clash / v2rayN / sing-box 全格式订阅；订阅地址固定，不随每次更新改变。
 """
     atomic_write_text(os.path.join(BASEDIR, "README.md"), readme)
     print(f"[+] README.md 更新完毕: 总节点 {total_count}, 家宽 {res_count}")
@@ -3048,6 +3104,7 @@ def main():
     print(f"==== 免费节点测活订阅池 v2 · 启动于 {datetime.now(timezone.utc).isoformat()} ====")
     ensure_directories()
     setup_environment()
+    source_config = load_source_config()
 
     # 1. 抓取
     raw_nodes = fetch_raw_nodes()
@@ -3118,6 +3175,19 @@ def main():
     if not candidates:
         print("[!] 无可测节点 (订阅源全部失效?) — 保留上次 output, 不覆盖订阅文件")
         return
+
+    region_exclusions = source_config.get("candidate_region_exclusions", {})
+    if region_exclusions:
+        country_reader = maxminddb.open_database(
+            os.path.join(RUNTIME_DIR, "Country.mmdb"))
+        try:
+            candidates = filter_candidates_by_server_region(
+                candidates, region_exclusions, country_reader)
+        finally:
+            country_reader.close()
+        if not candidates:
+            print("[!] 地区预筛后没有候选节点 — 保留上次 output, 不覆盖订阅文件")
+            return
 
     # 3. 端口预检
     candidates = prefilter_candidates(candidates)
