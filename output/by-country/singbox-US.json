@@ -15,7 +15,7 @@
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 02 R40",
       "server": "154.29.149.140",
-      "server_port": 41705,
+      "server_port": 16586,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -24,6 +24,27 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tBvlo8F8hKRXSK-EHRAfzEH-x3e4uvheGloO-9bPKx4",
+          "short_id": "70ab6d813e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 03 R40",
+      "server": "154.29.149.140",
+      "server_port": 41705,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "us1p1.xn--ghq880n3na965a.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -38,7 +59,8 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 ⚠R",
-        "🇺🇸 美国 (United States) 02 R40"
+        "🇺🇸 美国 (United States) 02 R40",
+        "🇺🇸 美国 (United States) 03 R40"
       ]
     },
     {
@@ -46,7 +68,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 ⚠R",
-        "🇺🇸 美国 (United States) 02 R40"
+        "🇺🇸 美国 (United States) 02 R40",
+        "🇺🇸 美国 (United States) 03 R40"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

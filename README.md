@@ -10,9 +10,9 @@
 
 | 客户端 / 格式类型 | 节点总数 | 免翻 CDN 订阅直链 (国内直连) | 官方原生 Raw 直链 (开启代理) |
 | :--- | :---: | :--- | :--- |
-| 🚀 **Clash (YAML 格式)** | `3` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/clash.yaml) | [官方 Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/clash.yaml) |
-| ⚡ **V2RayN (Base64 格式)** | `3` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/v2ray.txt) | [官方 Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/v2ray.txt) |
-| 📦 **sing-box (JSON 格式)** | `3` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/singbox.json) | [官方 Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/singbox.json) |
+| 🚀 **Clash (YAML 格式)** | `5` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/clash.yaml) | [官方 Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/clash.yaml) |
+| ⚡ **V2RayN (Base64 格式)** | `5` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/v2ray.txt) | [官方 Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/v2ray.txt) |
+| 📦 **sing-box (JSON 格式)** | `5` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/singbox.json) | [官方 Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/singbox.json) |
 
 ---
 
@@ -30,7 +30,8 @@
 
 | 地区/国家 | 节点数 | V2RayN 专属订阅 | Clash 专属订阅 | sing-box 专属订阅 |
 | :--- | :---: | :---: | :---: | :---: |
-| 🇺🇸 美国 (United States) | 2 | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/US.txt) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/US.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/clash-US.yaml) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/clash-US.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/singbox-US.json) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/singbox-US.json) |
+| 🇺🇸 美国 (United States) | 3 | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/US.txt) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/US.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/clash-US.yaml) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/clash-US.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/singbox-US.json) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/singbox-US.json) |
+| 🇭🇰 中国香港 (Hong Kong) | 1 | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/HK.txt) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/HK.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/clash-HK.yaml) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/clash-HK.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/singbox-HK.json) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/singbox-HK.json) |
 | 🇹🇭 泰国 (Thailand) | 1 | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/TH.txt) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/TH.txt) | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/clash-TH.yaml) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/clash-TH.yaml) | [CDN 直链](https://cdn.jsdelivr.net/gh/hzjnet/freesub@main/output/by-country/singbox-TH.json) · [Raw 直链](https://raw.githubusercontent.com/hzjnet/freesub/main/output/by-country/singbox-TH.json) |
 
 ---

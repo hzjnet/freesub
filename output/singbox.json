@@ -15,7 +15,7 @@
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 02 R40",
       "server": "154.29.149.140",
-      "server_port": 41705,
+      "server_port": 16586,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -27,6 +27,27 @@
         },
         "reality": {
           "enabled": true,
+          "public_key": "tBvlo8F8hKRXSK-EHRAfzEH-x3e4uvheGloO-9bPKx4",
+          "short_id": "70ab6d813e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 03 R40",
+      "server": "154.29.149.140",
+      "server_port": 41705,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "us1p1.xn--ghq880n3na965a.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
           "public_key": "KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA",
           "short_id": "e51285e3"
         }
@@ -34,7 +55,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03",
+      "tag": "🇹🇭 泰国 (Thailand) 04",
       "server": "154.21.203.106",
       "server_port": 21033,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
@@ -54,13 +75,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05",
+      "server": "3696b38bsg.murphyweb.sbs",
+      "server_port": 32134,
+      "uuid": "5b01dc2d-6892-49b8-8289-3f73a32e00e4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "buylite.music.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4",
+          "short_id": "6c6c7c97"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 ⚠R",
         "🇺🇸 美国 (United States) 02 R40",
-        "🇹🇭 泰国 (Thailand) 03"
+        "🇺🇸 美国 (United States) 03 R40",
+        "🇹🇭 泰国 (Thailand) 04",
+        "🇭🇰 中国香港 (Hong Kong) 05"
       ]
     },
     {
@@ -69,7 +113,9 @@
       "outbounds": [
         "🇺🇸 美国 (United States) 01 ⚠R",
         "🇺🇸 美国 (United States) 02 R40",
-        "🇹🇭 泰国 (Thailand) 03"
+        "🇺🇸 美国 (United States) 03 R40",
+        "🇹🇭 泰国 (Thailand) 04",
+        "🇭🇰 中国香港 (Hong Kong) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
