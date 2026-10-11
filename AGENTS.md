@@ -12,13 +12,14 @@
 ## 关键目录与文件
 - `scripts/main_v2.py`: 核心探测与订阅生成脚本
 - `scripts/requirements.txt`: Python 依赖
-- `config/sources.yml`: 手动订阅 URL、自动扫描的结果仓库/源码仓库及最后合并的上游结果池
+- `config/sources.yml`: 手动订阅 URL、自动扫描的结果仓库/源码仓库、最后合并的上游结果池及候选地区排除规则
 - `.github/workflows/update.yml`: GitHub Actions 工作流
 - `output/`: 测活结果订阅文件输出目录（由 Actions 自动提交）
 - `README.md`: 包含订阅链接与统计表格的主文档（由脚本自动生成覆盖）
 
 ## 测活筛选
 - 节点经代理隧道查询四川 DNS `61.139.2.69`，UDP 查询失败时回退 DNS/TCP；主地址不可用或 RTT 超过 800ms 时再测网关 `61.139.2.1`；仅保留有效 RTT 不超过 800ms 的节点。
+- 测活前按 `candidate_region_exclusions` 和入口服务器 IP 国家归属预筛；未知位置保留。
 
 ## 红线
 - 不要在脚本中硬编码个人敏感 Token 或密码。

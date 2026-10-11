@@ -153,6 +153,48 @@ class AggregationTests(unittest.TestCase):
             config["final_result_pools"],
             ["https://raw.githubusercontent.com/OgdenThomas/freesub/main/output/v2ray.txt"],
         )
+        self.assertEqual(
+            set(config["candidate_region_exclusions"]),
+            {"eastern_europe", "africa", "western_asia"},
+        )
+
+    def test_candidate_region_filter_uses_server_country_and_keeps_unknowns(self):
+        candidates = [
+            ("pl", {}, "pl.example", 443, "vless"),
+            ("za", {}, "za.example", 443, "vless"),
+            ("ir", {}, "ir.example", 443, "vless"),
+            ("us", {}, "us.example", 443, "vless"),
+            ("unknown", {}, "unknown.example", 443, "vless"),
+        ]
+        server_ips = {
+            "pl.example": "192.0.2.1",
+            "za.example": "192.0.2.2",
+            "ir.example": "192.0.2.3",
+            "us.example": "192.0.2.4",
+            "unknown.example": "",
+        }
+        countries = {
+            "192.0.2.1": "PL",
+            "192.0.2.2": "ZA",
+            "192.0.2.3": "IR",
+            "192.0.2.4": "US",
+        }
+
+        class CountryReader:
+            def get(self, ip):
+                return {"country": {"iso_code": countries[ip]}}
+
+        exclusions = {
+            "eastern_europe": ["PL"],
+            "africa": ["ZA"],
+            "western_asia": ["IR"],
+        }
+        with patch.object(main_v2, "resolve_host", side_effect=server_ips.get):
+            retained = main_v2.filter_candidates_by_server_region(
+                candidates, exclusions, CountryReader(),
+            )
+
+        self.assertEqual([item[0] for item in retained], ["us", "unknown"])
 
     def test_readme_generates_fixed_repository_subscription_urls(self):
         written = []

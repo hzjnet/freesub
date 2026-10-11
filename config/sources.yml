@@ -52,3 +52,10 @@ source_code_repositories:
 # the sources above. Do not add this repository to either crawler list.
 final_result_pools:
   - "https://raw.githubusercontent.com/OgdenThomas/freesub/main/output/v2ray.txt"
+
+# Candidate region exclusion is based on the node endpoint server IP (not its
+# eventual proxy exit IP). Unknown locations are retained for normal probing.
+candidate_region_exclusions:
+  eastern_europe: [BY, BG, CZ, HU, PL, MD, RO, RU, SK, UA]
+  africa: [DZ, EG, EH, LY, MA, SD, TN, BI, KM, DJ, ER, ET, KE, MG, MW, MU, YT, MZ, RE, RW, SC, SO, SS, UG, TZ, ZM, ZW, AO, CM, CF, TD, CG, CD, GQ, GA, ST, BW, SZ, LS, NA, ZA, BJ, BF, CV, CI, GM, GH, GN, GW, LR, ML, MR, NE, NG, SN, SL, TG]
+  western_asia: [AM, AZ, BH, CY, GE, IQ, IR, IL, JO, KW, LB, OM, PS, QA, SA, SY, TR, AE, YE]
