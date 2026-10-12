@@ -4,20 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 法国 (France) 01 R44
-  server: 193.70.85.96
+- name: 🇫🇷 法国 (France) 01
+  server: 172.67.152.98
   port: 443
   udp: true
   type: vless
-  uuid: 58756a39-0472-5f8a-89e3-a80fa94af59e
-  flow: xtls-rprx-vision
+  uuid: 5934b979-e128-4c90-a600-744b97bffc8c
   tls: true
-  servername: 7q4eiwcseu-193708596-direct.rahbarii.com
+  servername: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/Fi3kP8cNjBoo8UPv?ed=2560
+    headers:
+      Host: 5dktcuajb2a1jxix7csnrmeucg.mahrademami.workers.dev
 - name: 🇫🇷 法国 (France) 02
-  server: 185.114.72.31
-  port: 2053
+  server: pl140.vpnbook.com
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+- name: 🇫🇷 法国 (France) 03
+  server: 5.253.189.238
+  port: 443
   udp: true
   type: trojan
   password: humanity
@@ -26,13 +37,6 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 03
-  server: pl140.vpnbook.com
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
 - name: 🇫🇷 法国 (France) 04
   server: pl134.vpnbook.com
   port: 443
@@ -52,54 +56,31 @@ proxies:
     public-key: 7gPPAdSE90GC5DWQhNH3-7oAHulpWz6iN8dIuKfBflc
     short-id: 0da7e14db353e7d0
   servername: frafra.nztvpn.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 06
-  server: 140.248.186.45
+  server: 89.150.34.41
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 07 R44
+  server: 193.70.85.96
   port: 443
   udp: true
   type: vless
-  uuid: XpnTeam-13
+  uuid: 58756a39-0472-5f8a-89e3-a80fa94af59e
+  flow: xtls-rprx-vision
   tls: true
-  servername: ssl.fastly.com
+  servername: 7q4eiwcseu-193708596-direct.rahbarii.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-- name: 🇫🇷 法国 (France) 07
-  server: fr.api-music-fa.com
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  tls: true
-  servername: fr.api-music-fa.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/voip/updates/static/fr2035
-    headers:
-      Host: fr.api-music-fa.com
-- name: 🇫🇷 法国 (France) 08 R48
-  server: 104.21.60.29
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
-  tls: true
-  servername: www.large-files.info
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /var/www/html/video/preview/download/i8o0la
-    headers:
-      Host: www.large-files.info
-- name: 🇫🇷 法国 (France) 09
-  server: 85.31.102.163
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 08
+  server: 213.1.145.50
   port: 443
   udp: true
   type: trojan
@@ -109,8 +90,47 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🇫🇷 法国 (France) 09
+  server: fr5.wizard.select
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2acc3742-c568-11f1-9902-a337233c6cda
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uqLRHVERHP974FJk39ltiV8pkcGAWYKJfOJ1nMALahU
+    short-id: 984f
+  servername: fr5.wizard.select
+  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 10
-  server: 172.67.185.98
+  server: 185.220.100.168
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 11 R48
+  server: 172.67.175.23
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  tls: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 12
+  server: 8.47.69.0
   port: 2053
   udp: true
   type: vless
@@ -124,35 +144,52 @@ proxies:
     path: /api/voip/updates/static/fr2035
     headers:
       Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 13
+  server: 5.78.92.27
+  port: 8443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇷 法国 (France) 01 R44
+  - 🇫🇷 法国 (France) 01
   - 🇫🇷 法国 (France) 02
   - 🇫🇷 法国 (France) 03
   - 🇫🇷 法国 (France) 04
   - 🇫🇷 法国 (France) 05
   - 🇫🇷 法国 (France) 06
-  - 🇫🇷 法国 (France) 07
-  - 🇫🇷 法国 (France) 08 R48
+  - 🇫🇷 法国 (France) 07 R44
+  - 🇫🇷 法国 (France) 08
   - 🇫🇷 法国 (France) 09
   - 🇫🇷 法国 (France) 10
+  - 🇫🇷 法国 (France) 11 R48
+  - 🇫🇷 法国 (France) 12
+  - 🇫🇷 法国 (France) 13
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 (France) 01 R44
+  - 🇫🇷 法国 (France) 01
   - 🇫🇷 法国 (France) 02
   - 🇫🇷 法国 (France) 03
   - 🇫🇷 法国 (France) 04
   - 🇫🇷 法国 (France) 05
   - 🇫🇷 法国 (France) 06
-  - 🇫🇷 法国 (France) 07
-  - 🇫🇷 法国 (France) 08 R48
+  - 🇫🇷 法国 (France) 07 R44
+  - 🇫🇷 法国 (France) 08
   - 🇫🇷 法国 (France) 09
   - 🇫🇷 法国 (France) 10
+  - 🇫🇷 法国 (France) 11 R48
+  - 🇫🇷 法国 (France) 12
+  - 🇫🇷 法国 (France) 13
 rules:
 - MATCH,PROXIES
