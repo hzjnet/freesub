@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 45.207.157.24
-  port: 9443
+  server: 82.29.36.250
+  port: 443
   udp: true
   type: vless
-  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: random
+    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
+    short-id: ac3342a709db
+  servername: aws.amazon.com
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 02
   server: yg1.ygkkk.dpdns.org
   port: 443

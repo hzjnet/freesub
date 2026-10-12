@@ -4,14 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇦🇹 奥地利 (Austria) 01",
-      "server": "5.254.51.108",
-      "server_port": 9443,
-      "password": "Hc9_NX924RE_Mn948rgrwiub_m93V84nll",
+      "type": "tuic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
+      "server": "tw5.dexlos.com",
+      "server_port": 8080,
+      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
       "tls": {
         "enabled": true,
-        "server_name": "keyhop-voxility-at.dynuddns.com",
+        "server_name": "tw5.dexlos.com",
         "insecure": false,
         "alpn": [
           "h3"
@@ -23,14 +26,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

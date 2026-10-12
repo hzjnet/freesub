@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 01",
-      "server": "144.31.49.47",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": false
-      }
+      "type": "shadowsocks",
+      "tag": "🇮🇱 以色列 (Israel) 01",
+      "server": "31.57.185.253",
+      "server_port": 41575,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "a8H2a7f8S1tCO9cq/8jLiKVW85YCHvQvpmL4z/+93cw=:dyp231b5v7aZ3fC66aG/bF4UY4t21+0cajg7TVXofxg="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01"
+        "🇮🇱 以色列 (Israel) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01"
+        "🇮🇱 以色列 (Israel) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
