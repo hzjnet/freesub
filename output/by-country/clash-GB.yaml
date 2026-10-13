@@ -5,6 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01
+  server: 104.17.148.22
+  port: 80
+  udp: true
+  type: vless
+  uuid: 63f1ef69-92fd-427a-b3e4-98ffddf81ac6
+  network: ws
+  ws-opts:
+    path: /nPKoVRUdyuRZ6jpY/YnBiLnlvdXNlZi5pc2VnYXJvLmNvbSxwcm94eWlwLmNtbGl1c3Nzcy5uZXQsbmltYS5uc2NsLmlyLHR1cmsucmFkaWNhbGl6YXRpb24uaXI=
+    headers:
+      Host: young-rice-749e.heliy78750.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 02
+  server: 104.21.21.167
+  port: 443
+  udp: true
+  type: trojan
+  password: O5+31W&l1TnaLNaEfqur
+  sni: u3DANGs7bGo2yRJz4uhXMt3-M.e5Iq1Vr7gI52Ww7-83T0H6FUXI1D.WOrKerS.deV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/wITkfX2lvDk9IF41MvgctE8e7KWPbYpS?ed=2560
+- name: 🇬🇧 英国 (United Kingdom) 03
   server: 23.81.34.204
   port: 443
   udp: true
@@ -17,7 +39,7 @@ proxies:
     short-id: b19b017d6f453873
   servername: speed.cloudflare.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 02
+- name: 🇬🇧 英国 (United Kingdom) 04
   server: 23.81.36.148
   port: 1222
   udp: true
@@ -29,28 +51,38 @@ proxies:
     short-id: a25d0f
   servername: www.forvo.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 03
-  server: 23.81.36.65
+- name: 🇬🇧 英国 (United Kingdom) 05
+  server: 172.67.131.125
   port: 443
   udp: true
   type: vless
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  flow: xtls-rprx-vision
+  uuid: 8d0f652c-3caa-4570-a138-668364f3d25e
   tls: true
-  reality-opts:
-    public-key: UcFVpzbYTy8Iym6ZnCAtLQK-MeRg6wZuyni4xEOKG18
-    short-id: 0da7e14db353e7d0
-  servername: uk.nztvpn.com
+  servername: SqqfQ0vy-l4v0qA0ZLxNJd79-ykvkw.mRmamaLi.WoRKerS.DEV
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 04
-  server: 18.168.148.212
+  network: ws
+  ws-opts:
+    path: /vl/zInkY7qcXuM6P1AZTQ
+    headers:
+      Host: sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 06 ⚠R
+  server: 172.67.142.177
   port: 443
   udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: gb.tronsg.com
+  type: vmess
+  uuid: 235e318a-8bcb-4480-b256-7b65cc5d0b0a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: uk.lovehk.xyz
   skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 05
+  network: ws
+  ws-opts:
+    path: /London3
+    headers:
+      Host: uk.lovehk.xyz
+- name: 🇬🇧 英国 (United Kingdom) 07
   server: 104.238.2.82
   port: 443
   udp: true
@@ -73,6 +105,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 03
   - 🇬🇧 英国 (United Kingdom) 04
   - 🇬🇧 英国 (United Kingdom) 05
+  - 🇬🇧 英国 (United Kingdom) 06 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +117,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 03
   - 🇬🇧 英国 (United Kingdom) 04
   - 🇬🇧 英国 (United Kingdom) 05
+  - 🇬🇧 英国 (United Kingdom) 06 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 07
 rules:
 - MATCH,PROXIES

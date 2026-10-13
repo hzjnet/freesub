@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 45.149.114.171
-  port: 777
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-- name: 🇫🇮 芬兰 (Finland) 02
-  server: finkawwwbroy5.qcloud.surf
-  port: 20326
-  udp: true
-  type: hysteria2
-  password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-  sni: finkawwwbroy5.qcloud.surf
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 04
   server: fi.pythonsetupbib.online
   port: 443
   udp: true
@@ -38,19 +17,36 @@ proxies:
     short-id: bdf5852d1423e694
   servername: fi.pythonsetupbib.online
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05
-  server: 170.168.4.59
-  port: 17170
+- name: 🇫🇮 芬兰 (Finland) 02
+  server: van2.ragnarok-it.xyz
+  port: 8446
   udp: true
   type: vless
-  uuid: 3eec23c1-2a0d-4d53-afa5-62745a1f5ffe
+  uuid: a61496c3-f256-4a36-8a52-8638b9cc900a
+  flow: xtls-rprx-vision
   tls: true
-  servername: northerntrail.gazette.help
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trail-grpc
+  reality-opts:
+    public-key: Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM
+    short-id: 7bac4b112d30d1
+  servername: amd.com
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇫🇮 芬兰 (Finland) 04
+  server: fl.i3adra0-pshop.ir
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 6f2ead7e-db4a-4725-9657-6fd205faab91
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /
+    headers:
+      Host: fl.i3adra0-pshop.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,7 +56,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
-  - 🇫🇮 芬兰 (Finland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,6 +65,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
-  - 🇫🇮 芬兰 (Finland) 05
 rules:
 - MATCH,PROXIES
