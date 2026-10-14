@@ -6,23 +6,34 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 01",
-      "server": "206.245.166.249",
+      "server": "138.124.90.177",
+      "server_port": 10443,
+      "uuid": "3a0e4040-67cc-43e0-a9fb-98e15ddb0526"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 02",
+      "server": "193.163.203.170",
       "server_port": 443,
-      "uuid": "b8254d35-1cb0-4b74-8f7f-d2bc985196a0",
+      "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "laga18.api3-max.ru",
-        "insecure": false,
+        "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o",
+          "short_id": "b28db60d77c50b4f"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 02",
+      "tag": "🇬🇧 英国 (United Kingdom) 03",
       "server": "23.81.34.204",
       "server_port": 443,
       "uuid": "99955907-9070-46f0-a200-9c7a0b9d74fe",
@@ -32,7 +43,7 @@
         "server_name": "speed.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -43,8 +54,55 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 03",
-      "server": "5.199.0.226",
+      "tag": "🇬🇧 英国 (United Kingdom) 04",
+      "server": "193.188.21.253",
+      "server_port": 14430,
+      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "193.188.21.253"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇬🇧 英国 (United Kingdom) 05",
+      "server": "fi1server.rabstvo.shop",
+      "server_port": 443,
+      "password": "9yOIR2_QAChKs26rYaiX_aoNnOALd0aU",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1server.rabstvo.shop",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 06",
+      "server": "95.85.224.51",
+      "server_port": 443,
+      "uuid": "342ab7e4-5a89-0001-8809-304120d4aa83",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
+          "short_id": "a696de84963656de"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 07",
+      "server": "16.171.118.250",
       "server_port": 443,
       "uuid": "b0a100ee-c397-43f2-bdae-2adfb7a0d4e5",
       "tls": {
@@ -66,63 +124,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 04",
-      "server": "laga19.api3-max.ru",
-      "server_port": 443,
-      "uuid": "b8254d35-1cb0-4b74-8f7f-d2bc985196a0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "laga19.api3-max.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 05",
-      "server": "45.141.118.49",
-      "server_port": 443,
-      "uuid": "b8254d35-1cb0-4b74-8f7f-d2bc985196a0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lagad17.api3-max.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 06",
-      "server": "193.163.203.170",
-      "server_port": 443,
-      "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o",
-          "short_id": "b28db60d77c50b4f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 07",
-      "server": "sql.popmintxo.cc",
+      "tag": "🇬🇧 英国 (United Kingdom) 08",
+      "server": "104.238.2.82",
       "server_port": 443,
       "uuid": "d806a58b-33aa-42e0-b170-395e49c16b37",
       "flow": "xtls-rprx-vision",
@@ -137,27 +140,6 @@
           "enabled": true,
           "public_key": "Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ",
           "short_id": "b558b9305a0b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 08",
-      "server": "webdisk.jaggyslawa.org",
-      "server_port": 443,
-      "uuid": "88742d38-3f5c-4b9c-b256-7df5db8257ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
-          "short_id": "8f79726c5002"
         }
       }
     },

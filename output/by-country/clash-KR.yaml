@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01
-  server: kr2-r.link-t7.com
-  port: 10047
-  udp: true
-  type: vless
-  uuid: 58c828cd-3eba-46f9-b297-16003d7a6e68
-  tls: true
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: update
-- name: 🇰🇷 韩国 (South Korea) 02
   server: 34.22.111.30
   port: 443
   udp: true
@@ -30,7 +15,14 @@ proxies:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
     short-id: 8685f8b4d9f4f51e
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
+- name: 🇰🇷 韩国 (South Korea) 02
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇰🇷 韩国 (South Korea) 03
   server: 3.34.131.153
   port: 443
@@ -48,30 +40,6 @@ proxies:
   sni: noted-cougar.rooster465.autos
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 05
-  server: pure-kodiak.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pure-kodiak.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 06
-  server: main-fawn.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: main-fawn.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 07
-  server: optimum-snapper.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 08
   server: central-jawfish.rooster465.autos
   port: 443
   udp: true
@@ -79,6 +47,30 @@ proxies:
   password: UX82473651
   sni: central-jawfish.rooster465.autos
   skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 06
+  server: optimum-snapper.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 07
+  server: 4KnPRw5H74w4AVNs.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 10d6665f-10c9-4f03-9b83-ba45968f748d
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 4KnPRw5H74w4AVNs.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 4KnPRw5H74w4AVNs.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -91,7 +83,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05
   - 🇰🇷 韩国 (South Korea) 06
   - 🇰🇷 韩国 (South Korea) 07
-  - 🇰🇷 韩国 (South Korea) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,6 +95,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05
   - 🇰🇷 韩国 (South Korea) 06
   - 🇰🇷 韩国 (South Korea) 07
-  - 🇰🇷 韩国 (South Korea) 08
 rules:
 - MATCH,PROXIES

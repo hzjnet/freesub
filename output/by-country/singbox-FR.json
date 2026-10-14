@@ -5,35 +5,32 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 01",
+      "tag": "🇫🇷 法国 (France) 01 ⚠R",
+      "server": "51.195.248.89",
+      "server_port": 14117,
+      "method": "aes-128-gcm",
+      "password": "3391e35fc7a532f6a9b86adb077b2b34"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 02",
       "server": "54.36.174.140",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "e5c65ph"
     },
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 02",
-      "server": "104.18.9.83",
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 03",
+      "server": "pl134.vpnbook.com",
       "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "e5c65ph"
     },
     {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 03",
-      "server": "45.87.41.18",
+      "tag": "🇫🇷 法国 (France) 04",
+      "server": "172.67.231.254",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -54,18 +51,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01",
+        "🇫🇷 法国 (France) 01 ⚠R",
         "🇫🇷 法国 (France) 02",
-        "🇫🇷 法国 (France) 03"
+        "🇫🇷 法国 (France) 03",
+        "🇫🇷 法国 (France) 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01",
+        "🇫🇷 法国 (France) 01 ⚠R",
         "🇫🇷 法国 (France) 02",
-        "🇫🇷 法国 (France) 03"
+        "🇫🇷 法国 (France) 03",
+        "🇫🇷 法国 (France) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

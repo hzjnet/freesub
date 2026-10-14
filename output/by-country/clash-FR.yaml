@@ -4,26 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 法国 (France) 01
+- name: 🇫🇷 法国 (France) 01 ⚠R
+  server: 51.195.248.89
+  port: 14117
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 3391e35fc7a532f6a9b86adb077b2b34
+- name: 🇫🇷 法国 (France) 02
   server: 54.36.174.140
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: e5c65ph
-- name: 🇫🇷 法国 (France) 02
-  server: 104.18.9.83
+- name: 🇫🇷 法国 (France) 03
+  server: pl134.vpnbook.com
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 03
-  server: 45.87.41.18
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+- name: 🇫🇷 法国 (France) 04
+  server: 172.67.231.254
   port: 443
   udp: true
   type: trojan
@@ -38,16 +41,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇫🇷 法国 (France) 01
+  - 🇫🇷 法国 (France) 01 ⚠R
   - 🇫🇷 法国 (France) 02
   - 🇫🇷 法国 (France) 03
+  - 🇫🇷 法国 (France) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 (France) 01
+  - 🇫🇷 法国 (France) 01 ⚠R
   - 🇫🇷 法国 (France) 02
   - 🇫🇷 法国 (France) 03
+  - 🇫🇷 法国 (France) 04
 rules:
 - MATCH,PROXIES

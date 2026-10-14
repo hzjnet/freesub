@@ -4,14 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 波兰 (Poland) 01
-  server: ruot.ayucloudservices.nl
-  port: 35031
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 85590bd2-807b-49b9-af20-1101c18b9eda
-- name: 🇵🇱 波兰 (Poland) 02 R43
+- name: 🇵🇱 波兰 (Poland) 01 R43
   server: 54.37.131.126
   port: 80
   udp: true
@@ -29,14 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 波兰 (Poland) 01
-  - 🇵🇱 波兰 (Poland) 02 R43
+  - 🇵🇱 波兰 (Poland) 01 R43
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 (Poland) 01
-  - 🇵🇱 波兰 (Poland) 02 R43
+  - 🇵🇱 波兰 (Poland) 01 R43
 rules:
 - MATCH,PROXIES
