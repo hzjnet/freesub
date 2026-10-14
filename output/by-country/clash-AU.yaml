@@ -4,28 +4,27 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01
-  server: nimm.mpd.cc.cd
-  port: 2053
+- name: 🇦🇺 澳大利亚 (Australia) 01
+  server: 137.23.16.77
+  port: 20000
   udp: true
-  type: trojan
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  sni: nimm.mpd.cc.cd
+  type: hysteria2
+  password: a34f3990b69f44bfa0d32385
+  sni: rmgyvpn.rest
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /0962
+  obfs: salamander
+  obfs-password: a34f3990b69f44bfa0d32385
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01
+  - 🇦🇺 澳大利亚 (Australia) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01
+  - 🇦🇺 澳大利亚 (Australia) 01
 rules:
 - MATCH,PROXIES

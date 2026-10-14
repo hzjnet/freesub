@@ -4,66 +4,47 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 01",
-      "server": "13.40.25.145",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 02",
-      "server": "188.114.96.7",
+      "tag": "🇬🇧 英国 (United Kingdom) 01",
+      "server": "206.245.166.249",
       "server_port": 443,
-      "uuid": "ba49d874-fe02-465d-82d3-ed981dc7694f",
+      "uuid": "b8254d35-1cb0-4b74-8f7f-d2bc985196a0",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "o94yv7lIF0-AnXiSd9EFeHVVS7mxn6Bh.z-ULe-IKA-d-e-Ne-k-E.WORKERs.DEv",
+        "server_name": "laga18.api3-max.ru",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev"
+          "fingerprint": "firefox"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 03",
-      "server": "35.179.134.0",
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 02",
+      "server": "23.81.34.204",
       "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 04",
-      "server": "16.60.8.87",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 05",
-      "server": "13.135.199.253",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "uuid": "99955907-9070-46f0-a200-9c7a0b9d74fe",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "speed.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s",
+          "short_id": "b19b017d6f453873"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 06",
-      "server": "185.209.162.35",
+      "tag": "🇬🇧 英国 (United Kingdom) 03",
+      "server": "5.199.0.226",
       "server_port": 443,
       "uuid": "b0a100ee-c397-43f2-bdae-2adfb7a0d4e5",
       "tls": {
@@ -72,7 +53,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -85,14 +66,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 07",
-      "server": "206.245.166.203",
+      "tag": "🇬🇧 英国 (United Kingdom) 04",
+      "server": "laga19.api3-max.ru",
       "server_port": 443,
       "uuid": "b8254d35-1cb0-4b74-8f7f-d2bc985196a0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "laga20.api3-max.ru",
+        "server_name": "laga19.api3-max.ru",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -102,7 +83,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 08",
+      "tag": "🇬🇧 英国 (United Kingdom) 05",
+      "server": "45.141.118.49",
+      "server_port": 443,
+      "uuid": "b8254d35-1cb0-4b74-8f7f-d2bc985196a0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lagad17.api3-max.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 06",
       "server": "193.163.203.170",
       "server_port": 443,
       "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
@@ -123,117 +121,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 09",
-      "server": "23.81.36.148",
-      "server_port": 1222,
-      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.forvo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE",
-          "short_id": "a25d0f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 10",
-      "server": "45.141.118.49",
-      "server_port": 443,
-      "uuid": "b8254d35-1cb0-4b74-8f7f-d2bc985196a0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lagad17.api3-max.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 11",
-      "server": "206.245.166.173",
-      "server_port": 443,
-      "uuid": "b8254d35-1cb0-4b74-8f7f-d2bc985196a0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "laga19.api3-max.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 12",
-      "server": "45.141.118.213",
-      "server_port": 443,
-      "uuid": "b8254d35-1cb0-4b74-8f7f-d2bc985196a0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "laga16.api3-max.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 13",
-      "server": "laga18.api3-max.ru",
-      "server_port": 443,
-      "uuid": "b8254d35-1cb0-4b74-8f7f-d2bc985196a0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "laga18.api3-max.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 14",
-      "server": "webdisk.jaggyslawa.org",
-      "server_port": 443,
-      "uuid": "8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
-          "short_id": "87174b37ce3b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 15",
-      "server": "104.238.2.82",
+      "tag": "🇬🇧 英国 (United Kingdom) 07",
+      "server": "sql.popmintxo.cc",
       "server_port": 443,
       "uuid": "d806a58b-33aa-42e0-b170-395e49c16b37",
       "flow": "xtls-rprx-vision",
@@ -252,6 +141,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 08",
+      "server": "webdisk.jaggyslawa.org",
+      "server_port": 443,
+      "uuid": "88742d38-3f5c-4b9c-b256-7df5db8257ec",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
+          "short_id": "8f79726c5002"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -263,14 +173,7 @@
         "🇬🇧 英国 (United Kingdom) 05",
         "🇬🇧 英国 (United Kingdom) 06",
         "🇬🇧 英国 (United Kingdom) 07",
-        "🇬🇧 英国 (United Kingdom) 08",
-        "🇬🇧 英国 (United Kingdom) 09",
-        "🇬🇧 英国 (United Kingdom) 10",
-        "🇬🇧 英国 (United Kingdom) 11",
-        "🇬🇧 英国 (United Kingdom) 12",
-        "🇬🇧 英国 (United Kingdom) 13",
-        "🇬🇧 英国 (United Kingdom) 14",
-        "🇬🇧 英国 (United Kingdom) 15"
+        "🇬🇧 英国 (United Kingdom) 08"
       ]
     },
     {
@@ -284,14 +187,7 @@
         "🇬🇧 英国 (United Kingdom) 05",
         "🇬🇧 英国 (United Kingdom) 06",
         "🇬🇧 英国 (United Kingdom) 07",
-        "🇬🇧 英国 (United Kingdom) 08",
-        "🇬🇧 英国 (United Kingdom) 09",
-        "🇬🇧 英国 (United Kingdom) 10",
-        "🇬🇧 英国 (United Kingdom) 11",
-        "🇬🇧 英国 (United Kingdom) 12",
-        "🇬🇧 英国 (United Kingdom) 13",
-        "🇬🇧 英国 (United Kingdom) 14",
-        "🇬🇧 英国 (United Kingdom) 15"
+        "🇬🇧 英国 (United Kingdom) 08"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 01",
+      "server": "ruot.ayucloudservices.nl",
+      "server_port": 35031,
+      "method": "aes-128-gcm",
+      "password": "85590bd2-807b-49b9-af20-1101c18b9eda"
+    },
+    {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 01 R43",
+      "tag": "🇵🇱 波兰 (Poland) 02 R43",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -23,14 +31,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01 R43"
+        "🇵🇱 波兰 (Poland) 01",
+        "🇵🇱 波兰 (Poland) 02 R43"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01 R43"
+        "🇵🇱 波兰 (Poland) 01",
+        "🇵🇱 波兰 (Poland) 02 R43"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
