@@ -4,19 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01",
-      "server": "137.23.16.77",
-      "server_port": 20000,
-      "password": "a34f3990b69f44bfa0d32385",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01",
+      "server": "fujrdt.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "rmgyvpn.rest",
+        "server_name": "fujrdt.d6f54hd1j.cc",
         "insecure": false
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "a34f3990b69f44bfa0d32385"
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "fujrdt.d6f54hd1j.cc"
+        }
       }
     },
     {
@@ -24,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

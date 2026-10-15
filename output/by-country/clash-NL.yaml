@@ -5,17 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01
-  server: 94.183.206.121
-  port: 443
+  server: 104.21.3.133
+  port: 2053
   udp: true
   type: vless
-  uuid: 4f51ca84-43ea-4087-b8a2-938e0ccbe27a
-  flow: xtls-rprx-vision
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
   tls: true
-  reality-opts:
-    public-key: mDDDyruO33nuqcTS7pZOjd9oOpDHUf0aEv2TQ1DFGV4
-  servername: google.com
-  client-fingerprint: firefox
+  servername: FaNs.livErpoOl.qZZ.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZXlpMnFWRURmWkp5ZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: FaNs.livErpoOl.qZZ.io
 - name: 🇳🇱 荷兰 (Netherlands) 02
   server: 185.115.34.209
   port: 8444
@@ -31,6 +34,26 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇳🇱 荷兰 (Netherlands) 03
+  server: c3.nastuh.link
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: y7KeRTzmH0vXT2kp
+- name: 🇳🇱 荷兰 (Netherlands) 04
+  server: 31.77.28.118
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 0be0a2bf-aa20-4e52-aa5a-3d59d56b1582
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: niPkNwQ3kdNewalJ25vG_8GNJDdsxJTxbzgyX4lce0I
+    short-id: f26f705a6e554a41
+  servername: ss2.underground.company
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 05
   server: 72.56.85.221
   port: 443
   udp: true
@@ -43,56 +66,26 @@ proxies:
     short-id: 00353c
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 04
-  server: 2.27.71.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: FTB4bvTP-3JAbScj_vvkIOPFGjtN2TaNTUfeY-Ew8EU
-    short-id: 4d767145
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 05
-  server: 130.12.242.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
-  client-fingerprint: firefox
 - name: 🇳🇱 荷兰 (Netherlands) 06
-  server: 2.27.39.233
+  server: 51.124.229.141
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: y7KeRTzmH0vXT2kp
+- name: 🇳🇱 荷兰 (Netherlands) 07
+  server: 217.60.67.123
   port: 443
   udp: true
   type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 5tMM2VdgddmxOKhdNa3b7i_aXno1g-_61SzkppS2UXQ
-    short-id: f3c023cc
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 07
-  server: 172.67.118.45
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.volumeroot.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+    public-key: vSa3rWZfq5OftXO2RSgggbTOxbHlWGTLpP8bNDki3wk
+    short-id: adcbde41b1cf27ba
+  servername: nl1.aiage.work
+  client-fingerprint: random
 - name: 🇳🇱 荷兰 (Netherlands) 08
   server: 162.35.242.252
   port: 443
@@ -106,47 +99,130 @@ proxies:
   servername: nl.aksay.pro
   client-fingerprint: firefox
 - name: 🇳🇱 荷兰 (Netherlands) 09
-  server: sulgx-p34-production.up.railway.app
+  server: 188.253.26.216
   port: 443
   udp: true
   type: vless
-  uuid: 1c821f7a-9f8a-4019-ac5d-1e25cea8deea
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  flow: xtls-rprx-vision
   tls: true
-  servername: sulgx-p34-production.up.railway.app
-  skip-cert-verify: false
+  reality-opts:
+    public-key: noszGxmy754-TNyz9eM8EyHiaCRF2T4cu3El6GKb6n0
+    short-id: 0da7e14db353e7d0
+  servername: nl3.nztvpn.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/1c821f7a-9f8a-4019-ac5d-1e25cea8deea
-    headers:
-      Host: sulgx-p34-production.up.railway.app
 - name: 🇳🇱 荷兰 (Netherlands) 10
-  server: nl-hy-test.tcp-reset-club.net
+  server: 2.27.71.53
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5tMM2VdgddmxOKhdNa3b7i_aXno1g-_61SzkppS2UXQ
+    short-id: f3c023cc
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇳🇱 荷兰 (Netherlands) 11
+  server: 130.12.242.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 12
+  server: nl3.h1cloud.net
+  port: 25458
+  udp: true
+  type: vless
+  uuid: 83383473-0d62-4089-ac4d-d7ecb413504a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EaWx3gBCS5TeKts5FdgKVqJTn5yGAPoomRNzwVeN41M
+    short-id: 705d9608b0b71387
+  servername: nl4.nztvpn.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 13
+  server: 193.233.82.201
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fsEatg3Hi0O3NPHIg1xQYjmcYRmEgvnSW-i_ZwaL7XI
+    short-id: b054ade250673c91
+  servername: nl4.nztvpn.com
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 14
+  server: 109.235.49.234
   port: 443
   udp: true
   type: hysteria2
-  password: dd50a499-7e43-4589-8490-f3b9c2451473
-  sni: nl-hy-test.tcp-reset-club.net
+  password: 529f1911-04d5-4427-94b9-c851fd459a27
+  sni: tcp-reset-club.net
   skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 11
-  server: c3.nastuh.link
+- name: 🇳🇱 荷兰 (Netherlands) 15
+  server: 94.183.206.121
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: y7KeRTzmH0vXT2kp
-- name: 🇳🇱 荷兰 (Netherlands) 12
-  server: 188.226.181.61
+  type: vless
+  uuid: 4f51ca84-43ea-4087-b8a2-938e0ccbe27a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: mDDDyruO33nuqcTS7pZOjd9oOpDHUf0aEv2TQ1DFGV4
+  servername: google.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 16
+  server: 2.27.71.48
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇳🇱 荷兰 (Netherlands) 13
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FTB4bvTP-3JAbScj_vvkIOPFGjtN2TaNTUfeY-Ew8EU
+    short-id: 4d767145
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 17
+  server: 45.150.33.33
+  port: 443
+  udp: true
+  type: vless
+  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ
+    short-id: eba1498e012ef580
+  servername: amazon.de
+  client-fingerprint: ios
+- name: 🇳🇱 荷兰 (Netherlands) 18
+  server: 31.77.114.105
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 0be0a2bf-aa20-4e52-aa5a-3d59d56b1582
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xTchmRwHJRPurDqsJYiNtyOKJT4XFQguKKtWa9-gQD0
+    short-id: 2c68589f11afb488
+  servername: nlbb.underground.company
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 19
   server: mog.keyblack.site
   port: 8444
   udp: true
@@ -158,9 +234,57 @@ proxies:
     public-key: DQGwrxOgoiyBDrbdFUofP88FGtxHDA2duzNXKkyxaig
     short-id: 6ba85179e30d4fc2
   servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 20
+  server: 172.67.118.45
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.volumeroot.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 21
+  server: 188.226.181.61
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 22
+  server: 108.162.194.134
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 23
+  server: 172.67.155.222
+  port: 443
+  udp: true
+  type: vless
+  uuid: 82b279c6-5cba-3a96-f8bd-780a00000035
+  tls: true
+  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 14
-  server: 131.196.254.151
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+- name: 🇳🇱 荷兰 (Netherlands) 24
+  server: 46.62.230.149
   port: 443
   udp: true
   type: trojan
@@ -170,8 +294,8 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇳🇱 荷兰 (Netherlands) 15
-  server: 8.47.69.0
+- name: 🇳🇱 荷兰 (Netherlands) 25
+  server: 94.158.219.126
   port: 443
   udp: true
   type: trojan
@@ -181,7 +305,7 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇳🇱 荷兰 (Netherlands) 16
+- name: 🇳🇱 荷兰 (Netherlands) 26
   server: 208.67.106.154
   port: 443
   udp: true
@@ -193,21 +317,21 @@ proxies:
     public-key: _0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg
     short-id: c9677d3b7dea
   servername: www.microsoft.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 17
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 27
   server: 94.156.79.93
   port: 443
   udp: true
   type: vless
-  uuid: 1a5e7720-abf3-4b9b-bc9b-9a900a04b434
+  uuid: d6752c6b-80ae-4a91-b446-bb330f7f8177
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: _0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg
-    short-id: f129dcdbf64f
-  servername: www.microsoft.com
+    short-id: 88a13cf2655c
+  servername: www.foxsports.com
   client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 18
+- name: 🇳🇱 荷兰 (Netherlands) 28
   server: uk8.998998.best
   port: 443
   udp: true
@@ -241,6 +365,16 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 16
   - 🇳🇱 荷兰 (Netherlands) 17
   - 🇳🇱 荷兰 (Netherlands) 18
+  - 🇳🇱 荷兰 (Netherlands) 19
+  - 🇳🇱 荷兰 (Netherlands) 20
+  - 🇳🇱 荷兰 (Netherlands) 21
+  - 🇳🇱 荷兰 (Netherlands) 22
+  - 🇳🇱 荷兰 (Netherlands) 23
+  - 🇳🇱 荷兰 (Netherlands) 24
+  - 🇳🇱 荷兰 (Netherlands) 25
+  - 🇳🇱 荷兰 (Netherlands) 26
+  - 🇳🇱 荷兰 (Netherlands) 27
+  - 🇳🇱 荷兰 (Netherlands) 28
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -264,5 +398,15 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 16
   - 🇳🇱 荷兰 (Netherlands) 17
   - 🇳🇱 荷兰 (Netherlands) 18
+  - 🇳🇱 荷兰 (Netherlands) 19
+  - 🇳🇱 荷兰 (Netherlands) 20
+  - 🇳🇱 荷兰 (Netherlands) 21
+  - 🇳🇱 荷兰 (Netherlands) 22
+  - 🇳🇱 荷兰 (Netherlands) 23
+  - 🇳🇱 荷兰 (Netherlands) 24
+  - 🇳🇱 荷兰 (Netherlands) 25
+  - 🇳🇱 荷兰 (Netherlands) 26
+  - 🇳🇱 荷兰 (Netherlands) 27
+  - 🇳🇱 荷兰 (Netherlands) 28
 rules:
 - MATCH,PROXIES

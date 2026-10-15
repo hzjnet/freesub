@@ -5,12 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 ⚠R
-  server: 51.195.248.89
-  port: 14117
+  server: 162.159.153.4
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 3391e35fc7a532f6a9b86adb077b2b34
+  type: vless
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
 - name: 🇫🇷 法国 (France) 02
   server: 54.36.174.140
   port: 443
@@ -19,15 +27,81 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e5c65ph
 - name: 🇫🇷 法国 (France) 03
-  server: pl134.vpnbook.com
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 04
+  server: 54.36.174.134
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: e5c65ph
-- name: 🇫🇷 法国 (France) 04
-  server: 172.67.231.254
+- name: 🇫🇷 法国 (France) 05
+  server: 5.253.189.238
   port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 06
+  server: 89.150.34.41
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 07
+  server: 185.255.179.166
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 08
+  server: 45.87.41.18
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 09
+  server: 5.78.92.27
+  port: 8443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 10
+  server: 185.114.72.31
+  port: 2053
   udp: true
   type: trojan
   password: humanity
@@ -45,6 +119,12 @@ proxy-groups:
   - 🇫🇷 法国 (France) 02
   - 🇫🇷 法国 (France) 03
   - 🇫🇷 法国 (France) 04
+  - 🇫🇷 法国 (France) 05
+  - 🇫🇷 法国 (France) 06
+  - 🇫🇷 法国 (France) 07
+  - 🇫🇷 法国 (France) 08
+  - 🇫🇷 法国 (France) 09
+  - 🇫🇷 法国 (France) 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +134,11 @@ proxy-groups:
   - 🇫🇷 法国 (France) 02
   - 🇫🇷 法国 (France) 03
   - 🇫🇷 法国 (France) 04
+  - 🇫🇷 法国 (France) 05
+  - 🇫🇷 法国 (France) 06
+  - 🇫🇷 法国 (France) 07
+  - 🇫🇷 法国 (France) 08
+  - 🇫🇷 法国 (France) 09
+  - 🇫🇷 法国 (France) 10
 rules:
 - MATCH,PROXIES
