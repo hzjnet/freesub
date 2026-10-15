@@ -4,58 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽)",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "tuic",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-      "server": "tw3.dexlos.com",
-      "server_port": 8080,
-      "uuid": "8a9905b7-801b-41af-bfc9-2034212770f6",
-      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "tls": {
-        "enabled": true,
-        "server_name": "tw3.dexlos.com",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽)",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 (家宽)",
-      "server": "wzs.echo.net.eu.org",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
+      "server": "fujrdt.d6f54hd1j.cc",
       "server_port": 443,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "fujrdt.d6f54hd1j.cc",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c",
+        "path": "/",
         "headers": {
-          "Host": "wzs.echo.net.eu.org"
+          "Host": "fujrdt.d6f54hd1j.cc"
         }
       }
     },
@@ -64,20 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽)",
-        "🇸🇬 新加坡 (Singapore) 04 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽)",
-        "🇸🇬 新加坡 (Singapore) 04 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

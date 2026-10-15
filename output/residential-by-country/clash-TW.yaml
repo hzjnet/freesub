@@ -5,18 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
-  server: tw3.dexlos.com
-  port: 8080
+  server: fujrdt.d6f54hd1j.cc
+  port: 443
   udp: true
-  type: tuic
-  uuid: 8a9905b7-801b-41af-bfc9-2034212770f6
-  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  sni: tw3.dexlos.com
+  type: vmess
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: fujrdt.d6f54hd1j.cc
   skip-cert-verify: false
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fujrdt.d6f54hd1j.cc
 proxy-groups:
 - name: PROXIES
   type: select

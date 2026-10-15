@@ -4,21 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "tuic",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-      "server": "tw3.dexlos.com",
-      "server_port": 8080,
-      "uuid": "8a9905b7-801b-41af-bfc9-2034212770f6",
-      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
+      "server": "fujrdt.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "tw3.dexlos.com",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "fujrdt.d6f54hd1j.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "fujrdt.d6f54hd1j.cc"
+        }
       }
     },
     {

@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01",
-      "server": "84.32.109.20",
-      "server_port": 443,
-      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "litv.nztvpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4",
-          "short_id": "0da7e14db353e7d0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
       "server": "b58e68t.lt1.h1clayd.click",
       "server_port": 443,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
@@ -45,12 +24,46 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
+      "server": "84.32.109.20",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "litv.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4",
+          "short_id": "0da7e14db353e7d0"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03",
+      "server": "boostlitva77www.qcloud.surf",
+      "server_port": 21733,
+      "password": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
+      "tls": {
+        "enabled": true,
+        "server_name": "boostlitva77www.qcloud.surf",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01",
-        "🇱🇹 立陶宛 (Lithuania) 02"
+        "🇱🇹 立陶宛 (Lithuania) 02",
+        "🇱🇹 立陶宛 (Lithuania) 03"
       ]
     },
     {
@@ -58,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01",
-        "🇱🇹 立陶宛 (Lithuania) 02"
+        "🇱🇹 立陶宛 (Lithuania) 02",
+        "🇱🇹 立陶宛 (Lithuania) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
