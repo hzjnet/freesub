@@ -4,22 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-      "server": "fujrdt.d6f54hd1j.cc",
-      "server_port": 443,
-      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "fujrdt.d6f54hd1j.cc",
-        "insecure": false
-      },
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 01",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/vless",
         "headers": {
-          "Host": "fujrdt.d6f54hd1j.cc"
+          "Host": "13.140.56.100"
         }
       }
     },
@@ -28,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
+        "🇮🇳 印度 (India) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
+        "🇮🇳 印度 (India) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,32 +4,45 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 瑞士 (Switzerland) 01
-  server: 167.148.183.51
-  port: 444
+- name: 🇨🇭 瑞士 (Switzerland) 01 R41
+  server: 45.90.59.15
+  port: 443
   udp: true
   type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: ch.srv.vbuste.ru
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+- name: 🇨🇭 瑞士 (Switzerland) 02
+  server: freefl.aiage.work
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
+    short-id: ff0ddf949624ef2a
+  servername: freefl.aiage.work
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 瑞士 (Switzerland) 01
+  - 🇨🇭 瑞士 (Switzerland) 01 R41
+  - 🇨🇭 瑞士 (Switzerland) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 (Switzerland) 01
+  - 🇨🇭 瑞士 (Switzerland) 01 R41
+  - 🇨🇭 瑞士 (Switzerland) 02
 rules:
 - MATCH,PROXIES

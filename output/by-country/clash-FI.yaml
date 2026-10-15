@@ -5,16 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 45.144.234.157
-  port: 14430
+  server: edge10.cyrionflare.com
+  port: 2052
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇫🇮 芬兰 (Finland) 02
   server: 152.233.71.81
   port: 443
@@ -29,11 +24,12 @@ proxies:
   servername: brointelengence.com
   client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 03
-  server: edge10.cyrionflare.com
-  port: 2052
+  server: b2a2.velqixa.ir
+  port: 39221
   udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Pzlcb_PeV3uRgiC2NNoNKw
 proxy-groups:
 - name: PROXIES
   type: select

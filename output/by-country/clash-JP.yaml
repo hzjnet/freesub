@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01
-  server: 108.61.186.37
+  server: 43.206.91.175
   port: 443
   udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: jp.tronsg.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 638d9b71-941d-45d7-a11b-4e012b6259b8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DAgqTSuxmGE7fP-upyw4qCoM1fqQIDC7Im5K2pL5UXs
+    short-id: 9ebc0931
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 02
   server: 43.167.232.174
   port: 443
@@ -25,19 +30,6 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: random
 - name: 🇯🇵 日本 (Japan) 03
-  server: 43.206.91.175
-  port: 443
-  udp: true
-  type: vless
-  uuid: 638d9b71-941d-45d7-a11b-4e012b6259b8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DAgqTSuxmGE7fP-upyw4qCoM1fqQIDC7Im5K2pL5UXs
-    short-id: 9ebc0931
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 04
   server: t9.qifei.app
   port: 443
   udp: true
@@ -49,108 +41,30 @@ proxies:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
   servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 05
-  server: 18.183.215.124
-  port: 28573
-  udp: true
-  type: vless
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 06
-  server: jp4.oh-node.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qkSw1mYeebLzLGFAxnSu0CuNaSQXdhR-doksZoqEniA
-    short-id: f75fbd5b
-  servername: www.bandainamcoent.co.jp
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 07
-  server: jp2.oh-node.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3yorIs_psiYbIeESwMdne5mPe2JVzeNOpDa2IJxQ-Es
-    short-id: 21fa8a1ebf
-  servername: www.capcom.co.jp
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 08
-  server: jp3.oh-node.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7cfd34ae-edad-4cc5-9d6f-066f7add7829
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: HtrHyKJvjeh9xNVlNXidqFra8n_DhlL8EGu4ERst8QI
-    short-id: 912d2b581f59fb
-  servername: www.bandainamcoent.co.jp
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 09
-  server: 188.245.191.19
-  port: 2040
-  udp: true
-  type: vless
-  uuid: a42ba501-2628-40ab-87ad-cf77adc46f67
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 10 R54
-  server: v6.hdacd.com
-  port: 30806
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 11
-  server: 39.109.110.80
-  port: 27916
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ztQ8VYq_dVDc3x-QM8LXjup2161CirYrIBE1F7loVzQ
-    short-id: 6772eb2b7a
-  servername: cdn-dynmedia-1.microsoft.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 12
-  server: t5.qifei.app
-  port: 443
-  udp: true
-  type: vless
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  servername: s3.ap-east-1.amazonaws.com
   client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 04
+  server: jp.tronsg.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: jp.tronsg.com
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 05
+  server: vp3.yysyy.online
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 06
+  server: 191.223.221.53
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
 proxy-groups:
 - name: PROXIES
   type: select
@@ -162,12 +76,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 04
   - 🇯🇵 日本 (Japan) 05
   - 🇯🇵 日本 (Japan) 06
-  - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08
-  - 🇯🇵 日本 (Japan) 09
-  - 🇯🇵 日本 (Japan) 10 R54
-  - 🇯🇵 日本 (Japan) 11
-  - 🇯🇵 日本 (Japan) 12
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -179,11 +87,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 04
   - 🇯🇵 日本 (Japan) 05
   - 🇯🇵 日本 (Japan) 06
-  - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08
-  - 🇯🇵 日本 (Japan) 09
-  - 🇯🇵 日本 (Japan) 10 R54
-  - 🇯🇵 日本 (Japan) 11
-  - 🇯🇵 日本 (Japan) 12
 rules:
 - MATCH,PROXIES

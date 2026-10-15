@@ -6,53 +6,46 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 01",
-      "server": "54.36.174.140",
+      "server": "pl140.vpnbook.com",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "e5c65ph"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇫🇷 法国 (France) 02",
-      "server": "46.226.166.208",
-      "server_port": 14430,
-      "uuid": "af827fd0-6381-426f-bc5e-dcd9a7baeaac",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 03",
-      "server": "pl134.vpnbook.com",
+      "server": "212.183.88.136",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e5c65ph"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 04",
-      "server": "199.232.130.246",
-      "server_port": 443,
-      "uuid": "XpnTeam-6",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "default.ssl.fastly.net",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.calmlunch.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "//assignment",
         "headers": {
-          "Host": "Appxdn.global.ssl.fastly.net"
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 03",
+      "server": "185.220.100.168",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -63,8 +56,7 @@
         "auto",
         "🇫🇷 法国 (France) 01",
         "🇫🇷 法国 (France) 02",
-        "🇫🇷 法国 (France) 03",
-        "🇫🇷 法国 (France) 04"
+        "🇫🇷 法国 (France) 03"
       ]
     },
     {
@@ -73,8 +65,7 @@
       "outbounds": [
         "🇫🇷 法国 (France) 01",
         "🇫🇷 法国 (France) 02",
-        "🇫🇷 法国 (France) 03",
-        "🇫🇷 法国 (France) 04"
+        "🇫🇷 法国 (France) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
