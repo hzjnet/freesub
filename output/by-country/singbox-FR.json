@@ -14,7 +14,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 02",
-      "server": "pl134.vpnbook.com",
+      "server": "pl140.vpnbook.com",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "e5c65ph"
@@ -22,7 +22,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇷 法国 (France) 03",
-      "server": "pl140.vpnbook.com",
+      "server": "54.36.174.134",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "e5c65ph"
@@ -60,7 +60,26 @@
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 (France) 06",
-      "server": "185.255.179.166",
+      "server": "213.1.145.50",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 07",
+      "server": "45.87.41.18",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -78,7 +97,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 07 R43",
+      "tag": "🇫🇷 法国 (France) 08 R43",
       "server": "skycitybox-bidarbash.sbs",
       "server_port": 443,
       "uuid": "2bdcf0ac-f84e-471f-98dc-a1807acab1cb",
@@ -88,11 +107,7 @@
         "insecure": false,
         "alpn": [
           "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        ]
       },
       "transport": {
         "type": "ws",
@@ -104,14 +119,17 @@
     },
     {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 08",
-      "server": "5.253.189.238",
-      "server_port": 443,
+      "tag": "🇫🇷 法国 (France) 09",
+      "server": "212.227.144.37",
+      "server_port": 8443,
       "password": "humanity",
       "tls": {
         "enabled": true,
         "server_name": "www.calmlunch.com",
-        "insecure": false
+        "insecure": false,
+        "alpn": [
+          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+        ]
       },
       "transport": {
         "type": "ws",
@@ -132,8 +150,9 @@
         "🇫🇷 法国 (France) 04",
         "🇫🇷 法国 (France) 05",
         "🇫🇷 法国 (France) 06",
-        "🇫🇷 法国 (France) 07 R43",
-        "🇫🇷 法国 (France) 08"
+        "🇫🇷 法国 (France) 07",
+        "🇫🇷 法国 (France) 08 R43",
+        "🇫🇷 法国 (France) 09"
       ]
     },
     {
@@ -146,8 +165,9 @@
         "🇫🇷 法国 (France) 04",
         "🇫🇷 法国 (France) 05",
         "🇫🇷 法国 (France) 06",
-        "🇫🇷 法国 (France) 07 R43",
-        "🇫🇷 法国 (France) 08"
+        "🇫🇷 法国 (France) 07",
+        "🇫🇷 法国 (France) 08 R43",
+        "🇫🇷 法国 (France) 09"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
