@@ -6,25 +6,22 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01",
-      "server": "se1.h1cloud.net",
-      "server_port": 26128,
-      "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
+      "server": "193.27.200.200",
+      "server_port": 443,
+      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.icloud.com",
+        "server_name": "swe.wizard.select",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk",
-          "short_id": "13ac4d3bdadf1ea1"
+          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
+          "short_id": "3b20e438da99"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "df50147201bf"
       }
     },
     {
@@ -38,7 +35,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -72,13 +69,28 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
-        "🇸🇪 瑞典 (Sweden) 03"
+        "🇸🇪 瑞典 (Sweden) 03",
+        "🇸🇪 瑞典 (Sweden) 04"
       ]
     },
     {
@@ -87,7 +99,8 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
-        "🇸🇪 瑞典 (Sweden) 03"
+        "🇸🇪 瑞典 (Sweden) 03",
+        "🇸🇪 瑞典 (Sweden) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

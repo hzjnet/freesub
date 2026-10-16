@@ -5,11 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01
-  server: 138.124.90.177
-  port: 10443
+  server: 172.64.80.1
+  port: 2083
   udp: true
   type: vless
-  uuid: 3a0e4040-67cc-43e0-a9fb-98e15ddb0526
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+  tls: true
+  servername: fans.liverpool.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: fans.liverpool.qzz.io
 - name: 🇬🇧 英国 (United Kingdom) 02
   server: 13.40.23.138
   port: 443
@@ -18,6 +27,20 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇬🇧 英国 (United Kingdom) 03
+  server: 31.76.246.39
+  port: 706
+  udp: true
+  type: vless
+  uuid: e5544327-834c-455a-9db5-2454c788fa17
+  tls: true
+  reality-opts:
+    public-key: 6ABNRK-j4hVgo-DwsX3zxMSjMOuudrVZRxLde3XB530
+  servername: www.amd.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇬🇧 英国 (United Kingdom) 04
   server: 31.59.217.164
   port: 443
   udp: true
@@ -30,7 +53,60 @@ proxies:
     short-id: 1625a2a79d01328f
   servername: www.adobe.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 04
+- name: 🇬🇧 英国 (United Kingdom) 05 R50
+  server: 57.128.164.21
+  port: 80
+  udp: true
+  type: vmess
+  uuid: bda82bcd-f6e2-46ae-9552-673f0b87ac30
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==
+    headers:
+      Host: https.http.www.net.com.ramseyv2.ir.
+- name: 🇬🇧 英国 (United Kingdom) 06
+  server: 31.76.62.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8e66d40e-6f62-4243-a7d8-ebe83e4c2e77
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: C4kK4uxh9a5ym0-JmcaTwkUwkB0FTRjSAIlHLTKRHlo
+    short-id: 84341e3e
+  servername: lv-rix-1.koolb.org
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 07
+  server: 213.176.92.168
+  port: 14430
+  udp: true
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
+- name: 🇬🇧 英国 (United Kingdom) 08 ⚠R
+  server: 172.67.137.209
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: ukl.lovehk.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /London31
+    headers:
+      Host: ukl.lovehk.xyz
+- name: 🇬🇧 英国 (United Kingdom) 09
   server: 213.176.92.168
   port: 10444
   udp: true
@@ -43,21 +119,8 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
   client-fingerprint: safari
-- name: 🇬🇧 英国 (United Kingdom) 05
-  server: de1.wizard.select
-  port: 443
-  udp: true
-  type: vless
-  uuid: 143fc3c6-c807-11f1-b5bb-55ba72567166
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bh7oxfR5Z80ysdaZ-WurGfzR8rcXHEdKkxonpUtJLGk
-    short-id: 1760e3746d0697
-  servername: de1.wizard.select
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 06
-  server: sql.popmintxo.cc
+- name: 🇬🇧 英国 (United Kingdom) 10
+  server: 104.238.2.82
   port: 443
   udp: true
   type: vless
@@ -69,6 +132,19 @@ proxies:
     short-id: b558b9305a0b
   servername: www.microsoft.com
   client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 11
+  server: 107.181.151.128
+  port: 443
+  udp: true
+  type: vless
+  uuid: 75113671-63e3-452d-87d3-261a37e8b472
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: baf023e1026a
+  servername: www.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,8 +154,13 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
   - 🇬🇧 英国 (United Kingdom) 04
-  - 🇬🇧 英国 (United Kingdom) 05
+  - 🇬🇧 英国 (United Kingdom) 05 R50
   - 🇬🇧 英国 (United Kingdom) 06
+  - 🇬🇧 英国 (United Kingdom) 07
+  - 🇬🇧 英国 (United Kingdom) 08 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 09
+  - 🇬🇧 英国 (United Kingdom) 10
+  - 🇬🇧 英国 (United Kingdom) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,7 +170,12 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
   - 🇬🇧 英国 (United Kingdom) 04
-  - 🇬🇧 英国 (United Kingdom) 05
+  - 🇬🇧 英国 (United Kingdom) 05 R50
   - 🇬🇧 英国 (United Kingdom) 06
+  - 🇬🇧 英国 (United Kingdom) 07
+  - 🇬🇧 英国 (United Kingdom) 08 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 09
+  - 🇬🇧 英国 (United Kingdom) 10
+  - 🇬🇧 英国 (United Kingdom) 11
 rules:
 - MATCH,PROXIES

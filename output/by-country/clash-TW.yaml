@@ -18,13 +18,26 @@ proxies:
   alpn:
   - h3
 - name: 🇹🇼 中国台湾 (Taiwan) 02
-  server: tw8.dexlos.com
+  server: tw5.dexlos.com
   port: 8080
   udp: true
   type: tuic
   uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
   password: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  sni: tw8.dexlos.com
+  sni: tw5.dexlos.com
+  skip-cert-verify: false
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇹🇼 中国台湾 (Taiwan) 03
+  server: tw3.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: tw3.dexlos.com
   skip-cert-verify: false
   congestion-controller: bbr
   udp-relay-mode: native
@@ -37,6 +50,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01
   - 🇹🇼 中国台湾 (Taiwan) 02
+  - 🇹🇼 中国台湾 (Taiwan) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +58,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01
   - 🇹🇼 中国台湾 (Taiwan) 02
+  - 🇹🇼 中国台湾 (Taiwan) 03
 rules:
 - MATCH,PROXIES
