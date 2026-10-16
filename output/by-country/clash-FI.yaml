@@ -5,17 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 45.144.234.157
-  port: 14430
+  server: dl.pristytools.com
+  port: 8080
+  udp: true
+  type: vmess
+  uuid: 5623d95e-4c7c-41b4-b1ef-8538b8e895ea
+  alterId: 0
+  cipher: auto
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇫🇮 芬兰 (Finland) 02
+  server: fi-p1.h1cloud.net
+  port: 25481
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  tls: true
+  reality-opts:
+    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
+    short-id: 3b84fc70657725af
+  servername: www.bing.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 8cb5baa18cd7
+- name: 🇫🇮 芬兰 (Finland) 03
   server: 152.233.71.81
   port: 443
   udp: true
@@ -28,6 +43,52 @@ proxies:
     short-id: 1c3e8241a8743df9
   servername: brointelengence.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04
+  server: dl.pristytools.com
+  port: 2053
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-128-gcm
+  password: D3I8zT6ruZA1xEWD+6qvAg==:OTTAmiSAQzz5fiVJHA6n/w==
+- name: 🇫🇮 芬兰 (Finland) 05
+  server: dl.pristytools.com
+  port: 2083
+  udp: true
+  type: vmess
+  uuid: 5623d95e-4c7c-41b4-b1ef-8538b8e895ea
+  alterId: 0
+  cipher: auto
+- name: 🇫🇮 芬兰 (Finland) 06
+  server: dl.pristytools.com
+  port: 8443
+  udp: true
+  type: vmess
+  uuid: 5623d95e-4c7c-41b4-b1ef-8538b8e895ea
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇮 芬兰 (Finland) 07
+  server: dl.pristytools.com
+  port: 2096
+  udp: true
+  type: vmess
+  uuid: 5623d95e-4c7c-41b4-b1ef-8538b8e895ea
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
+- name: 🇫🇮 芬兰 (Finland) 08
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +96,12 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
+  - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
+  - 🇫🇮 芬兰 (Finland) 06
+  - 🇫🇮 芬兰 (Finland) 07
+  - 🇫🇮 芬兰 (Finland) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +109,11 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
+  - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
+  - 🇫🇮 芬兰 (Finland) 06
+  - 🇫🇮 芬兰 (Finland) 07
+  - 🇫🇮 芬兰 (Finland) 08
 rules:
 - MATCH,PROXIES

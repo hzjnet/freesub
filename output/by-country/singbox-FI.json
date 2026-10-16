@@ -4,22 +4,43 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇫🇮 芬兰 (Finland) 01",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "server": "dl.pristytools.com",
+      "server_port": 8080,
+      "uuid": "5623d95e-4c7c-41b4-b1ef-8538b8e895ea",
+      "security": "auto",
       "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
+        "type": "grpc"
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02",
+      "server": "fi-p1.h1cloud.net",
+      "server_port": 25481,
+      "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E",
+          "short_id": "3b84fc70657725af"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "8cb5baa18cd7"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03",
       "server": "152.233.71.81",
       "server_port": 443,
       "uuid": "741809be-e44e-000b-b411-bf66f0ae3860",
@@ -39,12 +60,71 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 04",
+      "server": "dl.pristytools.com",
+      "server_port": 2053,
+      "method": "2022-blake3-aes-128-gcm",
+      "password": "D3I8zT6ruZA1xEWD+6qvAg==:OTTAmiSAQzz5fiVJHA6n/w=="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 05",
+      "server": "dl.pristytools.com",
+      "server_port": 2083,
+      "uuid": "5623d95e-4c7c-41b4-b1ef-8538b8e895ea",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 06",
+      "server": "dl.pristytools.com",
+      "server_port": 8443,
+      "uuid": "5623d95e-4c7c-41b4-b1ef-8538b8e895ea",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 07",
+      "server": "dl.pristytools.com",
+      "server_port": 2096,
+      "uuid": "5623d95e-4c7c-41b4-b1ef-8538b8e895ea",
+      "security": "auto",
+      "transport": {
+        "type": "httpupgrade"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 08",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01",
-        "🇫🇮 芬兰 (Finland) 02"
+        "🇫🇮 芬兰 (Finland) 02",
+        "🇫🇮 芬兰 (Finland) 03",
+        "🇫🇮 芬兰 (Finland) 04",
+        "🇫🇮 芬兰 (Finland) 05",
+        "🇫🇮 芬兰 (Finland) 06",
+        "🇫🇮 芬兰 (Finland) 07",
+        "🇫🇮 芬兰 (Finland) 08"
       ]
     },
     {
@@ -52,7 +132,13 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01",
-        "🇫🇮 芬兰 (Finland) 02"
+        "🇫🇮 芬兰 (Finland) 02",
+        "🇫🇮 芬兰 (Finland) 03",
+        "🇫🇮 芬兰 (Finland) 04",
+        "🇫🇮 芬兰 (Finland) 05",
+        "🇫🇮 芬兰 (Finland) 06",
+        "🇫🇮 芬兰 (Finland) 07",
+        "🇫🇮 芬兰 (Finland) 08"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
