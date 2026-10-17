@@ -5,22 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 01",
-      "server": "85.90.197.220",
+      "tag": "🇨🇿 捷克 (Czech) 01",
+      "server": "cl-glb6e059ee.gcdn.co",
       "server_port": 443,
-      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
-      "flow": "xtls-rprx-vision",
+      "uuid": "6206cb76-491d-4237-baf1-8c29eea4eafb",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "node-3.wt419.site",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
-          "short_id": "94acb54627612d43"
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy",
+        "headers": {
+          "Host": "node-3.wt419.site"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01"
+        "🇨🇿 捷克 (Czech) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01"
+        "🇨🇿 捷克 (Czech) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

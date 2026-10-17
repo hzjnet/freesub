@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 188.114.98.0
-  port: 443
+  server: nimm.mpd.cc.cd
+  port: 2053
   udp: true
   type: trojan
   password: e309e031-991e-4656-9934-44d10deb8fd8
