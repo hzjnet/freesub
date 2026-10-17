@@ -5,86 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01
-  server: 172.67.131.217
-  port: 443
-  udp: true
-  type: trojan
-  password: 6c73b7937b3e44e5982f9d5efa57d8cd
-  sni: aUTO-scale-728382.BuiLD-sVc-267891.wORkErs.dEv
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/9LJwNSQPh5UJMu8TbPKBJPtkZWKkYFFl?ed=2560
-- name: 🇩🇪 德国 (Germany) 02
-  server: 172.64.80.1
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
-  tls: true
-  servername: fans.liverpool.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇩🇪 德国 (Germany) 03
-  server: 178.105.168.171
-  port: 2110
-  udp: true
-  type: vmess
-  uuid: 06d4d001-4168-4876-9416-7caecf578f40
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 04
-  server: 91.107.169.224
-  port: 80
-  udp: true
-  type: vmess
-  uuid: d4b69108-f756-48af-a331-e8356bc95eb4
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
-- name: 🇩🇪 德国 (Germany) 05
-  server: vless.herogoing.top
-  port: 443
-  udp: true
-  type: trojan
-  password: bpb-trojan
-  sni: vless.herogoing.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr?ed=2560
-- name: 🇩🇪 德国 (Germany) 06
-  server: 185.125.50.181
-  port: 443
-  udp: true
-  type: vless
-  uuid: ee3de8a9-ce8a-4316-b128-101d0816df4d
-  tls: true
-  servername: de-game.pink-service.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: degrpc
-- name: 🇩🇪 德国 (Germany) 07
-  server: 2.27.69.117
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 08
   server: 2.27.35.55
   port: 443
   udp: true
@@ -96,42 +16,67 @@ proxies:
     public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
     short-id: e696e744
   servername: addons.mozilla.org
-  client-fingerprint: randomized
-- name: 🇩🇪 德国 (Germany) 09
-  server: lm10.ehsanazizi-speed-server.com
-  port: 2127
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 02
+  server: 91.107.169.224
+  port: 80
   udp: true
-  type: trojan
-  password: zgRfB1MMJDJ65rwKSnGCZuzLpTiUSfgzHmTb26ye7mM=
-  sni: lm10.ehsanazizi-speed-server.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 10
-  server: 188.114.96.9
+  type: vmess
+  uuid: d4b69108-f756-48af-a331-e8356bc95eb4
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
+- name: 🇩🇪 德国 (Germany) 03
+  server: 185.125.50.181
   port: 443
   udp: true
   type: vless
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  uuid: ee3de8a9-ce8a-4316-b128-101d0816df4d
   tls: true
-  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+  servername: de-game.pink-service.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
-    headers:
-      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-- name: 🇩🇪 德国 (Germany) 11
-  server: undef.network
-  port: 2052
+  network: grpc
+  grpc-opts:
+    grpc-service-name: degrpc
+- name: 🇩🇪 德国 (Germany) 04
+  server: 31.70.111.146
+  port: 443
   udp: true
   type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 12
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 05
+  server: 46.28.69.123
+  port: 443
+  udp: true
+  type: vless
+  uuid: b945f9aa-1b45-4912-aa7e-248509472bad
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7KnJYp2-sE3o35mnbSZzX3fNg-ns9n8xyNfkRSHCD3E
+    short-id: 238e23c5150f02e4
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 06
+  server: 147.45.222.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: f9cb2991-ad4a-4a54-aeb3-55d56ac02a8e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dZl5iJJCMOXR6cJY4M_PbyV2bFp15dhAkz95NCGLsCc
+  servername: ger01.deflink.net
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 07
   server: 212.100.171.154
   port: 443
   udp: true
@@ -144,7 +89,32 @@ proxies:
     short-id: aa6582cf25e243ce
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 13
+- name: 🇩🇪 德国 (Germany) 08
+  server: 77.221.157.213
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 1d006ad5-1de1-4520-a5f4-875dae1b0a5d
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 77.221.157.213
+- name: 🇩🇪 德国 (Germany) 09
+  server: 46.225.46.136
+  port: 2087
+  udp: true
+  type: vless
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  tls: true
+  servername: hoert1rert.localip.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: hoert1rert.localip.ir
+- name: 🇩🇪 德国 (Germany) 10
   server: 189.24.82.195
   port: 443
   udp: true
@@ -161,19 +131,33 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇩🇪 德国 (Germany) 14
-  server: 147.45.222.137
-  port: 443
+- name: 🇩🇪 德国 (Germany) 11
+  server: gr6-allnet.onlinerwebsite.ir
+  port: 22000
   udp: true
   type: vless
-  uuid: f9cb2991-ad4a-4a54-aeb3-55d56ac02a8e
+  uuid: 16188ecf-2dcd-40d7-898b-60461f125978
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: dZl5iJJCMOXR6cJY4M_PbyV2bFp15dhAkz95NCGLsCc
-  servername: ger01.deflink.net
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 15
+    public-key: IffRRgkO2Kn06y1prY-NT2TfW-Ezm_RBi__F_jhKoSw
+    short-id: 1b0fa065866978d2
+  servername: store.steampowered.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 12
+  server: 2.27.69.117
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 13
   server: 82.118.19.153
   port: 443
   udp: true
@@ -186,54 +170,7 @@ proxies:
     short-id: 670ed9f350bd8ee0
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 16
-  server: 46.28.69.123
-  port: 443
-  udp: true
-  type: vless
-  uuid: b945f9aa-1b45-4912-aa7e-248509472bad
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7KnJYp2-sE3o35mnbSZzX3fNg-ns9n8xyNfkRSHCD3E
-    short-id: 238e23c5150f02e4
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 17
-  server: 31.70.111.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 18 R46
-  server: 57.129.113.16
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-- name: 🇩🇪 德国 (Germany) 19
-  server: 91.107.247.173
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  tls: true
-  servername: sino.bestsellers1.site
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 20
+- name: 🇩🇪 德国 (Germany) 14
   server: sino.bestsellers1.site
   port: 2083
   udp: true
@@ -242,24 +179,76 @@ proxies:
   tls: true
   servername: sino.bestsellers1.site
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 (Germany) 21
-  server: 209.38.238.229
-  port: 20202
+- name: 🇩🇪 德国 (Germany) 15
+  server: cctvhikvision.center
+  port: 2052
   udp: true
   type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 16
+  server: de3-allnet.onlinernet.ir
+  port: 22000
+  udp: true
+  type: vless
+  uuid: 16188ecf-2dcd-40d7-898b-60461f125978
+  flow: xtls-rprx-vision
   tls: true
-  servername: wzs.echo.net.eu.org
+  reality-opts:
+    public-key: IffRRgkO2Kn06y1prY-NT2TfW-Ezm_RBi__F_jhKoSw
+    short-id: 1b0fa065866978d2
+  servername: connectivitycheck.android.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 17
+  server: de3.onlinerwebsite.ir
+  port: 4832
+  udp: true
+  type: vless
+  uuid: 16188ecf-2dcd-40d7-898b-60461f125978
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xJj8r7gvIZ68LkH1GVMfZk96NlQspfRdrUh4mUDWElA
+    short-id: c0e1bb2e41266787
+  servername: store.steampowered.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 18
+  server: 95.182.99.226
+  port: 443
+  udp: true
+  type: vless
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  tls: true
+  servername: help855.mrgeost.ir
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    path: /gropcdn
     headers:
-      Host: wzs.echo.net.eu.org
+      Host: help855.mrgeost.ir
+- name: 🇩🇪 德国 (Germany) 19
+  server: andikurdi07.global.ssl.fastly.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: 468dfb17-11a0-4d34-b6fa-a454a6deea12
+  tls: true
+  servername: mwtilpaaquvcrlz.global.ssl.fastly.net
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mwtilpaaquvcrlz.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -282,10 +271,8 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 15
   - 🇩🇪 德国 (Germany) 16
   - 🇩🇪 德国 (Germany) 17
-  - 🇩🇪 德国 (Germany) 18 R46
+  - 🇩🇪 德国 (Germany) 18
   - 🇩🇪 德国 (Germany) 19
-  - 🇩🇪 德国 (Germany) 20
-  - 🇩🇪 德国 (Germany) 21
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -308,9 +295,7 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 15
   - 🇩🇪 德国 (Germany) 16
   - 🇩🇪 德国 (Germany) 17
-  - 🇩🇪 德国 (Germany) 18 R46
+  - 🇩🇪 德国 (Germany) 18
   - 🇩🇪 德国 (Germany) 19
-  - 🇩🇪 德国 (Germany) 20
-  - 🇩🇪 德国 (Germany) 21
 rules:
 - MATCH,PROXIES

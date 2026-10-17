@@ -4,32 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇪 阿联酋 (UAE) 01
-  server: 104.21.108.4
+- name: 🇲🇾 马来西亚 (Malaysia) 01 ⚠R
+  server: 104.21.23.80
   port: 443
   udp: true
-  type: vless
-  uuid: fa45096d-bed0-ad80-c773-23c300000018
+  type: vmess
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  servername: my.lovehk.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sync
+    path: /KualaLumpur1
     headers:
-      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+      Host: my.lovehk.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇪 阿联酋 (UAE) 01
+  - 🇲🇾 马来西亚 (Malaysia) 01 ⚠R
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇪 阿联酋 (UAE) 01
+  - 🇲🇾 马来西亚 (Malaysia) 01 ⚠R
 rules:
 - MATCH,PROXIES
