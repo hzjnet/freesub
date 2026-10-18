@@ -1,0 +1,31 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇸🇨 塞舌尔 (Seychelles) 01
+  server: 104.234.239.139
+  port: 443
+  udp: true
+  type: trojan
+  password: 70756c73-0000-4000-8000-650000000000
+  sni: parsa-panel-u48we.wotic15356.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pulse
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇨 塞舌尔 (Seychelles) 01
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇨 塞舌尔 (Seychelles) 01
+rules:
+- MATCH,PROXIES
