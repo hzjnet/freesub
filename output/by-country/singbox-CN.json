@@ -15,31 +15,18 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇨🇳 CN 02",
-      "server": "120.48.133.162",
-      "server_port": 10086,
-      "uuid": "4fc543d5-23ce-4556-ae2b-01685edd4397",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01",
-        "🇨🇳 CN 02"
+        "🇨🇳 CN 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01",
-        "🇨🇳 CN 02"
+        "🇨🇳 CN 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

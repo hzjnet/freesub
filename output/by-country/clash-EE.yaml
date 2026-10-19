@@ -16,32 +16,17 @@ proxies:
     short-id: a73f0410d728c823
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02
-  server: 176.112.152.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: a11213e8-a42f-4492-beaa-14084f6ae28a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 805vJbnw_12vyuxa9pW46ObJ1cOub-75pGJYTfMJYHM
-    short-id: 74e50da3c1769379
-  servername: www.coop.ee
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01
-  - 🇪🇪 爱沙尼亚 (Estonia) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01
-  - 🇪🇪 爱沙尼亚 (Estonia) 02
 rules:
 - MATCH,PROXIES

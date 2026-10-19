@@ -24,41 +24,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
-      "server": "176.112.152.147",
-      "server_port": 443,
-      "uuid": "a11213e8-a42f-4492-beaa-14084f6ae28a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.coop.ee",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "805vJbnw_12vyuxa9pW46ObJ1cOub-75pGJYTfMJYHM",
-          "short_id": "74e50da3c1769379"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01",
-        "🇪🇪 爱沙尼亚 (Estonia) 02"
+        "🇪🇪 爱沙尼亚 (Estonia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01",
-        "🇪🇪 爱沙尼亚 (Estonia) 02"
+        "🇪🇪 爱沙尼亚 (Estonia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

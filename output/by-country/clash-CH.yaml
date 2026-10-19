@@ -4,35 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 瑞士 (Switzerland) 01
-  server: 138.124.2.239
-  port: 443
-  udp: true
-  type: vless
-  uuid: a11213e8-a42f-4492-beaa-14084f6ae28a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tXT4qv4t7mKzWav_8e7eQdw9qhvoePARvGtvwDiiux4
-    short-id: 99b8d353e73e0b27
-  servername: www.blokker.nl
-  client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 02
-  server: ch.srv.vbuste.ru
-  port: 444
-  udp: true
-  type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: ch.srv.vbuste.ru
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇨🇭 瑞士 (Switzerland) 03 R48
+- name: 🇨🇭 瑞士 (Switzerland) 01 R48
   server: 45.90.59.15
   port: 443
   udp: true
@@ -45,38 +17,34 @@ proxies:
     short-id: 19253fae84102271
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 04
-  server: 129.151.64.169
-  port: 31867
+- name: 🇨🇭 瑞士 (Switzerland) 02
+  server: 45.76.87.125
+  port: 14750
   udp: true
   type: vless
-  uuid: 8a156284-4343-4feb-ae44-8e6a82359ef6
+  uuid: c2c94230-7075-4558-89f4-ddf74d7de107
   tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 瑞士 (Switzerland) 01
+  - 🇨🇭 瑞士 (Switzerland) 01 R48
   - 🇨🇭 瑞士 (Switzerland) 02
-  - 🇨🇭 瑞士 (Switzerland) 03 R48
-  - 🇨🇭 瑞士 (Switzerland) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 瑞士 (Switzerland) 01
+  - 🇨🇭 瑞士 (Switzerland) 01 R48
   - 🇨🇭 瑞士 (Switzerland) 02
-  - 🇨🇭 瑞士 (Switzerland) 03 R48
-  - 🇨🇭 瑞士 (Switzerland) 04
 rules:
 - MATCH,PROXIES

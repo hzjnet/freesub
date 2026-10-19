@@ -5,51 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01",
-      "server": "138.124.2.239",
-      "server_port": 443,
-      "uuid": "a11213e8-a42f-4492-beaa-14084f6ae28a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.blokker.nl",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tXT4qv4t7mKzWav_8e7eQdw9qhvoePARvGtvwDiiux4",
-          "short_id": "99b8d353e73e0b27"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02",
-      "server": "ch.srv.vbuste.ru",
-      "server_port": 444,
-      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
-      "tls": {
-        "enabled": true,
-        "server_name": "ch.srv.vbuste.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
-          "short_id": "4be4110078ebed4a"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 R48",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 R48",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -70,13 +26,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04",
-      "server": "129.151.64.169",
-      "server_port": 31867,
-      "uuid": "8a156284-4343-4feb-ae44-8e6a82359ef6",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02",
+      "server": "45.76.87.125",
+      "server_port": 14750,
+      "uuid": "c2c94230-7075-4558-89f4-ddf74d7de107",
       "tls": {
         "enabled": true,
-        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
+        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -87,7 +43,7 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
         }
       }
     },
@@ -96,20 +52,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 瑞士 (Switzerland) 01",
-        "🇨🇭 瑞士 (Switzerland) 02",
-        "🇨🇭 瑞士 (Switzerland) 03 R48",
-        "🇨🇭 瑞士 (Switzerland) 04"
+        "🇨🇭 瑞士 (Switzerland) 01 R48",
+        "🇨🇭 瑞士 (Switzerland) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 瑞士 (Switzerland) 01",
-        "🇨🇭 瑞士 (Switzerland) 02",
-        "🇨🇭 瑞士 (Switzerland) 03 R48",
-        "🇨🇭 瑞士 (Switzerland) 04"
+        "🇨🇭 瑞士 (Switzerland) 01 R48",
+        "🇨🇭 瑞士 (Switzerland) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
