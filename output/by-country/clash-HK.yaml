@@ -5,6 +5,51 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
+  server: t9.qifei.app
+  port: 443
+  udp: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: www.amazon.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: nycqg19zkwacpm1b.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: 20.235.220.189
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -26,11 +71,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01
+  - 🇭🇰 中国香港 (Hong Kong) 02
+  - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01
+  - 🇭🇰 中国香港 (Hong Kong) 02
+  - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
 rules:
 - MATCH,PROXIES

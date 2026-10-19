@@ -22,43 +22,21 @@ proxies:
   type: ss
   cipher: aes-128-gcm
   password: 6163d9d532e40f417dd8ebb5f9716495
-- name: 🇫🇷 法国 (France) 03
-  server: 104.16.71.213
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 04 R43
-  server: 172.67.171.33
-  port: 443
+- name: 🇫🇷 法国 (France) 03 R43
+  server: speedtest.org
+  port: 8443
   udp: true
   type: vless
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
+  uuid: c3571d81-38bd-44a8-9b75-5af8a125fc42
   tls: true
-  servername: redcloudport-bidarbash.sbs
+  servername: pbsjv.megalionzone-vexina.sbs
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /zoodi
+    path: /bala
     headers:
-      Host: redcloudport-bidarbash.sbs
-- name: 🇫🇷 法国 (France) 05
-  server: 89.150.34.41
-  port: 2053
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+      Host: pbsjv.megalionzone-vexina.sbs
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,9 +44,7 @@ proxy-groups:
   - AUTO
   - 🇫🇷 法国 (France) 01
   - 🇫🇷 法国 (France) 02
-  - 🇫🇷 法国 (France) 03
-  - 🇫🇷 法国 (France) 04 R43
-  - 🇫🇷 法国 (France) 05
+  - 🇫🇷 法国 (France) 03 R43
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,8 +52,6 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 (France) 01
   - 🇫🇷 法国 (France) 02
-  - 🇫🇷 法国 (France) 03
-  - 🇫🇷 法国 (France) 04 R43
-  - 🇫🇷 法国 (France) 05
+  - 🇫🇷 法国 (France) 03 R43
 rules:
 - MATCH,PROXIES

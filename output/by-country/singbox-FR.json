@@ -26,33 +26,14 @@
       "password": "6163d9d532e40f417dd8ebb5f9716495"
     },
     {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 03",
-      "server": "104.16.71.213",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 04 R43",
-      "server": "172.67.171.33",
-      "server_port": 443,
-      "uuid": "2bdcf0ac-f84e-471f-98dc-a1807acab1cb",
+      "tag": "🇫🇷 法国 (France) 03 R43",
+      "server": "speedtest.org",
+      "server_port": 8443,
+      "uuid": "c3571d81-38bd-44a8-9b75-5af8a125fc42",
       "tls": {
         "enabled": true,
-        "server_name": "redcloudport-bidarbash.sbs",
+        "server_name": "pbsjv.megalionzone-vexina.sbs",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -64,28 +45,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/zoodi",
+        "path": "/bala",
         "headers": {
-          "Host": "redcloudport-bidarbash.sbs"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 05",
-      "server": "89.150.34.41",
-      "server_port": 2053,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "pbsjv.megalionzone-vexina.sbs"
         }
       }
     },
@@ -96,9 +58,7 @@
         "auto",
         "🇫🇷 法国 (France) 01",
         "🇫🇷 法国 (France) 02",
-        "🇫🇷 法国 (France) 03",
-        "🇫🇷 法国 (France) 04 R43",
-        "🇫🇷 法国 (France) 05"
+        "🇫🇷 法国 (France) 03 R43"
       ]
     },
     {
@@ -107,9 +67,7 @@
       "outbounds": [
         "🇫🇷 法国 (France) 01",
         "🇫🇷 法国 (France) 02",
-        "🇫🇷 法国 (France) 03",
-        "🇫🇷 法国 (France) 04 R43",
-        "🇫🇷 法国 (France) 05"
+        "🇫🇷 法国 (France) 03 R43"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

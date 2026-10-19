@@ -5,24 +5,28 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01",
-      "server": "edge10.cyrionflare.com",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+      "tag": "🇮🇱 以色列 (Israel) 01",
+      "server": "31.57.185.220",
+      "server_port": 443,
+      "uuid": "2e2e204a-7e61-48fb-8182-5955821e8da0",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01"
+        "🇮🇱 以色列 (Israel) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01"
+        "🇮🇱 以色列 (Israel) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
