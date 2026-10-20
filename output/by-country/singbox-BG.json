@@ -4,15 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 01 (家宽)",
-      "server": "209.38.238.229",
-      "server_port": 20202,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "type": "trojan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "password": "mitivpn",
       "tls": {
         "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
+        "server_name": "de.mitivpn.in.net",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=",
+        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
         "headers": {
-          "Host": "wzs.echo.net.eu.org"
+          "Host": "de.mitivpn.in.net"
         }
       }
     },
@@ -31,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (家宽)"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (家宽)"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

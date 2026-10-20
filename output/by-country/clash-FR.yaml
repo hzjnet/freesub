@@ -13,15 +13,16 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 138.124.70.41
 - name: 🇫🇷 法国 (France) 02
-  server: 37.148.203.124
-  port: 12238
+  server: 35.181.176.187
+  port: 22223
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 6163d9d532e40f417dd8ebb5f9716495
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇫🇷 法国 (France) 03
-  server: 104.17.147.22
+  server: 104.16.72.41
   port: 443
   udp: true
   type: trojan
@@ -43,17 +44,6 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 05
-  server: 45.87.41.18
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 06
   server: 185.114.72.31
   port: 2053
   udp: true
@@ -64,8 +54,19 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
+- name: 🇫🇷 法国 (France) 06
+  server: 89.150.34.41
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 - name: 🇫🇷 法国 (France) 07
-  server: 185.220.100.168
+  server: 213.1.145.50
   port: 443
   udp: true
   type: trojan
@@ -75,23 +76,19 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 08 R43
-  server: 172.67.171.33
+- name: 🇫🇷 法国 (France) 08
+  server: 45.87.41.18
   port: 443
   udp: true
-  type: vless
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
-  tls: true
-  servername: redcloudport-bidarbash.sbs
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /zoodi
-    headers:
-      Host: redcloudport-bidarbash.sbs
+    path: /assignment
 - name: 🇫🇷 法国 (France) 09 R43
-  server: 104.21.47.118
+  server: 172.67.171.33
   port: 443
   udp: true
   type: vless
@@ -117,7 +114,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 05
   - 🇫🇷 法国 (France) 06
   - 🇫🇷 法国 (France) 07
-  - 🇫🇷 法国 (France) 08 R43
+  - 🇫🇷 法国 (France) 08
   - 🇫🇷 法国 (France) 09 R43
 - name: AUTO
   type: url-test
@@ -131,7 +128,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 05
   - 🇫🇷 法国 (France) 06
   - 🇫🇷 法国 (France) 07
-  - 🇫🇷 法国 (France) 08 R43
+  - 🇫🇷 法国 (France) 08
   - 🇫🇷 法国 (France) 09 R43
 rules:
 - MATCH,PROXIES

@@ -13,8 +13,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02
   server: 109.172.54.135
   port: 8444
@@ -29,18 +27,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: mci1.amir12.ir
-  port: 1222
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
-  - 🇫🇮 芬兰 (Finland) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
-  - 🇫🇮 芬兰 (Finland) 03
 rules:
 - MATCH,PROXIES

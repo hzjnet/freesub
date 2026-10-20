@@ -15,35 +15,18 @@ proxies:
     public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
     short-id: ce1dc482
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇷🇺 俄罗斯 (Russia) 02
-  server: 190.93.244.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: 903883c7-e62f-436e-a28c-e777637bb757
-  tls: true
-  servername: loaD-Bal-AC000A.sTAGiNg-Api-78c1a1.WorKErs.deV
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/7yxyRoUx67K43EW4zOdKqawWj2mXHsfh?ed=2560
-    headers:
-      Host: LOAd-bal-Ac000a.StaGInG-aPi-78C1A1.wOrkeRs.dEV
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01
-  - 🇷🇺 俄罗斯 (Russia) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01
-  - 🇷🇺 俄罗斯 (Russia) 02
 rules:
 - MATCH,PROXIES
