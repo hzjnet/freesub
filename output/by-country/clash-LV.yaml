@@ -16,9 +16,9 @@ proxies:
     public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
     short-id: 3c6afdc4124d0560
   servername: lv.aiage.work
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 02
-  server: lv.aiage.work
+  server: 185.220.223.24
   port: 443
   udp: true
   type: vless
