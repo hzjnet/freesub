@@ -4,28 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
-      "server": "188.114.97.6",
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01",
+      "server": "152.32.167.33",
       "server_port": 443,
-      "password": "mitivpn",
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "de.mitivpn.in.net",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "www.amazon.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
-        "headers": {
-          "Host": "de.mitivpn.in.net"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4",
+          "short_id": "cff998a4"
         }
       }
     },
@@ -34,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

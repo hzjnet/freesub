@@ -6,14 +6,60 @@
     {
       "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21041,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
+      "server": "vah4urdzl3jdx5r2.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "vah4urdzl3jdx5r2.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess"
+      }
     },
     {
       "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02",
+      "server": "i2psm3knof5qjjix.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "i2psm3knof5qjjix.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03",
+      "server": "8.217.13.103",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "qtkdr8jxe3wefxjm.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "qtkdr8jxe3wefxjm.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04",
       "server": "yg1.ygkkk.dpdns.org",
       "server_port": 443,
       "uuid": "b2ba4a73-3123-479e-aa96-5973a9ecd0c0",
@@ -32,12 +78,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05",
+      "server": "82.29.36.250",
+      "server_port": 443,
+      "uuid": "41a7af38-0bb1-4493-aa8d-634af0c2548b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g",
+          "short_id": "ac3342a709db"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01",
-        "🇭🇰 中国香港 (Hong Kong) 02"
+        "🇭🇰 中国香港 (Hong Kong) 02",
+        "🇭🇰 中国香港 (Hong Kong) 03",
+        "🇭🇰 中国香港 (Hong Kong) 04",
+        "🇭🇰 中国香港 (Hong Kong) 05"
       ]
     },
     {
@@ -45,7 +115,10 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01",
-        "🇭🇰 中国香港 (Hong Kong) 02"
+        "🇭🇰 中国香港 (Hong Kong) 02",
+        "🇭🇰 中国香港 (Hong Kong) 03",
+        "🇭🇰 中国香港 (Hong Kong) 04",
+        "🇭🇰 中国香港 (Hong Kong) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
