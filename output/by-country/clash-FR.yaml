@@ -5,24 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01
-  server: 51.44.187.221
-  port: 22224
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 02
-  server: 51.44.187.221
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 03
-  server: 51.44.147.45
-  port: 22224
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 04
   server: 138.124.70.41
   port: 14430
   udp: true
@@ -33,35 +15,13 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 05
-  server: 51.44.147.45
-  port: 22223
+- name: 🇫🇷 法国 (France) 02
+  server: 13.37.101.74
+  port: 22224
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 06
-  server: www.calmlunch.com
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 07
-  server: 213.1.145.50
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 08
+- name: 🇫🇷 法国 (France) 03
   server: 45.87.41.18
   port: 443
   udp: true
@@ -80,11 +40,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 01
   - 🇫🇷 法国 (France) 02
   - 🇫🇷 法国 (France) 03
-  - 🇫🇷 法国 (France) 04
-  - 🇫🇷 法国 (France) 05
-  - 🇫🇷 法国 (France) 06
-  - 🇫🇷 法国 (France) 07
-  - 🇫🇷 法国 (France) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,10 +48,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 01
   - 🇫🇷 法国 (France) 02
   - 🇫🇷 法国 (France) 03
-  - 🇫🇷 法国 (France) 04
-  - 🇫🇷 法国 (France) 05
-  - 🇫🇷 法国 (France) 06
-  - 🇫🇷 法国 (France) 07
-  - 🇫🇷 法国 (France) 08
 rules:
 - MATCH,PROXIES

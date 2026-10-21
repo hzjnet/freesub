@@ -25,18 +25,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 02",
+      "server": "47.80.19.173",
+      "server_port": 2053,
+      "uuid": "319d5ffb-57e8-4bbd-ac0c-5d55d0c253de",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms",
+          "short_id": "3c4041d3"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01"
+        "🇰🇷 韩国 (South Korea) 01",
+        "🇰🇷 韩国 (South Korea) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01"
+        "🇰🇷 韩国 (South Korea) 01",
+        "🇰🇷 韩国 (South Korea) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
