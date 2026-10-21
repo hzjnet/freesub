@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01
-  server: 51.92.25.174
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  network: h2
-  h2-opts:
-    host:
-    - play.googleapis.com
-    path: /
-- name: 🇪🇸 西班牙 (Spain) 02
   server: 46.28.71.247
   port: 443
   udp: true
@@ -28,7 +17,7 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 03
+- name: 🇪🇸 西班牙 (Spain) 02
   server: 193.238.154.78
   port: 443
   udp: true
@@ -48,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01
   - 🇪🇸 西班牙 (Spain) 02
-  - 🇪🇸 西班牙 (Spain) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01
   - 🇪🇸 西班牙 (Spain) 02
-  - 🇪🇸 西班牙 (Spain) 03
 rules:
 - MATCH,PROXIES
