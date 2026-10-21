@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: 138.124.70.41
 - name: 🇫🇷 法国 (France) 02
-  server: www.calmlunch.com
+  server: 141.193.213.172
   port: 443
   udp: true
   type: trojan
@@ -27,7 +27,7 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 03
-  server: 45.87.41.18
+  server: 213.1.145.50
   port: 443
   udp: true
   type: trojan
@@ -49,20 +49,25 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 05 R43
-  server: 104.21.47.118
-  port: 443
+  server: 51.75.118.75
+  port: 20121
   udp: true
   type: vless
-  uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
-  tls: true
-  servername: redcloudport-bidarbash.sbs
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 2dfef691-a18b-4070-88ee-4161b18dfab9
   network: ws
   ws-opts:
-    path: /zoodi
-    headers:
-      Host: redcloudport-bidarbash.sbs
+    path: /bp-vless
+- name: 🇫🇷 法国 (France) 06
+  server: 89.150.34.41
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +78,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 03
   - 🇫🇷 法国 (France) 04
   - 🇫🇷 法国 (France) 05 R43
+  - 🇫🇷 法国 (France) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +89,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 03
   - 🇫🇷 法国 (France) 04
   - 🇫🇷 法国 (France) 05 R43
+  - 🇫🇷 法国 (France) 06
 rules:
 - MATCH,PROXIES

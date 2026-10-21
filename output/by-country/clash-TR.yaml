@@ -5,7 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 104.21.48.18
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: trojan
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  sni: nimm.mpd.cc.cd
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /0962
+- name: 🇹🇷 土耳其 (Turkey) 02
+  server: 172.67.176.3
   port: 2053
   udp: true
   type: trojan
@@ -21,11 +32,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01
+  - 🇹🇷 土耳其 (Turkey) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01
+  - 🇹🇷 土耳其 (Turkey) 02
 rules:
 - MATCH,PROXIES
