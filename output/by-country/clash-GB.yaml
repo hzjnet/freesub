@@ -5,18 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01
-  server: 138.124.125.193
-  port: 10444
+  server: 23.81.36.148
+  port: 8080
   udp: true
   type: vless
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: safari
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇬🇧 英国 (United Kingdom) 02
   server: 191.44.108.31
   port: 443
@@ -38,6 +34,19 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 04
+  server: 138.124.125.193
+  port: 10444
+  udp: true
+  type: vless
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 05
   server: 23.81.36.148
   port: 1222
   udp: true
@@ -49,52 +58,91 @@ proxies:
     short-id: a25d0f
   servername: play.google.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 05
-  server: 193.188.21.253
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
 - name: 🇬🇧 英国 (United Kingdom) 06
+  server: 191.215.46.37
+  port: 443
+  udp: true
+  type: hysteria2
+  password: b3a11068-1a7e-4643-85de-7c82cce46943
+  sni: uk.shamanapp.online
+  skip-cert-verify: false
+- name: 🇬🇧 英国 (United Kingdom) 07
   server: 98.98.142.161
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 07 ⚠R
+- name: 🇬🇧 英国 (United Kingdom) 08
+  server: 31.59.217.164
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4b09d40d-e36a-47c3-baa4-e6bf551b3183
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kOkILS7UXUQDNPLYn4SQ65kMIWKXNOttV5Kddw4ZqTo
+    short-id: 1625a2a79d01328f
+  servername: www.adobe.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 09 ⚠R
   server: connect.hondamotor.site
   port: 10002
   udp: true
   type: vless
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
-- name: 🇬🇧 英国 (United Kingdom) 08
-  server: 193.163.203.170
-  port: 443
+- name: 🇬🇧 英国 (United Kingdom) 10
+  server: 213.176.92.168
+  port: 14430
   udp: true
   type: vless
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
+- name: 🇬🇧 英国 (United Kingdom) 11
+  server: 213.176.92.168
+  port: 10444
+  udp: true
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 09
-  server: uk-d9ca48498a.shamanapp.online
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
+- name: 🇬🇧 英国 (United Kingdom) 12 ⚠R
+  server: uk1.connectsuite.org
   port: 443
   udp: true
-  type: hysteria2
-  password: b3a11068-1a7e-4643-85de-7c82cce46943
-  sni: uk-d9ca48498a.shamanapp.online
+  type: vless
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  tls: true
+  servername: uk1.connectsuite.org
   skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 10
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+- name: 🇬🇧 英国 (United Kingdom) 13
+  server: 107.181.151.128
+  port: 443
+  udp: true
+  type: vless
+  uuid: 88742d38-3f5c-4b9c-b256-7df5db8257ec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: 8f79726c5002
+  servername: www.mozilla.org
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 14
   server: sql.popmintxo.cc
   port: 443
   udp: true
@@ -118,10 +166,14 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 04
   - 🇬🇧 英国 (United Kingdom) 05
   - 🇬🇧 英国 (United Kingdom) 06
-  - 🇬🇧 英国 (United Kingdom) 07 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 07
   - 🇬🇧 英国 (United Kingdom) 08
-  - 🇬🇧 英国 (United Kingdom) 09
+  - 🇬🇧 英国 (United Kingdom) 09 ⚠R
   - 🇬🇧 英国 (United Kingdom) 10
+  - 🇬🇧 英国 (United Kingdom) 11
+  - 🇬🇧 英国 (United Kingdom) 12 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 13
+  - 🇬🇧 英国 (United Kingdom) 14
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,9 +185,13 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 04
   - 🇬🇧 英国 (United Kingdom) 05
   - 🇬🇧 英国 (United Kingdom) 06
-  - 🇬🇧 英国 (United Kingdom) 07 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 07
   - 🇬🇧 英国 (United Kingdom) 08
-  - 🇬🇧 英国 (United Kingdom) 09
+  - 🇬🇧 英国 (United Kingdom) 09 ⚠R
   - 🇬🇧 英国 (United Kingdom) 10
+  - 🇬🇧 英国 (United Kingdom) 11
+  - 🇬🇧 英国 (United Kingdom) 12 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 13
+  - 🇬🇧 英国 (United Kingdom) 14
 rules:
 - MATCH,PROXIES

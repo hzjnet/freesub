@@ -4,8 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 01",
+      "server": "218.237.185.234",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 02",
+      "server": "183.109.131.75",
+      "server_port": 20086,
+      "uuid": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 03",
       "server": "64.176.231.183",
       "server_port": 443,
       "uuid": "583cc910-b57c-4dd0-a4a7-cea51a30b032",
@@ -26,22 +46,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02",
-      "server": "47.80.19.173",
-      "server_port": 2053,
-      "uuid": "319d5ffb-57e8-4bbd-ac0c-5d55d0c253de",
+      "tag": "🇰🇷 韩国 (South Korea) 04",
+      "server": "43.200.1.27",
+      "server_port": 443,
+      "uuid": "7e68e32f-8015-4f37-9082-70e8b0b58043",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "gateway.icloud.com",
+        "server_name": "ai.hamini.store",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms",
-          "short_id": "3c4041d3"
+          "public_key": "DHOrfoin7TeRpnIoU3d6qT5Yrq3QPVFp49kApATA4iE",
+          "short_id": "e04a526b0b09c765"
         }
       }
     },
@@ -51,7 +71,9 @@
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01",
-        "🇰🇷 韩国 (South Korea) 02"
+        "🇰🇷 韩国 (South Korea) 02",
+        "🇰🇷 韩国 (South Korea) 03",
+        "🇰🇷 韩国 (South Korea) 04"
       ]
     },
     {
@@ -59,7 +81,9 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01",
-        "🇰🇷 韩国 (South Korea) 02"
+        "🇰🇷 韩国 (South Korea) 02",
+        "🇰🇷 韩国 (South Korea) 03",
+        "🇰🇷 韩国 (South Korea) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
