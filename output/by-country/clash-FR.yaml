@@ -11,14 +11,14 @@ proxies:
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇫🇷 法国 (France) 02
-  server: 51.44.38.228
-  port: 22223
+  server: 35.180.76.81
+  port: 22222
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇫🇷 法国 (France) 03
-  server: 51.44.38.228
-  port: 22222
+  server: 35.180.76.81
+  port: 22223
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
@@ -34,8 +34,8 @@ proxies:
     headers:
       Host: 138.124.70.41
 - name: 🇫🇷 法国 (France) 05
-  server: 212.227.144.37
-  port: 8443
+  server: www.speedtest.net
+  port: 443
   udp: true
   type: trojan
   password: humanity
@@ -45,21 +45,20 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 06
-  server: 161.97.160.224
+  server: ai.smrtai.top
   port: 443
   udp: true
   type: vless
-  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
-  flow: xtls-rprx-vision
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
   tls: true
   reality-opts:
-    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
-    short-id: e6
-  servername: passport.yandex.ru
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+    short-id: 086bf957
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 07
-  server: 185.255.179.166
-  port: 443
+  server: 185.114.72.31
+  port: 2053
   udp: true
   type: trojan
   password: humanity
@@ -69,8 +68,8 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🇫🇷 法国 (France) 08
-  server: 185.114.72.31
-  port: 2053
+  server: 45.87.41.18
+  port: 443
   udp: true
   type: trojan
   password: humanity

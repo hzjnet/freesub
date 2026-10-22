@@ -13,15 +13,15 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 02",
-      "server": "51.44.38.228",
-      "server_port": 22223,
+      "server": "35.180.76.81",
+      "server_port": 22222,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 03",
-      "server": "51.44.38.228",
-      "server_port": 22222,
+      "server": "35.180.76.81",
+      "server_port": 22223,
       "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
@@ -41,16 +41,13 @@
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 (France) 05",
-      "server": "212.227.144.37",
-      "server_port": 8443,
+      "server": "www.speedtest.net",
+      "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
         "server_name": "www.calmlunch.com",
-        "insecure": false,
-        "alpn": [
-          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-        ]
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -63,29 +60,28 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 06",
-      "server": "161.97.160.224",
+      "server": "ai.smrtai.top",
       "server_port": 443,
-      "uuid": "b81b4d1b-7f20-48f1-82dc-d24bef898cab",
-      "flow": "xtls-rprx-vision",
+      "uuid": "086bf957-9cd0-4e55-8280-bbef10435b41",
       "tls": {
         "enabled": true,
-        "server_name": "passport.yandex.ru",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0",
-          "short_id": "e6"
+          "public_key": "R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc",
+          "short_id": "086bf957"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 (France) 07",
-      "server": "185.255.179.166",
-      "server_port": 443,
+      "server": "185.114.72.31",
+      "server_port": 2053,
       "password": "humanity",
       "tls": {
         "enabled": true,
@@ -103,8 +99,8 @@
     {
       "type": "trojan",
       "tag": "🇫🇷 法国 (France) 08",
-      "server": "185.114.72.31",
-      "server_port": 2053,
+      "server": "45.87.41.18",
+      "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,

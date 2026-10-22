@@ -4,47 +4,41 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 01",
-      "server": "109.120.150.245",
-      "server_port": 8443,
-      "uuid": "b1097a54-29de-4014-962c-c835d96e8409",
+      "type": "trojan",
+      "tag": "🇳🇱 荷兰 (Netherlands) 01 R52",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "password": "mitivpn",
       "tls": {
         "enabled": true,
-        "server_name": "www.rutube.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jMBABUVbMNQbil2pkU_bYTFoGKAM6NaTTjCqtme_0CA",
-          "short_id": "60e1354574cf8cd8"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "api.v1.Sync"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 02",
-      "server": "51.15.16.68",
-      "server_port": 2053,
-      "uuid": "7d0fd363-16d2-43ce-9d6d-ed2c15d2cb7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "de.mitivpn.in.net",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Zotx4F9CI6_q9yeKCKIHDjwzCv_Aq7WSo7N0Zc1A6Sc",
-          "short_id": "3c99c85cbb6b3b44"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/--@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "de.mitivpn.in.net"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02",
+      "server": "109.235.49.234",
+      "server_port": 443,
+      "password": "529f1911-04d5-4427-94b9-c851fd459a27",
+      "tls": {
+        "enabled": true,
+        "server_name": "tcp-reset-club.net",
+        "insecure": false
       }
     },
     {
@@ -69,16 +63,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇱 荷兰 (Netherlands) 04",
-      "server": "dns5.m3hrzd.ir",
-      "server_port": 8044,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5ox2e7xif1rCKOiffOPvibGk-KVXCk8v"
-    },
-    {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 05",
+      "tag": "🇳🇱 荷兰 (Netherlands) 04",
       "server": "109.120.150.245",
       "server_port": 2053,
       "uuid": "b1097a54-29de-4014-962c-c835d96e8409",
@@ -99,7 +85,45 @@
     },
     {
       "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 05",
+      "server": "172.66.44.124",
+      "server_port": 8443,
+      "uuid": "b2f2f9f2-1864-48ea-839b-22815faff1f1",
+      "tls": {
+        "enabled": true,
+        "server_name": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/9BozNyvQ8VdRvsYX?ed=2560",
+        "headers": {
+          "Host": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "🇳🇱 荷兰 (Netherlands) 06",
+      "server": "nl-2a972c8052.shamanapp.online",
+      "server_port": 33736,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess-ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 07",
       "server": "2.59.183.167",
       "server_port": 443,
       "uuid": "301d514e-4aa0-47b0-ba44-a0cb891cd52f",
@@ -113,120 +137,54 @@
         "reality": {
           "enabled": true,
           "public_key": "OZVjfQBboTDTBw0baMFqzVPsVUI4FNQmspTEb0b0zW4",
-          "short_id": "a1b2c3d4"
+          "short_id": ""
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 07",
-      "server": "dns4.m3hrzd.ir",
-      "server_port": 2800,
-      "uuid": "31419d3a-51dd-4959-b311-c2354c63f77f",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Y6EGB3qFcmBFAfL-gHaB4emJzC5fXq5ov9Ri4JqHenc",
-          "short_id": "81d0d80c09088a91"
-        }
-      }
-    },
-    {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇳🇱 荷兰 (Netherlands) 08",
-      "server": "57.128.179.254",
+      "server": "666.cf.cname.vvhan.com",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "server_name": "server7.9966338.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/sssssw",
         "headers": {
-          "Host": "www.volumeroot.com"
+          "Host": "server7.9966338.xyz"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 09",
-      "server": "172.67.155.222",
+      "server": "94.156.79.93",
       "server_port": 443,
-      "uuid": "82b279c6-5cba-3a96-f8bd-780a00000035",
+      "uuid": "1a5e7720-abf3-4b9b-bc9b-9a900a04b434",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev",
-        "insecure": false,
+        "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg",
+          "short_id": "f129dcdbf64f"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 10",
-      "server": "45.150.33.33",
-      "server_port": 443,
-      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amazon.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ",
-          "short_id": "eba1498e012ef580"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 11",
-      "server": "app-sh-185.spbstudentlife.com",
-      "server_port": 443,
-      "uuid": "074690f9-cb30-44f5-84e5-f3ce8fc6cf29",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-sh-185.spbstudentlife.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rM3p4mL72kcpvnxVRYxl5J0zPbxE2U3iZua0F29SHTQ",
-          "short_id": "8d942904d3e87323"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 12",
       "server": "208.67.106.154",
       "server_port": 443,
       "uuid": "96ee55ac-d534-4502-878a-468c7896360b",
@@ -246,52 +204,11 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 13",
-      "server": "94.156.79.93",
-      "server_port": 443,
-      "uuid": "1a5e7720-abf3-4b9b-bc9b-9a900a04b434",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg",
-          "short_id": "f129dcdbf64f"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇳🇱 荷兰 (Netherlands) 14",
-      "server": "666.cf.cname.vvhan.com",
-      "server_port": 443,
-      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "server7.9966338.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sssssw",
-        "headers": {
-          "Host": "server7.9966338.xyz"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01",
+        "🇳🇱 荷兰 (Netherlands) 01 R52",
         "🇳🇱 荷兰 (Netherlands) 02",
         "🇳🇱 荷兰 (Netherlands) 03",
         "🇳🇱 荷兰 (Netherlands) 04",
@@ -300,18 +217,14 @@
         "🇳🇱 荷兰 (Netherlands) 07",
         "🇳🇱 荷兰 (Netherlands) 08",
         "🇳🇱 荷兰 (Netherlands) 09",
-        "🇳🇱 荷兰 (Netherlands) 10",
-        "🇳🇱 荷兰 (Netherlands) 11",
-        "🇳🇱 荷兰 (Netherlands) 12",
-        "🇳🇱 荷兰 (Netherlands) 13",
-        "🇳🇱 荷兰 (Netherlands) 14"
+        "🇳🇱 荷兰 (Netherlands) 10"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01",
+        "🇳🇱 荷兰 (Netherlands) 01 R52",
         "🇳🇱 荷兰 (Netherlands) 02",
         "🇳🇱 荷兰 (Netherlands) 03",
         "🇳🇱 荷兰 (Netherlands) 04",
@@ -320,11 +233,7 @@
         "🇳🇱 荷兰 (Netherlands) 07",
         "🇳🇱 荷兰 (Netherlands) 08",
         "🇳🇱 荷兰 (Netherlands) 09",
-        "🇳🇱 荷兰 (Netherlands) 10",
-        "🇳🇱 荷兰 (Netherlands) 11",
-        "🇳🇱 荷兰 (Netherlands) 12",
-        "🇳🇱 荷兰 (Netherlands) 13",
-        "🇳🇱 荷兰 (Netherlands) 14"
+        "🇳🇱 荷兰 (Netherlands) 10"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
