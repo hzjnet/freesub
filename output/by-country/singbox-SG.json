@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 01 R52",
-      "server": "68.183.227.45",
+      "server": "68.183.235.122",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
@@ -14,14 +14,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 02 R52",
-      "server": "68.183.235.240",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 R52",
       "server": "68.183.227.4",
       "server_port": 8080,
       "method": "rc4-md5",
@@ -29,24 +21,45 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 R52",
-      "server": "68.183.227.236",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 R52",
+      "server": "68.183.227.45",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 R52",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 R52",
       "server": "128.199.172.224",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 05 R54",
+      "server": "172.237.88.103",
+      "server_port": 443,
+      "uuid": "efd11a89-7506-44ce-95b6-6654859f155b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "zoom.us",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI",
+          "short_id": "5a42dbd7e26a0415"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 06 R56",
-      "server": "128.1.186.73",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 R52",
+      "server": "68.183.235.240",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
@@ -74,30 +87,98 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 08 R52",
-      "server": "68.183.235.122",
+      "tag": "🇸🇬 新加坡 (Singapore) 08 R56",
+      "server": "128.1.186.132",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 09",
-      "server": "129.150.59.74",
-      "server_port": 14384,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA="
+      "tag": "🇸🇬 新加坡 (Singapore) 09 R56",
+      "server": "128.1.186.73",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "tuic",
+      "tag": "🇸🇬 新加坡 (Singapore) 10",
+      "server": "sg2-8sb.6121999.dpdns.org",
+      "server_port": 33738,
+      "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
+      "password": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "quic",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg2-8sb.6121999.dpdns.org",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 11 R52",
+      "server": "68.183.227.236",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 10 R54",
+      "tag": "🇸🇬 新加坡 (Singapore) 12",
+      "server": "43.156.89.197",
+      "server_port": 61000,
+      "uuid": "f5b93de5-b756-4f87-bb1c-7e5b622688fa",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FivAz9qw86uYacvLo5qIMnw9gQ9uKT9KIdGzhxROTSE",
+          "short_id": "63dac514fdfdd11c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 13",
+      "server": "54.169.200.246",
+      "server_port": 41688,
+      "uuid": "49c0aac1-5e05-4f04-b624-248fc59e03c4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk",
+          "short_id": "7f342137c20387"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 14 R54",
       "server": "172.237.88.103",
-      "server_port": 443,
+      "server_port": 447,
       "uuid": "efd11a89-7506-44ce-95b6-6654859f155b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "zoom.us",
+        "server_name": "netflix.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -110,16 +191,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 11 R56",
-      "server": "128.1.186.132",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 12",
+      "tag": "🇸🇬 新加坡 (Singapore) 15",
       "server": "67.159.52.81",
       "server_port": 443,
       "uuid": "a16bd0e2-ff2e-4e4c-a955-0c684255a065",
@@ -140,28 +213,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 13",
-      "server": "54.251.9.130",
-      "server_port": 24146,
-      "uuid": "9d9a048b-3aea-4b3e-b106-1106bf301feb",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.intel.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo",
-          "short_id": "7205d9079521832c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 14 R54",
+      "tag": "🇸🇬 新加坡 (Singapore) 16 R54",
       "server": "139.162.27.96",
       "server_port": 2096,
       "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
@@ -179,50 +231,6 @@
         "path": "/free-server.techsonic.dev",
         "headers": {
           "Host": "free-server.techsonic.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 15",
-      "server": "57.129.130.10",
-      "server_port": 52014,
-      "uuid": "bca740c6-6704-48ba-99da-7d7a31768d73",
-      "tls": {
-        "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 16",
-      "server": "147.93.173.45",
-      "server_port": 10444,
-      "uuid": "75c5f51b-d548-4eab-a26e-aa10fc3dbc7b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "video.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-          "short_id": "8debcf36f1cc69ff"
         }
       }
     },
@@ -255,18 +263,18 @@
         "🇸🇬 新加坡 (Singapore) 02 R52",
         "🇸🇬 新加坡 (Singapore) 03 R52",
         "🇸🇬 新加坡 (Singapore) 04 R52",
-        "🇸🇬 新加坡 (Singapore) 05 R52",
-        "🇸🇬 新加坡 (Singapore) 06 R56",
+        "🇸🇬 新加坡 (Singapore) 05 R54",
+        "🇸🇬 新加坡 (Singapore) 06 R52",
         "🇸🇬 新加坡 (Singapore) 07",
-        "🇸🇬 新加坡 (Singapore) 08 R52",
-        "🇸🇬 新加坡 (Singapore) 09",
-        "🇸🇬 新加坡 (Singapore) 10 R54",
-        "🇸🇬 新加坡 (Singapore) 11 R56",
+        "🇸🇬 新加坡 (Singapore) 08 R56",
+        "🇸🇬 新加坡 (Singapore) 09 R56",
+        "🇸🇬 新加坡 (Singapore) 10",
+        "🇸🇬 新加坡 (Singapore) 11 R52",
         "🇸🇬 新加坡 (Singapore) 12",
         "🇸🇬 新加坡 (Singapore) 13",
         "🇸🇬 新加坡 (Singapore) 14 R54",
         "🇸🇬 新加坡 (Singapore) 15",
-        "🇸🇬 新加坡 (Singapore) 16",
+        "🇸🇬 新加坡 (Singapore) 16 R54",
         "🇸🇬 新加坡 (Singapore) 17"
       ]
     },
@@ -278,18 +286,18 @@
         "🇸🇬 新加坡 (Singapore) 02 R52",
         "🇸🇬 新加坡 (Singapore) 03 R52",
         "🇸🇬 新加坡 (Singapore) 04 R52",
-        "🇸🇬 新加坡 (Singapore) 05 R52",
-        "🇸🇬 新加坡 (Singapore) 06 R56",
+        "🇸🇬 新加坡 (Singapore) 05 R54",
+        "🇸🇬 新加坡 (Singapore) 06 R52",
         "🇸🇬 新加坡 (Singapore) 07",
-        "🇸🇬 新加坡 (Singapore) 08 R52",
-        "🇸🇬 新加坡 (Singapore) 09",
-        "🇸🇬 新加坡 (Singapore) 10 R54",
-        "🇸🇬 新加坡 (Singapore) 11 R56",
+        "🇸🇬 新加坡 (Singapore) 08 R56",
+        "🇸🇬 新加坡 (Singapore) 09 R56",
+        "🇸🇬 新加坡 (Singapore) 10",
+        "🇸🇬 新加坡 (Singapore) 11 R52",
         "🇸🇬 新加坡 (Singapore) 12",
         "🇸🇬 新加坡 (Singapore) 13",
         "🇸🇬 新加坡 (Singapore) 14 R54",
         "🇸🇬 新加坡 (Singapore) 15",
-        "🇸🇬 新加坡 (Singapore) 16",
+        "🇸🇬 新加坡 (Singapore) 16 R54",
         "🇸🇬 新加坡 (Singapore) 17"
       ],
       "url": "https://www.gstatic.com/generate_204"
