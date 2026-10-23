@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01
-  server: 23.81.36.148
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇬🇧 英国 (United Kingdom) 02
   server: 31.59.217.164
   port: 443
   udp: true
@@ -25,91 +16,47 @@ proxies:
     public-key: kOkILS7UXUQDNPLYn4SQ65kMIWKXNOttV5Kddw4ZqTo
     short-id: 1625a2a79d01328f
   servername: www.adobe.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 03
-  server: 138.124.125.193
-  port: 10444
-  udp: true
-  type: vless
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 04 R47
-  server: 98.98.207.163
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 05 R67
-  server: gb.srv.dvzh.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ab3a362-1518-496d-b08d-eced45cec936
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
-    short-id: d30f9d846a7c8cba
-  servername: gb.srv.dvzh.net
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 06 ⚠R
-  server: connect.hondamotor.site
-  port: 10002
-  udp: true
-  type: vless
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
-- name: 🇬🇧 英国 (United Kingdom) 07
+- name: 🇬🇧 英国 (United Kingdom) 02
   server: 98.98.142.161
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 08
-  server: 213.176.92.168
-  port: 10444
+- name: 🇬🇧 英国 (United Kingdom) 03 R47
+  server: 98.98.207.163
+  port: 8080
   udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
-- name: 🇬🇧 英国 (United Kingdom) 09
-  server: 193.188.21.253
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇬🇧 英国 (United Kingdom) 10 ⚠R
-  server: uk1.connectsuite.org
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 04 R67
+  server: uk.2ul.top
   port: 443
   udp: true
   type: vless
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  uuid: 77479eaf-c35e-4088-ae47-a2beb88a7272
   tls: true
-  servername: uk1.connectsuite.org
-  skip-cert-verify: false
+  reality-opts:
+    public-key: C-e3vasFC42zQmJblol4foZozTe6j1c7TJMGqjvRm2U
+    short-id: 77479eaf
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cdn-cgi/ws
-- name: 🇬🇧 英国 (United Kingdom) 11
+- name: 🇬🇧 英国 (United Kingdom) 05
+  server: 31.76.62.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8e66d40e-6f62-4243-a7d8-ebe83e4c2e77
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: C4kK4uxh9a5ym0-JmcaTwkUwkB0FTRjSAIlHLTKRHlo
+    short-id: 84341e3e
+  servername: lv-rix-1.koolb.org
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 06
   server: 191.44.108.31
   port: 443
   udp: true
@@ -122,7 +69,7 @@ proxies:
     short-id: 3ba10d9ce34380c9
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 12
+- name: 🇬🇧 英国 (United Kingdom) 07
   server: 213.176.92.168
   port: 14430
   udp: true
@@ -133,20 +80,18 @@ proxies:
     path: /vless
     headers:
       Host: 213.176.92.168
-- name: 🇬🇧 英国 (United Kingdom) 13
-  server: 104.239.12.81
-  port: 443
+- name: 🇬🇧 英国 (United Kingdom) 08 ⚠R
+  server: forwarded.frnhk.xyz
+  port: 46001
   udp: true
   type: vless
-  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
-    short-id: b558b9305a0b
-  servername: www.microsoft.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 14
+  uuid: 5ce8f582-1494-4e3f-9a2d-7164491cc6fa
+  network: ws
+  ws-opts:
+    path: /uk1023
+    headers:
+      Host: forwarded.frnhk.xyz
+- name: 🇬🇧 英国 (United Kingdom) 09
   server: 107.181.151.128
   port: 443
   udp: true
@@ -159,6 +104,19 @@ proxies:
     short-id: 8f79726c5002
   servername: www.mozilla.org
   client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 10
+  server: sql.popmintxo.cc
+  port: 443
+  udp: true
+  type: vless
+  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
+    short-id: b558b9305a0b
+  servername: www.microsoft.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -166,18 +124,14 @@ proxy-groups:
   - AUTO
   - 🇬🇧 英国 (United Kingdom) 01
   - 🇬🇧 英国 (United Kingdom) 02
-  - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04 R47
-  - 🇬🇧 英国 (United Kingdom) 05 R67
-  - 🇬🇧 英国 (United Kingdom) 06 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 03 R47
+  - 🇬🇧 英国 (United Kingdom) 04 R67
+  - 🇬🇧 英国 (United Kingdom) 05
+  - 🇬🇧 英国 (United Kingdom) 06
   - 🇬🇧 英国 (United Kingdom) 07
-  - 🇬🇧 英国 (United Kingdom) 08
+  - 🇬🇧 英国 (United Kingdom) 08 ⚠R
   - 🇬🇧 英国 (United Kingdom) 09
-  - 🇬🇧 英国 (United Kingdom) 10 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 11
-  - 🇬🇧 英国 (United Kingdom) 12
-  - 🇬🇧 英国 (United Kingdom) 13
-  - 🇬🇧 英国 (United Kingdom) 14
+  - 🇬🇧 英国 (United Kingdom) 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -185,17 +139,13 @@ proxy-groups:
   proxies:
   - 🇬🇧 英国 (United Kingdom) 01
   - 🇬🇧 英国 (United Kingdom) 02
-  - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04 R47
-  - 🇬🇧 英国 (United Kingdom) 05 R67
-  - 🇬🇧 英国 (United Kingdom) 06 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 03 R47
+  - 🇬🇧 英国 (United Kingdom) 04 R67
+  - 🇬🇧 英国 (United Kingdom) 05
+  - 🇬🇧 英国 (United Kingdom) 06
   - 🇬🇧 英国 (United Kingdom) 07
-  - 🇬🇧 英国 (United Kingdom) 08
+  - 🇬🇧 英国 (United Kingdom) 08 ⚠R
   - 🇬🇧 英国 (United Kingdom) 09
-  - 🇬🇧 英国 (United Kingdom) 10 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 11
-  - 🇬🇧 英国 (United Kingdom) 12
-  - 🇬🇧 英国 (United Kingdom) 13
-  - 🇬🇧 英国 (United Kingdom) 14
+  - 🇬🇧 英国 (United Kingdom) 10
 rules:
 - MATCH,PROXIES

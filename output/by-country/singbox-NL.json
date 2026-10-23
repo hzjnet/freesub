@@ -5,33 +5,92 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 01 R55",
-      "server": "94.237.46.104",
-      "server_port": 443,
-      "uuid": "dac47070-c136-49f3-8ed2-32b68e710ea3"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 02 R52",
-      "server": "b2n.ir",
-      "server_port": 443,
-      "password": "mitivpn",
-      "tls": {
-        "enabled": true,
-        "server_name": "de.mitivpn.in.net",
-        "insecure": false
-      },
+      "tag": "🇳🇱 荷兰 (Netherlands) 01",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "93fa8bdb-9cca-4a3e-8355-b7c12e4f595e",
       "transport": {
         "type": "ws",
-        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/--@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "path": "/vl/yLWNcuUuw1jlJpkDhGy",
         "headers": {
-          "Host": "de.mitivpn.in.net"
+          "Host": "fornewiran.ade-1000.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02",
+      "server": "185.4.114.96",
+      "server_port": 443,
+      "uuid": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.twitch.tv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9W1WFl2qiFQ1-ylXEZ5dMKLT-ZfoNhFHL1-v8yyotCg",
+          "short_id": "e8a07ddc"
         }
+      },
+      "transport": {
+        "type": "grpc"
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 03",
+      "server": "77.90.63.170",
+      "server_port": 443,
+      "uuid": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.twitch.tv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wViUK7S8TlThBWKCwxdKFfPW_Qgcqm8YJHgel1D0uEk",
+          "short_id": "4778774e"
+        }
+      },
+      "transport": {
+        "type": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 04",
+      "server": "185.4.112.226",
+      "server_port": 443,
+      "uuid": "9c54d883-97a8-4b49-af23-fe052eff2c3a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.python.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pQFWeFFgW52ADvjMauzOrv-1v-grz-7IP2tC5cudOEw",
+          "short_id": "53c57020"
+        }
+      },
+      "transport": {
+        "type": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 05",
       "server": "109.120.150.245",
       "server_port": 8443,
       "uuid": "b1097a54-29de-4014-962c-c835d96e8409",
@@ -54,8 +113,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 荷兰 (Netherlands) 06",
+      "server": "50.7.41.118",
+      "server_port": 17001,
+      "method": "aes-256-gcm",
+      "password": "I6o9NnialYLMEjVt28RF4dpjmr9wMvNL"
+    },
+    {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 04",
+      "tag": "🇳🇱 荷兰 (Netherlands) 07",
       "server": "130.12.242.106",
       "server_port": 443,
       "uuid": "bc058e69-0444-4c7b-98da-bd67f0b143da",
@@ -75,15 +142,30 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇳🇱 荷兰 (Netherlands) 08",
+      "server": "109.235.49.234",
+      "server_port": 443,
+      "password": "529f1911-04d5-4427-94b9-c851fd459a27",
+      "tls": {
+        "enabled": true,
+        "server_name": "tcp-reset-club.net",
+        "insecure": false
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 05",
-      "server": "108.162.194.134",
+      "tag": "🇳🇱 荷兰 (Netherlands) 09",
+      "server": "8.47.69.0",
       "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
         "server_name": "www.pleadcourt.org",
-        "insecure": false
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
@@ -94,61 +176,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇳🇱 荷兰 (Netherlands) 06",
-      "server": "109.235.49.234",
-      "server_port": 443,
-      "password": "dd50a499-7e43-4589-8490-f3b9c2451473",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl-hy-test.tcp-reset-club.net",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 07",
-      "server": "45.85.117.174",
-      "server_port": 443,
-      "uuid": "92a4056a-38d6-49d0-8bd2-600e55af1e9f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rF4J_igTFQRUXEaY351LiZG0Ea4OuNpOakuAbqT0bAw",
-          "short_id": "088faf47"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 08",
-      "server": "51.15.16.68",
-      "server_port": 2053,
-      "uuid": "7d0fd363-16d2-43ce-9d6d-ed2c15d2cb7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Zotx4F9CI6_q9yeKCKIHDjwzCv_Aq7WSo7N0Zc1A6Sc",
-          "short_id": "3c99c85cbb6b3b44"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 09",
+      "tag": "🇳🇱 荷兰 (Netherlands) 10",
       "server": "109.120.150.245",
       "server_port": 2053,
       "uuid": "b1097a54-29de-4014-962c-c835d96e8409",
@@ -168,8 +197,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 荷兰 (Netherlands) 11",
+      "server": "dns8.m3hrzd.ir",
+      "server_port": 8044,
+      "method": "chacha20-ietf-poly1305",
+      "password": "W8wg-Pb6xj9NOOwriOXIBLulDFNNt5Jt"
+    },
+    {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 10",
+      "tag": "🇳🇱 荷兰 (Netherlands) 12",
       "server": "45.150.33.33",
       "server_port": 443,
       "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
@@ -189,135 +226,37 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇳🇱 荷兰 (Netherlands) 11",
-      "server": "uk3-2.998998.best",
-      "server_port": 443,
-      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "server22.9966338.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/serhrdftshg",
-        "headers": {
-          "Host": "server22.9966338.xyz"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 12",
-      "server": "131.196.254.151",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 13",
-      "server": "94.158.219.126",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
       "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 13 R55",
+      "server": "94.237.46.104",
+      "server_port": 443,
+      "uuid": "dac47070-c136-49f3-8ed2-32b68e710ea3"
+    },
+    {
+      "type": "trojan",
       "tag": "🇳🇱 荷兰 (Netherlands) 14",
-      "server": "172.67.155.222",
+      "server": "144.31.205.106",
       "server_port": 443,
-      "uuid": "82b279c6-5cba-3a96-f8bd-780a00000035",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev",
+        "server_name": "www.pleadcourt.org",
         "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/assignment",
         "headers": {
-          "Host": "pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 15",
-      "server": "94.156.79.93",
-      "server_port": 443,
-      "uuid": "d6752c6b-80ae-4a91-b446-bb330f7f8177",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.foxsports.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg",
-          "short_id": "88a13cf2655c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 16",
-      "server": "208.67.106.154",
-      "server_port": 443,
-      "uuid": "96ee55ac-d534-4502-878a-468c7896360b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg",
-          "short_id": "c9677d3b7dea"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇳🇱 荷兰 (Netherlands) 17",
+      "tag": "🇳🇱 荷兰 (Netherlands) 15",
       "server": "666.cf.cname.vvhan.com",
       "server_port": 443,
       "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
@@ -336,12 +275,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 16",
+      "server": "94.156.79.93",
+      "server_port": 443,
+      "uuid": "1a5e7720-abf3-4b9b-bc9b-9a900a04b434",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg",
+          "short_id": "f129dcdbf64f"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 荷兰 (Netherlands) 01 R55",
-        "🇳🇱 荷兰 (Netherlands) 02 R52",
+        "🇳🇱 荷兰 (Netherlands) 01",
+        "🇳🇱 荷兰 (Netherlands) 02",
         "🇳🇱 荷兰 (Netherlands) 03",
         "🇳🇱 荷兰 (Netherlands) 04",
         "🇳🇱 荷兰 (Netherlands) 05",
@@ -352,19 +312,18 @@
         "🇳🇱 荷兰 (Netherlands) 10",
         "🇳🇱 荷兰 (Netherlands) 11",
         "🇳🇱 荷兰 (Netherlands) 12",
-        "🇳🇱 荷兰 (Netherlands) 13",
+        "🇳🇱 荷兰 (Netherlands) 13 R55",
         "🇳🇱 荷兰 (Netherlands) 14",
         "🇳🇱 荷兰 (Netherlands) 15",
-        "🇳🇱 荷兰 (Netherlands) 16",
-        "🇳🇱 荷兰 (Netherlands) 17"
+        "🇳🇱 荷兰 (Netherlands) 16"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 荷兰 (Netherlands) 01 R55",
-        "🇳🇱 荷兰 (Netherlands) 02 R52",
+        "🇳🇱 荷兰 (Netherlands) 01",
+        "🇳🇱 荷兰 (Netherlands) 02",
         "🇳🇱 荷兰 (Netherlands) 03",
         "🇳🇱 荷兰 (Netherlands) 04",
         "🇳🇱 荷兰 (Netherlands) 05",
@@ -375,11 +334,10 @@
         "🇳🇱 荷兰 (Netherlands) 10",
         "🇳🇱 荷兰 (Netherlands) 11",
         "🇳🇱 荷兰 (Netherlands) 12",
-        "🇳🇱 荷兰 (Netherlands) 13",
+        "🇳🇱 荷兰 (Netherlands) 13 R55",
         "🇳🇱 荷兰 (Netherlands) 14",
         "🇳🇱 荷兰 (Netherlands) 15",
-        "🇳🇱 荷兰 (Netherlands) 16",
-        "🇳🇱 荷兰 (Netherlands) 17"
+        "🇳🇱 荷兰 (Netherlands) 16"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
