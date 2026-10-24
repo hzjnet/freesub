@@ -4,23 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 罗马尼亚 (Romania) 01
-  server: edge10.cyrionflare.com
-  port: 2052
+- name: 🇻🇳 越南 (Vietnam) 01
+  server: 150.95.109.109
+  port: 2086
   udp: true
   type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 罗马尼亚 (Romania) 01
+  - 🇻🇳 越南 (Vietnam) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 罗马尼亚 (Romania) 01
+  - 🇻🇳 越南 (Vietnam) 01
 rules:
 - MATCH,PROXIES

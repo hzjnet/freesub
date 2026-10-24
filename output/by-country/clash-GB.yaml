@@ -17,57 +17,20 @@ proxies:
     short-id: 1625a2a79d01328f
   servername: www.adobe.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 02 R47
-  server: 98.98.207.163
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 03
-  server: 23.81.36.148
-  port: 8080
+- name: 🇬🇧 英国 (United Kingdom) 02
+  server: 138.124.125.193
+  port: 10444
   udp: true
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇬🇧 英国 (United Kingdom) 04 ⚠R
-  server: 51.38.71.147
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  tls: true
-  servername: node-uk.connectsuite.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 05
-  server: 193.163.203.170
-  port: 443
-  udp: true
-  type: vless
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  servername: yandex.ru
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 06
-  server: 213.176.92.168
-  port: 14430
-  udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 213.176.92.168
-- name: 🇬🇧 英国 (United Kingdom) 07
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 03
   server: 191.44.108.31
   port: 443
   udp: true
@@ -79,21 +42,67 @@ proxies:
     public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
     short-id: 3ba10d9ce34380c9
   servername: www.google.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 08
-  server: 98.98.142.161
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 09
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 04
   server: sql.popmintxo.cc
   port: 43385
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
+- name: 🇬🇧 英国 (United Kingdom) 05 R45
+  server: 195.72.166.251
+  port: 443
+  udp: true
+  type: vless
+  uuid: 64c05afc-ce81-4ba0-b697-afa04da1427e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RKDT6fVgcZS8Qfzhv5rbeHRIflA3UTKD_HNLJyOoUwk
+    short-id: 25349b36802f
+  servername: www.lloydsbankinggroup.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 06 R47
+  server: 98.98.207.163
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 07
+  server: 23.81.36.148
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇬🇧 英国 (United Kingdom) 08
+  server: 193.163.203.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 09
+  server: 213.176.92.168
+  port: 14430
+  udp: true
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
 - name: 🇬🇧 英国 (United Kingdom) 10
   server: 213.176.92.168
   port: 10444
@@ -106,8 +115,20 @@ proxies:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇬🇧 英国 (United Kingdom) 11
+  server: 23.81.36.148
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 12
   server: 193.188.21.253
   port: 10444
   udp: true
@@ -120,32 +141,42 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
   client-fingerprint: safari
-- name: 🇬🇧 英国 (United Kingdom) 12 ⚠R
-  server: uk1.connectsuite.org
+- name: 🇬🇧 英国 (United Kingdom) 13 R67
+  server: gb.srv.dvzh.net
   port: 443
   udp: true
   type: vless
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  uuid: 9ab3a362-1518-496d-b08d-eced45cec936
+  flow: xtls-rprx-vision
   tls: true
-  servername: uk1.connectsuite.org
+  reality-opts:
+    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
+    short-id: d30f9d846a7c8cba
+  servername: gb.srv.dvzh.net
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 14
+  server: 98.98.142.161
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 15 R70
+  server: vpn.kovira.site
+  port: 443
+  udp: true
+  type: vless
+  uuid: 22e6604e-0481-411f-8028-ffbd65f624b6
+  tls: true
+  servername: vpn.kovira.site
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /cdn-cgi/ws
-- name: 🇬🇧 英国 (United Kingdom) 13
-  server: 23.81.36.148
-  port: 1222
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 14
+    path: /ws-738d2d0c5eba7609f3c37de2
+    headers:
+      Host: vpn.kovira.site
+- name: 🇬🇧 英国 (United Kingdom) 16
   server: 104.239.12.81
   port: 443
   udp: true
@@ -158,58 +189,62 @@ proxies:
     short-id: b558b9305a0b
   servername: www.microsoft.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 15
-  server: 107.181.151.128
+- name: 🇬🇧 英国 (United Kingdom) 17
+  server: webdisk.jaggyslawa.org
   port: 443
   udp: true
   type: vless
-  uuid: 88742d38-3f5c-4b9c-b256-7df5db8257ec
+  uuid: b62e3646-b84d-443c-9c94-718b646502e0
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 8f79726c5002
-  servername: www.mozilla.org
-  client-fingerprint: chrome
+    short-id: dda5f542d835
+  servername: www.foxsports.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇬🇧 英国 (United Kingdom) 01
-  - 🇬🇧 英国 (United Kingdom) 02 R47
+  - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 05
-  - 🇬🇧 英国 (United Kingdom) 06
+  - 🇬🇧 英国 (United Kingdom) 04
+  - 🇬🇧 英国 (United Kingdom) 05 R45
+  - 🇬🇧 英国 (United Kingdom) 06 R47
   - 🇬🇧 英国 (United Kingdom) 07
   - 🇬🇧 英国 (United Kingdom) 08
   - 🇬🇧 英国 (United Kingdom) 09
   - 🇬🇧 英国 (United Kingdom) 10
   - 🇬🇧 英国 (United Kingdom) 11
-  - 🇬🇧 英国 (United Kingdom) 12 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 13
+  - 🇬🇧 英国 (United Kingdom) 12
+  - 🇬🇧 英国 (United Kingdom) 13 R67
   - 🇬🇧 英国 (United Kingdom) 14
-  - 🇬🇧 英国 (United Kingdom) 15
+  - 🇬🇧 英国 (United Kingdom) 15 R70
+  - 🇬🇧 英国 (United Kingdom) 16
+  - 🇬🇧 英国 (United Kingdom) 17
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 (United Kingdom) 01
-  - 🇬🇧 英国 (United Kingdom) 02 R47
+  - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 05
-  - 🇬🇧 英国 (United Kingdom) 06
+  - 🇬🇧 英国 (United Kingdom) 04
+  - 🇬🇧 英国 (United Kingdom) 05 R45
+  - 🇬🇧 英国 (United Kingdom) 06 R47
   - 🇬🇧 英国 (United Kingdom) 07
   - 🇬🇧 英国 (United Kingdom) 08
   - 🇬🇧 英国 (United Kingdom) 09
   - 🇬🇧 英国 (United Kingdom) 10
   - 🇬🇧 英国 (United Kingdom) 11
-  - 🇬🇧 英国 (United Kingdom) 12 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 13
+  - 🇬🇧 英国 (United Kingdom) 12
+  - 🇬🇧 英国 (United Kingdom) 13 R67
   - 🇬🇧 英国 (United Kingdom) 14
-  - 🇬🇧 英国 (United Kingdom) 15
+  - 🇬🇧 英国 (United Kingdom) 15 R70
+  - 🇬🇧 英国 (United Kingdom) 16
+  - 🇬🇧 英国 (United Kingdom) 17
 rules:
 - MATCH,PROXIES
