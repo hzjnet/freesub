@@ -5,24 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01
-  server: 13.38.185.27
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇫🇷 法国 (France) 02
-  server: 161.97.66.16
-  port: 443
-  udp: true
-  type: vless
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  tls: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-    short-id: 086bf957
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 03
   server: 138.124.70.41
   port: 14430
   udp: true
@@ -33,7 +15,42 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 02
+  server: 185.18.250.245
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 03 ⚠R
+  server: 51.77.108.218
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 04
+  server: ai.smrtai.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  tls: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+    short-id: 086bf957
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 05
   server: 45.87.41.18
   port: 443
   udp: true
@@ -44,9 +61,20 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 05
-  server: 185.114.72.31
-  port: 2053
+- name: 🇫🇷 法国 (France) 06
+  server: 185.255.179.166
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 07
+  server: 185.220.100.168
+  port: 443
   udp: true
   type: trojan
   password: humanity
@@ -62,9 +90,11 @@ proxy-groups:
   - AUTO
   - 🇫🇷 法国 (France) 01
   - 🇫🇷 法国 (France) 02
-  - 🇫🇷 法国 (France) 03
+  - 🇫🇷 法国 (France) 03 ⚠R
   - 🇫🇷 法国 (France) 04
   - 🇫🇷 法国 (France) 05
+  - 🇫🇷 法国 (France) 06
+  - 🇫🇷 法国 (France) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,8 +102,10 @@ proxy-groups:
   proxies:
   - 🇫🇷 法国 (France) 01
   - 🇫🇷 法国 (France) 02
-  - 🇫🇷 法国 (France) 03
+  - 🇫🇷 法国 (France) 03 ⚠R
   - 🇫🇷 法国 (France) 04
   - 🇫🇷 法国 (France) 05
+  - 🇫🇷 法国 (France) 06
+  - 🇫🇷 法国 (France) 07
 rules:
 - MATCH,PROXIES

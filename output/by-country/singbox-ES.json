@@ -6,6 +6,16 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 01",
+      "server": "18.101.197.136",
+      "server_port": 443,
+      "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
+      "transport": {
+        "type": "http"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 02",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -29,14 +39,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01"
+        "🇪🇸 西班牙 (Spain) 01",
+        "🇪🇸 西班牙 (Spain) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01"
+        "🇪🇸 西班牙 (Spain) 01",
+        "🇪🇸 西班牙 (Spain) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
