@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01",
-      "server": "2.26.106.232",
+      "server": "31.77.202.166",
       "server_port": 8443,
       "uuid": "5a96c1fc-f167-44b9-9020-8f6867537d14",
       "tls": {
@@ -14,7 +14,7 @@
         "server_name": "finland02.azotvpn.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

@@ -5,14 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01
-  server: 18.135.33.244
+  server: 16.60.44.179
   port: 22223
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇮🇪 爱尔兰 (Ireland) 02
-  server: 18.135.33.244
+  server: 51.24.209.55
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 03
+  server: 16.60.44.179
   port: 22224
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 04
+  server: 51.24.209.55
+  port: 22224
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 05
+  server: 51.24.209.55
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇮🇪 爱尔兰 (Ireland) 06
+  server: 16.60.44.179
+  port: 22222
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
@@ -23,6 +47,10 @@ proxy-groups:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01
   - 🇮🇪 爱尔兰 (Ireland) 02
+  - 🇮🇪 爱尔兰 (Ireland) 03
+  - 🇮🇪 爱尔兰 (Ireland) 04
+  - 🇮🇪 爱尔兰 (Ireland) 05
+  - 🇮🇪 爱尔兰 (Ireland) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -30,5 +58,9 @@ proxy-groups:
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01
   - 🇮🇪 爱尔兰 (Ireland) 02
+  - 🇮🇪 爱尔兰 (Ireland) 03
+  - 🇮🇪 爱尔兰 (Ireland) 04
+  - 🇮🇪 爱尔兰 (Ireland) 05
+  - 🇮🇪 爱尔兰 (Ireland) 06
 rules:
 - MATCH,PROXIES
