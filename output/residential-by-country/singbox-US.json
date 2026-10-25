@@ -4,26 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇱 以色列 (Israel) 01",
-      "server": "31.57.185.124",
-      "server_port": 31940,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "u3g+BSYh+pZQUfbwRUDt5wzmnPa3LdQh3PtbsY6oUMQ=:4/9cGUeP4JzylmrqQOBw7iwdfeNwhoN8j7W+rhEonmU="
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) R50",
+      "server": "23.160.56.99",
+      "server_port": 2087,
+      "uuid": "f1e7eafa-0d6f-441e-8565-29f34171aef2"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01"
+        "🇺🇸 美国 (United States) 01 (家宽) R50"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01"
+        "🇺🇸 美国 (United States) 01 (家宽) R50"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

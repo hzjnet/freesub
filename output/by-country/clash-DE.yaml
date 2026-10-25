@@ -5,50 +5,64 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01
-  server: mci1.amir12.ir
-  port: 1222
+  server: lucas.ehsanazizi-speed-server.com
+  port: 2110
+  udp: true
+  type: vmess
+  uuid: 06d4d001-4168-4876-9416-7caecf578f40
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 02 R65
+  server: 172.67.130.187
+  port: 2083
   udp: true
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
   tls: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
+  servername: fans.liverpool.qzz.io
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 02
-  server: mci.amir12.ir
-  port: 2112
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: fans.liverpool.qzz.io
+- name: 🇩🇪 德国 (Germany) 03
+  server: 172.66.44.124
+  port: 8443
   udp: true
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
   tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 03 R58
-  server: 185.176.204.18
-  port: 19999
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇩🇪 德国 (Germany) 04 R46
+  server: 57.129.113.16
+  port: 8388
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 04 R56
-  server: 198.202.146.51
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+- name: 🇩🇪 德国 (Germany) 05
+  server: 66.151.40.159
   port: 443
   udp: true
   type: vless
-  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
+  uuid: 7ce594b9-918b-441d-922c-230341838abd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: B5DMtKe8wjH_WeM8M8IEuKwPqJ6-Ku98JH_LifwehEY
-    short-id: 6fe2994a0e208408
-  servername: 198.202.146.51.sslip.io
+    public-key: Z5c-WDN3JlGoSTDDKNVqKZsBbpwj80-xrM0jlYbgxzo
+    short-id: deb3256cd90dad0b
+  servername: de1.xshoponline.ru
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 05 ⚠R
+- name: 🇩🇪 德国 (Germany) 06 ⚠R
   server: 46.28.69.123
   port: 443
   udp: true
@@ -61,33 +75,31 @@ proxies:
     short-id: 238e23c5150f02e4
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 06
-  server: 64.188.66.181
+- name: 🇩🇪 德国 (Germany) 07
+  server: 188.114.96.9
   port: 443
   udp: true
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
   tls: true
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-  servername: ge-s-1.pythonmakemigreat.wiki
+  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 07 R54
-  server: 5.175.161.249
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3d87029f-b55b-487d-aea6-6049c8668ff1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _hvd47UytqRrbVTiFFe2vwvWgeg4visStJQpj9xcGjM
-    short-id: 681c5f389bb35191
-  servername: wifi6.jzxc.digital
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
+    headers:
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
 - name: 🇩🇪 德国 (Germany) 08
+  server: 91.107.169.224
+  port: 80
+  udp: true
+  type: vmess
+  uuid: d4b69108-f756-48af-a331-e8356bc95eb4
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
+- name: 🇩🇪 德国 (Germany) 09
   server: 31.70.111.146
   port: 443
   udp: true
@@ -99,55 +111,42 @@ proxies:
     public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
     short-id: d7de3a6ff4018957
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 09
-  server: 82.118.19.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-    short-id: 670ed9f350bd8ee0
-  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 10
-  server: 49.12.249.167
-  port: 145
+- name: 🇩🇪 德国 (Germany) 10 R58
+  server: 185.176.204.18
+  port: 19999
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 5uDrCF_iLoxCiRkKku6f7A
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇩🇪 德国 (Germany) 11
-  server: wifi12.jzxc.digital
+  server: 64.188.66.181
   port: 443
   udp: true
   type: vless
-  uuid: 3d87029f-b55b-487d-aea6-6049c8668ff1
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 90gg8QRDqwmrelQBiQ159MlmdUreo4h1-yBgRmp7U2c
-    short-id: 082e4d45beed1487
-  servername: wifi12.jzxc.digital
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  servername: ge-s-1.pythonmakemigreat.wiki
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 12
-  server: 185.4.115.36
-  port: 2094
+- name: 🇩🇪 德国 (Germany) 12 R56
+  server: 198.202.146.51.sslip.io
+  port: 443
   udp: true
   type: vless
-  uuid: d4833ea6-5064-4f4a-8384-507e0d67a086
+  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
-    short-id: 55986a94e2228791
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: B5DMtKe8wjH_WeM8M8IEuKwPqJ6-Ku98JH_LifwehEY
+    short-id: 6fe2994a0e208408
+  servername: 198.202.146.51.sslip.io
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 13
-  server: 104.21.5.128
+  server: 104.21.93.52
   port: 2052
   udp: true
   type: vless
@@ -170,59 +169,7 @@ proxies:
     short-id: a5543a67f52ea8ab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 15 R55
-  server: 5.175.161.227
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3d87029f-b55b-487d-aea6-6049c8668ff1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 53u64exYWpO2W3vlx4UUlDUFQpBFMUKQPeN6miQtpXE
-    short-id: 1cb422f39c02f3ec
-  servername: www.bmw.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 16
-  server: 91.107.247.173
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  tls: true
-  servername: sino.bestsellers1.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 17
-  server: uwu.blueknightnet.qzz.io
-  port: 2052
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 18
-  server: wifi13.jzxc.digital
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3d87029f-b55b-487d-aea6-6049c8668ff1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: UdBGJ1I5lzeteEjn5sLZfVTUcUidtjTx3cF92rPzgGk
-    short-id: 3eed9b237e5e5baf
-  servername: wifi13.jzxc.digital
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 19
+- name: 🇩🇪 德国 (Germany) 15
   server: 91.107.188.129
   port: 2083
   udp: true
@@ -235,26 +182,77 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇩🇪 德国 (Germany) 16
+  server: mci.amir12.ir
+  port: 2112
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+    short-id: 125ba3
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 17
+  server: sino.bestsellers1.site
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  tls: true
+  servername: sino.bestsellers1.site
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 18
+  server: mci1.amir12.ir
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 19
+  server: undef.network
+  port: 2053
+  udp: true
+  type: vless
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  tls: true
+  servername: uwu.blueknightnet.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01
-  - 🇩🇪 德国 (Germany) 02
-  - 🇩🇪 德国 (Germany) 03 R58
-  - 🇩🇪 德国 (Germany) 04 R56
-  - 🇩🇪 德国 (Germany) 05 ⚠R
-  - 🇩🇪 德国 (Germany) 06
-  - 🇩🇪 德国 (Germany) 07 R54
+  - 🇩🇪 德国 (Germany) 02 R65
+  - 🇩🇪 德国 (Germany) 03
+  - 🇩🇪 德国 (Germany) 04 R46
+  - 🇩🇪 德国 (Germany) 05
+  - 🇩🇪 德国 (Germany) 06 ⚠R
+  - 🇩🇪 德国 (Germany) 07
   - 🇩🇪 德国 (Germany) 08
   - 🇩🇪 德国 (Germany) 09
-  - 🇩🇪 德国 (Germany) 10
+  - 🇩🇪 德国 (Germany) 10 R58
   - 🇩🇪 德国 (Germany) 11
-  - 🇩🇪 德国 (Germany) 12
+  - 🇩🇪 德国 (Germany) 12 R56
   - 🇩🇪 德国 (Germany) 13
   - 🇩🇪 德国 (Germany) 14
-  - 🇩🇪 德国 (Germany) 15 R55
+  - 🇩🇪 德国 (Germany) 15
   - 🇩🇪 德国 (Germany) 16
   - 🇩🇪 德国 (Germany) 17
   - 🇩🇪 德国 (Germany) 18
@@ -265,20 +263,20 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01
-  - 🇩🇪 德国 (Germany) 02
-  - 🇩🇪 德国 (Germany) 03 R58
-  - 🇩🇪 德国 (Germany) 04 R56
-  - 🇩🇪 德国 (Germany) 05 ⚠R
-  - 🇩🇪 德国 (Germany) 06
-  - 🇩🇪 德国 (Germany) 07 R54
+  - 🇩🇪 德国 (Germany) 02 R65
+  - 🇩🇪 德国 (Germany) 03
+  - 🇩🇪 德国 (Germany) 04 R46
+  - 🇩🇪 德国 (Germany) 05
+  - 🇩🇪 德国 (Germany) 06 ⚠R
+  - 🇩🇪 德国 (Germany) 07
   - 🇩🇪 德国 (Germany) 08
   - 🇩🇪 德国 (Germany) 09
-  - 🇩🇪 德国 (Germany) 10
+  - 🇩🇪 德国 (Germany) 10 R58
   - 🇩🇪 德国 (Germany) 11
-  - 🇩🇪 德国 (Germany) 12
+  - 🇩🇪 德国 (Germany) 12 R56
   - 🇩🇪 德国 (Germany) 13
   - 🇩🇪 德国 (Germany) 14
-  - 🇩🇪 德国 (Germany) 15 R55
+  - 🇩🇪 德国 (Germany) 15
   - 🇩🇪 德国 (Germany) 16
   - 🇩🇪 德国 (Germany) 17
   - 🇩🇪 德国 (Germany) 18
