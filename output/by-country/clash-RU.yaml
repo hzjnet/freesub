@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 177.3.208.65
+  server: 77.90.61.135
   port: 443
   udp: true
   type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
   tls: true
-  servername: tgmansion.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-tr
+  reality-opts:
+    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
+    short-id: ce1dc482
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
