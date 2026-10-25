@@ -4,25 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (移动家宽)",
-      "server": "gu232.izzzzzi.com",
-      "server_port": 20052,
-      "password": "e56e752c86a640cd",
-      "tls": {
-        "enabled": true,
-        "server_name": "gu232.izzzzzi.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-      "server": "61.230.160.34",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -30,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -44,16 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (移动家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (移动家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

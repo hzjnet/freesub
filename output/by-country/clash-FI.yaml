@@ -5,16 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 45.144.234.157
-  port: 14430
+  server: hw3.divarkhaghazi.com
+  port: 465
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com.
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 45.144.234.157
+      Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 02
   server: 2.27.203.251
   port: 443
@@ -40,6 +43,17 @@ proxies:
   servername: finlandlanzarotte.live
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 05
   server: 2.26.3.75
   port: 443
   udp: true
@@ -47,21 +61,6 @@ proxies:
   password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
   sni: fi.67chat.ru
   skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 05
-  server: hw3.divarkhaghazi.com.
-  port: 465
-  udp: true
-  type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select

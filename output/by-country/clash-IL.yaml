@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽)
-  server: p141.panda001.net
-  port: 4652
+- name: 🇮🇱 以色列 (Israel) 01
+  server: 31.57.185.124
+  port: 41957
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  cipher: 2022-blake3-aes-256-gcm
+  password: aJzB4p6wYQF+OEbPk2VmV3JvdFo/K4YVuBqjBEmkf+o=:rpu36c0USkp5CNFZjLMYcrfib62BODipksGWj1BCCMI=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
+  - 🇮🇱 以色列 (Israel) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
+  - 🇮🇱 以色列 (Israel) 01
 rules:
 - MATCH,PROXIES
