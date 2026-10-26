@@ -5,17 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
-  server: 79.98.37.106
-  port: 443
+  server: ee2.pad-sservice.lat
+  port: 8443
   udp: true
   type: vless
-  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
-  flow: xtls-rprx-vision
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  reality-opts:
-    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
-  servername: ee-central.v8x2b.lol
+  servername: ee2.pad-sservice.lat
+  skip-cert-verify: false
   client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /EE2W
+    headers:
+      Host: ee2.pad-service.com
 proxy-groups:
 - name: PROXIES
   type: select

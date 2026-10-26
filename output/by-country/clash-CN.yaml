@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01
-  server: 39.108.113.127
-  port: 10086
-  udp: true
-  type: vmess
-  uuid: 2eb25c1e-c3b5-45cf-9afd-dd3ddc00da10
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇳 CN 02
   server: 8.35.211.242
   port: 443
   udp: true
@@ -35,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇳 CN 01
-  - 🇨🇳 CN 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇳 CN 01
-  - 🇨🇳 CN 02
 rules:
 - MATCH,PROXIES

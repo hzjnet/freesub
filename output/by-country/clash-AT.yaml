@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: au6.pad-sservice.lat
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /AU6W
