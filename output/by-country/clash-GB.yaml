@@ -5,11 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 ⚠R
-  server: 168.222.43.53
-  port: 10002
+  server: 51.89.225.90
+  port: 8443
   udp: true
   type: vless
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 02 ⚠R
   server: 51.89.228.166
   port: 8443
@@ -23,45 +29,6 @@ proxies:
   servername: ozon.ru
   client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 03 ⚠R
-  server: 51.89.225.90
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 680e92ac-1688-49e0-af96-7327fbc30ce8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 04
-  server: 98.98.142.161
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 05
-  server: 191.44.108.31
-  port: 443
-  udp: true
-  type: vless
-  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
-    short-id: 3ba10d9ce34380c9
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 06
-  server: sql.popmintxo.cc
-  port: 43385
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-- name: 🇬🇧 英国 (United Kingdom) 07 ⚠R
   server: 51.89.231.124
   port: 8443
   udp: true
@@ -73,20 +40,74 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: ozon.ru
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 08
-  server: 138.124.125.193
-  port: 10444
+- name: 🇬🇧 英国 (United Kingdom) 04
+  server: sql.popmintxo.cc
+  port: 43385
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
+- name: 🇬🇧 英国 (United Kingdom) 05 ⚠R
+  server: 168.222.43.53
+  port: 10002
   udp: true
   type: vless
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+- name: 🇬🇧 英国 (United Kingdom) 06
+  server: 191.44.108.31
+  port: 443
+  udp: true
+  type: vless
+  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: safari
+    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
+    short-id: 3ba10d9ce34380c9
+  servername: www.google.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 07 R46
+  server: 98.98.207.163
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 08
+  server: 98.98.142.161
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 09
+  server: 23.81.36.148
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 10
+  server: tr2.pad-sservice.lat
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: tr2.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /tr1-2
+    headers:
+      Host: tr2.pad-service.com
+- name: 🇬🇧 英国 (United Kingdom) 11
   server: 193.163.203.170
   port: 443
   udp: true
@@ -99,50 +120,8 @@ proxies:
     short-id: b28db60d77c50b4f
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 10 ⚠R
-  server: 37.153.158.27
-  port: 56137
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-- name: 🇬🇧 英国 (United Kingdom) 11 R47
-  server: 98.98.207.163
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 12
-  server: 107.181.151.128
-  port: 443
-  udp: true
-  type: vless
-  uuid: 88742d38-3f5c-4b9c-b256-7df5db8257ec
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 8f79726c5002
-  servername: www.mozilla.org
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 13
-  server: tr3.pad-sservice.lat
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  tls: true
-  servername: tr3.pad-sservice.lat
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /t1r
-    headers:
-      Host: tr3.pad-service.com
-- name: 🇬🇧 英国 (United Kingdom) 14
-  server: sql.popmintxo.cc
+  server: 104.239.12.81
   port: 443
   udp: true
   type: vless
@@ -153,6 +132,19 @@ proxies:
     public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
     short-id: b558b9305a0b
   servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 13
+  server: 107.181.151.128
+  port: 443
+  udp: true
+  type: vless
+  uuid: 75113671-63e3-452d-87d3-261a37e8b472
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: baf023e1026a
+  servername: www.mozilla.org
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -163,16 +155,15 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 02 ⚠R
   - 🇬🇧 英国 (United Kingdom) 03 ⚠R
   - 🇬🇧 英国 (United Kingdom) 04
-  - 🇬🇧 英国 (United Kingdom) 05
+  - 🇬🇧 英国 (United Kingdom) 05 ⚠R
   - 🇬🇧 英国 (United Kingdom) 06
-  - 🇬🇧 英国 (United Kingdom) 07 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 07 R46
   - 🇬🇧 英国 (United Kingdom) 08
   - 🇬🇧 英国 (United Kingdom) 09
-  - 🇬🇧 英国 (United Kingdom) 10 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 11 R47
+  - 🇬🇧 英国 (United Kingdom) 10
+  - 🇬🇧 英国 (United Kingdom) 11
   - 🇬🇧 英国 (United Kingdom) 12
   - 🇬🇧 英国 (United Kingdom) 13
-  - 🇬🇧 英国 (United Kingdom) 14
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -182,15 +173,14 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 02 ⚠R
   - 🇬🇧 英国 (United Kingdom) 03 ⚠R
   - 🇬🇧 英国 (United Kingdom) 04
-  - 🇬🇧 英国 (United Kingdom) 05
+  - 🇬🇧 英国 (United Kingdom) 05 ⚠R
   - 🇬🇧 英国 (United Kingdom) 06
-  - 🇬🇧 英国 (United Kingdom) 07 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 07 R46
   - 🇬🇧 英国 (United Kingdom) 08
   - 🇬🇧 英国 (United Kingdom) 09
-  - 🇬🇧 英国 (United Kingdom) 10 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 11 R47
+  - 🇬🇧 英国 (United Kingdom) 10
+  - 🇬🇧 英国 (United Kingdom) 11
   - 🇬🇧 英国 (United Kingdom) 12
   - 🇬🇧 英国 (United Kingdom) 13
-  - 🇬🇧 英国 (United Kingdom) 14
 rules:
 - MATCH,PROXIES
