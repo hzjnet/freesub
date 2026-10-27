@@ -5,20 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 01",
-      "server": "62.83.41.69",
-      "server_port": 8443,
-      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
+      "tag": "🇲🇰 MK 01",
+      "server": "89.185.82.151",
+      "server_port": 10443,
+      "uuid": "0869a7d7-b8e8-42be-8bca-84b0ab07744a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "au6.pad-sservice.lat",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/AU6W",
-        "headers": {
-          "Host": "au6.pad-sservice.lat"
+        "server_name": "stackoverflow.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XNfikFybWtjJjWU7-QBGrr-D9YUW0uSK_sR7mDDUmRU",
+          "short_id": "6ba85179"
         }
       }
     },
@@ -27,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01"
+        "🇲🇰 MK 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01"
+        "🇲🇰 MK 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

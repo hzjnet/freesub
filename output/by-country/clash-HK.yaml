@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16115
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02
   server: 165.154.63.139
   port: 443
   udp: true
@@ -17,51 +25,7 @@ proxies:
     short-id: ca4aedd4
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 38.22.88.248
-  port: 27509
-  udp: true
-  type: vless
-  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
-  servername: www.suffolk.edu
-  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 47.243.153.153
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05
   server: 501.150333.xyz
   port: 21003
   udp: true
@@ -73,7 +37,19 @@ proxies:
     short-id: 09acf476305bdc56
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: 501.150333.xyz
+  port: 21004
+  udp: true
+  type: vless
+  uuid: 972be0be-1831-4b5e-b26b-3b6e139a1cd0
+  tls: true
+  reality-opts:
+    public-key: OCs6EIBsSg-f8MW0RE7QDwjZafk09F1aGl7olF7yAW0
+    short-id: 04f9f3b03c9a6d79
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 05
   server: 501.150333.xyz
   port: 21002
   udp: true
@@ -85,7 +61,7 @@ proxies:
     short-id: 48b41af29b500164
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07
+- name: 🇭🇰 中国香港 (Hong Kong) 06
   server: 501.150333.xyz
   port: 21001
   udp: true
@@ -97,35 +73,6 @@ proxies:
     short-id: 15d7e7f1939e82e5
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08
-  server: 20.235.220.189
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 09
-  server: 122.10.117.1
-  port: 11674
-  udp: true
-  type: vless
-  uuid: fe40f32a-b03d-4ada-8bee-00f41b766098
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: F-yU1O5Q00eeyUdst7ZGDsgo4xS5mrdNwg0UcfsrVQs
-    short-id: d889b977
-  servername: apple.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,9 +84,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
-  - 🇭🇰 中国香港 (Hong Kong) 07
-  - 🇭🇰 中国香港 (Hong Kong) 08
-  - 🇭🇰 中国香港 (Hong Kong) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -151,8 +95,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
-  - 🇭🇰 中国香港 (Hong Kong) 07
-  - 🇭🇰 中国香港 (Hong Kong) 08
-  - 🇭🇰 中国香港 (Hong Kong) 09
 rules:
 - MATCH,PROXIES

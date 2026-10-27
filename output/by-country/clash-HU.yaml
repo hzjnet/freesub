@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 奥地利 (Austria) 01
-  server: 62.83.41.69
-  port: 8443
+- name: 🇭🇺 匈牙利 (Hungary) 01
+  server: 172.67.131.125
+  port: 2083
   udp: true
   type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  uuid: f418674e-f518-4318-8ff9-e10000000046
   tls: true
-  servername: au6.pad-sservice.lat
+  servername: smart-edge-424.arti98399-1905.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /AU6W
+    path: /sync
     headers:
-      Host: au6.pad-sservice.lat
+      Host: smart-edge-424.arti98399-1905.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 奥地利 (Austria) 01
+  - 🇭🇺 匈牙利 (Hungary) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 (Austria) 01
+  - 🇭🇺 匈牙利 (Hungary) 01
 rules:
 - MATCH,PROXIES

@@ -4,29 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 77.90.61.135
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
+  server: 46.8.43.125
   port: 443
   udp: true
   type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
   tls: true
   reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  servername: kz-central.v8x2b.lol
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
 rules:
 - MATCH,PROXIES

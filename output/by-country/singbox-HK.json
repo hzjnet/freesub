@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02",
       "server": "165.154.63.139",
       "server_port": 443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
@@ -26,68 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02",
-      "server": "38.22.88.248",
-      "server_port": 27509,
-      "uuid": "29d23018-3265-494c-b9fe-e320b619b1e2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.suffolk.edu",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03",
-      "server": "47.243.153.153",
-      "server_port": 443,
-      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "i2psm3knof5qjjix.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "i2psm3knof5qjjix.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04",
-      "server": "vah4urdzl3jdx5r2.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "vah4urdzl3jdx5r2.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "vah4urdzl3jdx5r2.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05",
       "server": "501.150333.xyz",
       "server_port": 21003,
       "uuid": "972be0be-1831-4b5e-b26b-3b6e139a1cd0",
@@ -107,7 +54,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04",
+      "server": "501.150333.xyz",
+      "server_port": 21004,
+      "uuid": "972be0be-1831-4b5e-b26b-3b6e139a1cd0",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OCs6EIBsSg-f8MW0RE7QDwjZafk09F1aGl7olF7yAW0",
+          "short_id": "04f9f3b03c9a6d79"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05",
       "server": "501.150333.xyz",
       "server_port": 21002,
       "uuid": "972be0be-1831-4b5e-b26b-3b6e139a1cd0",
@@ -127,7 +94,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06",
       "server": "501.150333.xyz",
       "server_port": 21001,
       "uuid": "972be0be-1831-4b5e-b26b-3b6e139a1cd0",
@@ -146,47 +113,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08",
-      "server": "20.235.220.189",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "6JDvArazgU3qQR6Q.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "6JDvArazgU3qQR6Q.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09",
-      "server": "122.10.117.1",
-      "server_port": 11674,
-      "uuid": "fe40f32a-b03d-4ada-8bee-00f41b766098",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F-yU1O5Q00eeyUdst7ZGDsgo4xS5mrdNwg0UcfsrVQs",
-          "short_id": "d889b977"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -196,10 +122,7 @@
         "🇭🇰 中国香港 (Hong Kong) 03",
         "🇭🇰 中国香港 (Hong Kong) 04",
         "🇭🇰 中国香港 (Hong Kong) 05",
-        "🇭🇰 中国香港 (Hong Kong) 06",
-        "🇭🇰 中国香港 (Hong Kong) 07",
-        "🇭🇰 中国香港 (Hong Kong) 08",
-        "🇭🇰 中国香港 (Hong Kong) 09"
+        "🇭🇰 中国香港 (Hong Kong) 06"
       ]
     },
     {
@@ -211,10 +134,7 @@
         "🇭🇰 中国香港 (Hong Kong) 03",
         "🇭🇰 中国香港 (Hong Kong) 04",
         "🇭🇰 中国香港 (Hong Kong) 05",
-        "🇭🇰 中国香港 (Hong Kong) 06",
-        "🇭🇰 中国香港 (Hong Kong) 07",
-        "🇭🇰 中国香港 (Hong Kong) 08",
-        "🇭🇰 中国香港 (Hong Kong) 09"
+        "🇭🇰 中国香港 (Hong Kong) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
