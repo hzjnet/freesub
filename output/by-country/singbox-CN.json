@@ -4,33 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇨🇳 CN 01",
-      "server": "39.108.113.127",
-      "server_port": 10086,
-      "uuid": "2eb25c1e-c3b5-45cf-9afd-dd3ddc00da10",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇳 CN 02",
-      "server": "8.35.211.242",
-      "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "tag": "🇨🇳 CN 01",
+      "server": "122.8.45.7",
+      "server_port": 8443,
+      "uuid": "362a0364-2b0f-cd11-9c20-ab9dfbeb8b11",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false
+        "server_name": "download.nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wcOBPSgoOKptWa9ZHpFpmbrPfLqobBNpCgLH88Ptjhk",
+          "short_id": ""
+        }
       },
       "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
@@ -38,16 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01",
-        "🇨🇳 CN 02"
+        "🇨🇳 CN 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01",
-        "🇨🇳 CN 02"
+        "🇨🇳 CN 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

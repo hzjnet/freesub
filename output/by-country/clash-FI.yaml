@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: 177.3.214.156
+  server: finlandlanzarotte.live
   port: 443
   udp: true
   type: vless
@@ -26,8 +26,23 @@ proxies:
   reality-opts:
     public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
   servername: finlandlanzarotte.live
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇫🇮 芬兰 (Finland) 03
+  server: 65.109.212.193
+  port: 465
+  udp: true
+  type: vless
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com.
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 04
   server: 196.196.204.174
   port: 443
   udp: true
@@ -38,21 +53,18 @@ proxies:
     public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
     short-id: 2892e611785bafd1
   servername: 263651t.fi3.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04
-  server: 65.109.212.193
-  port: 465
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 05
+  server: initialcase.net
+  port: 443
   udp: true
   type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  uuid: ef328563-cda1-4530-9b0a-988cc5a74d78
+  flow: xtls-rprx-vision
   tls: true
-  servername: hw3.divarkhaghazi.com.
+  servername: initialcase.net
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +74,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +84,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
 rules:
 - MATCH,PROXIES

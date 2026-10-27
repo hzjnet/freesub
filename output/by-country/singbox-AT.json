@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇺 匈牙利 (Hungary) 01",
-      "server": "172.67.131.125",
-      "server_port": 2083,
-      "uuid": "f418674e-f518-4318-8ff9-e10000000046",
+      "tag": "🇦🇹 奥地利 (Austria) 01",
+      "server": "188.137.158.179",
+      "server_port": 443,
+      "uuid": "ef328563-cda1-4530-9b0a-988cc5a74d78",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "smart-edge-424.arti98399-1905.workers.dev",
+        "server_name": "softice.net",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "smart-edge-424.arti98399-1905.workers.dev"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 匈牙利 (Hungary) 01"
+        "🇦🇹 奥地利 (Austria) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 匈牙利 (Hungary) 01"
+        "🇦🇹 奥地利 (Austria) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
