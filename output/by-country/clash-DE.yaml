@@ -4,40 +4,37 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01
-  server: mci.amir12.ir
-  port: 2112
+- name: 🇩🇪 德国 (Germany) 01 R45
+  server: www.gptcloudai.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  type: vmess
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 02 R62
+  servername: www.gptcloudai.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.gptcloudai.com
+- name: 🇩🇪 德国 (Germany) 02
+  server: 91.107.128.44
+  port: 36812
+  udp: true
+  type: vmess
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 03 R62
   server: 185.176.204.18
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 03
-  server: 217.216.217.70
-  port: 2060
-  udp: true
-  type: vless
-  uuid: 4718b360-7f15-42d3-9b82-ebc20c427c93
-  tls: true
-  reality-opts:
-    public-key: 1gruamAiEez-LJDBVveJS3ftHfEQFUuqWXCG3NVdmHY
-    short-id: 3058ec56c7628685
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 2086vless
 - name: 🇩🇪 德国 (Germany) 04
   server: 91.107.128.44
   port: 53185
@@ -45,7 +42,24 @@ proxies:
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: U/jVh1z5NQ0cFCiCeLLxNAFBjmLBo/ECQ0dICfRFLbQ=:cZkXr9v4dFpHUetNse9xo72JumvR4N2GLz3bxiEh6Rk=
-- name: 🇩🇪 德国 (Germany) 05 R50
+- name: 🇩🇪 德国 (Germany) 05
+  server: 91.107.128.44
+  port: 46928
+  udp: true
+  type: vless
+  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
+- name: 🇩🇪 德国 (Germany) 06 R45
+  server: free.sahanwickramasinghe.me
+  port: 80
+  udp: true
+  type: vless
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇩🇪 德国 (Germany) 07 R50
   server: 91.107.169.224
   port: 80
   udp: true
@@ -54,88 +68,7 @@ proxies:
   alterId: 0
   cipher: auto
   network: httpupgrade
-- name: 🇩🇪 德国 (Germany) 06
-  server: 159.200.230.170
-  port: 25172
-  udp: true
-  type: vless
-  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
-  tls: true
-  reality-opts:
-    public-key: Xr55Hig_JTeUluiGfSnma6zMHG2Uv5Xu30ZODGF5xGA
-    short-id: f09ac427e1abd14b
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 07 ⚠R
-  server: 46.28.69.123
-  port: 443
-  udp: true
-  type: vless
-  uuid: b945f9aa-1b45-4912-aa7e-248509472bad
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7KnJYp2-sE3o35mnbSZzX3fNg-ns9n8xyNfkRSHCD3E
-    short-id: 238e23c5150f02e4
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 08
-  server: 116.203.7.223
-  port: 34257
-  udp: true
-  type: vless
-  uuid: 00ee2eeb-cb0e-453c-b151-c8cf28089d31
-  tls: true
-  reality-opts:
-    public-key: 5FkOfDtgsGr856IC5mE1c27qzl_HQ85onkcaIzd_qgk
-    short-id: 601e43eb94a28919
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 09
-  server: 64.188.66.181
-  port: 443
-  udp: true
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-  servername: ge-s-1.pythonmakemigreat.wiki
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 10
-  server: mci1.amir12.ir
-  port: 1222
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 11
-  server: node-fra03.rkitman.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
-    short-id: 88d9dc52ef39c8bd
-  servername: node-fra03.rkitman.ru
-  client-fingerprint: safari
-- name: 🇩🇪 德国 (Germany) 12
-  server: 91.107.128.44
-  port: 46928
-  udp: true
-  type: vless
-  uuid: 6cdfc27b-a0cc-4ea1-802a-e98552be430d
-- name: 🇩🇪 德国 (Germany) 13
   server: p1real2.greewebservices.ir
   port: 1240
   udp: true
@@ -147,7 +80,20 @@ proxies:
     short-id: 9b60d3
   servername: play.googleapis.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 14
+- name: 🇩🇪 德国 (Germany) 09
+  server: 157.173.7.17
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
+    short-id: 88d9dc52ef39c8bd
+  servername: node-fra03.rkitman.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 10
   server: 31.76.15.24
   port: 443
   udp: true
@@ -160,51 +106,8 @@ proxies:
     short-id: a5543a67f52ea8ab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 15
-  server: 31.59.179.90
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4a02614f-c461-4675-9017-bb5a757c8edd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pJpaRasoceUeRDJTXEZNnKT3yW5IocPXudB_B7_rBR0
-    short-id: 4fa44664f6a566d3
-  servername: grr.milas.click
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 16 R45
-  server: free.sahanwickramasinghe.me
-  port: 80
-  udp: true
-  type: vless
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 17
-  server: 91.107.188.129
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
-  tls: true
-  servername: Site.check-looks.space
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 (Germany) 18 R45
-  server: 57.129.113.16
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-- name: 🇩🇪 德国 (Germany) 19 R45
-  server: 104.17.73.206
+- name: 🇩🇪 德国 (Germany) 11 R45
+  server: 51.75.67.209
   port: 8443
   udp: true
   type: vless
@@ -212,14 +115,25 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇩🇪 德国 (Germany) 20
-  server: 194.24.161.220
+- name: 🇩🇪 德国 (Germany) 12
+  server: 157.90.175.178
+  port: 2112
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+    short-id: 125ba3
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 13
+  server: borsch2.spravedlivost.fun
   port: 443
   udp: true
   type: vless
@@ -227,59 +141,74 @@ proxies:
   tls: true
   servername: borsch2.spravedlivost.fun
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /api/metric/ws
+- name: 🇩🇪 德国 (Germany) 14
+  server: 91.107.188.129
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  tls: true
+  servername: site.check-looks.space
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 15
+  server: mci1.amir12.ir
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01
-  - 🇩🇪 德国 (Germany) 02 R62
-  - 🇩🇪 德国 (Germany) 03
+  - 🇩🇪 德国 (Germany) 01 R45
+  - 🇩🇪 德国 (Germany) 02
+  - 🇩🇪 德国 (Germany) 03 R62
   - 🇩🇪 德国 (Germany) 04
-  - 🇩🇪 德国 (Germany) 05 R50
-  - 🇩🇪 德国 (Germany) 06
-  - 🇩🇪 德国 (Germany) 07 ⚠R
+  - 🇩🇪 德国 (Germany) 05
+  - 🇩🇪 德国 (Germany) 06 R45
+  - 🇩🇪 德国 (Germany) 07 R50
   - 🇩🇪 德国 (Germany) 08
   - 🇩🇪 德国 (Germany) 09
   - 🇩🇪 德国 (Germany) 10
-  - 🇩🇪 德国 (Germany) 11
+  - 🇩🇪 德国 (Germany) 11 R45
   - 🇩🇪 德国 (Germany) 12
   - 🇩🇪 德国 (Germany) 13
   - 🇩🇪 德国 (Germany) 14
   - 🇩🇪 德国 (Germany) 15
-  - 🇩🇪 德国 (Germany) 16 R45
-  - 🇩🇪 德国 (Germany) 17
-  - 🇩🇪 德国 (Germany) 18 R45
-  - 🇩🇪 德国 (Germany) 19 R45
-  - 🇩🇪 德国 (Germany) 20
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01
-  - 🇩🇪 德国 (Germany) 02 R62
-  - 🇩🇪 德国 (Germany) 03
+  - 🇩🇪 德国 (Germany) 01 R45
+  - 🇩🇪 德国 (Germany) 02
+  - 🇩🇪 德国 (Germany) 03 R62
   - 🇩🇪 德国 (Germany) 04
-  - 🇩🇪 德国 (Germany) 05 R50
-  - 🇩🇪 德国 (Germany) 06
-  - 🇩🇪 德国 (Germany) 07 ⚠R
+  - 🇩🇪 德国 (Germany) 05
+  - 🇩🇪 德国 (Germany) 06 R45
+  - 🇩🇪 德国 (Germany) 07 R50
   - 🇩🇪 德国 (Germany) 08
   - 🇩🇪 德国 (Germany) 09
   - 🇩🇪 德国 (Germany) 10
-  - 🇩🇪 德国 (Germany) 11
+  - 🇩🇪 德国 (Germany) 11 R45
   - 🇩🇪 德国 (Germany) 12
   - 🇩🇪 德国 (Germany) 13
   - 🇩🇪 德国 (Germany) 14
   - 🇩🇪 德国 (Germany) 15
-  - 🇩🇪 德国 (Germany) 16 R45
-  - 🇩🇪 德国 (Germany) 17
-  - 🇩🇪 德国 (Germany) 18 R45
-  - 🇩🇪 德国 (Germany) 19 R45
-  - 🇩🇪 德国 (Germany) 20
 rules:
 - MATCH,PROXIES

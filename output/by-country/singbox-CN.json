@@ -6,25 +6,20 @@
     {
       "type": "vless",
       "tag": "🇨🇳 CN 01",
-      "server": "122.8.45.7",
-      "server_port": 8443,
-      "uuid": "362a0364-2b0f-cd11-9c20-ab9dfbeb8b11",
+      "server": "8.35.211.242",
+      "server_port": 443,
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
         "enabled": true,
-        "server_name": "download.nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wcOBPSgoOKptWa9ZHpFpmbrPfLqobBNpCgLH88Ptjhk",
-          "short_id": ""
-        }
+        "server_name": "vpn.cintaku.qzz.io",
+        "insecure": false
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
       }
     },
     {

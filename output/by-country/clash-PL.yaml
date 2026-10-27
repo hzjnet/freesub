@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
-  server: edge10.cyrionflare.com
+  server: 168.222.43.53
   port: 2052
   udp: true
   type: vless

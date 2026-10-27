@@ -33,13 +33,17 @@ proxies:
   servername: www.wikipedia.org
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03
-  server: promo.betust.net
-  port: 443
+  server: 191.44.114.179
+  port: 8443
   udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: false
+  type: vless
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY
+  servername: www.wikipedia.org
+  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 04
   server: 191.44.114.179
   port: 2096
@@ -55,6 +59,22 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: st33614.rumedia-cdn.com
+- name: 🇸🇪 瑞典 (Sweden) 05
+  server: promo.betust.net
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 06
+  server: swe2.obxodvpn.us
+  port: 4443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: nl1.obxodvpn.us
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +84,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02
   - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
+  - 🇸🇪 瑞典 (Sweden) 05
+  - 🇸🇪 瑞典 (Sweden) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +95,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02
   - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
+  - 🇸🇪 瑞典 (Sweden) 05
+  - 🇸🇪 瑞典 (Sweden) 06
 rules:
 - MATCH,PROXIES
