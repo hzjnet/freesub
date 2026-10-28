@@ -5,30 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 103.238.227.211
-  port: 21003
+  server: 165.154.63.139
+  port: 443
   udp: true
   type: vless
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: eb9539689690d35c
-  servername: www.cloudflare.com
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
   client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 103.238.227.211
-  port: 21002
-  udp: true
-  type: vless
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  tls: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: f0e6a8bb98db3efd
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03
   server: hk2.open-bridonyx.top
   port: 443
   udp: true
@@ -41,19 +30,43 @@ proxies:
     short-id: 3b74d85e
   servername: hk2.open-bridonyx.top
   client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 165.154.63.139
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: 103.238.227.211
+  port: 21003
   udp: true
   type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  tls: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+    short-id: eb9539689690d35c
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: 103.238.227.211
+  port: 21002
+  udp: true
+  type: vless
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  tls: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+    short-id: f0e6a8bb98db3efd
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: 122.10.117.1
+  port: 11674
+  udp: true
+  type: vless
+  uuid: fe40f32a-b03d-4ada-8bee-00f41b766098
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: chrome
+    public-key: F-yU1O5Q00eeyUdst7ZGDsgo4xS5mrdNwg0UcfsrVQs
+    short-id: d889b977
+  servername: apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +76,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
   - 🇭🇰 中国香港 (Hong Kong) 04
+  - 🇭🇰 中国香港 (Hong Kong) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +86,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
   - 🇭🇰 中国香港 (Hong Kong) 04
+  - 🇭🇰 中国香港 (Hong Kong) 05
 rules:
 - MATCH,PROXIES

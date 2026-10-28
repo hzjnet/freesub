@@ -5,23 +5,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01",
-      "server": "104.18.42.54",
-      "server_port": 2083,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tag": "🇵🇭 菲律宾 (Philippines) 01",
+      "server": "130.94.52.94",
+      "server_port": 15656,
+      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
       "tls": {
         "enabled": true,
-        "server_name": "newwk1.f1w.de5.net",
+        "server_name": "ph001.zestapp778.com",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "newwk1.f1w.de5.net"
         }
       }
     },
@@ -30,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01"
+        "🇵🇭 菲律宾 (Philippines) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01"
+        "🇵🇭 菲律宾 (Philippines) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
