@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
+      "server": "kz-central.v8x2b.lol",
+      "server_port": 443,
+      "uuid": "846cedee-2a52-4a62-a0b9-11850ead6a8b",
+      "tls": {
+        "enabled": true,
+        "server_name": "kz-central.v8x2b.lol",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
       "server": "109.248.170.119",
       "server_port": 13447,
       "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
@@ -28,14 +48,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
