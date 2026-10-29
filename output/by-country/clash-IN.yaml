@@ -13,8 +13,17 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇮🇳 印度 (India) 02
-  server: in.smrtai.top
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 02 R53
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇮🇳 印度 (India) 03
+  server: 178.212.35.198
   port: 443
   udp: true
   type: vless
@@ -24,20 +33,33 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 04
+  server: in002.zestapp778.com
+  port: 46362
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: in002.zestapp778.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇳 印度 (India) 01
-  - 🇮🇳 印度 (India) 02
+  - 🇮🇳 印度 (India) 02 R53
+  - 🇮🇳 印度 (India) 03
+  - 🇮🇳 印度 (India) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇳 印度 (India) 01
-  - 🇮🇳 印度 (India) 02
+  - 🇮🇳 印度 (India) 02 R53
+  - 🇮🇳 印度 (India) 03
+  - 🇮🇳 印度 (India) 04
 rules:
 - MATCH,PROXIES
