@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
-  server: 79.182.39.233
+  server: 79.182.39.237
   port: 25895
   udp: true
   type: vless
