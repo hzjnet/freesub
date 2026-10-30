@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 匈牙利 (Hungary) 01
-  server: 172.67.131.125
-  port: 2083
+- name: 🇨🇿 捷克 (Czech) 01
+  server: 185.78.76.166
+  port: 443
   udp: true
   type: vless
-  uuid: f418674e-f518-4318-8ff9-e10000000046
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
   tls: true
-  servername: smart-edge-424.arti98399-1905.workers.dev
+  servername: n.bitpulse.me
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /sync
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128
     headers:
-      Host: smart-edge-424.arti98399-1905.workers.dev
+      Host: n.bitpulse.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 匈牙利 (Hungary) 01
+  - 🇨🇿 捷克 (Czech) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 匈牙利 (Hungary) 01
+  - 🇨🇿 捷克 (Czech) 01
 rules:
 - MATCH,PROXIES

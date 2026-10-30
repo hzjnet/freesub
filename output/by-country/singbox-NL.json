@@ -8,7 +8,7 @@
       "tag": "🇳🇱 荷兰 (Netherlands) 01",
       "server": "5.149.249.94",
       "server_port": 443,
-      "uuid": "4a140c2f-5b0c-4524-950c-026de74fcf69",
+      "uuid": "ed77c1dc-3df2-412b-b855-49286f979c21",
       "tls": {
         "enabled": true,
         "server_name": "nlb.kosmosapp.net",
@@ -30,89 +30,50 @@
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 02",
-      "server": "72.56.23.254",
-      "server_port": 41827,
-      "uuid": "e769c1c2-f2b8-4006-bc84-0672c8368578",
-      "flow": "xtls-rprx-vision",
+      "server": "5.149.248.151",
+      "server_port": 443,
+      "uuid": "a1195f62-7dc3-48c0-8d65-7eeaf3c2df40",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.nl",
+        "server_name": "nla.kosmosapp.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ",
+          "short_id": "27350908de933e09"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 03",
+      "server": "2.27.118.10",
+      "server_port": 443,
+      "uuid": "d9fe2431-8351-41eb-b956-75d96dec5d4a",
+      "tls": {
+        "enabled": true,
+        "server_name": "ph-nl-s3784.cybercat.network",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "cpKcsAG-_0k5q8envXiiOoBzt53gxwVWEqg6uVKMNDk",
-          "short_id": "fba996d8e3568d0d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 03",
-      "server": "217.60.35.146",
-      "server_port": 443,
-      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sw.golangwikito.cfd",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
-          "short_id": "a1037b25dcef6aa7"
+          "public_key": "goey7Sc4Xm6Nvdukb_DuoUnrkPSV0p4hPWbAmk2_AHc",
+          "short_id": "ecf1d9f7caa6ba67"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 04",
-      "server": "51.15.16.68",
-      "server_port": 2053,
-      "uuid": "7d0fd363-16d2-43ce-9d6d-ed2c15d2cb7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Zotx4F9CI6_q9yeKCKIHDjwzCv_Aq7WSo7N0Zc1A6Sc",
-          "short_id": "3c99c85cbb6b3b44"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 05",
-      "server": "153.75.86.200",
-      "server_port": 8443,
-      "uuid": "95fe46c3-6cfb-5116-beb7-459d4c7db0ad",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JNp0hUDwHZQw9kbwd-D1WfIOdqCtdJeBv1WTNp37V0M",
-          "short_id": "7e7434c068cbef5a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 06",
       "server": "130.12.242.106",
       "server_port": 443,
       "uuid": "bc058e69-0444-4c7b-98da-bd67f0b143da",
@@ -133,51 +94,66 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 07",
-      "server": "2.27.118.10",
-      "server_port": 443,
-      "uuid": "d9fe2431-8351-41eb-b956-75d96dec5d4a",
+      "tag": "🇳🇱 荷兰 (Netherlands) 05",
+      "server": "187.52.44.20",
+      "server_port": 47443,
+      "uuid": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ph-nl-s3784.cybercat.network",
+        "server_name": "nl4.waspnest.space",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "goey7Sc4Xm6Nvdukb_DuoUnrkPSV0p4hPWbAmk2_AHc",
-          "short_id": "ecf1d9f7caa6ba67"
+          "public_key": "g5am2VhZkx_xH2TSKfUU8OYLxAzFrmcszNQg8AbOenE",
+          "short_id": "ae97223a8f799872"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 06",
+      "server": "77.238.240.124",
+      "server_port": 8443,
+      "uuid": "fa0010d9-7060-4abd-956a-76f15f067d0d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "alice.proxyplankton.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 07",
+      "server": "153.75.86.200",
+      "server_port": 8443,
+      "uuid": "95fe46c3-6cfb-5116-beb7-459d4c7db0ad",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JNp0hUDwHZQw9kbwd-D1WfIOdqCtdJeBv1WTNp37V0M",
+          "short_id": "7e7434c068cbef5a"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 08",
-      "server": "83.147.232.69",
-      "server_port": 10459,
-      "uuid": "55ad002b-6cdf-4d76-81bb-91f3f605afc5",
-      "tls": {
-        "enabled": true,
-        "server_name": "ya.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DrVzuibwnFFd6HX9duNcyG65JPMCiUqoJFgxkktishg",
-          "short_id": "af86f23452bf025a"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "openway_ndrl"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 09",
       "server": "2.27.21.15",
       "server_port": 443,
       "uuid": "b68bd590-010d-402c-9ffe-68a8ebbacebe",
@@ -187,7 +163,7 @@
         "server_name": "envs.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -197,154 +173,34 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 10",
-      "server": "88.216.69.253",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 11",
-      "server": "188.226.181.61",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 12",
-      "server": "172.67.155.222",
-      "server_port": 443,
-      "uuid": "82b279c6-5cba-3a96-f8bd-780a00000035",
+      "tag": "🇳🇱 荷兰 (Netherlands) 09",
+      "server": "46.30.45.254",
+      "server_port": 8444,
+      "uuid": "a8321cfe-39a2-48a0-a918-f01f7d9006ed",
       "tls": {
         "enabled": true,
-        "server_name": "pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 13",
-      "server": "alice.proxyplankton.ru",
-      "server_port": 8443,
-      "uuid": "fa0010d9-7060-4abd-956a-76f15f067d0d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "alice.proxyplankton.ru",
+        "server_name": "nl12.meshbeat.online",
         "insecure": false,
         "alpn": [
           "http/1.1"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 14",
-      "server": "2.27.71.20",
-      "server_port": 443,
-      "uuid": "8fa83828-9777-4a5b-a951-60a4523f3e3d",
-      "tls": {
-        "enabled": true,
-        "server_name": "q5vt8.syncpointbase.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 15",
-      "server": "173.249.208.27",
-      "server_port": 443,
-      "uuid": "930d11dc-0c6f-9e1a-4d57-b8473c715465",
-      "tls": {
-        "enabled": true,
-        "server_name": "ahbpanel-4134.shiprr.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/930d11dc-0c6f-9e1a-4d57-b8473c715465",
+        "path": "/api/v1/devices/7495606fef/telemetry",
         "headers": {
-          "Host": "ahbpanel-4134.shiprr.dev"
+          "Host": "nl12.meshbeat.online"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 16",
-      "server": "46.62.204.134",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 17",
+      "tag": "🇳🇱 荷兰 (Netherlands) 10",
       "server": "144.31.205.106",
       "server_port": 443,
       "password": "humanity",
@@ -366,7 +222,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 18",
+      "tag": "🇳🇱 荷兰 (Netherlands) 11",
+      "server": "208.67.106.154",
+      "server_port": 443,
+      "uuid": "96ee55ac-d534-4502-878a-468c7896360b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg",
+          "short_id": "c9677d3b7dea"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 12",
       "server": "94.156.79.93",
       "server_port": 443,
       "uuid": "1a5e7720-abf3-4b9b-bc9b-9a900a04b434",
@@ -382,6 +259,48 @@
           "enabled": true,
           "public_key": "_0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg",
           "short_id": "f129dcdbf64f"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇳🇱 荷兰 (Netherlands) 13",
+      "server": "172.64.145.133",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 14",
+      "server": "77.220.213.244",
+      "server_port": 8444,
+      "uuid": "a8321cfe-39a2-48a0-a918-f01f7d9006ed",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl11.meshbeat.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v1/devices/d63ac7ea89/telemetry",
+        "headers": {
+          "Host": "nl11.meshbeat.online"
         }
       }
     },
@@ -403,11 +322,7 @@
         "🇳🇱 荷兰 (Netherlands) 11",
         "🇳🇱 荷兰 (Netherlands) 12",
         "🇳🇱 荷兰 (Netherlands) 13",
-        "🇳🇱 荷兰 (Netherlands) 14",
-        "🇳🇱 荷兰 (Netherlands) 15",
-        "🇳🇱 荷兰 (Netherlands) 16",
-        "🇳🇱 荷兰 (Netherlands) 17",
-        "🇳🇱 荷兰 (Netherlands) 18"
+        "🇳🇱 荷兰 (Netherlands) 14"
       ]
     },
     {
@@ -427,11 +342,7 @@
         "🇳🇱 荷兰 (Netherlands) 11",
         "🇳🇱 荷兰 (Netherlands) 12",
         "🇳🇱 荷兰 (Netherlands) 13",
-        "🇳🇱 荷兰 (Netherlands) 14",
-        "🇳🇱 荷兰 (Netherlands) 15",
-        "🇳🇱 荷兰 (Netherlands) 16",
-        "🇳🇱 荷兰 (Netherlands) 17",
-        "🇳🇱 荷兰 (Netherlands) 18"
+        "🇳🇱 荷兰 (Netherlands) 14"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

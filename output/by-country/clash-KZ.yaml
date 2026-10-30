@@ -5,32 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: 45.136.59.28
-  port: 43000
-  udp: true
-  type: vless
-  uuid: a8b8b21e-1f31-4e4d-a639-efb2de0d577e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: osqok9aA_NR7WyAxZptD36-_U8BF_9gL8AH84MMzbFs
-    short-id: ced96d59
-  servername: 45.136.59.28
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  server: 95.56.251.12
-  port: 47443
-  udp: true
-  type: vless
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU
-    short-id: ae97223a8f799877
-  servername: kz1.waspnest.space
-  client-fingerprint: firefox
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -48,15 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
 rules:
 - MATCH,PROXIES
