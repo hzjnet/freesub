@@ -6,26 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01",
-      "server": "178.212.35.198",
-      "server_port": 443,
-      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
-          "short_id": "6bdc8320"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02",
       "server": "13.140.56.100",
       "server_port": 14430,
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
@@ -38,24 +18,43 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 03",
-      "server": "in002.zestapp778.com",
-      "server_port": 42733,
-      "password": "5t6i121em5lkmsmk",
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02",
+      "server": "in.smrtai.top",
+      "server_port": 443,
+      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
         "enabled": true,
-        "server_name": "in002.zestapp778.com",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
+          "short_id": "6bdc8320"
+        }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 04 R53",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 03",
+      "server": "188.114.96.25",
+      "server_port": 443,
+      "uuid": "b15f187e-9b34-437c-8243-8651a8ada76c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tepar-k4j9.jounet.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/DEVCOP/8651a8ada76c/loc-0",
+        "headers": {
+          "Host": "tepar-k4j9.jounet.workers.dev"
+        }
+      }
     },
     {
       "type": "selector",
@@ -64,8 +63,7 @@
         "auto",
         "🇮🇳 印度 (India) 01",
         "🇮🇳 印度 (India) 02",
-        "🇮🇳 印度 (India) 03",
-        "🇮🇳 印度 (India) 04 R53"
+        "🇮🇳 印度 (India) 03"
       ]
     },
     {
@@ -74,8 +72,7 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01",
         "🇮🇳 印度 (India) 02",
-        "🇮🇳 印度 (India) 03",
-        "🇮🇳 印度 (India) 04 R53"
+        "🇮🇳 印度 (India) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
