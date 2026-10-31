@@ -20,7 +20,7 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02",
-      "server": "in.smrtai.top",
+      "server": "178.212.35.198",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -28,7 +28,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -38,32 +38,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03",
-      "server": "188.114.96.25",
-      "server_port": 443,
-      "uuid": "b15f187e-9b34-437c-8243-8651a8ada76c",
-      "tls": {
-        "enabled": true,
-        "server_name": "tepar-k4j9.jounet.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/DEVCOP/8651a8ada76c/loc-0",
-        "headers": {
-          "Host": "tepar-k4j9.jounet.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01",
-        "🇮🇳 印度 (India) 02",
-        "🇮🇳 印度 (India) 03"
+        "🇮🇳 印度 (India) 02"
       ]
     },
     {
@@ -71,8 +51,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇳 印度 (India) 01",
-        "🇮🇳 印度 (India) 02",
-        "🇮🇳 印度 (India) 03"
+        "🇮🇳 印度 (India) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

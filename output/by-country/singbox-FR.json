@@ -28,7 +28,7 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 03",
-      "server": "161.97.66.16",
+      "server": "ai.smrtai.top",
       "server_port": 443,
       "uuid": "086bf957-9cd0-4e55-8280-bbef10435b41",
       "tls": {
@@ -36,7 +36,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,42 +46,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 04 R40",
-      "server": "pl134.vpnbook.com",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "6heexyz"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 05",
-      "server": "199.232.78.160",
-      "server_port": 443,
-      "uuid": "XpnTeam-68",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "Appxdn.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 06",
+      "tag": "🇫🇷 法国 (France) 04",
       "server": "45.87.41.18",
       "server_port": 443,
       "password": "humanity",
@@ -99,65 +65,39 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 07 ⚠R",
-      "server": "www.ubuntuupdates.com",
-      "server_port": 443,
-      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ubuntuupdates.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/truth",
-        "headers": {
-          "Host": "www.ubuntuupdates.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 08 R42",
-      "server": "104.21.15.251",
-      "server_port": 443,
-      "uuid": "ba1116e2-8c2f-4e3d-8e50-c954360cf970",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.windowssearchtools.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/truth",
-        "headers": {
-          "Host": "www.windowssearchtools.com"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 09",
-      "server": "194.147.149.54",
-      "server_port": 443,
-      "password": "humanity",
+      "tag": "🇫🇷 法国 (France) 05",
+      "server": "108.61.177.57",
+      "server_port": 16778,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
+        "server_name": "fr001.zestapp778.com",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 06",
+      "server": "fr1.vpngold.ru",
+      "server_port": 8443,
+      "uuid": "a52fd54b-ba4d-4d11-8e00-301e2646cd66",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fr1.vpngold.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8",
+          "short_id": "385cb18df0892069"
         }
       }
     },
@@ -169,12 +109,9 @@
         "🇫🇷 法国 (France) 01 R40",
         "🇫🇷 法国 (France) 02",
         "🇫🇷 法国 (France) 03",
-        "🇫🇷 法国 (France) 04 R40",
+        "🇫🇷 法国 (France) 04",
         "🇫🇷 法国 (France) 05",
-        "🇫🇷 法国 (France) 06",
-        "🇫🇷 法国 (France) 07 ⚠R",
-        "🇫🇷 法国 (France) 08 R42",
-        "🇫🇷 法国 (France) 09"
+        "🇫🇷 法国 (France) 06"
       ]
     },
     {
@@ -184,12 +121,9 @@
         "🇫🇷 法国 (France) 01 R40",
         "🇫🇷 法国 (France) 02",
         "🇫🇷 法国 (France) 03",
-        "🇫🇷 法国 (France) 04 R40",
+        "🇫🇷 法国 (France) 04",
         "🇫🇷 法国 (France) 05",
-        "🇫🇷 法国 (France) 06",
-        "🇫🇷 法国 (France) 07 ⚠R",
-        "🇫🇷 法国 (France) 08 R42",
-        "🇫🇷 法国 (France) 09"
+        "🇫🇷 法国 (France) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

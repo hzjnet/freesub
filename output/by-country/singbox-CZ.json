@@ -6,19 +6,16 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01",
-      "server": "104.19.235.15",
+      "server": "saas.sin.fan",
       "server_port": 443,
       "uuid": "f27b6f65-6e59-4f89-b929-afa397ca587f",
       "tls": {
         "enabled": true,
         "server_name": "n.bitpulse.me",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -26,7 +23,9 @@
         "path": "/019bcbad-3813-7cce-8786-3ac0e418f128",
         "headers": {
           "Host": "n.bitpulse.me"
-        }
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {

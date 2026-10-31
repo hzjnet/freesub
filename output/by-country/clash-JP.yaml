@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01
-  server: 47.79.39.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2c055e6f-ab6e-4cf6-a73c-959597719221
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: KH6xPPsoxEKZx34hCFM7FAxGkLaW_aFPcYq9zWLmhF8
-    short-id: b42e93c37966e913
-  servername: dl.google.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 02
   server: 31.76.91.70
   port: 443
   udp: true
@@ -30,21 +17,27 @@ proxies:
     short-id: bd6f67b6b2152b45
   servername: fuji.etherhub.cc
   client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 03
-  server: jp004.421421.xyz
-  port: 20230
+- name: 🇯🇵 日本 (Japan) 02
+  server: ga1data.xyy123.bid
+  port: 443
   udp: true
   type: vless
-  uuid: 0400697c-b581-4575-9d2f-0bbd4659312d
+  uuid: 81f686e2-0700-4e7d-b3aa-2f7fc544bcc3
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: lbOfuIKCBPcQH4AEnwnPw1LNxWrl-Bul6KU99H240Fc
-    short-id: abae4722
-  servername: www.nvidia.com
+    public-key: Z7B8VKvjAiBH93XEkHFWCVBfK8Mu5HTLtAwfr5LuYlk
+    short-id: 00b0389a
+  servername: www.amzn.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: tj
+- name: 🇯🇵 日本 (Japan) 03
+  server: 45.32.10.7
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 04
   server: 45.76.98.127
   port: 443
@@ -61,14 +54,6 @@ proxies:
   ws-opts:
     path: /ws
 - name: 🇯🇵 日本 (Japan) 05
-  server: 45.32.10.7
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 06
   server: 167.179.108.225
   port: 443
   udp: true
@@ -76,91 +61,6 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: discoverparttimepositionsandsupplementyourincomeguide.com
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 07
-  server: 57.129.130.10
-  port: 52014
-  udp: true
-  type: vless
-  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 08
-  server: 38.47.96.220
-  port: 11424
-  udp: true
-  type: vless
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  tls: true
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇯🇵 日本 (Japan) 09
-  server: ga1data.xyy123.bid
-  port: 443
-  udp: true
-  type: vless
-  uuid: 81f686e2-0700-4e7d-b3aa-2f7fc544bcc3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Z7B8VKvjAiBH93XEkHFWCVBfK8Mu5HTLtAwfr5LuYlk
-    short-id: 00b0389a
-  servername: www.amzn.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10
-  server: 54.178.110.17
-  port: 4443
-  udp: true
-  type: vless
-  uuid: d5fbd83b-7346-4ad9-94c0-76293724824d
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇯🇵 日本 (Japan) 11
-  server: 18.183.215.124
-  port: 28573
-  udp: true
-  type: vless
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 12
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 47ba5dc6-8961-48a0-8b54-f57ec524627a
-  tls: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -171,13 +71,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 03
   - 🇯🇵 日本 (Japan) 04
   - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06
-  - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08
-  - 🇯🇵 日本 (Japan) 09
-  - 🇯🇵 日本 (Japan) 10
-  - 🇯🇵 日本 (Japan) 11
-  - 🇯🇵 日本 (Japan) 12
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -188,12 +81,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 03
   - 🇯🇵 日本 (Japan) 04
   - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06
-  - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08
-  - 🇯🇵 日本 (Japan) 09
-  - 🇯🇵 日本 (Japan) 10
-  - 🇯🇵 日本 (Japan) 11
-  - 🇯🇵 日本 (Japan) 12
 rules:
 - MATCH,PROXIES

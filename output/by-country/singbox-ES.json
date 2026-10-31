@@ -6,51 +6,6 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 01",
-      "server": "45.147.251.111",
-      "server_port": 443,
-      "uuid": "9ab3a362-1518-496d-b08d-eced45cec936",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "es.srv.dvzh.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
-          "short_id": "e0ccc8c2f487d913"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 02 R63",
-      "server": "66.163.118.166",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "learn.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 03 R63",
-      "server": "66.163.118.251",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "resources.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -60,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -71,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05",
+      "tag": "🇪🇸 西班牙 (Spain) 02",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -91,15 +46,29 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 03 R63",
+      "server": "66.163.118.251",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "resources.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇪🇸 西班牙 (Spain) 01",
-        "🇪🇸 西班牙 (Spain) 02 R63",
-        "🇪🇸 西班牙 (Spain) 03 R63",
-        "🇪🇸 西班牙 (Spain) 04",
-        "🇪🇸 西班牙 (Spain) 05"
+        "🇪🇸 西班牙 (Spain) 02",
+        "🇪🇸 西班牙 (Spain) 03 R63"
       ]
     },
     {
@@ -107,10 +76,8 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01",
-        "🇪🇸 西班牙 (Spain) 02 R63",
-        "🇪🇸 西班牙 (Spain) 03 R63",
-        "🇪🇸 西班牙 (Spain) 04",
-        "🇪🇸 西班牙 (Spain) 05"
+        "🇪🇸 西班牙 (Spain) 02",
+        "🇪🇸 西班牙 (Spain) 03 R63"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
