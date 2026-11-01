@@ -5,47 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 R52
-  server: 68.183.227.4
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 02 R55
-  server: 172.237.88.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
-    short-id: 5a42dbd7e26a0415
-  servername: zoom.us
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 03 R52
-  server: 68.183.235.122
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 04 R52
   server: 68.183.227.45
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 05 R52
-  server: 128.199.172.224
+- name: 🇸🇬 新加坡 (Singapore) 02 R52
+  server: 68.183.227.4
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 06
+- name: 🇸🇬 新加坡 (Singapore) 03
+  server: 45.132.75.213
+  port: 2053
+  udp: true
+  type: vless
+  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
+  tls: true
+  reality-opts:
+    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
+    short-id: cd7e85995ae2afc9
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 04
   server: 134.185.81.5
   port: 47881
   udp: true
@@ -58,6 +43,20 @@ proxies:
     short-id: 38d72071
   servername: www.tesla.com
   client-fingerprint: ios
+- name: 🇸🇬 新加坡 (Singapore) 05 R52
+  server: 68.183.227.236
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 06 R52
+  server: 128.199.172.224
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 07 R52
   server: 68.183.235.240
   port: 8080
@@ -66,20 +65,74 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 08 R55
-  server: 128.1.186.73
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 09 R55
   server: 128.1.186.132
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 10 R59
+- name: 🇸🇬 新加坡 (Singapore) 09 R55
+  server: 128.1.186.73
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 10
+  server: 46.137.202.178
+  port: 12512
+  udp: true
+  type: vless
+  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
+    short-id: e692a8250d2e2fd0
+  servername: www.intel.com
+  client-fingerprint: ios
+- name: 🇸🇬 新加坡 (Singapore) 11 R52
+  server: 68.183.235.122
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 12
+  server: 54.251.9.130
+  port: 24146
+  udp: true
+  type: vless
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 13 R55
+  server: 172.237.88.103
+  port: 443
+  udp: true
+  type: vless
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
+    short-id: 5a42dbd7e26a0415
+  servername: zoom.us
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 14
+  server: 149.28.130.108
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: searchcreativejobsandshowcaseyourartistictalents.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 15
   server: 5.34.177.164
   port: 443
   udp: true
@@ -92,22 +145,66 @@ proxies:
     short-id: b2efed6d157e7bb0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 11 R52
-  server: 68.183.227.236
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 12
-  server: 149.28.130.108
+- name: 🇸🇬 新加坡 (Singapore) 16
+  server: id.huahua.wiki
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchcreativejobsandshowcaseyourartistictalents.com
+  type: vless
+  uuid: 1d08ca28-9c86-43c6-9eff-7d3c13df06a8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: O_f5yv1Cb3_4Rk2MKYpjnpCEyPNY4_GPUTJYi9usUzc
+    short-id: b6343f999147d133
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 17
+  server: sg1.zestapp778.com
+  port: 56984
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: sg1.zestapp778.com
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 13 R41
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 18 R55
+  server: 172.237.88.103
+  port: 447
+  udp: true
+  type: vless
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
+    short-id: 5a42dbd7e26a0415
+  servername: netflix.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 19
+  server: 45.77.243.143
+  port: 443
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: sg003.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 20
+  server: sgp.huahua.wiki
+  port: 443
+  udp: true
+  type: vless
+  uuid: aa83d161-1169-494a-a57e-c8d8b327f051
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5KO-p5u_N5i11i_DC49SsSKTW1XvTiYMhg-eMzj3HTw
+    short-id: 0417be28beffdfc1
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 21 R41
   server: 139.162.27.96
   port: 2096
   udp: true
@@ -122,74 +219,102 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 14 R55
-  server: 172.237.88.103
-  port: 447
+- name: 🇸🇬 新加坡 (Singapore) 22
+  server: 147.93.173.45
+  port: 10444
   udp: true
   type: vless
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
-    short-id: 5a42dbd7e26a0415
-  servername: netflix.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 15
-  server: wjofHsQtEuEywxEq.v.3dns.vip
-  port: 443
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
+- name: 🇸🇬 新加坡 (Singapore) 23
+  server: mdk.mdmekjll.best
+  port: 80
   udp: true
   type: vmess
-  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
+  uuid: 6E571484-4166-4699-8F58-B34A1823691F
   alterId: 0
   cipher: auto
-  tls: true
-  servername: wjofHsQtEuEywxEq.v.3dns.vip
-  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /game/resources
     headers:
-      Host: wjofHsQtEuEywxEq.v.3dns.vip
+      Host: mdk.mdmekjll.best
+- name: 🇸🇬 新加坡 (Singapore) 24
+  server: hk1.huahua.wiki
+  port: 443
+  udp: true
+  type: vless
+  uuid: 99a4a20a-968b-4cb4-804b-a0eaeb1269b6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RT5W1WQ5IscetQH2kbVVejO1fwcbHt24MjCLgpZJbCU
+    short-id: fe9d8966354dfd7d
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 R52
-  - 🇸🇬 新加坡 (Singapore) 02 R55
-  - 🇸🇬 新加坡 (Singapore) 03 R52
-  - 🇸🇬 新加坡 (Singapore) 04 R52
+  - 🇸🇬 新加坡 (Singapore) 02 R52
+  - 🇸🇬 新加坡 (Singapore) 03
+  - 🇸🇬 新加坡 (Singapore) 04
   - 🇸🇬 新加坡 (Singapore) 05 R52
-  - 🇸🇬 新加坡 (Singapore) 06
+  - 🇸🇬 新加坡 (Singapore) 06 R52
   - 🇸🇬 新加坡 (Singapore) 07 R52
   - 🇸🇬 新加坡 (Singapore) 08 R55
   - 🇸🇬 新加坡 (Singapore) 09 R55
-  - 🇸🇬 新加坡 (Singapore) 10 R59
+  - 🇸🇬 新加坡 (Singapore) 10
   - 🇸🇬 新加坡 (Singapore) 11 R52
   - 🇸🇬 新加坡 (Singapore) 12
-  - 🇸🇬 新加坡 (Singapore) 13 R41
-  - 🇸🇬 新加坡 (Singapore) 14 R55
+  - 🇸🇬 新加坡 (Singapore) 13 R55
+  - 🇸🇬 新加坡 (Singapore) 14
   - 🇸🇬 新加坡 (Singapore) 15
+  - 🇸🇬 新加坡 (Singapore) 16
+  - 🇸🇬 新加坡 (Singapore) 17
+  - 🇸🇬 新加坡 (Singapore) 18 R55
+  - 🇸🇬 新加坡 (Singapore) 19
+  - 🇸🇬 新加坡 (Singapore) 20
+  - 🇸🇬 新加坡 (Singapore) 21 R41
+  - 🇸🇬 新加坡 (Singapore) 22
+  - 🇸🇬 新加坡 (Singapore) 23
+  - 🇸🇬 新加坡 (Singapore) 24
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 R52
-  - 🇸🇬 新加坡 (Singapore) 02 R55
-  - 🇸🇬 新加坡 (Singapore) 03 R52
-  - 🇸🇬 新加坡 (Singapore) 04 R52
+  - 🇸🇬 新加坡 (Singapore) 02 R52
+  - 🇸🇬 新加坡 (Singapore) 03
+  - 🇸🇬 新加坡 (Singapore) 04
   - 🇸🇬 新加坡 (Singapore) 05 R52
-  - 🇸🇬 新加坡 (Singapore) 06
+  - 🇸🇬 新加坡 (Singapore) 06 R52
   - 🇸🇬 新加坡 (Singapore) 07 R52
   - 🇸🇬 新加坡 (Singapore) 08 R55
   - 🇸🇬 新加坡 (Singapore) 09 R55
-  - 🇸🇬 新加坡 (Singapore) 10 R59
+  - 🇸🇬 新加坡 (Singapore) 10
   - 🇸🇬 新加坡 (Singapore) 11 R52
   - 🇸🇬 新加坡 (Singapore) 12
-  - 🇸🇬 新加坡 (Singapore) 13 R41
-  - 🇸🇬 新加坡 (Singapore) 14 R55
+  - 🇸🇬 新加坡 (Singapore) 13 R55
+  - 🇸🇬 新加坡 (Singapore) 14
   - 🇸🇬 新加坡 (Singapore) 15
+  - 🇸🇬 新加坡 (Singapore) 16
+  - 🇸🇬 新加坡 (Singapore) 17
+  - 🇸🇬 新加坡 (Singapore) 18 R55
+  - 🇸🇬 新加坡 (Singapore) 19
+  - 🇸🇬 新加坡 (Singapore) 20
+  - 🇸🇬 新加坡 (Singapore) 21 R41
+  - 🇸🇬 新加坡 (Singapore) 22
+  - 🇸🇬 新加坡 (Singapore) 23
+  - 🇸🇬 新加坡 (Singapore) 24
 rules:
 - MATCH,PROXIES

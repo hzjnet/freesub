@@ -16,7 +16,36 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: 65.109.211.81
+  server: 177.3.220.9
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
+  sni: nl1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: 94.228.168.219
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a52fd54b-ba4d-4d11-8e00-301e2646cd66
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8
+    short-id: 385cb18df0892069
+  servername: fin2.vpngold.ru
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04
+  server: 153.76.194.118
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
+  sni: finland.biznes.lol
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 05
+  server: hw6.divarkhaghazi.com
   port: 465
   udp: true
   type: vless
@@ -30,14 +59,21 @@ proxies:
     path: /
     headers:
       Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: finland.biznes.lol
-  port: 8443
+- name: 🇫🇮 芬兰 (Finland) 06
+  server: 65.109.210.221
+  port: 465
   udp: true
-  type: hysteria2
-  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
-  sni: finland.biznes.lol
+  type: vless
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com.
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +82,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
+  - 🇫🇮 芬兰 (Finland) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +93,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
+  - 🇫🇮 芬兰 (Finland) 06
 rules:
 - MATCH,PROXIES

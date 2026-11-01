@@ -6,13 +6,17 @@
     {
       "type": "trojan",
       "tag": "🇨🇦 加拿大 (Canada) 01 R61",
-      "server": "216.152.147.79",
+      "server": "216.152.147.93",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "blog.connectingpeoplewithgreatjobs.com",
-        "insecure": false
+        "server_name": "connectingpeoplewithgreatjobs.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -34,25 +38,33 @@
     {
       "type": "trojan",
       "tag": "🇨🇦 加拿大 (Canada) 03 R61",
-      "server": "216.152.147.85",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.connectingpeoplewithgreatjobs.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇨🇦 加拿大 (Canada) 04 R61",
       "server": "216.152.147.152",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
         "server_name": "learn.connectingpeoplewithgreatjobs.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇦 加拿大 (Canada) 04",
+      "server": "216.128.185.90",
+      "server_port": 46977,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "ca001.zestapp778.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
@@ -66,7 +78,7 @@
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 06 R52",
-      "server": "155.117.5.208",
+      "server": "168.222.43.53",
       "server_port": 8080,
       "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
     },
@@ -81,7 +93,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -113,9 +125,9 @@
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 09",
-      "server": "511.150333.xyz",
-      "server_port": 21002,
-      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
+      "server": "510.150333.xyz",
+      "server_port": 21001,
+      "uuid": "67952583-8572-42e1-943d-0602794f885b",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -125,34 +137,14 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
-          "short_id": "3ab8d93dd9b1a5be"
+          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
+          "short_id": "a51c3ccb2320024a"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 10",
-      "server": "511.150333.xyz",
-      "server_port": 21003,
-      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
-          "short_id": "bab49aa4c2a88d27"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 11",
       "server": "510.150333.xyz",
       "server_port": 21004,
       "uuid": "67952583-8572-42e1-943d-0602794f885b",
@@ -172,7 +164,47 @@
     },
     {
       "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 11",
+      "server": "511.150333.xyz",
+      "server_port": 21002,
+      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
+          "short_id": "3ab8d93dd9b1a5be"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 12",
+      "server": "510.150333.xyz",
+      "server_port": 21003,
+      "uuid": "67952583-8572-42e1-943d-0602794f885b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
+          "short_id": "f3602a3a1cf928b7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 13",
       "server": "510.150333.xyz",
       "server_port": 21002,
       "uuid": "67952583-8572-42e1-943d-0602794f885b",
@@ -191,18 +223,22 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇦 加拿大 (Canada) 13",
-      "server": "216.128.185.90",
-      "server_port": 46977,
-      "password": "5t6i121em5lkmsmk",
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 14",
+      "server": "511.150333.xyz",
+      "server_port": 21003,
+      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
       "tls": {
         "enabled": true,
-        "server_name": "ca001.zestapp778.com",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
+          "short_id": "bab49aa4c2a88d27"
         }
       }
     },
@@ -214,7 +250,7 @@
         "🇨🇦 加拿大 (Canada) 01 R61",
         "🇨🇦 加拿大 (Canada) 02 R61",
         "🇨🇦 加拿大 (Canada) 03 R61",
-        "🇨🇦 加拿大 (Canada) 04 R61",
+        "🇨🇦 加拿大 (Canada) 04",
         "🇨🇦 加拿大 (Canada) 05",
         "🇨🇦 加拿大 (Canada) 06 R52",
         "🇨🇦 加拿大 (Canada) 07",
@@ -223,7 +259,8 @@
         "🇨🇦 加拿大 (Canada) 10",
         "🇨🇦 加拿大 (Canada) 11",
         "🇨🇦 加拿大 (Canada) 12",
-        "🇨🇦 加拿大 (Canada) 13"
+        "🇨🇦 加拿大 (Canada) 13",
+        "🇨🇦 加拿大 (Canada) 14"
       ]
     },
     {
@@ -233,7 +270,7 @@
         "🇨🇦 加拿大 (Canada) 01 R61",
         "🇨🇦 加拿大 (Canada) 02 R61",
         "🇨🇦 加拿大 (Canada) 03 R61",
-        "🇨🇦 加拿大 (Canada) 04 R61",
+        "🇨🇦 加拿大 (Canada) 04",
         "🇨🇦 加拿大 (Canada) 05",
         "🇨🇦 加拿大 (Canada) 06 R52",
         "🇨🇦 加拿大 (Canada) 07",
@@ -242,7 +279,8 @@
         "🇨🇦 加拿大 (Canada) 10",
         "🇨🇦 加拿大 (Canada) 11",
         "🇨🇦 加拿大 (Canada) 12",
-        "🇨🇦 加拿大 (Canada) 13"
+        "🇨🇦 加拿大 (Canada) 13",
+        "🇨🇦 加拿大 (Canada) 14"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

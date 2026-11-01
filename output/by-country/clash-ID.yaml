@@ -1,0 +1,47 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇩 印尼 (Indonesia) 01
+  server: 104.17.3.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: dffb7646-1656-427a-8187-9c056a6a5fd5
+  tls: true
+  servername: vff67.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /id-dnva
+    headers:
+      Host: vff67.eu.cc
+- name: 🇮🇩 印尼 (Indonesia) 02
+  server: 130.94.95.198
+  port: 57353
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: in001.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇩 印尼 (Indonesia) 01
+  - 🇮🇩 印尼 (Indonesia) 02
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇩 印尼 (Indonesia) 01
+  - 🇮🇩 印尼 (Indonesia) 02
+rules:
+- MATCH,PROXIES

@@ -4,31 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 01",
-      "server": "178.253.16.185",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "x2A6AsyZ-rAllz0wbKHzWA"
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02",
-      "server": "app-mi-26.spbstudentlife.com",
+      "tag": "🇦🇪 阿联酋 (UAE) 01",
+      "server": "162.159.152.4",
       "server_port": 443,
-      "uuid": "07680ffb-0666-4836-b6ad-ec0de62bc38f",
-      "flow": "xtls-rprx-vision",
+      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
       "tls": {
         "enabled": true,
-        "server_name": "assets-mi-26.spbstudentlife.com",
+        "server_name": "rayan-007.maxima.dpdns.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc",
-          "short_id": "a7856800c2deb7b2"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "rayan-007.maxima.dpdns.org"
         }
       }
     },
@@ -37,16 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇪 阿联酋 (UAE) 01",
-        "🇦🇪 阿联酋 (UAE) 02"
+        "🇦🇪 阿联酋 (UAE) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇪 阿联酋 (UAE) 01",
-        "🇦🇪 阿联酋 (UAE) 02"
+        "🇦🇪 阿联酋 (UAE) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
