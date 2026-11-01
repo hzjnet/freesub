@@ -4,19 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01
-  server: 104.239.12.81
-  port: 43385
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
-- name: 🇬🇧 英国 (United Kingdom) 02 ⚠R
+- name: 🇬🇧 英国 (United Kingdom) 01 ⚠R
   server: 155.117.5.208
   port: 10002
   udp: true
   type: vless
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
+- name: 🇬🇧 英国 (United Kingdom) 02
+  server: 23.81.36.148
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇬🇧 英国 (United Kingdom) 03
   server: 23.81.36.148
   port: 1222
@@ -30,7 +32,7 @@ proxies:
   servername: play.google.com
   client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 04
-  server: 191.44.108.30
+  server: 191.44.108.6
   port: 443
   udp: true
   type: vless
@@ -38,10 +40,10 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 3pBHfffYFRPpe8Lt47cLSSgCgwNR-70blFzpEbm11AE
-    short-id: b2baf331493d3de1
-  servername: c8.qwyak.ru
-  client-fingerprint: chrome
+    public-key: A0QL_j-ReX7AotEj1w8qX9rHRgN2WycTZ43gUvuvZ00
+    short-id: 3cf8d11aa0415d29
+  servername: c9.qwyak.ru
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 05
   server: 191.44.108.31
   port: 443
@@ -63,7 +65,14 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 07
-  server: 191.44.108.6
+  server: 98.98.142.161
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 08
+  server: 191.44.108.30
   port: 443
   udp: true
   type: vless
@@ -71,39 +80,11 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: A0QL_j-ReX7AotEj1w8qX9rHRgN2WycTZ43gUvuvZ00
-    short-id: 3cf8d11aa0415d29
-  servername: c9.qwyak.ru
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 08
-  server: 98.98.142.161
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+    public-key: 3pBHfffYFRPpe8Lt47cLSSgCgwNR-70blFzpEbm11AE
+    short-id: b2baf331493d3de1
+  servername: c8.qwyak.ru
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 09
-  server: 130.94.77.169
-  port: 29813
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: en001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 10
-  server: 138.124.125.193
-  port: 10444
-  udp: true
-  type: vless
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 11
   server: 193.163.203.170
   port: 443
   udp: true
@@ -115,21 +96,8 @@ proxies:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
     short-id: b28db60d77c50b4f
   servername: yandex.ru
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 12 ⚠R
-  server: uk1.connectsuite.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
-  tls: true
-  servername: uk1.connectsuite.org
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cdn-cgi/ws
-- name: 🇬🇧 英国 (United Kingdom) 13
+- name: 🇬🇧 英国 (United Kingdom) 10
   server: 104.239.12.81
   port: 443
   udp: true
@@ -142,26 +110,34 @@ proxies:
     short-id: b558b9305a0b
   servername: www.microsoft.com
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 14
+- name: 🇬🇧 英国 (United Kingdom) 11
   server: 107.181.151.128
   port: 443
   udp: true
   type: vless
-  uuid: 73cb2a0d-e2a9-4e61-a343-f2845e8c272e
+  uuid: b62e3646-b84d-443c-9c94-718b646502e0
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 611ceeb0ae78
-  servername: www.tradingview.com
+    short-id: dda5f542d835
+  servername: www.foxsports.com
   client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 12
+  server: 130.94.77.169
+  port: 29813
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: en001.zestapp778.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01
-  - 🇬🇧 英国 (United Kingdom) 02 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 01 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
   - 🇬🇧 英国 (United Kingdom) 04
   - 🇬🇧 英国 (United Kingdom) 05
@@ -171,16 +147,14 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 09
   - 🇬🇧 英国 (United Kingdom) 10
   - 🇬🇧 英国 (United Kingdom) 11
-  - 🇬🇧 英国 (United Kingdom) 12 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 13
-  - 🇬🇧 英国 (United Kingdom) 14
+  - 🇬🇧 英国 (United Kingdom) 12
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01
-  - 🇬🇧 英国 (United Kingdom) 02 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 01 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
   - 🇬🇧 英国 (United Kingdom) 04
   - 🇬🇧 英国 (United Kingdom) 05
@@ -190,8 +164,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 09
   - 🇬🇧 英国 (United Kingdom) 10
   - 🇬🇧 英国 (United Kingdom) 11
-  - 🇬🇧 英国 (United Kingdom) 12 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 13
-  - 🇬🇧 英国 (United Kingdom) 14
+  - 🇬🇧 英国 (United Kingdom) 12
 rules:
 - MATCH,PROXIES

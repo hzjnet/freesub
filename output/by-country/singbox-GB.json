@@ -4,19 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 01",
-      "server": "104.239.12.81",
-      "server_port": 43385,
-      "method": "chacha20-ietf-poly1305",
-      "password": "AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 ⚠R",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 ⚠R",
       "server": "155.117.5.208",
       "server_port": 10002,
       "uuid": "c6362720-0931-4b91-b187-d8ecf3149734"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 02",
+      "server": "23.81.36.148",
+      "server_port": 8080,
+      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
     },
     {
       "type": "vless",
@@ -41,21 +44,21 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 04",
-      "server": "191.44.108.30",
+      "server": "191.44.108.6",
       "server_port": 443,
       "uuid": "558b26f6-061b-4079-9b84-ca13b3e90ae3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "c8.qwyak.ru",
+        "server_name": "c9.qwyak.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "3pBHfffYFRPpe8Lt47cLSSgCgwNR-70blFzpEbm11AE",
-          "short_id": "b2baf331493d3de1"
+          "public_key": "A0QL_j-ReX7AotEj1w8qX9rHRgN2WycTZ43gUvuvZ00",
+          "short_id": "3cf8d11aa0415d29"
         }
       }
     },
@@ -89,70 +92,37 @@
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 07",
-      "server": "191.44.108.6",
-      "server_port": 443,
-      "uuid": "558b26f6-061b-4079-9b84-ca13b3e90ae3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "c9.qwyak.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "A0QL_j-ReX7AotEj1w8qX9rHRgN2WycTZ43gUvuvZ00",
-          "short_id": "3cf8d11aa0415d29"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 08",
+      "tag": "🇬🇧 英国 (United Kingdom) 07",
       "server": "98.98.142.161",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "trojan",
-      "tag": "🇬🇧 英国 (United Kingdom) 09",
-      "server": "130.94.77.169",
-      "server_port": 29813,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "en001.zestapp778.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 10",
-      "server": "138.124.125.193",
-      "server_port": 10444,
-      "uuid": "e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4",
+      "tag": "🇬🇧 英国 (United Kingdom) 08",
+      "server": "191.44.108.30",
+      "server_port": 443,
+      "uuid": "558b26f6-061b-4079-9b84-ca13b3e90ae3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ads.x5.ru",
+        "server_name": "c8.qwyak.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-          "short_id": "8debcf36f1cc69ff"
+          "public_key": "3pBHfffYFRPpe8Lt47cLSSgCgwNR-70blFzpEbm11AE",
+          "short_id": "b2baf331493d3de1"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 11",
+      "tag": "🇬🇧 英国 (United Kingdom) 09",
       "server": "193.163.203.170",
       "server_port": 443,
       "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
@@ -162,7 +132,7 @@
         "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -173,27 +143,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 12 ⚠R",
-      "server": "uk1.connectsuite.org",
-      "server_port": 443,
-      "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk1.connectsuite.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn-cgi/ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 13",
+      "tag": "🇬🇧 英国 (United Kingdom) 10",
       "server": "104.239.12.81",
       "server_port": 443,
       "uuid": "d806a58b-33aa-42e0-b170-395e49c16b37",
@@ -214,14 +164,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 14",
+      "tag": "🇬🇧 英国 (United Kingdom) 11",
       "server": "107.181.151.128",
       "server_port": 443,
-      "uuid": "73cb2a0d-e2a9-4e61-a343-f2845e8c272e",
+      "uuid": "b62e3646-b84d-443c-9c94-718b646502e0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.tradingview.com",
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -229,8 +179,20 @@
         "reality": {
           "enabled": true,
           "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
-          "short_id": "611ceeb0ae78"
+          "short_id": "dda5f542d835"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇬🇧 英国 (United Kingdom) 12",
+      "server": "130.94.77.169",
+      "server_port": 29813,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "en001.zestapp778.com",
+        "insecure": false
       }
     },
     {
@@ -238,8 +200,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01",
-        "🇬🇧 英国 (United Kingdom) 02 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 01 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 02",
         "🇬🇧 英国 (United Kingdom) 03",
         "🇬🇧 英国 (United Kingdom) 04",
         "🇬🇧 英国 (United Kingdom) 05",
@@ -249,17 +211,15 @@
         "🇬🇧 英国 (United Kingdom) 09",
         "🇬🇧 英国 (United Kingdom) 10",
         "🇬🇧 英国 (United Kingdom) 11",
-        "🇬🇧 英国 (United Kingdom) 12 ⚠R",
-        "🇬🇧 英国 (United Kingdom) 13",
-        "🇬🇧 英国 (United Kingdom) 14"
+        "🇬🇧 英国 (United Kingdom) 12"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01",
-        "🇬🇧 英国 (United Kingdom) 02 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 01 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 02",
         "🇬🇧 英国 (United Kingdom) 03",
         "🇬🇧 英国 (United Kingdom) 04",
         "🇬🇧 英国 (United Kingdom) 05",
@@ -269,9 +229,7 @@
         "🇬🇧 英国 (United Kingdom) 09",
         "🇬🇧 英国 (United Kingdom) 10",
         "🇬🇧 英国 (United Kingdom) 11",
-        "🇬🇧 英国 (United Kingdom) 12 ⚠R",
-        "🇬🇧 英国 (United Kingdom) 13",
-        "🇬🇧 英国 (United Kingdom) 14"
+        "🇬🇧 英国 (United Kingdom) 12"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

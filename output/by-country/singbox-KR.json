@@ -4,12 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 01",
-      "server": "129.154.61.196",
-      "server_port": 800,
-      "uuid": "a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0",
-      "security": "auto"
+      "server": "104.16.154.175",
+      "server_port": 443,
+      "uuid": "9ca218c0-e97b-4a8a-a345-af005a0ae3e5",
+      "tls": {
+        "enabled": true,
+        "server_name": "v.poker2025.dpdns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "v.poker2025.dpdns.org"
+        }
+      }
     },
     {
       "type": "vless",
@@ -25,7 +40,7 @@
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 03",
-      "server": "158.247.255.150",
+      "server": "kr002.zestapp778.com",
       "server_port": 48851,
       "password": "5t6i121em5lkmsmk",
       "tls": {
@@ -51,6 +66,14 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 05",
+      "server": "129.154.61.196",
+      "server_port": 800,
+      "uuid": "a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -58,7 +81,8 @@
         "🇰🇷 韩国 (South Korea) 01",
         "🇰🇷 韩国 (South Korea) 02",
         "🇰🇷 韩国 (South Korea) 03",
-        "🇰🇷 韩国 (South Korea) 04"
+        "🇰🇷 韩国 (South Korea) 04",
+        "🇰🇷 韩国 (South Korea) 05"
       ]
     },
     {
@@ -68,7 +92,8 @@
         "🇰🇷 韩国 (South Korea) 01",
         "🇰🇷 韩国 (South Korea) 02",
         "🇰🇷 韩国 (South Korea) 03",
-        "🇰🇷 韩国 (South Korea) 04"
+        "🇰🇷 韩国 (South Korea) 04",
+        "🇰🇷 韩国 (South Korea) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

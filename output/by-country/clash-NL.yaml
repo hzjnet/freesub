@@ -5,175 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01
-  server: www.speedtest.net
-  port: 8443
-  udp: true
-  type: trojan
-  password: uFepQ5r4JSusbY
-  sni: floral-grass-aa1e.dianawpewpek1.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-- name: 🇳🇱 荷兰 (Netherlands) 02
-  server: www.speedtest.net
-  port: 2083
-  udp: true
-  type: trojan
-  password: uFepQ5r4JSusbY
-  sni: floral-grass-aa1e.dianawpewpek1.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-- name: 🇳🇱 荷兰 (Netherlands) 03
-  server: 185.4.115.147
-  port: 8044
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hNfeLCN3XzYgLFSAWo_fxOl4HC1gNw0V
-- name: 🇳🇱 荷兰 (Netherlands) 04
-  server: 185.4.115.146
-  port: 8044
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hNfeLCN3XzYgLFSAWo_fxOl4HC1gNw0V
-- name: 🇳🇱 荷兰 (Netherlands) 05
-  server: 51.15.16.68
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 7d0fd363-16d2-43ce-9d6d-ed2c15d2cb7c
-  tls: true
-  reality-opts:
-    public-key: Zotx4F9CI6_q9yeKCKIHDjwzCv_Aq7WSo7N0Zc1A6Sc
-    short-id: 3c99c85cbb6b3b44
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 06
-  server: 2.27.118.10
-  port: 443
-  udp: true
-  type: vless
-  uuid: d9fe2431-8351-41eb-b956-75d96dec5d4a
-  tls: true
-  reality-opts:
-    public-key: goey7Sc4Xm6Nvdukb_DuoUnrkPSV0p4hPWbAmk2_AHc
-    short-id: ecf1d9f7caa6ba67
-  servername: ph-nl-s3784.cybercat.network
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 07
-  server: 187.52.44.20
-  port: 47443
-  udp: true
-  type: vless
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g5am2VhZkx_xH2TSKfUU8OYLxAzFrmcszNQg8AbOenE
-    short-id: ae97223a8f799872
-  servername: nl4.waspnest.space
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 08
-  server: 138.124.39.251
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5254c281-3bc1-40ee-ba89-1aaf8c251402
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: node0aB_7yyVADkeieiBBpxqIlxNLQcvgotRClh0QXQ
-  servername: nl-modx-prime.storagedirectguide.com
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 09
-  server: 104.16.65.1
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.cordweave.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇳🇱 荷兰 (Netherlands) 10
-  server: 138.124.32.139
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5254c281-3bc1-40ee-ba89-1aaf8c251402
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: node0aB_7yyVADkeieiBBpxqIlxNLQcvgotRClh0QXQ
-  servername: nl-modx-prime.storagedirectguide.com
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 11
-  server: 130.12.242.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 12
-  server: 8.47.69.0
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇳🇱 荷兰 (Netherlands) 13
-  server: 154.86.119.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-  servername: sw.golangwikito.cfd
-  client-fingerprint: edge
-- name: 🇳🇱 荷兰 (Netherlands) 14
-  server: 130.17.18.204
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9c6e83fc-b755-4ad4-9b0a-14b610153d8f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2KR7JfMfxzaUqtSFXUP_8VRCnvfpyUQqfsKATK-VpgI
-    short-id: 7f38f12ada698251
-  servername: api-maps.yandex.ru
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 15
-  server: 172.66.40.99
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.trusteeforward.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇳🇱 荷兰 (Netherlands) 16
   server: 172.67.155.222
   port: 443
   udp: true
@@ -188,7 +19,161 @@ proxies:
     path: /sync
     headers:
       Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
-- name: 🇳🇱 荷兰 (Netherlands) 17
+- name: 🇳🇱 荷兰 (Netherlands) 02
+  server: 79.141.164.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: 82544447-89fc-45a2-b014-4327804fa85d
+  tls: true
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
+  servername: nla.kosmosapp.net
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: neurex
+- name: 🇳🇱 荷兰 (Netherlands) 03
+  server: 130.12.242.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  servername: deepl.com
+  client-fingerprint: random
+- name: 🇳🇱 荷兰 (Netherlands) 04
+  server: 130.17.18.204
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9c6e83fc-b755-4ad4-9b0a-14b610153d8f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2KR7JfMfxzaUqtSFXUP_8VRCnvfpyUQqfsKATK-VpgI
+    short-id: 7f38f12ada698251
+  servername: api-maps.yandex.ru
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 05
+  server: 138.124.32.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5254c281-3bc1-40ee-ba89-1aaf8c251402
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: node0aB_7yyVADkeieiBBpxqIlxNLQcvgotRClh0QXQ
+  servername: nl-modx-prime.storagedirectguide.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 06
+  server: 172.66.40.99
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.trusteeforward.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 07
+  server: 217.60.35.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
+  servername: sw.golangwikito.cfd
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 08
+  server: 50.7.38.243
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 09
+  server: 104.18.35.86
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.volumerOot.coM.
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 10
+  server: 179.255.126.253
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 11
+  server: 77.220.213.244
+  port: 8444
+  udp: true
+  type: vless
+  uuid: a8321cfe-39a2-48a0-a918-f01f7d9006ed
+  tls: true
+  servername: nl11.meshbeat.online
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api/v1/devices/d63ac7ea89/telemetry
+    headers:
+      Host: nl11.meshbeat.online
+- name: 🇳🇱 荷兰 (Netherlands) 12
+  server: 179.255.127.209
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 13
+  server: 202.50.55.76
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 14
+  server: 8.47.69.0
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 15
   server: 168.143.108.38
   port: 443
   udp: true
@@ -199,52 +184,18 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇳🇱 荷兰 (Netherlands) 18
-  server: 50.7.38.243
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 19
-  server: 188.226.181.61
+- name: 🇳🇱 荷兰 (Netherlands) 16
+  server: 185.146.234.242
   port: 443
   udp: true
   type: trojan
   password: humanity
-  sni: www.pleadcourt.org
+  sni: www.cordweave.com
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇳🇱 荷兰 (Netherlands) 20
-  server: 77.220.213.244
-  port: 8444
-  udp: true
-  type: vless
-  uuid: a8321cfe-39a2-48a0-a918-f01f7d9006ed
-  tls: true
-  servername: nl11.meshbeat.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/v1/devices/d63ac7ea89/telemetry
-    headers:
-      Host: nl11.meshbeat.online
-- name: 🇳🇱 荷兰 (Netherlands) 21
-  server: 144.31.205.106
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇳🇱 荷兰 (Netherlands) 22
+- name: 🇳🇱 荷兰 (Netherlands) 17
   server: 208.67.106.154
   port: 443
   udp: true
@@ -257,7 +208,29 @@ proxies:
     short-id: c9677d3b7dea
   servername: www.microsoft.com
   client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 23
+- name: 🇳🇱 荷兰 (Netherlands) 18
+  server: 179.255.132.69
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 19
+  server: 62.182.198.47
+  port: 8443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.cordweave.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 20
   server: 94.156.79.93
   port: 443
   udp: true
@@ -270,13 +243,13 @@ proxies:
     short-id: f129dcdbf64f
   servername: www.microsoft.com
   client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 24
-  server: 103.219.195.65
+- name: 🇳🇱 荷兰 (Netherlands) 21
+  server: 46.62.230.149
   port: 443
   udp: true
   type: trojan
   password: humanity
-  sni: www.cordweave.com
+  sni: www.pleadcourt.org
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -307,9 +280,6 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 19
   - 🇳🇱 荷兰 (Netherlands) 20
   - 🇳🇱 荷兰 (Netherlands) 21
-  - 🇳🇱 荷兰 (Netherlands) 22
-  - 🇳🇱 荷兰 (Netherlands) 23
-  - 🇳🇱 荷兰 (Netherlands) 24
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -336,8 +306,5 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 19
   - 🇳🇱 荷兰 (Netherlands) 20
   - 🇳🇱 荷兰 (Netherlands) 21
-  - 🇳🇱 荷兰 (Netherlands) 22
-  - 🇳🇱 荷兰 (Netherlands) 23
-  - 🇳🇱 荷兰 (Netherlands) 24
 rules:
 - MATCH,PROXIES

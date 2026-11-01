@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01",
-      "server": "185.78.76.166",
+      "server": "saas.sin.fan",
       "server_port": 443,
       "uuid": "f27b6f65-6e59-4f89-b929-afa397ca587f",
       "tls": {

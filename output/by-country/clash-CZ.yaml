@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01
-  server: 185.78.76.166
+  server: saas.sin.fan
   port: 443
   udp: true
   type: vless

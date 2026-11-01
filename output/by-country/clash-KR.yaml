@@ -5,13 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01
-  server: 129.154.61.196
-  port: 800
+  server: 104.16.154.175
+  port: 443
   udp: true
-  type: vmess
-  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 9ca218c0-e97b-4a8a-a345-af005a0ae3e5
+  tls: true
+  servername: v.poker2025.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v.poker2025.dpdns.org
 - name: 🇰🇷 韩国 (South Korea) 02
   server: 152.69.226.63
   port: 25555
@@ -22,7 +29,7 @@ proxies:
   ws-opts:
     path: /
 - name: 🇰🇷 韩国 (South Korea) 03
-  server: 158.247.255.150
+  server: kr002.zestapp778.com
   port: 48851
   udp: true
   type: trojan
@@ -37,6 +44,14 @@ proxies:
   password: dc9e33c7a6df4164
   sni: ikr100a.zxom.eu.org
   skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 05
+  server: 129.154.61.196
+  port: 800
+  udp: true
+  type: vmess
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +61,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02
   - 🇰🇷 韩国 (South Korea) 03
   - 🇰🇷 韩国 (South Korea) 04
+  - 🇰🇷 韩国 (South Korea) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +71,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02
   - 🇰🇷 韩国 (South Korea) 03
   - 🇰🇷 韩国 (South Korea) 04
+  - 🇰🇷 韩国 (South Korea) 05
 rules:
 - MATCH,PROXIES

@@ -20,12 +20,12 @@
     {
       "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 02",
-      "server": "177.3.220.9",
-      "server_port": 443,
-      "password": "2a0fc918-9c61-451b-a9ad-e8f796e70f52",
+      "server": "153.76.194.118",
+      "server_port": 8443,
+      "password": "7d43670b-6b08-45b9-8a24-8f3971abc132",
       "tls": {
         "enabled": true,
-        "server_name": "nl1.obxodvpn.us",
+        "server_name": "finland.biznes.lol",
         "insecure": false
       }
     },
@@ -51,80 +51,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 04",
-      "server": "153.76.194.118",
-      "server_port": 8443,
-      "password": "7d43670b-6b08-45b9-8a24-8f3971abc132",
-      "tls": {
-        "enabled": true,
-        "server_name": "finland.biznes.lol",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05",
-      "server": "hw6.divarkhaghazi.com",
-      "server_port": 465,
-      "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
-      "tls": {
-        "enabled": true,
-        "server_name": "hw6.divarkhaghazi.com.",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hw6.divarkhaghazi.com."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06",
-      "server": "65.109.210.221",
-      "server_port": 465,
-      "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
-      "tls": {
-        "enabled": true,
-        "server_name": "hw3.divarkhaghazi.com.",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hw3.divarkhaghazi.com."
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04",
-        "🇫🇮 芬兰 (Finland) 05",
-        "🇫🇮 芬兰 (Finland) 06"
+        "🇫🇮 芬兰 (Finland) 03"
       ]
     },
     {
@@ -133,10 +66,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04",
-        "🇫🇮 芬兰 (Finland) 05",
-        "🇫🇮 芬兰 (Finland) 06"
+        "🇫🇮 芬兰 (Finland) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
