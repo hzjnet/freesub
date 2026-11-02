@@ -6,83 +6,6 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 01",
-      "server": "45.198.55.200",
-      "server_port": 25150,
-      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Qvn7tV54mdqxJ40LmmoI1PRM1QKXEbfFOZS-omPKhGY",
-          "short_id": "4301a484cc762aa6"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 02 R63",
-      "server": "66.163.118.166",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "learn.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03",
-      "server": "45.198.55.200",
-      "server_port": 25152,
-      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZIZIfEd-cs4jAgYIav5ZAkfWaqvpG8DQP-SH6xhGDmc",
-          "short_id": "08c379434f36cdbe"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 04 R63",
-      "server": "66.163.118.244",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 05 R63",
-      "server": "66.163.118.131",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -106,24 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01",
-        "🇪🇸 西班牙 (Spain) 02 R63",
-        "🇪🇸 西班牙 (Spain) 03",
-        "🇪🇸 西班牙 (Spain) 04 R63",
-        "🇪🇸 西班牙 (Spain) 05 R63",
-        "🇪🇸 西班牙 (Spain) 06"
+        "🇪🇸 西班牙 (Spain) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01",
-        "🇪🇸 西班牙 (Spain) 02 R63",
-        "🇪🇸 西班牙 (Spain) 03",
-        "🇪🇸 西班牙 (Spain) 04 R63",
-        "🇪🇸 西班牙 (Spain) 05 R63",
-        "🇪🇸 西班牙 (Spain) 06"
+        "🇪🇸 西班牙 (Spain) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
