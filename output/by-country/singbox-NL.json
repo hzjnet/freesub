@@ -6,9 +6,57 @@
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 01",
+      "server": "5.149.249.94",
+      "server_port": 443,
+      "uuid": "ed77c1dc-3df2-412b-b855-49286f979c21",
+      "tls": {
+        "enabled": true,
+        "server_name": "nlb.kosmosapp.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ",
+          "short_id": "27350908de933e09"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02 R63",
+      "server": "66.163.127.215",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.indyourperfectremotetechjobfromthecomfortofhome.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇳🇱 荷兰 (Netherlands) 03 R63",
+      "server": "66.163.127.154",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.indyourperfectremotetechjobfromthecomfortofhome.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 04",
       "server": "79.141.164.81",
       "server_port": 443,
-      "uuid": "d3117332-c109-48ea-9125-954999131651",
+      "uuid": "117a94af-00b3-44cb-b82d-fb005276ec8b",
       "tls": {
         "enabled": true,
         "server_name": "nla.kosmosapp.net",
@@ -28,29 +76,37 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 02",
-      "server": "130.12.242.106",
+      "type": "trojan",
+      "tag": "🇳🇱 荷兰 (Netherlands) 05 R63",
+      "server": "66.163.127.9",
       "server_port": 443,
-      "uuid": "bc058e69-0444-4c7b-98da-bd67f0b143da",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "resources.indyourperfectremotetechjobfromthecomfortofhome.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 06",
+      "server": "177.177.215.45",
+      "server_port": 444,
+      "uuid": "254f28cb-d0c1-41e9-a06b-f2155213ff04",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "ams2.shtil.io",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8",
-          "short_id": "15affa0af66dfc79"
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 03",
+      "tag": "🇳🇱 荷兰 (Netherlands) 07",
       "server": "154.86.119.62",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
@@ -71,140 +127,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 04 R63",
-      "server": "66.163.127.9",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "resources.indyourperfectremotetechjobfromthecomfortofhome.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 05",
-      "server": "130.17.18.204",
-      "server_port": 8443,
-      "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-maps.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "2KR7JfMfxzaUqtSFXUP_8VRCnvfpyUQqfsKATK-VpgI",
-          "short_id": "7f38f12ada698251"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 06",
-      "server": "138.124.39.251",
-      "server_port": 443,
-      "uuid": "5254c281-3bc1-40ee-ba89-1aaf8c251402",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl-modx-prime.storagedirectguide.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "node0aB_7yyVADkeieiBBpxqIlxNLQcvgotRClh0QXQ",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 07",
-      "server": "138.124.32.139",
-      "server_port": 443,
-      "uuid": "5254c281-3bc1-40ee-ba89-1aaf8c251402",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl-modx-prime.storagedirectguide.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "node0aB_7yyVADkeieiBBpxqIlxNLQcvgotRClh0QXQ",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇳🇱 荷兰 (Netherlands) 08",
-      "server": "144.31.225.79",
-      "server_port": 28152,
-      "password": "6656cc0a-5908-4d04-a436-64f5843c0c7a",
-      "tls": {
-        "enabled": true,
-        "server_name": "downloadchache1.song69.fun",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 09",
-      "server": "172.67.155.222",
-      "server_port": 443,
-      "uuid": "82b279c6-5cba-3a96-f8bd-780a00000035",
-      "tls": {
-        "enabled": true,
-        "server_name": "pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 10",
-      "server": "77.220.213.244",
-      "server_port": 8444,
-      "uuid": "a8321cfe-39a2-48a0-a918-f01f7d9006ed",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl11.meshbeat.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v1/devices/d63ac7ea89/telemetry",
-        "headers": {
-          "Host": "nl11.meshbeat.online"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 11 R63",
+      "tag": "🇳🇱 荷兰 (Netherlands) 08 R63",
       "server": "66.163.127.155",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -215,16 +138,41 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇳🇱 荷兰 (Netherlands) 12",
-      "server": "promo.betust.net",
-      "server_port": 443,
-      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "type": "shadowsocks",
+      "tag": "🇳🇱 荷兰 (Netherlands) 09",
+      "server": "dns24.m3hrzd.ir",
+      "server_port": 8044,
+      "method": "chacha20-ietf-poly1305",
+      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 10",
+      "server": "130.17.18.204",
+      "server_port": 8443,
+      "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "promo.betust.net",
-        "insecure": false
+        "server_name": "api-maps.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2KR7JfMfxzaUqtSFXUP_8VRCnvfpyUQqfsKATK-VpgI",
+          "short_id": "7f38f12ada698251"
+        }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱 荷兰 (Netherlands) 11",
+      "server": "dns27.m3hrzd.ir",
+      "server_port": 8044,
+      "method": "chacha20-ietf-poly1305",
+      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
     },
     {
       "type": "selector",
@@ -232,17 +180,16 @@
       "outbounds": [
         "auto",
         "🇳🇱 荷兰 (Netherlands) 01",
-        "🇳🇱 荷兰 (Netherlands) 02",
-        "🇳🇱 荷兰 (Netherlands) 03",
-        "🇳🇱 荷兰 (Netherlands) 04 R63",
-        "🇳🇱 荷兰 (Netherlands) 05",
+        "🇳🇱 荷兰 (Netherlands) 02 R63",
+        "🇳🇱 荷兰 (Netherlands) 03 R63",
+        "🇳🇱 荷兰 (Netherlands) 04",
+        "🇳🇱 荷兰 (Netherlands) 05 R63",
         "🇳🇱 荷兰 (Netherlands) 06",
         "🇳🇱 荷兰 (Netherlands) 07",
-        "🇳🇱 荷兰 (Netherlands) 08",
+        "🇳🇱 荷兰 (Netherlands) 08 R63",
         "🇳🇱 荷兰 (Netherlands) 09",
         "🇳🇱 荷兰 (Netherlands) 10",
-        "🇳🇱 荷兰 (Netherlands) 11 R63",
-        "🇳🇱 荷兰 (Netherlands) 12"
+        "🇳🇱 荷兰 (Netherlands) 11"
       ]
     },
     {
@@ -250,17 +197,16 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 荷兰 (Netherlands) 01",
-        "🇳🇱 荷兰 (Netherlands) 02",
-        "🇳🇱 荷兰 (Netherlands) 03",
-        "🇳🇱 荷兰 (Netherlands) 04 R63",
-        "🇳🇱 荷兰 (Netherlands) 05",
+        "🇳🇱 荷兰 (Netherlands) 02 R63",
+        "🇳🇱 荷兰 (Netherlands) 03 R63",
+        "🇳🇱 荷兰 (Netherlands) 04",
+        "🇳🇱 荷兰 (Netherlands) 05 R63",
         "🇳🇱 荷兰 (Netherlands) 06",
         "🇳🇱 荷兰 (Netherlands) 07",
-        "🇳🇱 荷兰 (Netherlands) 08",
+        "🇳🇱 荷兰 (Netherlands) 08 R63",
         "🇳🇱 荷兰 (Netherlands) 09",
         "🇳🇱 荷兰 (Netherlands) 10",
-        "🇳🇱 荷兰 (Netherlands) 11 R63",
-        "🇳🇱 荷兰 (Netherlands) 12"
+        "🇳🇱 荷兰 (Netherlands) 11"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

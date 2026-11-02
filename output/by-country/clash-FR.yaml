@@ -5,95 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 R40
-  server: 54.36.174.134
+  server: 54.36.174.140
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 6heexyz
-- name: 🇫🇷 法国 (France) 02 R40
-  server: pl140.vpnbook.com
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-- name: 🇫🇷 法国 (France) 03 R42
+- name: 🇫🇷 法国 (France) 02 R42
   server: 77.216.2.178
   port: 30
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: BHxDn8Z67zuaoQsjHqSAMQQs8Dz1CGqJ
-- name: 🇫🇷 法国 (France) 04
-  server: 108.61.177.57
-  port: 16778
+- name: 🇫🇷 法国 (France) 03
+  server: 45.77.62.132
+  port: 22357
   udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: fr001.zestapp778.com
+  type: hysteria2
+  password: dq6rfcyex30h1b6z
+  sni: ll5xoe8j.easyiran.org
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 05
-  server: 15.236.109.186
-  port: 2053
-  udp: true
-  type: vless
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  tls: true
-  servername: w.geogame.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 06 R42
-  server: 104.21.15.251
-  port: 443
-  udp: true
-  type: vmess
-  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: www.windowssearchtools.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.windowssearchtools.com
-- name: 🇫🇷 法国 (France) 07
-  server: ai.smrtai.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  tls: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-    short-id: 086bf957
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: qkdqum5rllpyup7h
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇷 法国 (France) 01 R40
-  - 🇫🇷 法国 (France) 02 R40
-  - 🇫🇷 法国 (France) 03 R42
-  - 🇫🇷 法国 (France) 04
-  - 🇫🇷 法国 (France) 05
-  - 🇫🇷 法国 (France) 06 R42
-  - 🇫🇷 法国 (France) 07
+  - 🇫🇷 法国 (France) 02 R42
+  - 🇫🇷 法国 (France) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇷 法国 (France) 01 R40
-  - 🇫🇷 法国 (France) 02 R40
-  - 🇫🇷 法国 (France) 03 R42
-  - 🇫🇷 法国 (France) 04
-  - 🇫🇷 法国 (France) 05
-  - 🇫🇷 法国 (France) 06 R42
-  - 🇫🇷 法国 (France) 07
+  - 🇫🇷 法国 (France) 02 R42
+  - 🇫🇷 法国 (France) 03
 rules:
 - MATCH,PROXIES

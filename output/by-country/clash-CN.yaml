@@ -5,18 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01
-  server: 39.108.113.127
-  port: 10086
+  server: 104.21.91.49
+  port: 443
   udp: true
-  type: vmess
-  uuid: 19ee3050-be66-4850-9f13-fc9d47487a3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  tls: true
+  servername: vpn.cintaku.qzz.io
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 02
-  server: 8.35.211.242
+  server: 104.17.11.191
   port: 443
   udp: true
   type: vless
@@ -30,20 +33,6 @@ proxies:
     path: /vlessws
     headers:
       Host: vpn.cintaku.qzz.io
-- name: 🇨🇳 CN 03
-  server: 188.114.98.0
-  port: 443
-  udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +40,6 @@ proxy-groups:
   - AUTO
   - 🇨🇳 CN 01
   - 🇨🇳 CN 02
-  - 🇨🇳 CN 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +47,5 @@ proxy-groups:
   proxies:
   - 🇨🇳 CN 01
   - 🇨🇳 CN 02
-  - 🇨🇳 CN 03
 rules:
 - MATCH,PROXIES

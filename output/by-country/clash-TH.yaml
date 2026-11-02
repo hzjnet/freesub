@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 R43
-  server: 38.60.200.237
+  server: 38.60.200.21
   port: 33079
   udp: true
   type: trojan

@@ -4,11 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 ⚠R",
-      "server": "178.83.45.226",
-      "server_port": 10002,
-      "uuid": "c6362720-0931-4b91-b187-d8ecf3149734"
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 R62",
+      "server": "dns27.m3hrzd.ir",
+      "server_port": 1353,
+      "method": "chacha20-ietf-poly1305",
+      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
     },
     {
       "type": "vless",
@@ -22,8 +23,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇬🇧 英国 (United Kingdom) 03",
+      "server": "promo2.betust.net",
+      "server_port": 443,
+      "password": "2bc6428196efb899f544d750bea0c06d",
+      "tls": {
+        "enabled": true,
+        "server_name": "promo2.betust.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 04",
       "server": "193.163.203.170",
       "server_port": 443,
       "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
@@ -43,22 +56,38 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 R43",
+      "server": "en001.zestapp778.com",
+      "server_port": 29813,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "en001.zestapp778.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 01 R62",
         "🇬🇧 英国 (United Kingdom) 02",
-        "🇬🇧 英国 (United Kingdom) 03"
+        "🇬🇧 英国 (United Kingdom) 03",
+        "🇬🇧 英国 (United Kingdom) 04",
+        "🇬🇧 英国 (United Kingdom) 05 R43"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 01 R62",
         "🇬🇧 英国 (United Kingdom) 02",
-        "🇬🇧 英国 (United Kingdom) 03"
+        "🇬🇧 英国 (United Kingdom) 03",
+        "🇬🇧 英国 (United Kingdom) 04",
+        "🇬🇧 英国 (United Kingdom) 05 R43"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

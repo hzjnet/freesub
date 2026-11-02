@@ -4,20 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 01",
-      "server": "185.72.11.43",
-      "server_port": 443,
-      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
-      "flow": "xtls-rprx-vision",
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽)",
+      "server": "us001.zestapp778.com",
+      "server_port": 57277,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
-        "server_name": "rs8.speedtestinternet.link",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "us001.zestapp778.com",
+        "insecure": false
       }
     },
     {
@@ -25,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01"
+        "🇺🇸 美国 (United States) 01 (移动家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01"
+        "🇺🇸 美国 (United States) 01 (移动家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
