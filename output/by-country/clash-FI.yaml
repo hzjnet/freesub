@@ -1,0 +1,44 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇫🇮 芬兰 (Finland) 01 R48
+  server: 185.4.115.149
+  port: 1346
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
+- name: 🇫🇮 芬兰 (Finland) 02
+  server: ams.zovip2.ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: 51219f47-398b-48c1-afda-743513e77a4d
+  tls: true
+  servername: ams.zovip2.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/v3/pulse
+    headers:
+      Host: ams.zovip2.ir
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇮 芬兰 (Finland) 01 R48
+  - 🇫🇮 芬兰 (Finland) 02
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇮 芬兰 (Finland) 01 R48
+  - 🇫🇮 芬兰 (Finland) 02
+rules:
+- MATCH,PROXIES

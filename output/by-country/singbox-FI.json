@@ -1,0 +1,67 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 01 R48",
+      "server": "185.4.115.149",
+      "server_port": 1346,
+      "method": "chacha20-ietf-poly1305",
+      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02",
+      "server": "ams.zovip2.ir",
+      "server_port": 443,
+      "uuid": "51219f47-398b-48c1-afda-743513e77a4d",
+      "tls": {
+        "enabled": true,
+        "server_name": "ams.zovip2.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v3/pulse",
+        "headers": {
+          "Host": "ams.zovip2.ir"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇫🇮 芬兰 (Finland) 01 R48",
+        "🇫🇮 芬兰 (Finland) 02"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇫🇮 芬兰 (Finland) 01 R48",
+        "🇫🇮 芬兰 (Finland) 02"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

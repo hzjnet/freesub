@@ -12,17 +12,42 @@ proxies:
   password: ae5338ae-9a70-58c9-3d47-7d54a5675715
   sni: bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com
   skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: 46.8.125.64
+  port: 443
+  udp: true
+  type: vless
+  uuid: dc413f44-7dce-4cc4-b2c7-878ef70ce464
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9MgNwdrftjPf18DG8qYo6iHJw7IG7uSnULScDQ0WDy4
+    short-id: 0123456789abcdef
+  servername: dubai-cdn-keno.keno.su
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  sni: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01
+  - 🇭🇰 中国香港 (Hong Kong) 02
+  - 🇭🇰 中国香港 (Hong Kong) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01
+  - 🇭🇰 中国香港 (Hong Kong) 02
+  - 🇭🇰 中国香港 (Hong Kong) 03
 rules:
 - MATCH,PROXIES

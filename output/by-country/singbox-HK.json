@@ -16,18 +16,55 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02",
+      "server": "46.8.125.64",
+      "server_port": 443,
+      "uuid": "dc413f44-7dce-4cc4-b2c7-878ef70ce464",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dubai-cdn-keno.keno.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9MgNwdrftjPf18DG8qYo6iHJw7IG7uSnULScDQ0WDy4",
+          "short_id": "0123456789abcdef"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03",
+      "server": "d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "20f87b02-0eaa-11eb-8684-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01"
+        "🇭🇰 中国香港 (Hong Kong) 01",
+        "🇭🇰 中国香港 (Hong Kong) 02",
+        "🇭🇰 中国香港 (Hong Kong) 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01"
+        "🇭🇰 中国香港 (Hong Kong) 01",
+        "🇭🇰 中国香港 (Hong Kong) 02",
+        "🇭🇰 中国香港 (Hong Kong) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

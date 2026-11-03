@@ -5,14 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01
-  server: 49.254.204.133
-  port: 1774
+  server: 8.220.241.33
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: vless
+  uuid: f877d913-9f87-45dd-bfe8-d95043081184
+  tls: true
+  reality-opts:
+    public-key: jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8
+  servername: cloudflare.com
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 02
-  server: 158.247.255.150
+  server: kr002.zestapp778.com
   port: 48851
   udp: true
   type: trojan
@@ -20,12 +24,12 @@ proxies:
   sni: kr002.zestapp778.com
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 03
-  server: 3.34.91.121
-  port: 12308
+  server: 168.110.119.243
+  port: 20039
   udp: true
   type: trojan
-  password: 3637190e-4ce3-41cd-9425-f5676345b38c
-  sni: kr02.ulifeai.com
+  password: dc9e33c7a6df4164
+  sni: ikr100a.zxom.eu.org
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES

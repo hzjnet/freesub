@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 R62
-  server: dns27.m3hrzd.ir
+- name: 🇬🇧 英国 (United Kingdom) 01 R61
+  server: 185.4.115.146
   port: 1353
   udp: true
   type: ss
@@ -20,7 +20,20 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇬🇧 英国 (United Kingdom) 03
+- name: 🇬🇧 英国 (United Kingdom) 03 ⚠R
+  server: 51.38.71.147
+  port: 443
+  udp: true
+  type: vless
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  tls: true
+  servername: uk1.connectsuite.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+- name: 🇬🇧 英国 (United Kingdom) 04
   server: promo2.betust.net
   port: 443
   udp: true
@@ -28,7 +41,7 @@ proxies:
   password: 2bc6428196efb899f544d750bea0c06d
   sni: promo2.betust.net
   skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 04
+- name: 🇬🇧 英国 (United Kingdom) 05
   server: 193.163.203.170
   port: 443
   udp: true
@@ -41,33 +54,25 @@ proxies:
     short-id: b28db60d77c50b4f
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 05 R43
-  server: en001.zestapp778.com
-  port: 29813
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: en001.zestapp778.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 R62
+  - 🇬🇧 英国 (United Kingdom) 01 R61
   - 🇬🇧 英国 (United Kingdom) 02
-  - 🇬🇧 英国 (United Kingdom) 03
+  - 🇬🇧 英国 (United Kingdom) 03 ⚠R
   - 🇬🇧 英国 (United Kingdom) 04
-  - 🇬🇧 英国 (United Kingdom) 05 R43
+  - 🇬🇧 英国 (United Kingdom) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 R62
+  - 🇬🇧 英国 (United Kingdom) 01 R61
   - 🇬🇧 英国 (United Kingdom) 02
-  - 🇬🇧 英国 (United Kingdom) 03
+  - 🇬🇧 英国 (United Kingdom) 03 ⚠R
   - 🇬🇧 英国 (United Kingdom) 04
-  - 🇬🇧 英国 (United Kingdom) 05 R43
+  - 🇬🇧 英国 (United Kingdom) 05
 rules:
 - MATCH,PROXIES

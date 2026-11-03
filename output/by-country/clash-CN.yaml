@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01
-  server: 104.21.91.49
+  server: 172.67.166.188
   port: 443
   udp: true
   type: vless
@@ -13,13 +13,14 @@ proxies:
   tls: true
   servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /vlessws
     headers:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 02
-  server: 104.17.11.191
+  server: vpn.cintaku.qzz.io
   port: 443
   udp: true
   type: vless
@@ -31,8 +32,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select

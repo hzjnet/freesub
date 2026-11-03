@@ -4,22 +4,56 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01",
-      "server": "95.143.196.97",
+      "server": "sw.golangwikito.cfd",
       "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
+        "server_name": "sw.golangwikito.cfd",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+          "short_id": "a1037b25dcef6aa7"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 R50",
+      "server": "se.mimowhat.online",
+      "server_port": 443,
+      "password": "769f34f0-1500-488f-b414-03bc90666502",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.mimowhat.online",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03",
+      "server": "swidenafterlanzerotte.space",
+      "server_port": 443,
+      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swidenafterlanzerotte.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
+          "short_id": ""
         }
       }
     },
@@ -28,14 +62,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01"
+        "🇸🇪 瑞典 (Sweden) 01",
+        "🇸🇪 瑞典 (Sweden) 02 R50",
+        "🇸🇪 瑞典 (Sweden) 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01"
+        "🇸🇪 瑞典 (Sweden) 01",
+        "🇸🇪 瑞典 (Sweden) 02 R50",
+        "🇸🇪 瑞典 (Sweden) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
