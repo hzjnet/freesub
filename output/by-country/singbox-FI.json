@@ -12,14 +12,14 @@
       "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 02",
-      "server": "ams.zovip2.ir",
-      "server_port": 443,
-      "uuid": "51219f47-398b-48c1-afda-743513e77a4d",
+      "server": "104.24.0.1",
+      "server_port": 2053,
+      "password": "gHQP0D7D15",
       "tls": {
         "enabled": true,
-        "server_name": "ams.zovip2.ir",
+        "server_name": "marvdasht.phonecomparisonblog.org",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -31,9 +31,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v3/pulse",
+        "path": "/",
         "headers": {
-          "Host": "ams.zovip2.ir"
+          "Host": "marvdasht.phonecomparisonblog.org"
         }
       }
     },

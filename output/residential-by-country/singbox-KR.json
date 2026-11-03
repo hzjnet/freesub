@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇮🇱 以色列 (Israel) 01",
-      "server": "31.57.185.203",
-      "server_port": 53799,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "ZV9gr1G1kn+MtegpmGMVOqXbSUwnCHtaS/8vuccEKJU=:op/9FM428frdCwL8/lqmAvTcUnWXny0nXfI5tpG7Bj4="
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽)",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01"
+        "🇰🇷 韩国 (South Korea) 01 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01"
+        "🇰🇷 韩国 (South Korea) 01 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

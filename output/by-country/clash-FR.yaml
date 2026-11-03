@@ -11,71 +11,17 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 6heexyz
-- name: 🇫🇷 法国 (France) 02 R40
-  server: 54.36.174.134
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-- name: 🇫🇷 法国 (France) 03
-  server: 108.61.177.57
-  port: 16778
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: fr001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 04 R66
-  server: dns24.m3hrzd.ir
-  port: 1352
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-- name: 🇫🇷 法国 (France) 05
-  server: 161.97.66.16
-  port: 443
-  udp: true
-  type: vless
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  tls: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-    short-id: 086bf957
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 06
-  server: w.geogame.ir
-  port: 2053
-  udp: true
-  type: vless
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-  tls: true
-  servername: w.geogame.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇷 法国 (France) 01 R40
-  - 🇫🇷 法国 (France) 02 R40
-  - 🇫🇷 法国 (France) 03
-  - 🇫🇷 法国 (France) 04 R66
-  - 🇫🇷 法国 (France) 05
-  - 🇫🇷 法国 (France) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇷 法国 (France) 01 R40
-  - 🇫🇷 法国 (France) 02 R40
-  - 🇫🇷 法国 (France) 03
-  - 🇫🇷 法国 (France) 04 R66
-  - 🇫🇷 法国 (France) 05
-  - 🇫🇷 法国 (France) 06
 rules:
 - MATCH,PROXIES

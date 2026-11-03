@@ -5,15 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com
+  server: 154.83.87.6
+  port: 8443
+  udp: true
+  type: vless
+  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  tls: true
+  reality-opts:
+    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+    short-id: 4ad2e4e660550e43
+  servername: github.githubassets.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: 210.0.244.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: f3ff9bac-2904-4f38-bae1-54ab1a72891b
+  tls: true
+  reality-opts:
+    public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: 210.0.244.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
+  tls: true
+  reality-opts:
+    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: ae5338ae-9a70-58c9-3d47-7d54a5675715
-  sni: bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com
+  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  sni: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 46.8.125.64
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: dubai-cdn-keno.keno.su
   port: 443
   udp: true
   type: vless
@@ -25,14 +59,6 @@ proxies:
     short-id: 0123456789abcdef
   servername: dubai-cdn-keno.keno.su
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
-  sni: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +67,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
+  - 🇭🇰 中国香港 (Hong Kong) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +77,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
+  - 🇭🇰 中国香港 (Hong Kong) 05
 rules:
 - MATCH,PROXIES

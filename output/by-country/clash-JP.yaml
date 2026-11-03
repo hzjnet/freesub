@@ -12,20 +12,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: discoverparttimepositionsandsupplementyourincomeguide.com
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 02 R56
-  server: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
-  port: 443
-  udp: true
-  type: tuic
-  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
-  password: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
-  sni: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
-  skip-cert-verify: false
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
-- name: 🇯🇵 日本 (Japan) 03
+- name: 🇯🇵 日本 (Japan) 02
   server: ga1data.xyy123.bid
   port: 443
   udp: true
@@ -38,38 +25,19 @@ proxies:
     short-id: 00b0389a
   servername: www.amzn.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 04
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: aff1ffd0-594c-44c9-9f79-4096fde005ea
-  tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇯🇵 日本 (Japan) 01
-  - 🇯🇵 日本 (Japan) 02 R56
-  - 🇯🇵 日本 (Japan) 03
-  - 🇯🇵 日本 (Japan) 04
+  - 🇯🇵 日本 (Japan) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 日本 (Japan) 01
-  - 🇯🇵 日本 (Japan) 02 R56
-  - 🇯🇵 日本 (Japan) 03
-  - 🇯🇵 日本 (Japan) 04
+  - 🇯🇵 日本 (Japan) 02
 rules:
 - MATCH,PROXIES

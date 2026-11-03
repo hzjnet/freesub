@@ -12,20 +12,16 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: ams.zovip2.ir
-  port: 443
+  server: 104.24.0.1
+  port: 2053
   udp: true
-  type: vless
-  uuid: 51219f47-398b-48c1-afda-743513e77a4d
-  tls: true
-  servername: ams.zovip2.ir
+  type: trojan
+  password: gHQP0D7D15
+  sni: marvdasht.phonecomparisonblog.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /api/v3/pulse
-    headers:
-      Host: ams.zovip2.ir
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select

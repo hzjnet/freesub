@@ -12,34 +12,12 @@
       "tls": {
         "enabled": true,
         "server_name": "discoverparttimepositionsandsupplementyourincomeguide.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "tuic",
-      "tag": "🇯🇵 日本 (Japan) 02 R56",
-      "server": "de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com",
-      "server_port": 443,
-      "uuid": "cd1b0ae0-4010-11ee-953a-f23c9164ca5d",
-      "password": "cd1b0ae0-4010-11ee-953a-f23c9164ca5d",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "tls": {
-        "enabled": true,
-        "server_name": "de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ]
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03",
+      "tag": "🇯🇵 日本 (Japan) 02",
       "server": "ga1data.xyy123.bid",
       "server_port": 443,
       "uuid": "81f686e2-0700-4e7d-b3aa-2f7fc544bcc3",
@@ -59,37 +37,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 04",
-      "server": "142.91.101.39",
-      "server_port": 627,
-      "uuid": "aff1ffd0-594c-44c9-9f79-4096fde005ea",
-      "tls": {
-        "enabled": true,
-        "server_name": "9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇯🇵 日本 (Japan) 01",
-        "🇯🇵 日本 (Japan) 02 R56",
-        "🇯🇵 日本 (Japan) 03",
-        "🇯🇵 日本 (Japan) 04"
+        "🇯🇵 日本 (Japan) 02"
       ]
     },
     {
@@ -97,9 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇯🇵 日本 (Japan) 01",
-        "🇯🇵 日本 (Japan) 02 R56",
-        "🇯🇵 日本 (Japan) 03",
-        "🇯🇵 日本 (Japan) 04"
+        "🇯🇵 日本 (Japan) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

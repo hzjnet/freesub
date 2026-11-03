@@ -12,100 +12,18 @@
       "password": "6heexyz"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 02 R40",
-      "server": "54.36.174.134",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "6heexyz"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 03",
-      "server": "108.61.177.57",
-      "server_port": 16778,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "fr001.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 04 R66",
-      "server": "dns24.m3hrzd.ir",
-      "server_port": 1352,
-      "method": "chacha20-ietf-poly1305",
-      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 05",
-      "server": "161.97.66.16",
-      "server_port": 443,
-      "uuid": "086bf957-9cd0-4e55-8280-bbef10435b41",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc",
-          "short_id": "086bf957"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 06",
-      "server": "w.geogame.ir",
-      "server_port": 2053,
-      "uuid": "fbda2834-b1e7-4148-afb9-deda31036a30",
-      "tls": {
-        "enabled": true,
-        "server_name": "w.geogame.ir",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 R40",
-        "🇫🇷 法国 (France) 02 R40",
-        "🇫🇷 法国 (France) 03",
-        "🇫🇷 法国 (France) 04 R66",
-        "🇫🇷 法国 (France) 05",
-        "🇫🇷 法国 (France) 06"
+        "🇫🇷 法国 (France) 01 R40"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 R40",
-        "🇫🇷 法国 (France) 02 R40",
-        "🇫🇷 法国 (France) 03",
-        "🇫🇷 法国 (France) 04 R66",
-        "🇫🇷 法国 (France) 05",
-        "🇫🇷 法国 (France) 06"
+        "🇫🇷 法国 (France) 01 R40"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
