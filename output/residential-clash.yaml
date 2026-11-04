@@ -4,34 +4,49 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽)
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  server: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
+- name: 🇺🇸 美国 (United States) 01 (家宽)
+  server: 185.193.29.123
   port: 443
   udp: true
-  type: hysteria2
-  password: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
-  sni: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
+  type: vless
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  tls: true
+  servername: notls.lukongtou.eu.org
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  server: terutrrj.d6f54hd1j.cc
+  port: 443
+  udp: true
+  type: vmess
+  uuid: a904e307-771f-498b-87ad-8e6e0d0ade4a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: terutrrj.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: terutrrj.d6f54hd1j.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  - 🇺🇸 美国 (United States) 01 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  - 🇺🇸 美国 (United States) 01 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
 rules:
 - MATCH,PROXIES

@@ -4,23 +4,42 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽)",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
-      "server": "a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com",
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽)",
+      "server": "185.193.29.123",
       "server_port": 443,
-      "password": "2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d",
+      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
       "tls": {
         "enabled": true,
-        "server_name": "a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com",
+        "server_name": "notls.lukongtou.eu.org",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "Telegram-WangCai2🇨🇳",
+        "headers": {
+          "Host": "notls.lukongtou.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
+      "server": "terutrrj.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "a904e307-771f-498b-87ad-8e6e0d0ade4a",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "terutrrj.d6f54hd1j.cc",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "terutrrj.d6f54hd1j.cc"
+        }
       }
     },
     {
@@ -28,16 +47,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)"
+        "🇺🇸 美国 (United States) 01 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)"
+        "🇺🇸 美国 (United States) 01 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

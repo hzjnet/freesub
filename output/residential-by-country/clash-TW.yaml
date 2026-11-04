@@ -1,0 +1,36 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  server: terutrrj.d6f54hd1j.cc
+  port: 443
+  udp: true
+  type: vmess
+  uuid: a904e307-771f-498b-87ad-8e6e0d0ade4a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: terutrrj.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: terutrrj.d6f54hd1j.cc
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+rules:
+- MATCH,PROXIES

@@ -13,26 +13,29 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇮🇳 印度 (India) 02 R53
-  server: 172.105.39.124
-  port: 7002
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 02
+  server: 139.84.210.39
+  port: 42733
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: in002.zestapp778.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇳 印度 (India) 01
-  - 🇮🇳 印度 (India) 02 R53
+  - 🇮🇳 印度 (India) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇳 印度 (India) 01
-  - 🇮🇳 印度 (India) 02 R53
+  - 🇮🇳 印度 (India) 02
 rules:
 - MATCH,PROXIES
