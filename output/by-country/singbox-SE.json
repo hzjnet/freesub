@@ -12,14 +12,14 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 R50",
-      "server": "connect-se.mimowhat.online",
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02",
+      "server": "se.mimowhat.online",
       "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
+      "password": "769f34f0-1500-488f-b414-03bc90666502",
       "tls": {
         "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
+        "server_name": "se.mimowhat.online",
         "insecure": false
       }
     },
@@ -29,7 +29,7 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01",
-        "🇸🇪 瑞典 (Sweden) 02 R50"
+        "🇸🇪 瑞典 (Sweden) 02"
       ]
     },
     {
@@ -37,7 +37,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01",
-        "🇸🇪 瑞典 (Sweden) 02 R50"
+        "🇸🇪 瑞典 (Sweden) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

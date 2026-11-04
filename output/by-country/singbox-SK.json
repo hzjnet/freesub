@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇷 IR 01",
-      "server": "198.16.113.222",
-      "server_port": 8443,
-      "uuid": "98a24806-141a-43d3-b094-bd66c4eb93b8",
+      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01 R46",
+      "server": "94.183.234.245",
+      "server_port": 443,
+      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE",
-          "short_id": "69984b9e02545831"
+          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
+          "short_id": "7f1e29593aa94ad1"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01"
+        "🇸🇰 斯洛伐克 (Slovakia) 01 R46"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01"
+        "🇸🇰 斯洛伐克 (Slovakia) 01 R46"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

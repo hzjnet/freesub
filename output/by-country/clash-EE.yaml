@@ -16,7 +16,7 @@ proxies:
     public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
     short-id: 2e82d7ac
   servername: addons.mozilla.org
-  client-fingerprint: qq
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

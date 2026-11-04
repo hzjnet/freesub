@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 89.144.53.4
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: 1a2b3c4d
-  servername: videos.porsche.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02
   server: 217.144.188.185
   port: 443
   udp: true
@@ -29,15 +16,30 @@ proxies:
     public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
   servername: www.nordea.fi
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 02
+  server: 146.103.118.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  tls: true
+  servername: nl2.574ck.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
 - name: 🇫🇮 芬兰 (Finland) 03 R49
-  server: dns22.m3hrzd.ir
+  server: 185.4.115.149
   port: 1346
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
 - name: 🇫🇮 芬兰 (Finland) 04
-  server: 172.66.0.1
+  server: 104.18.0.1
   port: 2053
   udp: true
   type: trojan

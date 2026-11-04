@@ -4,22 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 R50
-  server: 162.159.152.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rayan-007.maxima.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇬🇧 英国 (United Kingdom) 02
+- name: 🇬🇧 英国 (United Kingdom) 01
   server: 23.81.36.148
   port: 8080
   udp: true
@@ -28,40 +13,32 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇬🇧 英国 (United Kingdom) 02
+  server: 23.81.36.148
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 03
-  server: 132.243.207.154
+  server: 193.163.203.170
   port: 443
   udp: true
   type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: tVx2o1LD0BI7CCoXfFSv-Rr_etGde9XpQ-iNA9P3338
-    short-id: 59d2296aa6320c76
-  servername: get-37.topp-con.xyz
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 04 R61
-  server: dns27.m3hrzd.ir
-  port: 1353
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
-- name: 🇬🇧 英国 (United Kingdom) 05 ⚠R
-  server: uk1.connectsuite.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
-  tls: true
-  servername: uk1.connectsuite.org
-  skip-cert-verify: false
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cdn-cgi/ws
-- name: 🇬🇧 英国 (United Kingdom) 06
+- name: 🇬🇧 英国 (United Kingdom) 04
   server: promo2.betust.net
   port: 443
   udp: true
@@ -74,22 +51,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 R50
+  - 🇬🇧 英国 (United Kingdom) 01
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04 R61
-  - 🇬🇧 英国 (United Kingdom) 05 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 06
+  - 🇬🇧 英国 (United Kingdom) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 R50
+  - 🇬🇧 英国 (United Kingdom) 01
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04 R61
-  - 🇬🇧 英国 (United Kingdom) 05 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 06
+  - 🇬🇧 英国 (United Kingdom) 04
 rules:
 - MATCH,PROXIES

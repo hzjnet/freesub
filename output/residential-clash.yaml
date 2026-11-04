@@ -4,20 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽)
-  server: 185.193.29.123
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
+  server: 112.120.123.140
   port: 443
   udp: true
-  type: vless
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  tls: true
-  servername: notls.lukongtou.eu.org
+  type: hysteria2
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  sni: 9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
   server: terutrrj.d6f54hd1j.cc
   port: 443
@@ -39,14 +33,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
 rules:
 - MATCH,PROXIES
