@@ -14,7 +14,7 @@
     {
       "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 02",
-      "server": "se.mimowhat.online",
+      "server": "185.153.55.28",
       "server_port": 443,
       "password": "769f34f0-1500-488f-b414-03bc90666502",
       "tls": {

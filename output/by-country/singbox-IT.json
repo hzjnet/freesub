@@ -5,18 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 01",
-      "server": "185.72.11.43",
+      "tag": "🇮🇹 意大利 (Italy) 01",
+      "server": "82.118.16.187",
       "server_port": 443,
-      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
+      "uuid": "dc2259c4-388e-4285-ba18-df619b6672b6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "rs8.speedtestinternet.link",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU",
+          "short_id": "cd6065902eea7a02"
         }
       }
     },
@@ -25,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01"
+        "🇮🇹 意大利 (Italy) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01"
+        "🇮🇹 意大利 (Italy) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

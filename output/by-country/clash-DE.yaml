@@ -5,6 +5,130 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  network: ws
+  ws-opts:
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
+    headers:
+      Host: elenaaaaaaaaaa.cloudns.pro
+- name: 🇩🇪 德国 (Germany) 02 R50
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: courses.mftplus.qzz.io
+- name: 🇩🇪 德国 (Germany) 03
+  server: 188.114.96.9
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  tls: true
+  servername: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
+    headers:
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+- name: 🇩🇪 德国 (Germany) 04 R40
+  server: 172.67.208.235
+  port: 2096
+  udp: true
+  type: vless
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  tls: true
+  servername: courses.mftplus.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: courses.mftplus.qzz.io
+- name: 🇩🇪 德国 (Germany) 05
+  server: www.buydomains.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
+  tls: true
+  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
+    headers:
+      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+- name: 🇩🇪 德国 (Germany) 06
+  server: 104.26.0.1
+  port: 443
+  udp: true
+  type: vless
+  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
+  tls: true
+  servername: ezaccess-project-f62c30.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ezaccess-project-f62c30.pages.dev
+- name: 🇩🇪 德国 (Germany) 07
+  server: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+  port: 443
+  udp: true
+  type: trojan
+  password: TsX0XJKMa2h$CbKr0k
+  sni: iDB8onmvBnTuyt5T7T6CejfW8vlRb.PagES.DeV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/60XnEWrAQkStT4oTTwmkao9a4sc
+- name: 🇩🇪 德国 (Germany) 08 R46
+  server: 57.129.113.16
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+- name: 🇩🇪 德国 (Germany) 09
+  server: 77.90.2.130
+  port: 43086
+  udp: true
+  type: vless
+  uuid: d782aa4c-9284-4a60-a9d9-f61412f8a2a4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SRKTZm_KYvsD9ONd5VU54ABZxudjR65r5Uhxc-1lLko
+    short-id: 1c601fed
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 10
+  server: 2.26.54.200
+  port: 8018
+  udp: true
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /websocket/transfer/gayporn
+- name: 🇩🇪 德国 (Germany) 11
   server: 217.60.99.115
   port: 443
   udp: true
@@ -16,67 +140,7 @@ proxies:
     public-key: q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ
   servername: music.3apes.online
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 02
-  server: 193.23.218.107
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6f433cf6-4221-48b2-ad29-01121952ef8a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cBTZdCBwrYTTarw6B_lu2TN1M6_Lku68FfWCQT9svhc
-    short-id: cb620aa2f04bce33
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 03 R65
-  server: 193.108.119.193
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.iloverussia2026.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 04
-  server: d2hplu8rn1zhez.cloudfront.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: f17a82cc-4b2b-49bc-8875-51c43cc49c36
-  tls: true
-  servername: d2hplu8rn1zhez.cloudfront.net
-  skip-cert-verify: false
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /api/v3/ws/events
-- name: 🇩🇪 德国 (Germany) 05
-  server: hw14.roghanmo.com
-  port: 465
-  udp: true
-  type: vless
-  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
-  tls: true
-  servername: hw14.roghanmo.com.
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw14.roghanmo.com
-- name: 🇩🇪 德国 (Germany) 06
-  server: 193.148.253.226
-  port: 25362
-  udp: true
-  type: vless
-  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
-  tls: true
-  reality-opts:
-    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
-    short-id: 23732d14a527990d
-  servername: www.chip.de
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 07
+- name: 🇩🇪 德国 (Germany) 12
   server: 45.129.242.56
   port: 443
   udp: true
@@ -89,45 +153,186 @@ proxies:
     short-id: abcdef
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 08 R46
-  server: 104.17.70.206
-  port: 8443
+- name: 🇩🇪 德国 (Germany) 13
+  server: 2.31.22.130
+  port: 3939
   udp: true
   type: vless
-  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
+  uuid: 838e8b68-b583-4850-9c06-3ca63b05a936
+  flow: xtls-rprx-vision
   tls: true
-  servername: free.sahanwickramasinghe.com
+  reality-opts:
+    public-key: dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA
+    short-id: d9a2600fdecd7be2
+  servername: ai.android
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 14
+  server: 45.148.117.151
+  port: 38291
+  udp: true
+  type: vless
+  uuid: 483079ae-79ba-48aa-9071-340b79117a22
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PNT2xM-R4OpFcV-bVO1Fgdb_C8tuB32bGIznjy2YYzc
+    short-id: 55e00de72e977e65
+  servername: reality.airvpn.su
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 15
+  server: 150.241.79.124
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dlhvkjq7Sj-TT__FLwUJzFLMDCk8bgi85Uz4qDU-5FM
+    short-id: 5212dad2aa9723d7
+  servername: de1.waspnest.space
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 16
+  server: 91.107.179.0
+  port: 10105
+  udp: true
+  type: vless
+  uuid: ad3f4a0a-a89f-498e-9869-a93c8fa185b1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
+    short-id: 12e321badd07906e
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 17 R65
+  server: 193.108.119.29
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 18
+  server: 146.103.118.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: 82382a00-3784-41e3-85d6-37f626263944
+  tls: true
+  servername: vpn.574ck.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vpn.574ck.xyz
+- name: 🇩🇪 德国 (Germany) 19
+  server: hw5.roghanmo.com
+  port: 465
+  udp: true
+  type: vless
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  tls: true
+  servername: hw5.roghanmo.com.
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw5.roghanmo.com
+- name: 🇩🇪 德国 (Germany) 20 R46
+  server: 88.216.67.54
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-47be357e54da
+  tls: true
+  servername: 52z4vtewuass.game4090taking.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/47be357e54da/loc-0
+    headers:
+      Host: 52z4vtewuass.game4090taking.workers.dev
+- name: 🇩🇪 德国 (Germany) 21 R65
+  server: 193.108.119.15
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 22
+  server: 91.107.243.131
+  port: 465
+  udp: true
+  type: vless
+  uuid: 98aa35fc-7d2f-4744-a91b-7e33b4fdd9c8
+  tls: true
+  servername: hw14.roghanmo.com
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: free.sahanwickramasinghe.com
+      Host: hw14.roghanmo.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01
-  - 🇩🇪 德国 (Germany) 02
-  - 🇩🇪 德国 (Germany) 03 R65
-  - 🇩🇪 德国 (Germany) 04
+  - 🇩🇪 德国 (Germany) 02 R50
+  - 🇩🇪 德国 (Germany) 03
+  - 🇩🇪 德国 (Germany) 04 R40
   - 🇩🇪 德国 (Germany) 05
   - 🇩🇪 德国 (Germany) 06
   - 🇩🇪 德国 (Germany) 07
   - 🇩🇪 德国 (Germany) 08 R46
+  - 🇩🇪 德国 (Germany) 09
+  - 🇩🇪 德国 (Germany) 10
+  - 🇩🇪 德国 (Germany) 11
+  - 🇩🇪 德国 (Germany) 12
+  - 🇩🇪 德国 (Germany) 13
+  - 🇩🇪 德国 (Germany) 14
+  - 🇩🇪 德国 (Germany) 15
+  - 🇩🇪 德国 (Germany) 16
+  - 🇩🇪 德国 (Germany) 17 R65
+  - 🇩🇪 德国 (Germany) 18
+  - 🇩🇪 德国 (Germany) 19
+  - 🇩🇪 德国 (Germany) 20 R46
+  - 🇩🇪 德国 (Germany) 21 R65
+  - 🇩🇪 德国 (Germany) 22
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01
-  - 🇩🇪 德国 (Germany) 02
-  - 🇩🇪 德国 (Germany) 03 R65
-  - 🇩🇪 德国 (Germany) 04
+  - 🇩🇪 德国 (Germany) 02 R50
+  - 🇩🇪 德国 (Germany) 03
+  - 🇩🇪 德国 (Germany) 04 R40
   - 🇩🇪 德国 (Germany) 05
   - 🇩🇪 德国 (Germany) 06
   - 🇩🇪 德国 (Germany) 07
   - 🇩🇪 德国 (Germany) 08 R46
+  - 🇩🇪 德国 (Germany) 09
+  - 🇩🇪 德国 (Germany) 10
+  - 🇩🇪 德国 (Germany) 11
+  - 🇩🇪 德国 (Germany) 12
+  - 🇩🇪 德国 (Germany) 13
+  - 🇩🇪 德国 (Germany) 14
+  - 🇩🇪 德国 (Germany) 15
+  - 🇩🇪 德国 (Germany) 16
+  - 🇩🇪 德国 (Germany) 17 R65
+  - 🇩🇪 德国 (Germany) 18
+  - 🇩🇪 德国 (Germany) 19
+  - 🇩🇪 德国 (Germany) 20 R46
+  - 🇩🇪 德国 (Germany) 21 R65
+  - 🇩🇪 德国 (Germany) 22
 rules:
 - MATCH,PROXIES

@@ -4,26 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇮🇩 印尼 (Indonesia) 01",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16298,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01",
+      "server": "bot.vudfaro.ir",
+      "server_port": 5061,
+      "uuid": "7df4f23f-b361-412a-883a-54dfdb5b8c8f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01"
+        "🇷🇴 罗马尼亚 (Romania) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01"
+        "🇷🇴 罗马尼亚 (Romania) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

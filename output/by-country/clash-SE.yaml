@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: se.mimowhat.online
+  server: 185.153.55.28
   port: 443
   udp: true
   type: hysteria2

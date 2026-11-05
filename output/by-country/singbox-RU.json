@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
-      "server": "112.120.123.140",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01",
+      "server": "steel7.hadsvpn.com",
       "server_port": 443,
-      "password": "3f514ea2-4662-11ed-a8bf-f23c91cfbbc9",
+      "password": "23c82941-70f4-4381-90db-bd28e9a902e9",
       "tls": {
         "enabled": true,
-        "server_name": "9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com",
+        "server_name": "steel7.hadsvpn.com",
         "insecure": false
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
+        "🇷🇺 俄罗斯 (Russia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
+        "🇷🇺 俄罗斯 (Russia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,23 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-      "server": "terutrrj.d6f54hd1j.cc",
+      "type": "trojan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
+      "server": "floral-grass-aa1e.dianawpewpek1.workers.dev",
       "server_port": 443,
-      "uuid": "a904e307-771f-498b-87ad-8e6e0d0ade4a",
-      "security": "auto",
+      "password": "uFepQ5r4JSusbY",
       "tls": {
         "enabled": true,
-        "server_name": "terutrrj.d6f54hd1j.cc",
-        "insecure": false
+        "server_name": "floral-grass-aa1e.dianawpewpek1.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "terutrrj.d6f54hd1j.cc"
-        }
+        "path": "/?ed=2048"
       }
     },
     {
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

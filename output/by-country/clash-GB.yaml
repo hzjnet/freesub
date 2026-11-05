@@ -5,27 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01
-  server: 23.81.36.148
+  server: 188.114.98.112
+  port: 80
+  udp: true
+  type: vless
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  network: ws
+  ws-opts:
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY
+    headers:
+      Host: elenaaaaaaaaaa.cloudns.pro.
+- name: 🇬🇧 英国 (United Kingdom) 02
+  server: 188.114.97.6
   port: 8080
   udp: true
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
   network: ws
   ws-opts:
-    path: /
-- name: 🇬🇧 英国 (United Kingdom) 02
-  server: 23.81.36.148
-  port: 1222
+    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
+    headers:
+      Host: fornewiran.ade-1000.workers.dev
+- name: 🇬🇧 英国 (United Kingdom) 03
+  server: promo2.betust.net
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 2bc6428196efb899f544d750bea0c06d
+  sni: promo2.betust.net
+  skip-cert-verify: false
+- name: 🇬🇧 英国 (United Kingdom) 04 ⚠R
+  server: 51.38.71.147
+  port: 443
   udp: true
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
   tls: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
+  servername: uk1.connectsuite.org
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 03
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+- name: 🇬🇧 英国 (United Kingdom) 05
   server: 193.163.203.170
   port: 443
   udp: true
@@ -38,14 +60,21 @@ proxies:
     short-id: b28db60d77c50b4f
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 04
-  server: promo2.betust.net
+- name: 🇬🇧 英国 (United Kingdom) 06
+  server: 172.237.91.206
   port: 443
   udp: true
-  type: hysteria2
-  password: 2bc6428196efb899f544d750bea0c06d
-  sni: promo2.betust.net
+  type: vless
+  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
+  tls: true
+  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
+    headers:
+      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +83,9 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04
+  - 🇬🇧 英国 (United Kingdom) 04 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 05
+  - 🇬🇧 英国 (United Kingdom) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +94,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04
+  - 🇬🇧 英国 (United Kingdom) 04 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 05
+  - 🇬🇧 英国 (United Kingdom) 06
 rules:
 - MATCH,PROXIES

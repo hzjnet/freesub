@@ -6,37 +6,68 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 01",
-      "server": "23.81.36.148",
-      "server_port": 8080,
-      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
+      "server": "188.114.98.112",
+      "server_port": 80,
+      "uuid": "0991a0c4-0ee5-4213-af89-7ad589f853f3",
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY",
+        "headers": {
+          "Host": "elenaaaaaaaaaa.cloudns.pro."
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 02",
-      "server": "23.81.36.148",
-      "server_port": 1222,
-      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE",
-          "short_id": "a25d0f"
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "93fa8bdb-9cca-4a3e-8355-b7c12e4f595e",
+      "transport": {
+        "type": "ws",
+        "path": "/vl/yLWNcuUuw1jlJpkDhGy?ed=2560",
+        "headers": {
+          "Host": "fornewiran.ade-1000.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇬🇧 英国 (United Kingdom) 03",
+      "server": "promo2.betust.net",
+      "server_port": 443,
+      "password": "2bc6428196efb899f544d750bea0c06d",
+      "tls": {
+        "enabled": true,
+        "server_name": "promo2.betust.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 04 ⚠R",
+      "server": "51.38.71.147",
+      "server_port": 443,
+      "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
+      "tls": {
+        "enabled": true,
+        "server_name": "uk1.connectsuite.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn-cgi/ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 05",
       "server": "193.163.203.170",
       "server_port": 443,
       "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
@@ -56,15 +87,26 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇬🇧 英国 (United Kingdom) 04",
-      "server": "promo2.betust.net",
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 06",
+      "server": "172.237.91.206",
       "server_port": 443,
-      "password": "2bc6428196efb899f544d750bea0c06d",
+      "uuid": "4d945644-69ab-47e0-98b3-d43a6313135d",
       "tls": {
         "enabled": true,
-        "server_name": "promo2.betust.net",
-        "insecure": false
+        "server_name": "mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/SaXqikbSPA3ImtmZKAFin?ed=2560",
+        "headers": {
+          "Host": "mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV"
+        }
       }
     },
     {
@@ -75,7 +117,9 @@
         "🇬🇧 英国 (United Kingdom) 01",
         "🇬🇧 英国 (United Kingdom) 02",
         "🇬🇧 英国 (United Kingdom) 03",
-        "🇬🇧 英国 (United Kingdom) 04"
+        "🇬🇧 英国 (United Kingdom) 04 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 05",
+        "🇬🇧 英国 (United Kingdom) 06"
       ]
     },
     {
@@ -85,7 +129,9 @@
         "🇬🇧 英国 (United Kingdom) 01",
         "🇬🇧 英国 (United Kingdom) 02",
         "🇬🇧 英国 (United Kingdom) 03",
-        "🇬🇧 英国 (United Kingdom) 04"
+        "🇬🇧 英国 (United Kingdom) 04 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 05",
+        "🇬🇧 英国 (United Kingdom) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
