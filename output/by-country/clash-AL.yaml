@@ -4,23 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 罗马尼亚 (Romania) 01
-  server: bot.vudfaro.ir
-  port: 5061
+- name: 🇦🇱 AL 01
+  server: dns22.m3hrzd.ir
+  port: 1348
   udp: true
-  type: vless
-  uuid: 7df4f23f-b361-412a-883a-54dfdb5b8c8f
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6Gzfdmd2cvye1qyKoub9E7eWijMDR2lK
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 罗马尼亚 (Romania) 01
+  - 🇦🇱 AL 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 罗马尼亚 (Romania) 01
+  - 🇦🇱 AL 01
 rules:
 - MATCH,PROXIES
