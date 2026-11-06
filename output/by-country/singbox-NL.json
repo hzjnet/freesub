@@ -6,81 +6,9 @@
     {
       "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 01",
-      "server": "5.149.249.94",
-      "server_port": 443,
-      "uuid": "f038bdac-d9f7-47b5-a376-47ebc71c950a",
-      "tls": {
-        "enabled": true,
-        "server_name": "nlb.kosmosapp.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ",
-          "short_id": "27350908de933e09"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "neurex"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 02 R63",
-      "server": "66.163.127.9",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "resources.indyourperfectremotetechjobfromthecomfortofhome.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 03",
-      "server": "79.141.164.81",
-      "server_port": 443,
-      "uuid": "b7065844-31ff-4f4d-a6f7-42a38d09bed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "nla.kosmosapp.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ",
-          "short_id": "27350908de933e09"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "neurex"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇳🇱 荷兰 (Netherlands) 04",
-      "server": "176.65.151.175",
-      "server_port": 11674,
-      "uuid": "a98a98cb-ae86-43ae-b695-cf0dbcad3fc2",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 05",
       "server": "188.116.27.6",
       "server_port": 443,
-      "uuid": "441caaf2-aae6-4883-8af9-1e5770395ae8",
+      "uuid": "407d047a-d9b4-41f3-8a02-ebc53854efca",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -98,28 +26,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 06",
-      "server": "130.12.242.106",
+      "tag": "🇳🇱 荷兰 (Netherlands) 02",
+      "server": "132.243.119.223",
       "server_port": 443,
-      "uuid": "bc058e69-0444-4c7b-98da-bd67f0b143da",
+      "uuid": "326c45d1-966c-4080-874f-ac73883c5e4a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "www.techadvisor.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8",
-          "short_id": "15affa0af66dfc79"
+          "public_key": "KjXapnfwZtRbZIKBDsP-5YOL1nsiHLds8Hw-JfzczDo",
+          "short_id": "5e50b6c8fe883545"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇳🇱 荷兰 (Netherlands) 07 R52",
+      "tag": "🇳🇱 荷兰 (Netherlands) 03 R52",
       "server": "188.166.81.135",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -131,29 +59,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 08",
-      "server": "132.243.119.223",
+      "type": "hysteria2",
+      "tag": "🇳🇱 荷兰 (Netherlands) 04",
+      "server": "45.91.237.78",
       "server_port": 443,
-      "uuid": "326c45d1-966c-4080-874f-ac73883c5e4a",
-      "flow": "xtls-rprx-vision",
+      "password": "f4b80b26-b6d4-49a6-a460-f50efb7a457c",
       "tls": {
         "enabled": true,
-        "server_name": "www.techadvisor.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KjXapnfwZtRbZIKBDsP-5YOL1nsiHLds8Hw-JfzczDo",
-          "short_id": "5e50b6c8fe883545"
-        }
+        "server_name": "node.aweom.su",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 09",
+      "tag": "🇳🇱 荷兰 (Netherlands) 05",
       "server": "ams2.shtil.io",
       "server_port": 444,
       "uuid": "254f28cb-d0c1-41e9-a06b-f2155213ff04",
@@ -173,63 +92,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇳🇱 荷兰 (Netherlands) 10",
-      "server": "45.91.237.78",
-      "server_port": 443,
-      "password": "f4b80b26-b6d4-49a6-a460-f50efb7a457c",
-      "tls": {
-        "enabled": true,
-        "server_name": "node.aweom.su",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 11",
-      "server": "15d7fft.nl11.h1clayd.click",
-      "server_port": 443,
-      "uuid": "b7b8ee80-db83-4276-8c68-87dc88b0b0b5",
-      "tls": {
-        "enabled": true,
-        "server_name": "15d7fft.nl11.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4",
-          "short_id": "c71118d9399fb8c2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 12",
-      "server": "172.67.155.222",
-      "server_port": 443,
-      "uuid": "82b279c6-5cba-3a96-f8bd-780a00000035",
-      "tls": {
-        "enabled": true,
-        "server_name": "pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 13 R63",
+      "tag": "🇳🇱 荷兰 (Netherlands) 06 R63",
       "server": "66.163.127.215",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -241,7 +105,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇳🇱 荷兰 (Netherlands) 14 R63",
+      "tag": "🇳🇱 荷兰 (Netherlands) 07 R63",
       "server": "66.163.127.107",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -257,54 +121,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 15",
-      "server": "nl3.japancase.site",
-      "server_port": 443,
-      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl3.japancase.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZsKgmywoAPRRkYHqQ8hUHFB6X_f7tjXfYmvSeHj0-xQ",
-          "short_id": "0d98b07acc98ccef"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 16",
-      "server": "95.142.32.42",
-      "server_port": 8444,
-      "uuid": "a8321cfe-39a2-48a0-a918-f01f7d9006ed",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl18.meshbeat.online",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v1/devices/86f81c4330/telemetry",
-        "headers": {
-          "Host": "nl18.meshbeat.online"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 荷兰 (Netherlands) 17",
+      "tag": "🇳🇱 荷兰 (Netherlands) 08",
       "server": "nl5.japancase.site",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -314,7 +131,7 @@
         "server_name": "nl5.japancase.site",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -324,27 +141,40 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 09",
+      "server": "vdsin.xvanta.online",
+      "server_port": 443,
+      "uuid": "71b566cb-78c4-48e4-af5b-720e4f7884f2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vdsin.xvanta.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xEDYfxVdiRkY-z7qiUvoly7fYDz4U6wI5p69oNbjWA4",
+          "short_id": "f9d991431c87703c"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇳🇱 荷兰 (Netherlands) 01",
-        "🇳🇱 荷兰 (Netherlands) 02 R63",
-        "🇳🇱 荷兰 (Netherlands) 03",
+        "🇳🇱 荷兰 (Netherlands) 02",
+        "🇳🇱 荷兰 (Netherlands) 03 R52",
         "🇳🇱 荷兰 (Netherlands) 04",
         "🇳🇱 荷兰 (Netherlands) 05",
-        "🇳🇱 荷兰 (Netherlands) 06",
-        "🇳🇱 荷兰 (Netherlands) 07 R52",
+        "🇳🇱 荷兰 (Netherlands) 06 R63",
+        "🇳🇱 荷兰 (Netherlands) 07 R63",
         "🇳🇱 荷兰 (Netherlands) 08",
-        "🇳🇱 荷兰 (Netherlands) 09",
-        "🇳🇱 荷兰 (Netherlands) 10",
-        "🇳🇱 荷兰 (Netherlands) 11",
-        "🇳🇱 荷兰 (Netherlands) 12",
-        "🇳🇱 荷兰 (Netherlands) 13 R63",
-        "🇳🇱 荷兰 (Netherlands) 14 R63",
-        "🇳🇱 荷兰 (Netherlands) 15",
-        "🇳🇱 荷兰 (Netherlands) 16",
-        "🇳🇱 荷兰 (Netherlands) 17"
+        "🇳🇱 荷兰 (Netherlands) 09"
       ]
     },
     {
@@ -352,22 +182,14 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇱 荷兰 (Netherlands) 01",
-        "🇳🇱 荷兰 (Netherlands) 02 R63",
-        "🇳🇱 荷兰 (Netherlands) 03",
+        "🇳🇱 荷兰 (Netherlands) 02",
+        "🇳🇱 荷兰 (Netherlands) 03 R52",
         "🇳🇱 荷兰 (Netherlands) 04",
         "🇳🇱 荷兰 (Netherlands) 05",
-        "🇳🇱 荷兰 (Netherlands) 06",
-        "🇳🇱 荷兰 (Netherlands) 07 R52",
+        "🇳🇱 荷兰 (Netherlands) 06 R63",
+        "🇳🇱 荷兰 (Netherlands) 07 R63",
         "🇳🇱 荷兰 (Netherlands) 08",
-        "🇳🇱 荷兰 (Netherlands) 09",
-        "🇳🇱 荷兰 (Netherlands) 10",
-        "🇳🇱 荷兰 (Netherlands) 11",
-        "🇳🇱 荷兰 (Netherlands) 12",
-        "🇳🇱 荷兰 (Netherlands) 13 R63",
-        "🇳🇱 荷兰 (Netherlands) 14 R63",
-        "🇳🇱 荷兰 (Netherlands) 15",
-        "🇳🇱 荷兰 (Netherlands) 16",
-        "🇳🇱 荷兰 (Netherlands) 17"
+        "🇳🇱 荷兰 (Netherlands) 09"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

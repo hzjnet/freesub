@@ -4,64 +4,42 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 法国 (France) 01 R41
-  server: 79.137.99.183
+- name: 🇫🇷 法国 (France) 01 ⚠R
+  server: 198.244.202.215
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 02
-  server: 54.36.174.140
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-- name: 🇫🇷 法国 (France) 03 R46
-  server: 57.129.76.233
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 04 ⚠R
+- name: 🇫🇷 法国 (France) 02 ⚠R
   server: 198.244.201.129
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 05
-  server: pl134.vpnbook.com
+- name: 🇫🇷 法国 (France) 03 R41
+  server: 79.137.99.183
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 04
+  server: pl140.vpnbook.com
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 6heexyz
+- name: 🇫🇷 法国 (France) 05 R46
+  server: 57.129.83.85
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 06 R41
-  server: 79.137.99.183
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 07 R41
-  server: 46.105.222.155
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 08 R41
   server: 162.19.82.57
   port: 1270
   udp: true
@@ -72,48 +50,30 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 09
-  server: ai.smrtai.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  tls: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-    short-id: 086bf957
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10
-  server: m.cnmjin.net
-  port: 16644
+- name: 🇫🇷 法国 (France) 07 R41
+  server: 46.105.222.157
+  port: 1270
   udp: true
   type: vmess
-  uuid: 545ee947-78b4-4c47-9c01-7a1d983273f8
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8b6efbd394b2946b0781661c2a1ba8f1.mobgslb.tbcache.com
-- name: 🇫🇷 法国 (France) 11
-  server: 178.104.70.11
-  port: 443
-  udp: true
-  type: vless
-  uuid: 64726966-0000-4000-8000-740000000000
   tls: true
-  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  servername: xmfhlpy.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
-- name: 🇫🇷 法国 (France) 12 R41
-  server: www.windowssearchtools.com
+- name: 🇫🇷 法国 (France) 08 R41
+  server: 46.105.222.155
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 09 R41
+  server: 104.21.15.251
   port: 443
   udp: true
   type: vmess
@@ -133,34 +93,28 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇫🇷 法国 (France) 01 R41
-  - 🇫🇷 法国 (France) 02
-  - 🇫🇷 法国 (France) 03 R46
-  - 🇫🇷 法国 (France) 04 ⚠R
-  - 🇫🇷 法国 (France) 05
+  - 🇫🇷 法国 (France) 01 ⚠R
+  - 🇫🇷 法国 (France) 02 ⚠R
+  - 🇫🇷 法国 (France) 03 R41
+  - 🇫🇷 法国 (France) 04
+  - 🇫🇷 法国 (France) 05 R46
   - 🇫🇷 法国 (France) 06 R41
   - 🇫🇷 法国 (France) 07 R41
   - 🇫🇷 法国 (France) 08 R41
-  - 🇫🇷 法国 (France) 09
-  - 🇫🇷 法国 (France) 10
-  - 🇫🇷 法国 (France) 11
-  - 🇫🇷 法国 (France) 12 R41
+  - 🇫🇷 法国 (France) 09 R41
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 (France) 01 R41
-  - 🇫🇷 法国 (France) 02
-  - 🇫🇷 法国 (France) 03 R46
-  - 🇫🇷 法国 (France) 04 ⚠R
-  - 🇫🇷 法国 (France) 05
+  - 🇫🇷 法国 (France) 01 ⚠R
+  - 🇫🇷 法国 (France) 02 ⚠R
+  - 🇫🇷 法国 (France) 03 R41
+  - 🇫🇷 法国 (France) 04
+  - 🇫🇷 法国 (France) 05 R46
   - 🇫🇷 法国 (France) 06 R41
   - 🇫🇷 法国 (France) 07 R41
   - 🇫🇷 法国 (France) 08 R41
-  - 🇫🇷 法国 (France) 09
-  - 🇫🇷 法国 (France) 10
-  - 🇫🇷 法国 (France) 11
-  - 🇫🇷 法国 (France) 12 R41
+  - 🇫🇷 法国 (France) 09 R41
 rules:
 - MATCH,PROXIES

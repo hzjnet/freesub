@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 01",
-      "server": "82.118.16.187",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
+      "server": "ee.frgcdn.xyz",
       "server_port": 443,
-      "uuid": "dc2259c4-388e-4285-ba18-df619b6672b6",
+      "uuid": "43a26f1a-99b7-4b17-98c7-b836fb466999",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "ee.frgcdn.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU",
-          "short_id": "cd6065902eea7a02"
+          "public_key": "RO5YMxxtJmZo2w370qG-seJ41toowHPbz6i2uXJ2gG0",
+          "short_id": "7a3f9e2b1c8d4f6a"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 意大利 (Italy) 01"
+        "🇪🇪 爱沙尼亚 (Estonia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 意大利 (Italy) 01"
+        "🇪🇪 爱沙尼亚 (Estonia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
