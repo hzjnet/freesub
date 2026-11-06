@@ -4,9 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇨🇳 CN 01",
-      "server": "vpn.cintaku.qzz.io",
+      "server": "39.108.113.127",
+      "server_port": 10086,
+      "uuid": "fccbad0f-eb6c-4bdd-80ed-145409e2f761",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇳 CN 02",
+      "server": "104.17.108.213",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
@@ -20,7 +31,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vlessws"
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
       }
     },
     {
@@ -28,14 +42,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01"
+        "🇨🇳 CN 01",
+        "🇨🇳 CN 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01"
+        "🇨🇳 CN 01",
+        "🇨🇳 CN 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
