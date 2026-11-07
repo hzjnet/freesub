@@ -5,20 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  server: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
+  server: bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
-  sni: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
+  password: ae5338ae-9a70-58c9-3d47-7d54a5675715
+  sni: bd452e87-tmm5c0-tv7dx2-py5w.hk3.hyhuawei.com
   skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  server: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
+  server: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
+  port: 443
+  udp: true
+  type: tuic
+  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  sni: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
+  skip-cert-verify: false
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  server: 112.120.123.140
   port: 443
   udp: true
   type: hysteria2
-  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
-  sni: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  sni: 9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -27,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
 rules:
 - MATCH,PROXIES

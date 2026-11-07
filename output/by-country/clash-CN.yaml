@@ -5,16 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01
-  server: 120.48.133.162
-  port: 10086
+  server: 103.115.17.137
+  port: 8388
   udp: true
-  type: vmess
-  uuid: 2a489513-46b5-488c-9899-9faaf2d83cd9
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
+  type: ss
+  cipher: aes-256-gcm
+  password: WY1I2Cps3AHOh7AS
 proxy-groups:
 - name: PROXIES
   type: select

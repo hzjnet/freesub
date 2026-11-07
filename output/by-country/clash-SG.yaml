@@ -4,21 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 新加坡 (Singapore) 01
-  server: 190.93.247.242
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 01 R48
+  server: 149.88.106.73
+  port: 19999
   udp: true
-  type: vless
-  uuid: 20e565e1-3858-40bf-94e8-4ec9624fc985
-  tls: true
-  servername: wallweb8.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb8.pages.dev
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 02 R41
   server: 15.235.164.133
   port: 19999
@@ -26,13 +18,14 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 03 R41
-  server: 51.79.228.131
-  port: 19999
+- name: 🇸🇬 新加坡 (Singapore) 03
+  server: 185.36.192.228
+  port: 35488
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vmess
+  uuid: fb5a4283-dbfb-458b-8619-c4a53739f781
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 04 R41
   server: 15.235.182.183
   port: 19999
@@ -40,15 +33,15 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 05 R48
-  server: 149.88.106.74
+- name: 🇸🇬 新加坡 (Singapore) 05 R41
+  server: 51.79.228.131
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 06 R48
-  server: 149.88.106.73
+  server: 149.88.106.74
   port: 19999
   udp: true
   type: ss
@@ -61,55 +54,74 @@ proxies:
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 08 R52
-  server: 68.183.227.236
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 09 R52
-  server: 128.199.172.224
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 10 R52
-  server: 68.183.227.4
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 11 R55
+- name: 🇸🇬 新加坡 (Singapore) 08 R55
   server: 128.1.186.73
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 12
-  server: 134.255.211.36
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 09 R52
+  server: 68.183.235.240
+  port: 8080
   udp: true
-  type: vless
-  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: KcI3PoYu2yF7whv-e0C7JnRyUoUiUDu6tOlUBPYYbCk
-    short-id: 2e96bf6afa823abb
-  servername: sg-sin.probe.geomyip.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 10 R52
+  server: 68.183.227.236
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 11 R55
+  server: 128.1.186.132
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 12 R52
+  server: 128.199.172.224
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 13 R52
+  server: 68.183.227.4
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 14 R52
   server: 68.183.227.45
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 14 R41
+- name: 🇸🇬 新加坡 (Singapore) 15 R57
+  server: 014dd758-tmm5c0-tpda83-1lkbs.sg7.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5a4c13ae-6673-11ee-a149-f23c9164ca5d
+  sni: 014dd758-tmm5c0-tpda83-1lkbs.sg7.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 16
+  server: 45.76.155.179
+  port: 443
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: sg003.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 17 R41
   server: 15.235.144.92
   port: 1270
   udp: true
@@ -120,46 +132,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 15
-  server: 45.76.155.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: sg003.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 16 R55
-  server: 128.1.186.132
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 17 R57
-  server: 188.114.98.0
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: 🇸🇬 新加坡 (Singapore) 18 R52
-  server: 68.183.235.240
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 19 R57
+- name: 🇸🇬 新加坡 (Singapore) 18 R57
   server: 139.162.27.96
   port: 2096
   udp: true
@@ -174,70 +147,81 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 20
-  server: 104.17.117.137
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 19
+  server: 54.251.9.130
+  port: 24146
   udp: true
   type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+  flow: xtls-rprx-vision
   tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  servername: www.intel.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
+- name: 🇸🇬 新加坡 (Singapore) 20
+  server: 147.93.173.45
+  port: 10444
+  udp: true
+  type: vless
+  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 新加坡 (Singapore) 01
+  - 🇸🇬 新加坡 (Singapore) 01 R48
   - 🇸🇬 新加坡 (Singapore) 02 R41
-  - 🇸🇬 新加坡 (Singapore) 03 R41
+  - 🇸🇬 新加坡 (Singapore) 03
   - 🇸🇬 新加坡 (Singapore) 04 R41
-  - 🇸🇬 新加坡 (Singapore) 05 R48
+  - 🇸🇬 新加坡 (Singapore) 05 R41
   - 🇸🇬 新加坡 (Singapore) 06 R48
   - 🇸🇬 新加坡 (Singapore) 07 R52
-  - 🇸🇬 新加坡 (Singapore) 08 R52
+  - 🇸🇬 新加坡 (Singapore) 08 R55
   - 🇸🇬 新加坡 (Singapore) 09 R52
   - 🇸🇬 新加坡 (Singapore) 10 R52
   - 🇸🇬 新加坡 (Singapore) 11 R55
-  - 🇸🇬 新加坡 (Singapore) 12
+  - 🇸🇬 新加坡 (Singapore) 12 R52
   - 🇸🇬 新加坡 (Singapore) 13 R52
-  - 🇸🇬 新加坡 (Singapore) 14 R41
-  - 🇸🇬 新加坡 (Singapore) 15
-  - 🇸🇬 新加坡 (Singapore) 16 R55
-  - 🇸🇬 新加坡 (Singapore) 17 R57
-  - 🇸🇬 新加坡 (Singapore) 18 R52
-  - 🇸🇬 新加坡 (Singapore) 19 R57
+  - 🇸🇬 新加坡 (Singapore) 14 R52
+  - 🇸🇬 新加坡 (Singapore) 15 R57
+  - 🇸🇬 新加坡 (Singapore) 16
+  - 🇸🇬 新加坡 (Singapore) 17 R41
+  - 🇸🇬 新加坡 (Singapore) 18 R57
+  - 🇸🇬 新加坡 (Singapore) 19
   - 🇸🇬 新加坡 (Singapore) 20
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 (Singapore) 01
+  - 🇸🇬 新加坡 (Singapore) 01 R48
   - 🇸🇬 新加坡 (Singapore) 02 R41
-  - 🇸🇬 新加坡 (Singapore) 03 R41
+  - 🇸🇬 新加坡 (Singapore) 03
   - 🇸🇬 新加坡 (Singapore) 04 R41
-  - 🇸🇬 新加坡 (Singapore) 05 R48
+  - 🇸🇬 新加坡 (Singapore) 05 R41
   - 🇸🇬 新加坡 (Singapore) 06 R48
   - 🇸🇬 新加坡 (Singapore) 07 R52
-  - 🇸🇬 新加坡 (Singapore) 08 R52
+  - 🇸🇬 新加坡 (Singapore) 08 R55
   - 🇸🇬 新加坡 (Singapore) 09 R52
   - 🇸🇬 新加坡 (Singapore) 10 R52
   - 🇸🇬 新加坡 (Singapore) 11 R55
-  - 🇸🇬 新加坡 (Singapore) 12
+  - 🇸🇬 新加坡 (Singapore) 12 R52
   - 🇸🇬 新加坡 (Singapore) 13 R52
-  - 🇸🇬 新加坡 (Singapore) 14 R41
-  - 🇸🇬 新加坡 (Singapore) 15
-  - 🇸🇬 新加坡 (Singapore) 16 R55
-  - 🇸🇬 新加坡 (Singapore) 17 R57
-  - 🇸🇬 新加坡 (Singapore) 18 R52
-  - 🇸🇬 新加坡 (Singapore) 19 R57
+  - 🇸🇬 新加坡 (Singapore) 14 R52
+  - 🇸🇬 新加坡 (Singapore) 15 R57
+  - 🇸🇬 新加坡 (Singapore) 16
+  - 🇸🇬 新加坡 (Singapore) 17 R41
+  - 🇸🇬 新加坡 (Singapore) 18 R57
+  - 🇸🇬 新加坡 (Singapore) 19
   - 🇸🇬 新加坡 (Singapore) 20
 rules:
 - MATCH,PROXIES

@@ -4,9 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-      "server": "kz1.japancase.site",
+      "server": "38.180.38.19",
+      "server_port": 15231,
+      "method": "aes-128-gcm",
+      "password": "5126ccc78eea4c643cbed4e6c21465e8"
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
+      "server": "95.57.50.87",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
       "flow": "xtls-rprx-vision",
@@ -29,14 +37,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

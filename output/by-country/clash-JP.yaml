@@ -5,25 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01
-  server: 152.69.195.67
-  port: 47878
+  server: 74.113.233.192
+  port: 443
   udp: true
   type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- name: 🇯🇵 日本 (Japan) 02
-  server: 64.110.100.50
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Uj6mzD2Qjr9PN0nfBCR2-4KyWm-8vddROou39LN6BXM
-    short-id: d7953572
-  servername: www.developer.nvidia.com
+    public-key: vR15JQvAL78o2FzRCftXVm1LTz-xdU31wBB2ohHFD0g
+    short-id: 47b225059e19aa39
+  servername: jp1.japancase.site
   client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 03 R57
+- name: 🇯🇵 日本 (Japan) 02 R57
   server: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
   port: 443
   udp: true
@@ -36,184 +30,19 @@ proxies:
   udp-relay-mode: native
   alpn:
   - h3
-- name: 🇯🇵 日本 (Japan) 04
-  server: 167.179.108.225
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: discoverparttimepositionsandsupplementyourincomeguide.com
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 05
-  server: 80.240.18.227
-  port: 10051
-  udp: true
-  type: vless
-  uuid: d161dcf1-fde2-44cc-b08d-d8944895e842
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇯🇵 日本 (Japan) 06
-  server: 57.129.130.63
-  port: 52014
-  udp: true
-  type: vless
-  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 07
-  server: 129.151.64.169
-  port: 31867
-  udp: true
-  type: vless
-  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 08
-  server: 147.45.42.73
-  port: 20443
-  udp: true
-  type: vless
-  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇯🇵 日本 (Japan) 09
-  server: 80.240.18.227
-  port: 10051
-  udp: true
-  type: vless
-  uuid: 73996ef7-544c-45e7-abc0-973218c727e2
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 日本 (Japan) 10
-  server: 188.34.142.174
-  port: 444
-  udp: true
-  type: vless
-  uuid: da46ec1f-84ad-4470-866f-010b58357b19
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 11
-  server: 5.9.117.252
-  port: 4433
-  udp: true
-  type: vless
-  uuid: ef286b0e-21ed-4e2b-9110-e2ddc7627892
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 12
-  server: 57.129.52.47
-  port: 52014
-  udp: true
-  type: vless
-  uuid: ecc4675b-1607-4699-8b20-23af97b671af
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇯🇵 日本 (Japan) 13
-  server: 109.120.155.155
-  port: 444
-  udp: true
-  type: vless
-  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇯🇵 日本 (Japan) 01
-  - 🇯🇵 日本 (Japan) 02
-  - 🇯🇵 日本 (Japan) 03 R57
-  - 🇯🇵 日本 (Japan) 04
-  - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06
-  - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08
-  - 🇯🇵 日本 (Japan) 09
-  - 🇯🇵 日本 (Japan) 10
-  - 🇯🇵 日本 (Japan) 11
-  - 🇯🇵 日本 (Japan) 12
-  - 🇯🇵 日本 (Japan) 13
+  - 🇯🇵 日本 (Japan) 02 R57
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 日本 (Japan) 01
-  - 🇯🇵 日本 (Japan) 02
-  - 🇯🇵 日本 (Japan) 03 R57
-  - 🇯🇵 日本 (Japan) 04
-  - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06
-  - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08
-  - 🇯🇵 日本 (Japan) 09
-  - 🇯🇵 日本 (Japan) 10
-  - 🇯🇵 日本 (Japan) 11
-  - 🇯🇵 日本 (Japan) 12
-  - 🇯🇵 日本 (Japan) 13
+  - 🇯🇵 日本 (Japan) 02 R57
 rules:
 - MATCH,PROXIES

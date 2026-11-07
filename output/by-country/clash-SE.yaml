@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: 193.25.216.31
+  server: 193.25.216.88
   port: 443
   udp: true
   type: vless
@@ -23,28 +23,8 @@ proxies:
     public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
     short-id: a1037b25dcef6aa7
   servername: sw.golangwikito.cfd
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 03 R50
-  server: 95.143.196.97
-  port: 443
-  udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04
-  server: 13.51.251.17
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9c9d857a-5008-4ae7-843b-d1d15d1c012c
-  tls: true
-  reality-opts:
-    public-key: t9S4iPLQk1ixWi1QDCxhr1eVpIRdF38goAf_5gYZRGQ
-    short-id: ba35
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 05
+  client-fingerprint: ios
+- name: 🇸🇪 瑞典 (Sweden) 03
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -57,7 +37,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 06
+- name: 🇸🇪 瑞典 (Sweden) 04
   server: 194.104.94.141
   port: 443
   udp: true
@@ -67,6 +47,14 @@ proxies:
   servername: se3.shtil.io
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 05 R50
+  server: 95.143.196.97
+  port: 443
+  udp: true
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,10 +62,9 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
-  - 🇸🇪 瑞典 (Sweden) 03 R50
+  - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
-  - 🇸🇪 瑞典 (Sweden) 05
-  - 🇸🇪 瑞典 (Sweden) 06
+  - 🇸🇪 瑞典 (Sweden) 05 R50
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,9 +72,8 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
-  - 🇸🇪 瑞典 (Sweden) 03 R50
+  - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
-  - 🇸🇪 瑞典 (Sweden) 05
-  - 🇸🇪 瑞典 (Sweden) 06
+  - 🇸🇪 瑞典 (Sweden) 05 R50
 rules:
 - MATCH,PROXIES
