@@ -5,33 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01
-  server: 62.182.193.228
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
-- name: 🇸🇪 瑞典 (Sweden) 02
   server: 138.199.55.243
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇪 瑞典 (Sweden) 03
-  server: 193.25.216.88
+- name: 🇸🇪 瑞典 (Sweden) 02
+  server: 194.104.94.141
   port: 443
   udp: true
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   tls: true
-  reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-  servername: sw.golangwikito.cfd
-  client-fingerprint: ios
-- name: 🇸🇪 瑞典 (Sweden) 04
+  servername: se3.shtil.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 03
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -44,6 +34,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 04
+  server: sw.golangwikito.cfd
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
+  servername: sw.golangwikito.cfd
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 05 R50
   server: 95.143.196.97
   port: 443
@@ -52,16 +55,6 @@ proxies:
   password: 769f34f0-1500-488f-b414-03bc90666502
   sni: se.mimowhat.online
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 06
-  server: 194.104.94.141
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  tls: true
-  servername: se3.shtil.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,7 +65,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
   - 🇸🇪 瑞典 (Sweden) 05 R50
-  - 🇸🇪 瑞典 (Sweden) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,6 +75,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
   - 🇸🇪 瑞典 (Sweden) 05 R50
-  - 🇸🇪 瑞典 (Sweden) 06
 rules:
 - MATCH,PROXIES

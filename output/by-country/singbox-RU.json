@@ -6,67 +6,13 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01",
-      "server": "50.7.227.77",
-      "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "bizorg.su",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02",
-      "server": "89.105.218.148",
+      "server": "89.105.218.138",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "golos.mail.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03",
-      "server": "201.8.71.59",
-      "server_port": 443,
-      "password": "23c82941-70f4-4381-90db-bd28e9a902e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "steel7.hadsvpn.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04",
-      "server": "179.43.166.190",
-      "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "perevodchiki.su",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -80,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02",
       "server": "66.90.106.28",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
@@ -100,18 +46,30 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03",
+      "server": "steel7.hadsvpn.com",
+      "server_port": 443,
+      "password": "23c82941-70f4-4381-90db-bd28e9a902e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "steel7.hadsvpn.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06",
-      "server": "fdat.titun.su",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04",
+      "server": "fduknew.titun.su",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "banket-restoran.su",
+        "server_name": "bizorg.su",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -122,14 +80,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07",
-      "server": "ee.subv.ru",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05",
+      "server": "fdat.titun.su",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "dvizhok.su",
+        "server_name": "banket-restoran.su",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -150,9 +108,7 @@
         "🇷🇺 俄罗斯 (Russia) 02",
         "🇷🇺 俄罗斯 (Russia) 03",
         "🇷🇺 俄罗斯 (Russia) 04",
-        "🇷🇺 俄罗斯 (Russia) 05",
-        "🇷🇺 俄罗斯 (Russia) 06",
-        "🇷🇺 俄罗斯 (Russia) 07"
+        "🇷🇺 俄罗斯 (Russia) 05"
       ]
     },
     {
@@ -163,9 +119,7 @@
         "🇷🇺 俄罗斯 (Russia) 02",
         "🇷🇺 俄罗斯 (Russia) 03",
         "🇷🇺 俄罗斯 (Russia) 04",
-        "🇷🇺 俄罗斯 (Russia) 05",
-        "🇷🇺 俄罗斯 (Russia) 06",
-        "🇷🇺 俄罗斯 (Russia) 07"
+        "🇷🇺 俄罗斯 (Russia) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

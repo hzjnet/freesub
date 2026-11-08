@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 01",
-      "server": "162.159.228.255",
-      "server_port": 443,
-      "uuid": "b135a1e0-ebdb-4d46-b3fa-bd1e78580244",
+      "server": "154.31.112.237",
+      "server_port": 26418,
+      "uuid": "06aaca30-c533-40e2-b4d2-159587f74b09",
       "tls": {
         "enabled": true,
-        "server_name": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev",
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -22,19 +22,19 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 02",
-      "server": "57.129.130.200",
-      "server_port": 52014,
-      "uuid": "c8b0617e-010f-43a8-b3d0-d5358febf0c9",
+      "server": "107.191.53.86",
+      "server_port": 4798,
+      "uuid": "1fa79462-3a93-43f6-86b5-82c1536203df",
       "tls": {
         "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -45,19 +45,19 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 03",
-      "server": "57.129.130.63",
-      "server_port": 52014,
-      "uuid": "d731cf09-79a6-4647-aabe-8e0fda4fe3be",
+      "server": "154.31.112.237",
+      "server_port": 26418,
+      "uuid": "4217be59-425f-472c-9948-cff6ecf7be0b",
       "tls": {
         "enabled": true,
-        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -68,19 +68,19 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 04",
-      "server": "46.101.46.169",
-      "server_port": 486,
-      "uuid": "16bf3359-e7d8-4de6-86a0-6d65cf793b56",
+      "server": "54.178.110.17",
+      "server_port": 4443,
+      "uuid": "ed4c72b0-51b6-4334-a977-f433d7fe8f88",
       "tls": {
         "enabled": true,
-        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -91,19 +91,19 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 05",
-      "server": "188.34.142.174",
-      "server_port": 444,
-      "uuid": "da46ec1f-84ad-4470-866f-010b58357b19",
+      "server": "57.129.130.34",
+      "server_port": 52014,
+      "uuid": "bfbfeb23-2f8f-4ca2-9891-c1d708cffce2",
       "tls": {
         "enabled": true,
-        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -114,31 +114,42 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
         }
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 06",
-      "server": "150.230.217.160",
-      "server_port": 27777,
-      "password": "e79bb958-2a79-4eea-87a3-7e73d0059ebf",
+      "server": "107.191.53.86",
+      "server_port": 4798,
+      "uuid": "2b7eed58-3e9a-44ea-adda-acf914fb57ed",
       "tls": {
         "enabled": true,
-        "server_name": "ol1.ssn571.top",
-        "insecure": false
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 07",
-      "server": "37.120.222.70",
-      "server_port": 8082,
-      "uuid": "59c3c1c7-62d0-4707-9d67-5ff9c008591c",
+      "server": "57.129.130.34",
+      "server_port": 52014,
+      "uuid": "6f33c3ef-ac0c-4138-8562-531d8d0eddb0",
       "tls": {
         "enabled": true,
-        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -149,19 +160,19 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 08",
-      "server": "57.129.130.57",
-      "server_port": 52014,
-      "uuid": "47ba5dc6-8961-48a0-8b54-f57ec524627a",
+      "server": "129.151.64.169",
+      "server_port": 31867,
+      "uuid": "5d85c2e3-cb03-4ec4-b068-bd6ad778c02f",
       "tls": {
         "enabled": true,
-        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -172,40 +183,42 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 09",
-      "server": "74.113.233.192",
-      "server_port": 443,
-      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-      "flow": "xtls-rprx-vision",
+      "server": "179.61.251.244",
+      "server_port": 7443,
+      "uuid": "ef23b676-4740-4005-a1c7-c3b85f8fa812",
       "tls": {
         "enabled": true,
-        "server_name": "jp1.japancase.site",
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vR15JQvAL78o2FzRCftXVm1LTz-xdU31wBB2ohHFD0g",
-          "short_id": "47b225059e19aa39"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 10",
-      "server": "5.9.117.252",
-      "server_port": 4433,
-      "uuid": "ef286b0e-21ed-4e2b-9110-e2ddc7627892",
+      "server": "79.137.197.212",
+      "server_port": 2105,
+      "uuid": "a1598f4a-2b90-4367-998e-f2ab77452436",
       "tls": {
         "enabled": true,
-        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -216,19 +229,44 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 11",
-      "server": "57.129.52.47",
-      "server_port": 52014,
-      "uuid": "ecc4675b-1607-4699-8b20-23af97b671af",
+      "server": "freev2.cloudflare.182682.xyz",
+      "server_port": 443,
+      "uuid": "f1f7b063-621c-48fb-9091-81ad5f3a2213",
       "tls": {
         "enabled": true,
-        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
+        "server_name": "jp-osa.862400.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/announcement",
+        "headers": {
+          "Host": "jp-osa.862400.xyz"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 12",
+      "server": "79.137.197.212",
+      "server_port": 2105,
+      "uuid": "4af07c53-a386-49d7-9f84-6c439e53b701",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -239,13 +277,105 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 12",
+      "tag": "🇯🇵 日本 (Japan) 13",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "201e0019-2e79-4147-8a09-e510d630abeb",
+      "tls": {
+        "enabled": true,
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 14",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "091ea5fd-4e8d-4459-90af-e4d10179efff",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 15",
+      "server": "185.125.103.62",
+      "server_port": 8082,
+      "uuid": "3dbf58d7-53fc-4fad-8779-1c867e024fd0",
+      "tls": {
+        "enabled": true,
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 16",
+      "server": "57.129.130.34",
+      "server_port": 52014,
+      "uuid": "d44da6cd-10d2-4189-a167-49e9f35c7143",
+      "tls": {
+        "enabled": true,
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 17",
       "server": "147.45.42.73",
       "server_port": 20443,
       "uuid": "f293db4d-7ab1-4faf-bb15-89540d8709cb",
@@ -268,13 +398,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 13",
-      "server": "54.178.110.17",
-      "server_port": 4443,
-      "uuid": "d5fbd83b-7346-4ad9-94c0-76293724824d",
+      "tag": "🇯🇵 日本 (Japan) 18",
+      "server": "23.27.20.142",
+      "server_port": 48537,
+      "uuid": "0b583bdc-401c-4715-bfec-500a25584133",
       "tls": {
         "enabled": true,
-        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -285,13 +415,59 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14",
+      "tag": "🇯🇵 日本 (Japan) 19",
+      "server": "45.77.241.190",
+      "server_port": 8441,
+      "uuid": "66b076d4-519d-4b05-872e-d0366d15bace",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 20",
+      "server": "79.137.197.212",
+      "server_port": 2105,
+      "uuid": "3b2c840f-da7c-41ec-b19b-ffbb2afa8a5a",
+      "tls": {
+        "enabled": true,
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 21",
       "server": "79.137.199.52",
       "server_port": 21,
       "uuid": "763e2ddd-c830-4f4f-801c-f6f2c3418d4f",
@@ -314,13 +490,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 15",
+      "tag": "🇯🇵 日本 (Japan) 22",
       "server": "5.75.195.83",
       "server_port": 56879,
-      "uuid": "f8847ac2-e586-400f-841b-00081ea4592e",
+      "uuid": "5fe048f2-68e2-42e0-9758-c33a5ac2ee6d",
       "tls": {
         "enabled": true,
-        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -331,31 +507,88 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
         }
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 16",
-      "server": "151.145.71.43",
-      "server_port": 27777,
-      "password": "e79bb958-2a79-4eea-87a3-7e73d0059ebf",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 23",
+      "server": "79.137.197.212",
+      "server_port": 2105,
+      "uuid": "3c88be7f-dc22-4a4a-b1b5-9a2efc5a721e",
       "tls": {
         "enabled": true,
-        "server_name": "ol2.ssn571.top",
-        "insecure": false
+        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 17",
+      "tag": "🇯🇵 日本 (Japan) 24",
+      "server": "178.105.133.160",
+      "server_port": 4443,
+      "uuid": "8ca2a846-d47a-4a06-b25a-a2431cede451",
+      "tls": {
+        "enabled": true,
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 25",
+      "server": "172.105.241.119",
+      "server_port": 1916,
+      "uuid": "8008ceea-be4e-47e1-88c0-6a99cb1b5825",
+      "tls": {
+        "enabled": true,
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 26",
       "server": "203.137.165.164",
       "server_port": 57554,
-      "uuid": "e5b2a063-a114-4bd0-802d-b2da1fe1d1da",
+      "uuid": "0985e268-5c1c-4141-9d96-139f8046c47c",
       "tls": {
         "enabled": true,
-        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -366,19 +599,19 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 18",
-      "server": "84.22.150.39",
-      "server_port": 7443,
-      "uuid": "9d5cbb90-876b-448d-9874-27ab35bae6e7",
+      "tag": "🇯🇵 日本 (Japan) 27",
+      "server": "172.105.241.119",
+      "server_port": 1916,
+      "uuid": "50b0b78d-dab1-4952-9388-9143849e0766",
       "tls": {
         "enabled": true,
-        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -389,19 +622,19 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 19",
-      "server": "89.22.224.146",
-      "server_port": 43788,
-      "uuid": "6fbd9bd1-ccd4-4e2f-a918-a0f871965763",
+      "tag": "🇯🇵 日本 (Japan) 28",
+      "server": "147.45.42.73",
+      "server_port": 20443,
+      "uuid": "fcbb9617-7b3c-4b21-8a91-a57350a75222",
       "tls": {
         "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -412,7 +645,198 @@
         "type": "ws",
         "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 29",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "8199228b-e84b-42a2-9268-e400391e483a",
+      "tls": {
+        "enabled": true,
+        "server_name": "9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 30",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "50f7f0fe-32be-4d5a-9432-095160ff7775",
+      "tls": {
+        "enabled": true,
+        "server_name": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 31",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "259253f0-1c3e-42e3-a12e-2badd0a1f5bb",
+      "tls": {
+        "enabled": true,
+        "server_name": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 32",
+      "server": "172.105.241.119",
+      "server_port": 1916,
+      "uuid": "e121912d-2931-4326-a7f8-2c1db8376b18",
+      "tls": {
+        "enabled": true,
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 33",
+      "server": "109.120.155.155",
+      "server_port": 444,
+      "uuid": "c325206e-0f0c-4472-9d76-43e9b9b2ef63",
+      "tls": {
+        "enabled": true,
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 34",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "63738559-6af2-424b-8dc9-77d6edba7804",
+      "tls": {
+        "enabled": true,
+        "server_name": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 35",
+      "server": "152.69.195.67",
+      "server_port": 47878,
+      "uuid": "eb8613e3-8393-4cff-a3ad-6501fd4adc63"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 36",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "a32f3ec6-d776-450e-9d97-9e2deb6c8421",
+      "tls": {
+        "enabled": true,
+        "server_name": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 37",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "01e7eda0-cd5a-4415-b42d-0dc4a7598cf9",
+      "tls": {
+        "enabled": true,
+        "server_name": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev"
         }
       }
     },
@@ -439,7 +863,25 @@
         "🇯🇵 日本 (Japan) 16",
         "🇯🇵 日本 (Japan) 17",
         "🇯🇵 日本 (Japan) 18",
-        "🇯🇵 日本 (Japan) 19"
+        "🇯🇵 日本 (Japan) 19",
+        "🇯🇵 日本 (Japan) 20",
+        "🇯🇵 日本 (Japan) 21",
+        "🇯🇵 日本 (Japan) 22",
+        "🇯🇵 日本 (Japan) 23",
+        "🇯🇵 日本 (Japan) 24",
+        "🇯🇵 日本 (Japan) 25",
+        "🇯🇵 日本 (Japan) 26",
+        "🇯🇵 日本 (Japan) 27",
+        "🇯🇵 日本 (Japan) 28",
+        "🇯🇵 日本 (Japan) 29",
+        "🇯🇵 日本 (Japan) 30",
+        "🇯🇵 日本 (Japan) 31",
+        "🇯🇵 日本 (Japan) 32",
+        "🇯🇵 日本 (Japan) 33",
+        "🇯🇵 日本 (Japan) 34",
+        "🇯🇵 日本 (Japan) 35",
+        "🇯🇵 日本 (Japan) 36",
+        "🇯🇵 日本 (Japan) 37"
       ]
     },
     {
@@ -464,7 +906,25 @@
         "🇯🇵 日本 (Japan) 16",
         "🇯🇵 日本 (Japan) 17",
         "🇯🇵 日本 (Japan) 18",
-        "🇯🇵 日本 (Japan) 19"
+        "🇯🇵 日本 (Japan) 19",
+        "🇯🇵 日本 (Japan) 20",
+        "🇯🇵 日本 (Japan) 21",
+        "🇯🇵 日本 (Japan) 22",
+        "🇯🇵 日本 (Japan) 23",
+        "🇯🇵 日本 (Japan) 24",
+        "🇯🇵 日本 (Japan) 25",
+        "🇯🇵 日本 (Japan) 26",
+        "🇯🇵 日本 (Japan) 27",
+        "🇯🇵 日本 (Japan) 28",
+        "🇯🇵 日本 (Japan) 29",
+        "🇯🇵 日本 (Japan) 30",
+        "🇯🇵 日本 (Japan) 31",
+        "🇯🇵 日本 (Japan) 32",
+        "🇯🇵 日本 (Japan) 33",
+        "🇯🇵 日本 (Japan) 34",
+        "🇯🇵 日本 (Japan) 35",
+        "🇯🇵 日本 (Japan) 36",
+        "🇯🇵 日本 (Japan) 37"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
