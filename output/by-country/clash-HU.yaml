@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01
-  server: 8.6.112.0
-  port: 8443
+- name: 🇭🇺 匈牙利 (Hungary) 01
+  server: 172.67.131.125
+  port: 2083
   udp: true
   type: vless
-  uuid: 8eb92a78-ec8d-4ff6-8a2d-8b801367be87
+  uuid: f418674e-f518-4318-8ff9-e10000000046
   tls: true
-  servername: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+  servername: smart-edge-424.arti98399-1905.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /sync
     headers:
-      Host: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+      Host: smart-edge-424.arti98399-1905.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01
+  - 🇭🇺 匈牙利 (Hungary) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01
+  - 🇭🇺 匈牙利 (Hungary) 01
 rules:
 - MATCH,PROXIES

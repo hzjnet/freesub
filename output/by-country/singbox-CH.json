@@ -4,26 +4,34 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 R49",
-      "server": "208.69.78.29",
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01",
+      "server": "537df6t.ch5.h1clayd.click",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "54066259-28a1-47dc-b0f7-e7715f27918e",
       "tls": {
         "enabled": true,
-        "server_name": "learn.yourultimateprofessionalcareerhub.com",
-        "insecure": false
+        "server_name": "537df6t.ch5.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LHkKUZNBp93VjTHD9fpoj44-4WB-TQbDpa5A929nSwE",
+          "short_id": "e368a430524df0fa"
+        }
       }
     },
     {
       "type": "trojan",
       "tag": "🇨🇭 瑞士 (Switzerland) 02 R49",
-      "server": "208.69.78.222",
+      "server": "208.69.78.158",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "yourultimateprofessionalcareerhub.com",
+        "server_name": "api.yourultimateprofessionalcareerhub.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -32,20 +40,34 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 R49",
+      "server": "208.69.78.60",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.yourultimateprofessionalcareerhub.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 瑞士 (Switzerland) 01 R49",
-        "🇨🇭 瑞士 (Switzerland) 02 R49"
+        "🇨🇭 瑞士 (Switzerland) 01",
+        "🇨🇭 瑞士 (Switzerland) 02 R49",
+        "🇨🇭 瑞士 (Switzerland) 03 R49"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 瑞士 (Switzerland) 01 R49",
-        "🇨🇭 瑞士 (Switzerland) 02 R49"
+        "🇨🇭 瑞士 (Switzerland) 01",
+        "🇨🇭 瑞士 (Switzerland) 02 R49",
+        "🇨🇭 瑞士 (Switzerland) 03 R49"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
 - name: 🇮🇳 印度 (India) 02
-  server: in1.japancase.site
+  server: 107.181.139.144
   port: 443
   udp: true
   type: vless

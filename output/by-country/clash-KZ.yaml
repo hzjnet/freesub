@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: 38.180.38.19
-  port: 15231
+  server: 90.156.230.179
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 5126ccc78eea4c643cbed4e6c21465e8
+  type: vless
+  uuid: dc95c1dd-2cd3-414c-8cf1-71ae86dad666
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Au1rmQdDRjlEJk17IfLQv5PBUEEosMWNhAlrWZj6mnY
+    short-id: '14324280'
+  servername: kz-cdn-prsv-forum.keno.su
+  client-fingerprint: firefox
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
   server: 95.57.50.87
   port: 443

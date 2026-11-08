@@ -14,7 +14,7 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02",
-      "server": "in1.japancase.site",
+      "server": "107.181.139.144",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
       "flow": "xtls-rprx-vision",
