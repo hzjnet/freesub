@@ -4,64 +4,70 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 新加坡 (Singapore) 01 R48
-  server: 149.88.106.74
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 02 R48
-  server: 149.88.106.73
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 03 R41
+- name: 🇸🇬 新加坡 (Singapore) 01 R41
   server: 15.235.164.133
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 04 R41
-  server: 15.235.182.183
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 05 R41
+- name: 🇸🇬 新加坡 (Singapore) 02 R41
   server: 51.79.228.131
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 03 R41
+  server: 15.235.182.183
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 04 R48
+  server: 149.88.106.74
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 05 R48
+  server: 149.88.106.73
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 06 R52
-  server: 68.183.227.45
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 07 R52
-  server: 68.183.227.236
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 08 R52
   server: 68.183.235.240
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 07
+  server: 134.255.211.36
+  port: 443
+  udp: true
+  type: vless
+  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KcI3PoYu2yF7whv-e0C7JnRyUoUiUDu6tOlUBPYYbCk
+    short-id: 2e96bf6afa823abb
+  servername: sg-sin.probe.geomyip.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 08 R55
+  server: 128.1.186.132
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 09 R52
-  server: 68.183.227.4
+  server: 68.183.235.122
   port: 8080
   udp: true
   type: ss
@@ -75,67 +81,27 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 11 R52
-  server: 128.199.172.224
+  server: 68.183.227.45
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 12 R55
-  server: 128.1.186.132
+- name: 🇸🇬 新加坡 (Singapore) 12 R52
+  server: 68.183.227.4
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 13
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 14 R52
-  server: 68.183.235.122
+- name: 🇸🇬 新加坡 (Singapore) 13 R52
+  server: 68.183.227.236
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 15 R57
-  server: 139.162.27.96
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  tls: true
-  servername: free-server.techsonic.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 16
-  server: 45.76.155.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: sg003.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 17 R41
+- name: 🇸🇬 新加坡 (Singapore) 14 R41
   server: 15.235.144.92
   port: 1270
   udp: true
@@ -146,66 +112,102 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 18
-  server: 172.105.241.119
-  port: 1916
+- name: 🇸🇬 新加坡 (Singapore) 15
+  server: 45.76.155.179
+  port: 443
   udp: true
   type: vless
-  uuid: 9147bb5d-59bc-4180-b780-122242e133b2
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  servername: sg003.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 16
+  server: 84.22.150.39
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 17
+  server: 54.251.9.130
+  port: 24146
+  udp: true
+  type: vless
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 18
+  server: 3.0.70.13
+  port: 1114
+  udp: true
+  type: vless
+  uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
+    short-id: 79a1e14b
+  servername: yahoo.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 新加坡 (Singapore) 01 R48
-  - 🇸🇬 新加坡 (Singapore) 02 R48
+  - 🇸🇬 新加坡 (Singapore) 01 R41
+  - 🇸🇬 新加坡 (Singapore) 02 R41
   - 🇸🇬 新加坡 (Singapore) 03 R41
-  - 🇸🇬 新加坡 (Singapore) 04 R41
-  - 🇸🇬 新加坡 (Singapore) 05 R41
+  - 🇸🇬 新加坡 (Singapore) 04 R48
+  - 🇸🇬 新加坡 (Singapore) 05 R48
   - 🇸🇬 新加坡 (Singapore) 06 R52
-  - 🇸🇬 新加坡 (Singapore) 07 R52
-  - 🇸🇬 新加坡 (Singapore) 08 R52
+  - 🇸🇬 新加坡 (Singapore) 07
+  - 🇸🇬 新加坡 (Singapore) 08 R55
   - 🇸🇬 新加坡 (Singapore) 09 R52
   - 🇸🇬 新加坡 (Singapore) 10 R55
   - 🇸🇬 新加坡 (Singapore) 11 R52
-  - 🇸🇬 新加坡 (Singapore) 12 R55
-  - 🇸🇬 新加坡 (Singapore) 13
-  - 🇸🇬 新加坡 (Singapore) 14 R52
-  - 🇸🇬 新加坡 (Singapore) 15 R57
+  - 🇸🇬 新加坡 (Singapore) 12 R52
+  - 🇸🇬 新加坡 (Singapore) 13 R52
+  - 🇸🇬 新加坡 (Singapore) 14 R41
+  - 🇸🇬 新加坡 (Singapore) 15
   - 🇸🇬 新加坡 (Singapore) 16
-  - 🇸🇬 新加坡 (Singapore) 17 R41
+  - 🇸🇬 新加坡 (Singapore) 17
   - 🇸🇬 新加坡 (Singapore) 18
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 (Singapore) 01 R48
-  - 🇸🇬 新加坡 (Singapore) 02 R48
+  - 🇸🇬 新加坡 (Singapore) 01 R41
+  - 🇸🇬 新加坡 (Singapore) 02 R41
   - 🇸🇬 新加坡 (Singapore) 03 R41
-  - 🇸🇬 新加坡 (Singapore) 04 R41
-  - 🇸🇬 新加坡 (Singapore) 05 R41
+  - 🇸🇬 新加坡 (Singapore) 04 R48
+  - 🇸🇬 新加坡 (Singapore) 05 R48
   - 🇸🇬 新加坡 (Singapore) 06 R52
-  - 🇸🇬 新加坡 (Singapore) 07 R52
-  - 🇸🇬 新加坡 (Singapore) 08 R52
+  - 🇸🇬 新加坡 (Singapore) 07
+  - 🇸🇬 新加坡 (Singapore) 08 R55
   - 🇸🇬 新加坡 (Singapore) 09 R52
   - 🇸🇬 新加坡 (Singapore) 10 R55
   - 🇸🇬 新加坡 (Singapore) 11 R52
-  - 🇸🇬 新加坡 (Singapore) 12 R55
-  - 🇸🇬 新加坡 (Singapore) 13
-  - 🇸🇬 新加坡 (Singapore) 14 R52
-  - 🇸🇬 新加坡 (Singapore) 15 R57
+  - 🇸🇬 新加坡 (Singapore) 12 R52
+  - 🇸🇬 新加坡 (Singapore) 13 R52
+  - 🇸🇬 新加坡 (Singapore) 14 R41
+  - 🇸🇬 新加坡 (Singapore) 15
   - 🇸🇬 新加坡 (Singapore) 16
-  - 🇸🇬 新加坡 (Singapore) 17 R41
+  - 🇸🇬 新加坡 (Singapore) 17
   - 🇸🇬 新加坡 (Singapore) 18
 rules:
 - MATCH,PROXIES

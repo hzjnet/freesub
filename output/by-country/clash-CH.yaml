@@ -25,19 +25,34 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: api.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 03
-  server: 179.43.166.190
+- name: 🇨🇭 瑞士 (Switzerland) 03 R49
+  server: 208.69.78.19
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 04
+  server: 537df6t.ch5.h1clayd.click
   port: 443
   udp: true
   type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
+  uuid: 54066259-28a1-47dc-b0f7-e7715f27918e
   tls: true
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
+    public-key: LHkKUZNBp93VjTHD9fpoj44-4WB-TQbDpa5A929nSwE
+    short-id: e368a430524df0fa
+  servername: 537df6t.ch5.h1clayd.click
   client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 05 R49
+  server: 208.69.78.60
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,7 +60,9 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 R54
   - 🇨🇭 瑞士 (Switzerland) 02 R49
-  - 🇨🇭 瑞士 (Switzerland) 03
+  - 🇨🇭 瑞士 (Switzerland) 03 R49
+  - 🇨🇭 瑞士 (Switzerland) 04
+  - 🇨🇭 瑞士 (Switzerland) 05 R49
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +70,8 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 R54
   - 🇨🇭 瑞士 (Switzerland) 02 R49
-  - 🇨🇭 瑞士 (Switzerland) 03
+  - 🇨🇭 瑞士 (Switzerland) 03 R49
+  - 🇨🇭 瑞士 (Switzerland) 04
+  - 🇨🇭 瑞士 (Switzerland) 05 R49
 rules:
 - MATCH,PROXIES
