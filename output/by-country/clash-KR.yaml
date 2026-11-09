@@ -13,27 +13,20 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02
-  server: 158.247.220.26
-  port: 37095
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: kr002.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 - name: 🇰🇷 韩国 (South Korea) 03
-  server: 43.108.85.54
-  port: 443
+  server: kr002.zestapp778.com
+  port: 48851
   udp: true
-  type: vless
-  uuid: e15db5c2-2dca-49fc-857b-aa37a7ba1c79
-  tls: true
-  reality-opts:
-    public-key: v5HjgwMvPEsrpqwtgEytMQ3xs-1Cdv2gOCiGMZ2vimc
-    short-id: 68307e
-  servername: cloudflare.com
-  client-fingerprint: chrome
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: kr002.zestapp778.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
