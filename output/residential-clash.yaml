@@ -1,0 +1,53 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇸🇬 新加坡 (Singapore) 01 (家宽)
+  server: 116.88.224.217
+  port: 8080
+  udp: true
+  type: vmess
+  uuid: 6f4f0eb5-fe86-41ca-eccb-a6ca68f88d9b
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  server: dddz-1-x.473221.xyz
+  port: 13239
+  udp: true
+  type: vless
+  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NJgrmuV1CFhj7PeKJoQfDQVagDcFITkfrM-a7sa_mWw
+    short-id: 8591c4d31f59a60d
+  servername: updates.cdn-apple.com
+  client-fingerprint: edge
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇬 新加坡 (Singapore) 01 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)
+rules:
+- MATCH,PROXIES

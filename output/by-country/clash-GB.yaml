@@ -15,27 +15,77 @@ proxies:
     path: /vless
     headers:
       Host: 213.176.92.168
-- name: 🇬🇧 英国 (United Kingdom) 02
-  server: promo2.betust.net
+- name: 🇬🇧 英国 (United Kingdom) 02 R63
+  server: 136.176.68.34
   port: 443
   udp: true
-  type: hysteria2
-  password: 2bc6428196efb899f544d750bea0c06d
-  sni: promo2.betust.net
+  type: vless
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Jcm0TjP_kw-KmJoiG5EGyY5sQ9RGeqlX9Ajd3ZCnSAo
+    short-id: a6040129ad7f4b74
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 03
+  server: 193.163.203.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 04 ⚠R
+  server: uk1.connectsuite.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  tls: true
+  servername: uk1.connectsuite.org
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+- name: 🇬🇧 英国 (United Kingdom) 05
+  server: 104.222.183.180
+  port: 443
+  udp: true
+  type: vless
+  uuid: a1cf2f59-ffe0-4cb3-8c68-e6abf44726fc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MYmnKEaJyfk1HrBaKg3AvYebp-sP3rZRNh9MnOcKgXY
+    short-id: 705f0a232571
+  servername: www.tradingview.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇬🇧 英国 (United Kingdom) 01
-  - 🇬🇧 英国 (United Kingdom) 02
+  - 🇬🇧 英国 (United Kingdom) 02 R63
+  - 🇬🇧 英国 (United Kingdom) 03
+  - 🇬🇧 英国 (United Kingdom) 04 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 (United Kingdom) 01
-  - 🇬🇧 英国 (United Kingdom) 02
+  - 🇬🇧 英国 (United Kingdom) 02 R63
+  - 🇬🇧 英国 (United Kingdom) 03
+  - 🇬🇧 英国 (United Kingdom) 04 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 05
 rules:
 - MATCH,PROXIES

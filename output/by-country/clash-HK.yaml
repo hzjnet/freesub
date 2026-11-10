@@ -5,7 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 58.152.81.104
+  server: dog-hk.kunlun01dns.com
+  port: 21041
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: 43.161.193.181
+  port: 443
+  udp: true
+  type: vless
+  uuid: 280f4d33-69fb-4f0d-a4c3-fe0bf841009f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nf9eFC0yVVO-peA-wmZ1EEIwAaSstK2JN3tJV0WNJQE
+    short-id: 8c994df3c4e175a4
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
   port: 443
   udp: true
   type: tuic
@@ -13,18 +34,34 @@ proxies:
   password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
   sni: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
   skip-cert-verify: false
-  congestion-controller: cubic
+  congestion-controller: bbr
   udp-relay-mode: native
   alpn:
   - h3
-- name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 1cce7df2-251c-11ee-9409-f23c9164ca5d
-  sni: 633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com
+  password: f7d95364-607b-11ee-93af-f23c91369f2d
+  sni: e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com
   skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: vipccc.cc
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 5bead32f-a987-4f57-b1a8-6698778facda
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vipccc.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ray_proxy
+    headers:
+      Host: vipccc.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +69,9 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
+  - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
+  - 🇭🇰 中国香港 (Hong Kong) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +79,8 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
+  - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
+  - 🇭🇰 中国香港 (Hong Kong) 05
 rules:
 - MATCH,PROXIES
