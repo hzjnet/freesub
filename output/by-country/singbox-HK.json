@@ -4,37 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21041,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02",
-      "server": "43.161.193.181",
-      "server_port": 443,
-      "uuid": "280f4d33-69fb-4f0d-a4c3-fe0bf841009f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nf9eFC0yVVO-peA-wmZ1EEIwAaSstK2JN3tJV0WNJQE",
-          "short_id": "8c994df3c4e175a4"
-        }
-      }
-    },
-    {
       "type": "tuic",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01",
       "server": "54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com",
       "server_port": 443,
       "uuid": "73bfcc1c-5814-5f2a-b43a-3ef6af011db8",
@@ -51,34 +22,44 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04",
-      "server": "e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "f7d95364-607b-11ee-93af-f23c91369f2d",
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02",
+      "server": "doghkzf.zalolink.com",
+      "server_port": 28675,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com",
-        "insecure": false
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jgtiLXdCnQ9WRWMuu2gsuGQOQTCRZQpspnn228kjTSA",
+          "short_id": "9a79807253c040"
+        }
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05",
-      "server": "vipccc.cc",
-      "server_port": 443,
-      "uuid": "5bead32f-a987-4f57-b1a8-6698778facda",
-      "security": "auto",
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03",
+      "server": "39.109.111.23",
+      "server_port": 39675,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vipccc.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ray_proxy",
-        "headers": {
-          "Host": "vipccc.cc"
+        "server_name": "www.lamer.com.hk",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VW9b1Lj_TPfa52PVrmLypSxQjRiV06sgG96uEd6oBRM",
+          "short_id": "551a216445"
         }
       }
     },
@@ -89,9 +70,7 @@
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01",
         "🇭🇰 中国香港 (Hong Kong) 02",
-        "🇭🇰 中国香港 (Hong Kong) 03",
-        "🇭🇰 中国香港 (Hong Kong) 04",
-        "🇭🇰 中国香港 (Hong Kong) 05"
+        "🇭🇰 中国香港 (Hong Kong) 03"
       ]
     },
     {
@@ -100,9 +79,7 @@
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01",
         "🇭🇰 中国香港 (Hong Kong) 02",
-        "🇭🇰 中国香港 (Hong Kong) 03",
-        "🇭🇰 中国香港 (Hong Kong) 04",
-        "🇭🇰 中国香港 (Hong Kong) 05"
+        "🇭🇰 中国香港 (Hong Kong) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

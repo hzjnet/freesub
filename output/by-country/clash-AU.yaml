@@ -5,39 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01
-  server: 50.6.54.163
-  port: 443
+  server: 38.91.107.49
+  port: 18000
   udp: true
-  type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2vd1kmOeZpjjDpgN75FMhwFRzPjNfzvLoUM5LlLrm2U
-    short-id: 26b26357bfcd59a1
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 02
-  server: au001.zestapp778.com
-  port: 54374
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: au001.zestapp778.com
-  skip-cert-verify: false
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01
-  - 🇦🇺 澳大利亚 (Australia) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01
-  - 🇦🇺 澳大利亚 (Australia) 02
 rules:
 - MATCH,PROXIES
