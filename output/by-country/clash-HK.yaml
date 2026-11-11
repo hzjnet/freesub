@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
+  server: 66.90.115.123
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
+    short-id: 08a4b1f473932632
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: 66.90.115.133
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
+    short-id: 08a4b1f473932632
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03
   server: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
   port: 443
   udp: true
@@ -17,31 +43,31 @@ proxies:
   udp-relay-mode: native
   alpn:
   - h3
-- name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: doghkzf.zalolink.com
-  port: 28675
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: 23.95.72.244
+  port: 48741
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: jgtiLXdCnQ9WRWMuu2gsuGQOQTCRZQpspnn228kjTSA
-    short-id: 9a79807253c040
-  servername: www.lamer.com.hk
+    public-key: uBxSs6VRu8YTdOqtrj07gqmX_0rlzKoGIkIm-qAFFG0
+    short-id: fe92059c14
+  servername: api.adidas.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 39.109.111.23
-  port: 39675
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: 66.90.115.133
+  port: 2053
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  uuid: 3b8896fd-ba38-4da7-b365-d0f01f37aa40
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VW9b1Lj_TPfa52PVrmLypSxQjRiV06sgG96uEd6oBRM
-    short-id: 551a216445
-  servername: www.lamer.com.hk
+    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
+    short-id: 08a4b1f473932632
+  servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -51,6 +77,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
+  - 🇭🇰 中国香港 (Hong Kong) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +87,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
+  - 🇭🇰 中国香港 (Hong Kong) 05
 rules:
 - MATCH,PROXIES

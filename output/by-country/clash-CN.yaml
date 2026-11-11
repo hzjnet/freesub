@@ -4,25 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01
-  server: 38.91.107.49
-  port: 18000
+- name: 🇨🇳 CN 01
+  server: 39.108.113.127
+  port: 10086
   udp: true
   type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  uuid: b0253c6c-0b96-4950-bde1-669f13bc1a01
   alterId: 0
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01
+  - 🇨🇳 CN 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01
+  - 🇨🇳 CN 01
 rules:
 - MATCH,PROXIES
