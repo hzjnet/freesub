@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇷 克罗地亚 (Croatia) 01",
-      "server": "23.95.72.244",
-      "server_port": 50131,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "tag": "🇻🇳 越南 (Vietnam) 01",
+      "server": "154.21.203.106",
+      "server_port": 51279,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "api.adidas.com",
+        "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "D-7bbtY-0R7n8bX_n-tMlnNPkgy1-y7zaxQvmHrcAHQ",
-          "short_id": "edcd88f8279bfd9b"
+          "public_key": "f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A",
+          "short_id": "bb82c8"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇷 克罗地亚 (Croatia) 01"
+        "🇻🇳 越南 (Vietnam) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇷 克罗地亚 (Croatia) 01"
+        "🇻🇳 越南 (Vietnam) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

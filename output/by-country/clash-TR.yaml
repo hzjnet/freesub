@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: 176.120.21.23
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 01
+  server: 185.246.155.91
+  port: 10103
   udp: true
   type: vless
-  uuid: 83cc8226-1087-49ae-aac3-1f157ddc57b4
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: OAU9917HKYqvTO59c9SvAL9BBh8v85tfJhw5PMg-2iU
-    short-id: c4d4cf50489d51
-  servername: yahoo.com
+    public-key: obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko
+    short-id: 6859f5b59e55aa30
+  servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
+  - 🇹🇷 土耳其 (Turkey) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
+  - 🇹🇷 土耳其 (Turkey) 01
 rules:
 - MATCH,PROXIES

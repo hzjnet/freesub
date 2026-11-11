@@ -4,46 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)
-  server: dog-hk.kunlun01dns.com
-  port: 21020
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 02 (移动家宽)
-  server: us001.zestapp778.com
-  port: 57277
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 03 (家宽)
-  server: 116.88.224.217
-  port: 8080
-  udp: true
-  type: vmess
-  uuid: 6f4f0eb5-fe86-41ca-eccb-a6ca68f88d9b
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽)
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇸🇬 新加坡 (Singapore) 05 (家宽)
-  server: 195.133.135.238
-  port: 10086
-  udp: true
-  type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 06 (移动家宽)
+- name: 🇺🇸 美国 (United States) 01 (移动家宽)
   server: 130.94.19.95
   port: 57277
   udp: true
@@ -51,27 +12,42 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: us001.zestapp778.com
   skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 02 (移动家宽)
+  server: 130.94.20.17
+  port: 57277
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  server: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
+  port: 443
+  udp: true
+  type: tuic
+  uuid: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  password: 73bfcc1c-5814-5f2a-b43a-3ef6af011db8
+  sni: 54fb07dd-tk7400-toh6wi-jx5r.pccw3.hyhuawei.com
+  skip-cert-verify: false
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)
+  - 🇺🇸 美国 (United States) 01 (移动家宽)
   - 🇺🇸 美国 (United States) 02 (移动家宽)
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽)
-  - 🇰🇷 韩国 (South Korea) 04 (家宽)
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽)
-  - 🇺🇸 美国 (United States) 06 (移动家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)
+  - 🇺🇸 美国 (United States) 01 (移动家宽)
   - 🇺🇸 美国 (United States) 02 (移动家宽)
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽)
-  - 🇰🇷 韩国 (South Korea) 04 (家宽)
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽)
-  - 🇺🇸 美国 (United States) 06 (移动家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
 rules:
 - MATCH,PROXIES
