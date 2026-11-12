@@ -4,36 +4,101 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01",
-      "server": "prvtch.titun.su",
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 R54",
+      "server": "208.69.78.19",
       "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yourultimateprofessionalcareerhub.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 R53",
+      "server": "45.90.59.15",
+      "server_port": 443,
+      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "perevodchiki.su",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
+          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
+          "short_id": "19253fae84102271"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 R54",
-      "server": "208.69.78.208",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 R54",
+      "server": "208.69.78.60",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "resources.yourultimateprofessionalcareerhub.com",
+        "server_name": "cdn.yourultimateprofessionalcareerhub.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 R54",
+      "server": "208.69.78.29",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.yourultimateprofessionalcareerhub.com",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05",
+      "server": "74.161.152.237",
+      "server_port": 2083,
+      "uuid": "52a5a29f-c162-411a-8a37-a3f11b0dc537",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4",
+          "short_id": "0123456789abcdef"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 R54",
+      "server": "208.69.78.222",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "yourultimateprofessionalcareerhub.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -41,16 +106,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 瑞士 (Switzerland) 01",
-        "🇨🇭 瑞士 (Switzerland) 02 R54"
+        "🇨🇭 瑞士 (Switzerland) 01 R54",
+        "🇨🇭 瑞士 (Switzerland) 02 R53",
+        "🇨🇭 瑞士 (Switzerland) 03 R54",
+        "🇨🇭 瑞士 (Switzerland) 04 R54",
+        "🇨🇭 瑞士 (Switzerland) 05",
+        "🇨🇭 瑞士 (Switzerland) 06 R54"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 瑞士 (Switzerland) 01",
-        "🇨🇭 瑞士 (Switzerland) 02 R54"
+        "🇨🇭 瑞士 (Switzerland) 01 R54",
+        "🇨🇭 瑞士 (Switzerland) 02 R53",
+        "🇨🇭 瑞士 (Switzerland) 03 R54",
+        "🇨🇭 瑞士 (Switzerland) 04 R54",
+        "🇨🇭 瑞士 (Switzerland) 05",
+        "🇨🇭 瑞士 (Switzerland) 06 R54"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

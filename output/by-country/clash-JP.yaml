@@ -1,0 +1,89 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇯🇵 日本 (Japan) 01
+  server: 168.138.205.100
+  port: 53758
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+- name: 🇯🇵 日本 (Japan) 02
+  server: 168.110.45.41
+  port: 23444
+  udp: true
+  type: vless
+  uuid: ee2112e4-1e58-4f77-b162-5ef869358df9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zfxKuH7gDFZ2EMjdt8zMfnsZFpeckMhM5q5XZ3ATe2c
+    short-id: 119c9e68498f5900
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 03
+  server: ootd-jp.xiaokeyun.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3d84bbdc-9616-4e89-9ded-c9bff9db8dc7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oEgpqVVhvIZpCejedfWU0OqhEnfsGNGEmmds1nzRqEE
+    short-id: 568d60f0
+  servername: v3-default.ixigua.com
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 04
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: 8199228b-e84b-42a2-9268-e400391e483a
+  tls: true
+  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+- name: 🇯🇵 日本 (Japan) 05
+  server: 23.95.72.244
+  port: 52541
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs
+    short-id: ce5793a7ad9594
+  servername: api.adidas.com
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇯🇵 日本 (Japan) 01
+  - 🇯🇵 日本 (Japan) 02
+  - 🇯🇵 日本 (Japan) 03
+  - 🇯🇵 日本 (Japan) 04
+  - 🇯🇵 日本 (Japan) 05
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇯🇵 日本 (Japan) 01
+  - 🇯🇵 日本 (Japan) 02
+  - 🇯🇵 日本 (Japan) 03
+  - 🇯🇵 日本 (Japan) 04
+  - 🇯🇵 日本 (Japan) 05
+rules:
+- MATCH,PROXIES
