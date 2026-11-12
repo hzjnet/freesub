@@ -17,27 +17,17 @@ proxies:
     short-id: 26b26357bfcd59a1
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 02
-  server: au001.zestapp778.com
-  port: 54374
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: au001.zestapp778.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01
-  - 🇦🇺 澳大利亚 (Australia) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01
-  - 🇦🇺 澳大利亚 (Australia) 02
 rules:
 - MATCH,PROXIES

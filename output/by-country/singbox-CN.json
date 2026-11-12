@@ -5,25 +5,28 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01",
-      "server": "192.228.145.118",
+      "tag": "🇨🇳 CN 01",
+      "server": "39.108.113.127",
       "server_port": 10086,
-      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
-      "security": "auto"
+      "uuid": "b0253c6c-0b96-4950-bde1-669f13bc1a01",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01"
+        "🇨🇳 CN 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01"
+        "🇨🇳 CN 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

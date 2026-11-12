@@ -5,7 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 39.109.111.23
+  server: 206.237.11.17
+  port: 50376
+  udp: true
+  type: vmess
+  uuid: 9091fd64-7e8e-4b7a-8ae7-84474f234926
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: 64.118.129.151
+  port: 22222
+  udp: true
+  type: vmess
+  uuid: a5206a55-d5bd-41b9-92a5-bd27a90355ff
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: 91.149.237.29
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: CrQILX5MAK5dplfn
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: doghkzf.zalolink.com
   port: 28675
   udp: true
   type: vless
@@ -16,47 +39,19 @@ proxies:
     public-key: jgtiLXdCnQ9WRWMuu2gsuGQOQTCRZQpspnn228kjTSA
     short-id: 9a79807253c040
   servername: www.lamer.com.hk
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: bd8d18d7-tmm5c0-tny186-4lg6.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d
-  sni: bd8d18d7-tmm5c0-tny186-4lg6.hk3.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-  sni: 6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 209.33.160.122
-  port: 39098
-  udp: true
-  type: vless
-  uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
-  servername: dash.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 23.95.72.244
-  port: 48741
+  server: hk3.wawojk.dpdns.org
+  port: 51314
   udp: true
   type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  uuid: affd72c9-0870-4c92-b6e5-af7d0e06313e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: uBxSs6VRu8YTdOqtrj07gqmX_0rlzKoGIkIm-qAFFG0
-    short-id: fe92059c14
-  servername: api.adidas.com
+    public-key: VWY3lvh8l3OoKnhln5nIzmxAG0Imp9arXMK6nbsGVB4
+    short-id: 0ee643ab
+  servername: www.asus.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

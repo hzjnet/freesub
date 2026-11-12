@@ -12,59 +12,40 @@ proxies:
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
 - name: 🇯🇵 日本 (Japan) 02
-  server: 168.110.45.41
-  port: 23444
+  server: 167.17.179.56
+  port: 8388
   udp: true
-  type: vless
-  uuid: ee2112e4-1e58-4f77-b162-5ef869358df9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfxKuH7gDFZ2EMjdt8zMfnsZFpeckMhM5q5XZ3ATe2c
-    short-id: 119c9e68498f5900
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-gcm
+  password: 9eT3EJIpI8YR2YRP
 - name: 🇯🇵 日本 (Japan) 03
-  server: ootd-jp.xiaokeyun.top
+  server: JP032011.ssgreen.org
   port: 443
   udp: true
-  type: vless
-  uuid: 3d84bbdc-9616-4e89-9ded-c9bff9db8dc7
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: aab7db8d-eed8-4f7c-94ef-5a6afb978c0f
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: oEgpqVVhvIZpCejedfWU0OqhEnfsGNGEmmds1nzRqEE
-    short-id: 568d60f0
-  servername: v3-default.ixigua.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 04
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 8199228b-e84b-42a2-9268-e400391e483a
-  tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  servername: JP032011.ssgreen.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇯🇵 日本 (Japan) 05
-  server: 23.95.72.244
-  port: 52541
+    path: /wes
+- name: 🇯🇵 日本 (Japan) 04
+  server: JP032008.ssgreen.org
+  port: 443
   udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: 9db47acb-b0c7-4b1d-b0dc-ad2f9ee65980
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: _DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs
-    short-id: ce5793a7ad9594
-  servername: api.adidas.com
-  client-fingerprint: firefox
+  servername: JP032008.ssgreen.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /wes
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,7 +55,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02
   - 🇯🇵 日本 (Japan) 03
   - 🇯🇵 日本 (Japan) 04
-  - 🇯🇵 日本 (Japan) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,6 +64,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02
   - 🇯🇵 日本 (Japan) 03
   - 🇯🇵 日本 (Japan) 04
-  - 🇯🇵 日本 (Japan) 05
 rules:
 - MATCH,PROXIES
