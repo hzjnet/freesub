@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01
-  server: 172.66.44.124
-  port: 8443
+  server: 16.60.30.137
+  port: 443
   udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇬🇧 英国 (United Kingdom) 02
   server: 104.222.183.180
   port: 47195
@@ -27,78 +19,14 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: DYVqFDnYoMquRQunXC1xd2FyuDhd7JWs5jtf2eb7VkKLzXgZv8pt8gY1e91TT71V762zRX7MWW4HmjavanYdUF9bij8gG8AP
 - name: 🇬🇧 英国 (United Kingdom) 03
-  server: 16.60.30.137
+  server: 50.7.193.146
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 (United Kingdom) 04 R63
-  server: 136.176.68.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Jcm0TjP_kw-KmJoiG5EGyY5sQ9RGeqlX9Ajd3ZCnSAo
-    short-id: a6040129ad7f4b74
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 05
-  server: 34.39.80.57
-  port: 50818
-  udp: true
-  type: vless
-  uuid: 408c814e-f70a-4d16-b3b3-8182bb70211d
-  tls: true
-  servername: yingguo.rymaker.cn
+  type: hysteria2
+  password: 2bc6428196efb899f544d750bea0c06d
+  sni: promo2.betust.net
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /GunService
-- name: 🇬🇧 英国 (United Kingdom) 06
-  server: 213.176.92.168
-  port: 14430
-  udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 213.176.92.168
-- name: 🇬🇧 英国 (United Kingdom) 07
-  server: 193.163.203.170
-  port: 443
-  udp: true
-  type: vless
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 08 ⚠R
-  server: uk1.connectsuite.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
-  tls: true
-  servername: uk1.connectsuite.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cdn-cgi/ws
-    headers:
-      Host: uk1.connectsuite.org
-- name: 🇬🇧 英国 (United Kingdom) 09
+- name: 🇬🇧 英国 (United Kingdom) 04
   server: 104.222.183.180
   port: 443
   udp: true
@@ -119,12 +47,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04 R63
-  - 🇬🇧 英国 (United Kingdom) 05
-  - 🇬🇧 英国 (United Kingdom) 06
-  - 🇬🇧 英国 (United Kingdom) 07
-  - 🇬🇧 英国 (United Kingdom) 08 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 09
+  - 🇬🇧 英国 (United Kingdom) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,11 +56,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 01
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04 R63
-  - 🇬🇧 英国 (United Kingdom) 05
-  - 🇬🇧 英国 (United Kingdom) 06
-  - 🇬🇧 英国 (United Kingdom) 07
-  - 🇬🇧 英国 (United Kingdom) 08 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 09
+  - 🇬🇧 英国 (United Kingdom) 04
 rules:
 - MATCH,PROXIES

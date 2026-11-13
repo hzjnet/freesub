@@ -25,40 +25,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 02",
-      "server": "65.109.208.183",
-      "server_port": 443,
-      "uuid": "5f07a2a1-82a5-494d-847b-b882e6903192",
+      "server": "94.183.164.119",
+      "server_port": 24433,
+      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
       "tls": {
         "enabled": true,
-        "server_name": "free.for.member.iiproxy.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "lakes.blog-forme.ru",
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03",
-      "server": "free.for.member.iiproxy.com",
-      "server_port": 443,
-      "uuid": "5f07a2a1-82a5-494d-847b-b882e6903192",
-      "tls": {
-        "enabled": true,
-        "server_name": "free.for.member.iiproxy.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04",
       "server": "146.103.118.189",
       "server_port": 443,
       "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
@@ -86,8 +66,7 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 R47",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04"
+        "🇫🇮 芬兰 (Finland) 03"
       ]
     },
     {
@@ -96,8 +75,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 R47",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04"
+        "🇫🇮 芬兰 (Finland) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

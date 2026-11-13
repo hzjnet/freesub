@@ -20,12 +20,25 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 03",
-      "server": "202.50.253.27",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "server": "203.23.179.123",
+      "server_port": 443,
+      "uuid": "fa081e9f-7574-0002-8928-31aa5ac923c7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de1-b.sbcweb.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "868419504747f6de"
+        }
+      }
     },
     {
       "type": "vless",
@@ -49,6 +62,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 05",
+      "server": "202.50.253.27",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -56,7 +77,8 @@
         "🇮🇹 意大利 (Italy) 01",
         "🇮🇹 意大利 (Italy) 02",
         "🇮🇹 意大利 (Italy) 03",
-        "🇮🇹 意大利 (Italy) 04"
+        "🇮🇹 意大利 (Italy) 04",
+        "🇮🇹 意大利 (Italy) 05"
       ]
     },
     {
@@ -66,7 +88,8 @@
         "🇮🇹 意大利 (Italy) 01",
         "🇮🇹 意大利 (Italy) 02",
         "🇮🇹 意大利 (Italy) 03",
-        "🇮🇹 意大利 (Italy) 04"
+        "🇮🇹 意大利 (Italy) 04",
+        "🇮🇹 意大利 (Italy) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

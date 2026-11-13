@@ -5,24 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01
-  server: 152.69.195.67
-  port: 47878
+  server: 168.138.205.100
+  port: 53758
   udp: true
-  type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
 - name: 🇯🇵 日本 (Japan) 02
-  server: djj.zjlo.top
-  port: 23169
+  server: 168.110.48.252
+  port: 10018
   udp: true
   type: vless
-  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
+  uuid: d8fc873b-860d-4490-b2f0-300d6ae3c2d3
   flow: xtls-rprx-vision
   tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: YxoFVB0NhCx4BJCgq5Ey5jdteRU2H2toGa-ZKW5XV3c
+  servername: www.ebay.com
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 (Japan) 03
-  server: xray-p1vi234h-lunar-forest-6.cloady.io
+  server: 168.110.45.41
+  port: 23444
+  udp: true
+  type: vless
+  uuid: ee2112e4-1e58-4f77-b162-5ef869358df9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zfxKuH7gDFZ2EMjdt8zMfnsZFpeckMhM5q5XZ3ATe2c
+    short-id: 119c9e68498f5900
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 04
+  server: jp.yi-yi.xyz
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 36c06e11-028b-40a1-a91f-c8f38f03e829
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: g3T4dVyrbNixv7HvSMlh91cYBa5kEsZCEInB7Xc_AEY
+    short-id: 956d8072a694ff37
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 05
+  server: 13.140.248.125
   port: 443
   udp: true
   type: vless
@@ -36,6 +64,17 @@ proxies:
     path: /e3e2aa65089989f0
     headers:
       Host: xray-p1vi234h-lunar-forest-6.cloady.io
+- name: 🇯🇵 日本 (Japan) 06
+  server: 168.110.63.247
+  port: 8081
+  udp: true
+  type: vmess
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +83,9 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 01
   - 🇯🇵 日本 (Japan) 02
   - 🇯🇵 日本 (Japan) 03
+  - 🇯🇵 日本 (Japan) 04
+  - 🇯🇵 日本 (Japan) 05
+  - 🇯🇵 日本 (Japan) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +94,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 01
   - 🇯🇵 日本 (Japan) 02
   - 🇯🇵 日本 (Japan) 03
+  - 🇯🇵 日本 (Japan) 04
+  - 🇯🇵 日本 (Japan) 05
+  - 🇯🇵 日本 (Japan) 06
 rules:
 - MATCH,PROXIES

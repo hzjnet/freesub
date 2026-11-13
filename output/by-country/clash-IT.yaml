@@ -19,12 +19,18 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 03
-  server: 202.50.253.27
-  port: 19999
+  server: 203.23.179.123
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  uuid: fa081e9f-7574-0002-8928-31aa5ac923c7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: de1-b.sbcweb.net
+  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 04
   server: 172.213.24.16
   port: 2083
@@ -38,6 +44,13 @@ proxies:
     short-id: 0123456789abcdef
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 05
+  server: 202.50.253.27
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +60,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02
   - 🇮🇹 意大利 (Italy) 03
   - 🇮🇹 意大利 (Italy) 04
+  - 🇮🇹 意大利 (Italy) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +70,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02
   - 🇮🇹 意大利 (Italy) 03
   - 🇮🇹 意大利 (Italy) 04
+  - 🇮🇹 意大利 (Italy) 05
 rules:
 - MATCH,PROXIES

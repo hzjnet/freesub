@@ -1,0 +1,45 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇰 中国香港 (Hong Kong) 01
+  server: 206.237.11.17
+  port: 50376
+  udp: true
+  type: vmess
+  uuid: 9091fd64-7e8e-4b7a-8ae7-84474f234926
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: hk1t.wawojk.dpdns.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5d967efa-702c-4cde-9e79-29386c8012e5
+  tls: true
+  servername: hk1t.wawojk.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /hk1-ws-1f8915c8964a
+    headers:
+      Host: hk1t.wawojk.dpdns.org
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇰 中国香港 (Hong Kong) 01
+  - 🇭🇰 中国香港 (Hong Kong) 02
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 中国香港 (Hong Kong) 01
+  - 🇭🇰 中国香港 (Hong Kong) 02
+rules:
+- MATCH,PROXIES

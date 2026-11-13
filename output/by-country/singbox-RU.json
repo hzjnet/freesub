@@ -47,13 +47,13 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03",
-      "server": "185.215.184.50",
+      "server": "novonl.subv.ru",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "185.215.184.50",
+        "server_name": "golos.mail.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -68,13 +68,57 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 04",
-      "server": "66.90.106.28",
+      "server": "185.215.184.50",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "banket-restoran.su",
+        "server_name": "185.215.184.50",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
+          "short_id": "428ef87fd47a3a32"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05",
+      "server": "200.102.183.50",
+      "server_port": 443,
+      "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
+      "tls": {
+        "enabled": true,
+        "server_name": "f2hbck5x3c0g8pl7.cdn.cachefleet.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "qi8ws15c7jv5q2fa"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06",
+      "server": "185.215.184.86",
+      "server_port": 443,
+      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dvizhok.su",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -88,14 +132,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05",
-      "server": "185.215.184.79",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07",
+      "server": "fdat.titun.su",
       "server_port": 443,
       "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "dvizhok.su",
+        "server_name": "banket-restoran.su",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -116,7 +160,9 @@
         "🇷🇺 俄罗斯 (Russia) 02",
         "🇷🇺 俄罗斯 (Russia) 03",
         "🇷🇺 俄罗斯 (Russia) 04",
-        "🇷🇺 俄罗斯 (Russia) 05"
+        "🇷🇺 俄罗斯 (Russia) 05",
+        "🇷🇺 俄罗斯 (Russia) 06",
+        "🇷🇺 俄罗斯 (Russia) 07"
       ]
     },
     {
@@ -127,7 +173,9 @@
         "🇷🇺 俄罗斯 (Russia) 02",
         "🇷🇺 俄罗斯 (Russia) 03",
         "🇷🇺 俄罗斯 (Russia) 04",
-        "🇷🇺 俄罗斯 (Russia) 05"
+        "🇷🇺 俄罗斯 (Russia) 05",
+        "🇷🇺 俄罗斯 (Russia) 06",
+        "🇷🇺 俄罗斯 (Russia) 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
