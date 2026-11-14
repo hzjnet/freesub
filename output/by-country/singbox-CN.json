@@ -8,7 +8,7 @@
       "tag": "🇨🇳 CN 01",
       "server": "39.108.113.127",
       "server_port": 10086,
-      "uuid": "74e07df3-f82a-4791-987f-247c3c395866",
+      "uuid": "d50cc563-0c03-4136-899f-85cbc0b02699",
       "security": "auto",
       "transport": {
         "type": "ws"

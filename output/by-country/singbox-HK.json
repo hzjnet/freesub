@@ -12,25 +12,39 @@
       "security": "auto"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02",
-      "server": "hk1t.wawojk.dpdns.org",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21019,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04",
+      "server": "jp2tts.xyy123.win",
       "server_port": 443,
-      "uuid": "5d967efa-702c-4cde-9e79-29386c8012e5",
+      "uuid": "da03bde4-a5b6-4423-965d-c76842fcd923",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hk1t.wawojk.dpdns.org",
-        "insecure": false,
+        "server_name": "nvplm.stg.nvidia.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/hk1-ws-1f8915c8964a",
-        "headers": {
-          "Host": "hk1t.wawojk.dpdns.org"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KBPuCiAKJQQtlsodm5MIBFfYf-TGsrjCK5GGJzJJli4",
+          "short_id": "d188c855"
         }
       }
     },
@@ -40,7 +54,9 @@
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01",
-        "🇭🇰 中国香港 (Hong Kong) 02"
+        "🇭🇰 中国香港 (Hong Kong) 02",
+        "🇭🇰 中国香港 (Hong Kong) 03",
+        "🇭🇰 中国香港 (Hong Kong) 04"
       ]
     },
     {
@@ -48,7 +64,9 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01",
-        "🇭🇰 中国香港 (Hong Kong) 02"
+        "🇭🇰 中国香港 (Hong Kong) 02",
+        "🇭🇰 中国香港 (Hong Kong) 03",
+        "🇭🇰 中国香港 (Hong Kong) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

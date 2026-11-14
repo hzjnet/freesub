@@ -13,20 +13,34 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: hk1t.wawojk.dpdns.org
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16115
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: jp2tts.xyy123.win
   port: 443
   udp: true
   type: vless
-  uuid: 5d967efa-702c-4cde-9e79-29386c8012e5
+  uuid: da03bde4-a5b6-4423-965d-c76842fcd923
+  flow: xtls-rprx-vision
   tls: true
-  servername: hk1t.wawojk.dpdns.org
-  skip-cert-verify: false
+  reality-opts:
+    public-key: KBPuCiAKJQQtlsodm5MIBFfYf-TGsrjCK5GGJzJJli4
+    short-id: d188c855
+  servername: nvplm.stg.nvidia.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /hk1-ws-1f8915c8964a
-    headers:
-      Host: hk1t.wawojk.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +48,8 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
+  - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +57,7 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
+  - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
 rules:
 - MATCH,PROXIES

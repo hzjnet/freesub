@@ -4,100 +4,143 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01",
-      "server": "100.31.159.227",
-      "server_port": 1114,
-      "uuid": "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ",
-          "short_id": "79a1e14b"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 02 R67",
-      "server": "84.17.41.2",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 01 R50",
+      "server": "198.98.53.130",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "eDfN7SODQceIOmIAbtJJtK"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 03",
-      "server": "95.215.201.18",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 04 R52",
+      "tag": "🇺🇸 美国 (United States) 02 R52",
       "server": "138.197.89.234",
       "server_port": 28960,
       "method": "chacha20-ietf-poly1305",
       "password": "DZRy4Q3QH0jUGfKFl2jDCZ"
     },
     {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 05 ⚠R",
-      "server": "172.111.36.126",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 06 ⚠R",
-      "server": "167.88.62.134",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 03",
+      "server": "hackernoon.com",
+      "server_port": 2052,
+      "uuid": "1658394c-bc07-4db2-ac14-c6e22ee3ad46",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "rayAn69-P9fr6z6w-v3.raYan-69.worKers.deV"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 07 R63",
-      "server": "216.152.155.189",
+      "tag": "🇺🇸 美国 (United States) 04",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "newwk1.f1w.de5.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 05",
+      "server": "195.211.98.43",
       "server_port": 443,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "uuid": "1b4b11d5-4c2d-4533-9a55-636757cdee94",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "F5BVp5XkY93lll_Ju34lOIE6A1-dx16_frY6eu9Nzzk",
-          "short_id": "fecf2b55bb11bb0d"
+          "public_key": "xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA",
+          "short_id": "9c56fddf237e8eaf"
         }
       }
     },
     {
       "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 06",
+      "server": "3.16.78.3",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 07",
+      "server": "172.64.146.66",
+      "server_port": 8443,
+      "uuid": "767b6340-96dc-4aa0-8013-a8af7513d920",
+      "tls": {
+        "enabled": true,
+        "server_name": "c7dabe95.proxy-978.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c7dabe95.proxy-978.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇺🇸 美国 (United States) 08",
+      "server": "172.67.161.104",
+      "server_port": 443,
+      "uuid": "767b6340-96dc-4aa0-8013-a8af7513d920",
+      "tls": {
+        "enabled": true,
+        "server_name": "c7dabe95.proxy-978.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c7dabe95.proxy-978.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 09",
+      "server": "acm.org",
+      "server_port": 80,
+      "uuid": "ec24cde1-6bd9-4b69-baf7-270e8aabd6dd",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "rayAN21-6yU73878-v3.raYAn-21.woRKers.dEV"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 10",
       "server": "38.145.220.193",
       "server_port": 8443,
       "method": "2022-blake3-aes-128-gcm",
@@ -105,151 +148,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 09",
-      "server": "143.246.60.254",
-      "server_port": 443,
-      "uuid": "fa895069-bfe5-42c9-9f30-f918e1e442c1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ccJ6xUaUhUxN6GEj6a1vqsQDNDTJJX1KYSURY5pJpBE",
-          "short_id": "eb68848e2575a1f4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 10",
-      "server": "84.32.61.133",
-      "server_port": 443,
-      "uuid": "fa081e9f-7574-4e18-8928-31aa5ac923c7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "us5.sbcweb.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "868419504747f6de"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 11",
-      "server": "216.172.144.199",
-      "server_port": 40643,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Xd4G9xn7AgT88msCYC9MZfavMUqd3dWFNAvswi6KfaD9YcexptMbPn4cSECEMzDgvAMomAWJHyweqJer99ssMVYGH6TK8k4c"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 12",
-      "server": "15.204.97.219",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 13",
-      "server": "143.246.62.191",
-      "server_port": 8443,
-      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.githubassets.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
-          "short_id": "4ad2e4e660550e43"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 14 ⚠R",
-      "server": "15.204.97.197",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 15",
-      "server": "147.224.54.25",
-      "server_port": 2053,
-      "uuid": "cdb7fa1d-6e7a-467c-da9c-da363c7bf779",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk",
-          "short_id": "68"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 16 R67",
-      "server": "170.101.101.53",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.explorecreativejobsandenhanceyourcareerportfolio.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 17 R63",
+      "tag": "🇺🇸 美国 (United States) 11 R63",
       "server": "136.176.65.251",
       "server_port": 443,
       "uuid": "39826f32-f5ca-42a5-ab33-188f7d199478",
@@ -269,100 +168,106 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 18 R63",
-      "server": "15.204.97.214",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 12",
+      "server": "95.215.201.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 19 ⚠R",
-      "server": "15.204.97.198",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 20 R67",
-      "server": "15.204.97.206",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 21 R67",
-      "server": "172.111.36.147",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 22 R50",
-      "server": "170.101.101.112",
+      "tag": "🇺🇸 美国 (United States) 13",
+      "server": "104.18.185.26",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "2bcfbfba-b446-4ad5-93ad-72af9e008f61",
       "tls": {
         "enabled": true,
-        "server_name": "resources.explorecreativejobsandenhanceyourcareerportfolio.com",
+        "server_name": "blackshadow.dpdns.org",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/44.209.52.7-443",
+        "headers": {
+          "Host": "blackshadow.dpdns.org"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 23 ⚠R",
+      "tag": "🇺🇸 美国 (United States) 14",
+      "server": "172.67.71.122",
+      "server_port": 2087,
+      "uuid": "767b6340-96dc-4aa0-8013-a8af7513d920",
+      "tls": {
+        "enabled": true,
+        "server_name": "c7dabe95.proxy-978.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c7dabe95.proxy-978.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 15",
+      "server": "172.67.70.92",
+      "server_port": 2053,
+      "uuid": "767b6340-96dc-4aa0-8013-a8af7513d920",
+      "tls": {
+        "enabled": true,
+        "server_name": "c7dabe95.proxy-978.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c7dabe95.proxy-978.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 16 R70",
+      "server": "188.114.97.3",
+      "server_port": 2083,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "newwk1.f1w.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "newwk1.f1w.de5.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 17 ⚠R",
       "server": "15.204.97.209",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -382,44 +287,49 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 24 R67",
-      "server": "167.88.61.20",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.browseseniorrolesandenhanceyourcareertoday.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 25",
-      "server": "panel.paytiktok.com",
-      "server_port": 20000,
-      "uuid": "e668c236-dead-4ea2-8a99-812a738afd13",
+      "tag": "🇺🇸 美国 (United States) 18",
+      "server": "147.224.54.25",
+      "server_port": 2053,
+      "uuid": "cdb7fa1d-6e7a-467c-da9c-da363c7bf779",
       "tls": {
         "enabled": true,
-        "server_name": "tesla.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "aCKxBnWGJSFRLP1TC7cvV6lwNBsEdrW3fIqRnVD131w",
-          "short_id": "144d7588628c0387"
+          "public_key": "DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk",
+          "short_id": "68"
         }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 19",
+      "server": "216.172.144.199",
+      "server_port": 40643,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xd4G9xn7AgT88msCYC9MZfavMUqd3dWFNAvswi6KfaD9YcexptMbPn4cSECEMzDgvAMomAWJHyweqJer99ssMVYGH6TK8k4c"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 20 ⚠R",
+      "server": "172.111.36.126",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 26 ⚠R",
+      "tag": "🇺🇸 美国 (United States) 21 ⚠R",
       "server": "15.204.97.216",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -440,7 +350,134 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 27 ⚠R",
+      "tag": "🇺🇸 美国 (United States) 22",
+      "server": "15.204.97.219",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 23 ⚠R",
+      "server": "15.204.97.197",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 24",
+      "server": "104.24.31.89",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "rayan-007.nastaran.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 25 ⚠R",
+      "server": "167.88.62.134",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 26 R67",
+      "server": "15.204.97.206",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 27",
+      "server": "156.229.167.109",
+      "server_port": 8443,
+      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.githubassets.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
+          "short_id": "4ad2e4e660550e43"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸 美国 (United States) 28",
+      "server": "23.230.52.119",
+      "server_port": 42878,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 29 ⚠R",
       "server": "15.204.97.195",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -460,44 +497,241 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 30",
+      "server": "143.246.60.254",
+      "server_port": 443,
+      "uuid": "fa895069-bfe5-42c9-9f30-f918e1e442c1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ccJ6xUaUhUxN6GEj6a1vqsQDNDTJJX1KYSURY5pJpBE",
+          "short_id": "eb68848e2575a1f4"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 31 R67",
+      "server": "84.17.41.2",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 32 R52",
+      "server": "179.254.92.190",
+      "server_port": 443,
+      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-32.topp-con.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "66-TFe0f5ub9A27G6hLPLm-KRZ4LGixHi8IA_Nv7jVM",
+          "short_id": "81d36ba71dddfc3e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 33",
+      "server": "185.117.89.74",
+      "server_port": 443,
+      "uuid": "f8cb3c89-32af-4255-bebc-d90aad175069",
+      "tls": {
+        "enabled": true,
+        "server_name": "seb.kosmosapp.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ",
+          "short_id": "27350908de933e09"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "neurex"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 34",
+      "server": "104.26.4.157",
+      "server_port": 2083,
+      "uuid": "767b6340-96dc-4aa0-8013-a8af7513d920",
+      "tls": {
+        "enabled": true,
+        "server_name": "c7dabe95.proxy-978.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "c7dabe95.proxy-978.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 35",
+      "server": "172.67.67.178",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "rAyAn-007.nAsTaRaN.DpDnS.OrG"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 36 ⚠R",
+      "server": "15.204.97.198",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 37",
+      "server": "104.24.30.89",
+      "server_port": 443,
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "rayan-007.nastaran.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 38 R63",
+      "server": "15.204.97.214",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 28 R63",
-      "server": "170.101.101.211",
+      "tag": "🇺🇸 美国 (United States) 39 R63",
+      "server": "170.101.101.112",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "api.explorecreativejobsandenhanceyourcareerportfolio.com",
+        "server_name": "resources.explorecreativejobsandenhanceyourcareerportfolio.com",
         "insecure": false
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 美国 (United States) 29",
-      "server": "news.bushyjenz.cyou",
-      "server_port": 42878,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu"
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 40 R50",
+      "server": "170.101.101.53",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.explorecreativejobsandenhanceyourcareerportfolio.com",
+        "insecure": false
+      }
     },
     {
       "type": "trojan",
-      "tag": "🇺🇸 美国 (United States) 30 R63",
+      "tag": "🇺🇸 美国 (United States) 41 R63",
       "server": "167.88.61.198",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
         "server_name": "cdn.browseseniorrolesandenhanceyourcareertoday.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 42",
+      "server": "104.21.70.21",
+      "server_port": 8080,
+      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
+      "transport": {
+        "type": "ws",
+        "path": "/xiron",
+        "headers": {
+          "Host": "xstack.mahanfixe.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 31",
+      "tag": "🇺🇸 美国 (United States) 43",
       "server": "31.76.32.122",
       "server_port": 443,
       "uuid": "71b566cb-78c4-48e4-af5b-720e4f7884f2",
@@ -518,19 +752,107 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 32 R60",
-      "server": "13.140.93.74",
-      "server_port": 39561,
-      "uuid": "2f191862-ea33-4d59-b38c-f8b0b8694616",
+      "tag": "🇺🇸 美国 (United States) 44",
+      "server": "pl.galacticworld.online",
+      "server_port": 443,
+      "uuid": "ecc0e60a-f2cc-4266-8353-b228df89730a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.galacticworld.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 45 R70",
+      "server": "104.17.0.1",
+      "server_port": 8080,
+      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/xiron",
+        "headers": {
+          "Host": "xstack.mahanfixe.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 46",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
+      "transport": {
+        "type": "ws",
+        "path": "/xiron",
+        "headers": {
+          "Host": "xstack.mahanfixe.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 47 R67",
+      "server": "167.88.61.20",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.browseseniorrolesandenhanceyourcareertoday.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 48 R60",
+      "server": "170.101.101.67",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.explorecreativejobsandenhanceyourcareerportfolio.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 49 R52",
+      "server": "104.18.42.54",
+      "server_port": 2083,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "newwk1.f1w.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "newwk1.f1w.de5.net"
+        }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇺🇸 美国 (United States) 33",
-      "server": "172.64.145.93",
+      "tag": "🇺🇸 美国 (United States) 50",
+      "server": "172.67.190.164",
       "server_port": 443,
       "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
       "security": "auto",
@@ -549,7 +871,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 34",
+      "tag": "🇺🇸 美国 (United States) 51",
       "server": "2.27.210.6",
       "server_port": 4444,
       "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
@@ -560,9 +882,121 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 52 R51",
+      "server": "fast.145779.xyz",
+      "server_port": 2053,
+      "uuid": "e3149c82-00f6-4227-b2c0-b78f1dd81279",
+      "tls": {
+        "enabled": true,
+        "server_name": "fast.145779.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-tesla",
+        "headers": {
+          "Host": "fast.145779.xyz"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 35",
-      "server": "50.7.38.243",
+      "tag": "🇺🇸 美国 (United States) 53",
+      "server": "48.102.214.167",
+      "server_port": 4444,
+      "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
+      "tls": {
+        "enabled": true,
+        "server_name": "fl5.edgeport.cloud",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 54 R42",
+      "server": "US122201.ssgreen.org",
+      "server_port": 443,
+      "uuid": "7a8f7391-1711-4fcc-b29b-562a00f357f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "US122201.ssgreen.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/wes",
+        "headers": {
+          "Host": "US122201.ssgreen.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 55",
+      "server": "yg6.ygkkk.dpdns.org",
+      "server_port": 80,
+      "uuid": "3c75a551-81d6-46d0-876d-79519719bb22",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/3c75a551-81d6-46d0-876d-79519719bb22-vm",
+        "headers": {
+          "Host": "argo.235697.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 56",
+      "server": "195.123.240.65",
+      "server_port": 443,
+      "uuid": "ce18d0eb-5c71-41f9-96e5-1632e22456e4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE",
+          "short_id": "19296c9f1bf9c7b1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 57",
+      "server": "83.141.69.239",
+      "server_port": 443,
+      "uuid": "1b487f79-6b87-4971-863c-526bd31abd44",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "83.141.69.239.sslip.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vluPN5krskStuIe1YYoOopN766N8qK_uMsSsZGJdwCI",
+          "short_id": "db71028aeb67289c"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 58",
+      "server": "promo.betust.net",
       "server_port": 443,
       "password": "d4ca9415f0eac7897472e1e5b86d2e96",
       "tls": {
@@ -573,7 +1007,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 36",
+      "tag": "🇺🇸 美国 (United States) 59",
       "server": "148.135.86.162",
       "server_port": 10000,
       "uuid": "327b1113-049e-4256-8d72-8815643dbb65",
@@ -593,88 +1027,188 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇺🇸 美国 (United States) 60",
+      "server": "dog-us.kunlun01dns.com",
+      "server_port": 21010,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 61 R59",
+      "server": "104.18.151.231",
+      "server_port": 443,
+      "uuid": "eaf76557-2219-4799-8171-d7020adfefd0",
+      "tls": {
+        "enabled": true,
+        "server_name": "hidden-star-98c5.tebohi79684008.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "hidden-star-98c5.tebohi79684008.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 62",
+      "server": "zfapi.zalolink.com",
+      "server_port": 47691,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "m.media-amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg",
+          "short_id": "2905326a"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01",
-        "🇺🇸 美国 (United States) 02 R67",
+        "🇺🇸 美国 (United States) 01 R50",
+        "🇺🇸 美国 (United States) 02 R52",
         "🇺🇸 美国 (United States) 03",
-        "🇺🇸 美国 (United States) 04 R52",
-        "🇺🇸 美国 (United States) 05 ⚠R",
-        "🇺🇸 美国 (United States) 06 ⚠R",
-        "🇺🇸 美国 (United States) 07 R63",
+        "🇺🇸 美国 (United States) 04",
+        "🇺🇸 美国 (United States) 05",
+        "🇺🇸 美国 (United States) 06",
+        "🇺🇸 美国 (United States) 07",
         "🇺🇸 美国 (United States) 08",
         "🇺🇸 美国 (United States) 09",
         "🇺🇸 美国 (United States) 10",
-        "🇺🇸 美国 (United States) 11",
+        "🇺🇸 美国 (United States) 11 R63",
         "🇺🇸 美国 (United States) 12",
         "🇺🇸 美国 (United States) 13",
-        "🇺🇸 美国 (United States) 14 ⚠R",
+        "🇺🇸 美国 (United States) 14",
         "🇺🇸 美国 (United States) 15",
-        "🇺🇸 美国 (United States) 16 R67",
-        "🇺🇸 美国 (United States) 17 R63",
-        "🇺🇸 美国 (United States) 18 R63",
-        "🇺🇸 美国 (United States) 19 ⚠R",
-        "🇺🇸 美国 (United States) 20 R67",
-        "🇺🇸 美国 (United States) 21 R67",
-        "🇺🇸 美国 (United States) 22 R50",
+        "🇺🇸 美国 (United States) 16 R70",
+        "🇺🇸 美国 (United States) 17 ⚠R",
+        "🇺🇸 美国 (United States) 18",
+        "🇺🇸 美国 (United States) 19",
+        "🇺🇸 美国 (United States) 20 ⚠R",
+        "🇺🇸 美国 (United States) 21 ⚠R",
+        "🇺🇸 美国 (United States) 22",
         "🇺🇸 美国 (United States) 23 ⚠R",
-        "🇺🇸 美国 (United States) 24 R67",
-        "🇺🇸 美国 (United States) 25",
-        "🇺🇸 美国 (United States) 26 ⚠R",
-        "🇺🇸 美国 (United States) 27 ⚠R",
-        "🇺🇸 美国 (United States) 28 R63",
-        "🇺🇸 美国 (United States) 29",
-        "🇺🇸 美国 (United States) 30 R63",
-        "🇺🇸 美国 (United States) 31",
-        "🇺🇸 美国 (United States) 32 R60",
+        "🇺🇸 美国 (United States) 24",
+        "🇺🇸 美国 (United States) 25 ⚠R",
+        "🇺🇸 美国 (United States) 26 R67",
+        "🇺🇸 美国 (United States) 27",
+        "🇺🇸 美国 (United States) 28",
+        "🇺🇸 美国 (United States) 29 ⚠R",
+        "🇺🇸 美国 (United States) 30",
+        "🇺🇸 美国 (United States) 31 R67",
+        "🇺🇸 美国 (United States) 32 R52",
         "🇺🇸 美国 (United States) 33",
         "🇺🇸 美国 (United States) 34",
         "🇺🇸 美国 (United States) 35",
-        "🇺🇸 美国 (United States) 36"
+        "🇺🇸 美国 (United States) 36 ⚠R",
+        "🇺🇸 美国 (United States) 37",
+        "🇺🇸 美国 (United States) 38 R63",
+        "🇺🇸 美国 (United States) 39 R63",
+        "🇺🇸 美国 (United States) 40 R50",
+        "🇺🇸 美国 (United States) 41 R63",
+        "🇺🇸 美国 (United States) 42",
+        "🇺🇸 美国 (United States) 43",
+        "🇺🇸 美国 (United States) 44",
+        "🇺🇸 美国 (United States) 45 R70",
+        "🇺🇸 美国 (United States) 46",
+        "🇺🇸 美国 (United States) 47 R67",
+        "🇺🇸 美国 (United States) 48 R60",
+        "🇺🇸 美国 (United States) 49 R52",
+        "🇺🇸 美国 (United States) 50",
+        "🇺🇸 美国 (United States) 51",
+        "🇺🇸 美国 (United States) 52 R51",
+        "🇺🇸 美国 (United States) 53",
+        "🇺🇸 美国 (United States) 54 R42",
+        "🇺🇸 美国 (United States) 55",
+        "🇺🇸 美国 (United States) 56",
+        "🇺🇸 美国 (United States) 57",
+        "🇺🇸 美国 (United States) 58",
+        "🇺🇸 美国 (United States) 59",
+        "🇺🇸 美国 (United States) 60",
+        "🇺🇸 美国 (United States) 61 R59",
+        "🇺🇸 美国 (United States) 62"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01",
-        "🇺🇸 美国 (United States) 02 R67",
+        "🇺🇸 美国 (United States) 01 R50",
+        "🇺🇸 美国 (United States) 02 R52",
         "🇺🇸 美国 (United States) 03",
-        "🇺🇸 美国 (United States) 04 R52",
-        "🇺🇸 美国 (United States) 05 ⚠R",
-        "🇺🇸 美国 (United States) 06 ⚠R",
-        "🇺🇸 美国 (United States) 07 R63",
+        "🇺🇸 美国 (United States) 04",
+        "🇺🇸 美国 (United States) 05",
+        "🇺🇸 美国 (United States) 06",
+        "🇺🇸 美国 (United States) 07",
         "🇺🇸 美国 (United States) 08",
         "🇺🇸 美国 (United States) 09",
         "🇺🇸 美国 (United States) 10",
-        "🇺🇸 美国 (United States) 11",
+        "🇺🇸 美国 (United States) 11 R63",
         "🇺🇸 美国 (United States) 12",
         "🇺🇸 美国 (United States) 13",
-        "🇺🇸 美国 (United States) 14 ⚠R",
+        "🇺🇸 美国 (United States) 14",
         "🇺🇸 美国 (United States) 15",
-        "🇺🇸 美国 (United States) 16 R67",
-        "🇺🇸 美国 (United States) 17 R63",
-        "🇺🇸 美国 (United States) 18 R63",
-        "🇺🇸 美国 (United States) 19 ⚠R",
-        "🇺🇸 美国 (United States) 20 R67",
-        "🇺🇸 美国 (United States) 21 R67",
-        "🇺🇸 美国 (United States) 22 R50",
+        "🇺🇸 美国 (United States) 16 R70",
+        "🇺🇸 美国 (United States) 17 ⚠R",
+        "🇺🇸 美国 (United States) 18",
+        "🇺🇸 美国 (United States) 19",
+        "🇺🇸 美国 (United States) 20 ⚠R",
+        "🇺🇸 美国 (United States) 21 ⚠R",
+        "🇺🇸 美国 (United States) 22",
         "🇺🇸 美国 (United States) 23 ⚠R",
-        "🇺🇸 美国 (United States) 24 R67",
-        "🇺🇸 美国 (United States) 25",
-        "🇺🇸 美国 (United States) 26 ⚠R",
-        "🇺🇸 美国 (United States) 27 ⚠R",
-        "🇺🇸 美国 (United States) 28 R63",
-        "🇺🇸 美国 (United States) 29",
-        "🇺🇸 美国 (United States) 30 R63",
-        "🇺🇸 美国 (United States) 31",
-        "🇺🇸 美国 (United States) 32 R60",
+        "🇺🇸 美国 (United States) 24",
+        "🇺🇸 美国 (United States) 25 ⚠R",
+        "🇺🇸 美国 (United States) 26 R67",
+        "🇺🇸 美国 (United States) 27",
+        "🇺🇸 美国 (United States) 28",
+        "🇺🇸 美国 (United States) 29 ⚠R",
+        "🇺🇸 美国 (United States) 30",
+        "🇺🇸 美国 (United States) 31 R67",
+        "🇺🇸 美国 (United States) 32 R52",
         "🇺🇸 美国 (United States) 33",
         "🇺🇸 美国 (United States) 34",
         "🇺🇸 美国 (United States) 35",
-        "🇺🇸 美国 (United States) 36"
+        "🇺🇸 美国 (United States) 36 ⚠R",
+        "🇺🇸 美国 (United States) 37",
+        "🇺🇸 美国 (United States) 38 R63",
+        "🇺🇸 美国 (United States) 39 R63",
+        "🇺🇸 美国 (United States) 40 R50",
+        "🇺🇸 美国 (United States) 41 R63",
+        "🇺🇸 美国 (United States) 42",
+        "🇺🇸 美国 (United States) 43",
+        "🇺🇸 美国 (United States) 44",
+        "🇺🇸 美国 (United States) 45 R70",
+        "🇺🇸 美国 (United States) 46",
+        "🇺🇸 美国 (United States) 47 R67",
+        "🇺🇸 美国 (United States) 48 R60",
+        "🇺🇸 美国 (United States) 49 R52",
+        "🇺🇸 美国 (United States) 50",
+        "🇺🇸 美国 (United States) 51",
+        "🇺🇸 美国 (United States) 52 R51",
+        "🇺🇸 美国 (United States) 53",
+        "🇺🇸 美国 (United States) 54 R42",
+        "🇺🇸 美国 (United States) 55",
+        "🇺🇸 美国 (United States) 56",
+        "🇺🇸 美国 (United States) 57",
+        "🇺🇸 美国 (United States) 58",
+        "🇺🇸 美国 (United States) 59",
+        "🇺🇸 美国 (United States) 60",
+        "🇺🇸 美国 (United States) 61 R59",
+        "🇺🇸 美国 (United States) 62"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

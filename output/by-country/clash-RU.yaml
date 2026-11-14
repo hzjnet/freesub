@@ -13,50 +13,11 @@ proxies:
   tls: true
   servername: 68r2nrw6avta71yq.cdn.cachefleet.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: qi8ws15c7jv5q2fa
 - name: 🇷🇺 俄罗斯 (Russia) 02
-  server: 185.215.184.54
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: 185.215.184.54
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03
-  server: novonl.subv.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04
-  server: 185.215.184.50
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: 185.215.184.50
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 05
   server: 200.102.183.50
   port: 443
   udp: true
@@ -69,31 +30,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: qi8ws15c7jv5q2fa
-- name: 🇷🇺 俄罗斯 (Russia) 06
-  server: 185.215.184.86
+- name: 🇷🇺 俄罗斯 (Russia) 03
+  server: 83.141.68.232
   port: 443
   udp: true
   type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: dvizhok.su
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07
-  server: fdat.titun.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: banket-restoran.su
+    public-key: RDFOZiTfbF3lzMcJGSm9rODFi1ErzlqqADAHQUpU2xs
+    short-id: d06c37930f65c360
+  servername: fieldnote.lalibobi.online
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -103,10 +51,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01
   - 🇷🇺 俄罗斯 (Russia) 02
   - 🇷🇺 俄罗斯 (Russia) 03
-  - 🇷🇺 俄罗斯 (Russia) 04
-  - 🇷🇺 俄罗斯 (Russia) 05
-  - 🇷🇺 俄罗斯 (Russia) 06
-  - 🇷🇺 俄罗斯 (Russia) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -115,9 +59,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01
   - 🇷🇺 俄罗斯 (Russia) 02
   - 🇷🇺 俄罗斯 (Russia) 03
-  - 🇷🇺 俄罗斯 (Russia) 04
-  - 🇷🇺 俄罗斯 (Russia) 05
-  - 🇷🇺 俄罗斯 (Russia) 06
-  - 🇷🇺 俄罗斯 (Russia) 07
 rules:
 - MATCH,PROXIES

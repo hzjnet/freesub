@@ -4,29 +4,70 @@
   },
   "outbounds": [
     {
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 01",
+      "server": "65.108.240.210",
+      "server_port": 39018,
+      "uuid": "77fb7a80-4724-4e33-9558-4f20c1634c5a",
+      "security": "auto"
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01 R47",
-      "server": "178.214.125.1",
-      "server_port": 443,
-      "uuid": "3f3160a0-747d-4fed-bf3d-4d884bfa964d",
+      "tag": "🇫🇮 芬兰 (Finland) 02",
+      "server": "37.27.202.231",
+      "server_port": 12040,
+      "uuid": "b7b41f80-8477-4cc8-affb-2680c2478df8",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "conf.emaar.ru",
+        "server_name": "testspeed-foreign.tci.ir",
         "utls": {
           "enabled": true,
           "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY",
-          "short_id": "6172ba9cffe9c22f"
+          "public_key": "yuNMNhM9R953IK0nvJrsfV2qiW8v8RxXLaRUalaETwI",
+          "short_id": "1aac41ca1a05d782"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03",
+      "server": "s19161.h1cloud.net",
+      "server_port": 25749,
+      "uuid": "e460e79d-5dd9-451d-8d1a-a84c8b70c9a7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "80aa2br.fi4.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nmjOhfpVZtk9W-3GZk5JY0B-OvCFkjP2RvTVBNZO7lE",
+          "short_id": "f6b3841eabafff9a"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 02",
+      "tag": "🇫🇮 芬兰 (Finland) 04",
+      "server": "177.202.75.56",
+      "server_port": 443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1.obxodvpn.us",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 05",
       "server": "94.183.164.119",
       "server_port": 24433,
       "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
@@ -37,45 +78,26 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03",
-      "server": "146.103.118.189",
-      "server_port": 443,
-      "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl2.574ck.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/574ck-finland",
-        "headers": {
-          "Host": "nl2.574ck.xyz"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01 R47",
+        "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03"
+        "🇫🇮 芬兰 (Finland) 03",
+        "🇫🇮 芬兰 (Finland) 04",
+        "🇫🇮 芬兰 (Finland) 05"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01 R47",
+        "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03"
+        "🇫🇮 芬兰 (Finland) 03",
+        "🇫🇮 芬兰 (Finland) 04",
+        "🇫🇮 芬兰 (Finland) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

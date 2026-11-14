@@ -9,7 +9,7 @@ proxies:
   port: 10086
   udp: true
   type: vmess
-  uuid: 74e07df3-f82a-4791-987f-247c3c395866
+  uuid: d50cc563-0c03-4136-899f-85cbc0b02699
   alterId: 0
   cipher: auto
   network: ws
