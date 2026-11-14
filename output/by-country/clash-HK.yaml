@@ -14,33 +14,28 @@ proxies:
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02
   server: dog-hk.kunlun01dns.com
-  port: 21019
+  port: 21022
   udp: true
   type: vmess
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16115
+  server: dog-hk.kunlun01dns.com
+  port: 21021
   udp: true
   type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: jp2tts.xyy123.win
-  port: 443
+  server: dog-hk.kunlun01dns.com
+  port: 21020
   udp: true
-  type: vless
-  uuid: da03bde4-a5b6-4423-965d-c76842fcd923
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: KBPuCiAKJQQtlsodm5MIBFfYf-TGsrjCK5GGJzJJli4
-    short-id: d188c855
-  servername: nvplm.stg.nvidia.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select

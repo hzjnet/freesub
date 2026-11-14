@@ -4,20 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 01",
-      "server": "tally.so",
-      "server_port": 2082,
-      "uuid": "975955b1-0521-49d9-97ad-eed2e626a30f",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "roOz-ryo1kZgj-v1.rOoz-67c.woRKers.deV"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      }
+      "server": "16.60.30.137",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
@@ -79,68 +71,6 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 06",
-      "server": "34.39.80.57",
-      "server_port": 50818,
-      "uuid": "408c814e-f70a-4d16-b3b3-8182bb70211d",
-      "tls": {
-        "enabled": true,
-        "server_name": "yingguo.rymaker.cn",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/GunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 07",
-      "server": "213.176.92.168",
-      "server_port": 10444,
-      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "video.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
-          "short_id": "8debcf36f1cc69ff"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 08",
-      "server": "193.163.203.170",
-      "server_port": 443,
-      "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o",
-          "short_id": "b28db60d77c50b4f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 09",
       "server": "104.222.183.180",
       "server_port": 443,
       "uuid": "a1cf2f59-ffe0-4cb3-8c68-e6abf44726fc",
@@ -169,10 +99,7 @@
         "🇬🇧 英国 (United Kingdom) 03 R63",
         "🇬🇧 英国 (United Kingdom) 04",
         "🇬🇧 英国 (United Kingdom) 05",
-        "🇬🇧 英国 (United Kingdom) 06",
-        "🇬🇧 英国 (United Kingdom) 07",
-        "🇬🇧 英国 (United Kingdom) 08",
-        "🇬🇧 英国 (United Kingdom) 09"
+        "🇬🇧 英国 (United Kingdom) 06"
       ]
     },
     {
@@ -184,10 +111,7 @@
         "🇬🇧 英国 (United Kingdom) 03 R63",
         "🇬🇧 英国 (United Kingdom) 04",
         "🇬🇧 英国 (United Kingdom) 05",
-        "🇬🇧 英国 (United Kingdom) 06",
-        "🇬🇧 英国 (United Kingdom) 07",
-        "🇬🇧 英国 (United Kingdom) 08",
-        "🇬🇧 英国 (United Kingdom) 09"
+        "🇬🇧 英国 (United Kingdom) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

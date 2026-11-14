@@ -5,31 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 01 ⚠R",
-      "server": "198.244.202.215",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 02 ⚠R",
-      "server": "198.244.201.129",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 03 R41",
-      "server": "51.83.61.102",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "29irqk0paakcx19v"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 04",
+      "tag": "🇫🇷 法国 (France) 01",
       "server": "15.237.53.254",
       "server_port": 443,
       "method": "aes-256-cfb",
@@ -37,7 +13,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 05",
+      "tag": "🇫🇷 法国 (France) 02",
       "server": "51.44.170.122",
       "server_port": 443,
       "method": "aes-256-cfb",
@@ -45,39 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 06 R46",
-      "server": "57.129.76.233",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 07 R46",
-      "server": "57.129.83.85",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 08 ⚠R",
-      "server": "54.37.240.40",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "8nrpt2il04ptci2j"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 09 R41",
-      "server": "79.137.99.183",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 10",
+      "tag": "🇫🇷 法国 (France) 03",
       "server": "54.36.174.140",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -85,15 +29,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 11",
-      "server": "57.131.4.13",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "mx81glqbtlwuhcjo"
+      "tag": "🇫🇷 法国 (France) 04 R46",
+      "server": "57.129.76.233",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 12",
+      "tag": "🇫🇷 法国 (France) 05",
       "server": "20.19.83.143",
       "server_port": 2083,
       "uuid": "52a5a29f-c162-411a-8a37-a3f11b0dc537",
@@ -114,7 +58,44 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 13",
+      "tag": "🇫🇷 法国 (France) 06",
+      "server": "212.69.86.159",
+      "server_port": 8447,
+      "uuid": "52030136-eee3-4675-baae-a50f17b2bb8b",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Pe1-DgXHoB_IGysYKHHhjppQD88mHkzYkqISdSXQxT4",
+          "short_id": "732ef4f5320b5e19"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇷 法国 (France) 07 R41",
+      "server": "46.105.222.157",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 08",
       "server": "ai.smrtai.top",
       "server_port": 443,
       "uuid": "086bf957-9cd0-4e55-8280-bbef10435b41",
@@ -134,8 +115,8 @@
     },
     {
       "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 14 R41",
-      "server": "79.137.99.183",
+      "tag": "🇫🇷 法国 (France) 09 R41",
+      "server": "46.105.222.155",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -146,97 +127,44 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 15 R41",
-      "server": "46.105.222.157",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 16 R41",
-      "server": "162.19.82.57",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 17",
-      "server": "ww3.levikogjgfdd.ir",
-      "server_port": 443,
-      "uuid": "b81b4d1b-7f20-48f1-82dc-d24bef898cab",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "passport.yandex.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0",
-          "short_id": "e6"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 10 ⚠R",
+      "server": "198.244.201.129",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 ⚠R",
-        "🇫🇷 法国 (France) 02 ⚠R",
-        "🇫🇷 法国 (France) 03 R41",
-        "🇫🇷 法国 (France) 04",
+        "🇫🇷 法国 (France) 01",
+        "🇫🇷 法国 (France) 02",
+        "🇫🇷 法国 (France) 03",
+        "🇫🇷 法国 (France) 04 R46",
         "🇫🇷 法国 (France) 05",
-        "🇫🇷 法国 (France) 06 R46",
-        "🇫🇷 法国 (France) 07 R46",
-        "🇫🇷 法国 (France) 08 ⚠R",
+        "🇫🇷 法国 (France) 06",
+        "🇫🇷 法国 (France) 07 R41",
+        "🇫🇷 法国 (France) 08",
         "🇫🇷 法国 (France) 09 R41",
-        "🇫🇷 法国 (France) 10",
-        "🇫🇷 法国 (France) 11",
-        "🇫🇷 法国 (France) 12",
-        "🇫🇷 法国 (France) 13",
-        "🇫🇷 法国 (France) 14 R41",
-        "🇫🇷 法国 (France) 15 R41",
-        "🇫🇷 法国 (France) 16 R41",
-        "🇫🇷 法国 (France) 17"
+        "🇫🇷 法国 (France) 10 ⚠R"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 ⚠R",
-        "🇫🇷 法国 (France) 02 ⚠R",
-        "🇫🇷 法国 (France) 03 R41",
-        "🇫🇷 法国 (France) 04",
+        "🇫🇷 法国 (France) 01",
+        "🇫🇷 法国 (France) 02",
+        "🇫🇷 法国 (France) 03",
+        "🇫🇷 法国 (France) 04 R46",
         "🇫🇷 法国 (France) 05",
-        "🇫🇷 法国 (France) 06 R46",
-        "🇫🇷 法国 (France) 07 R46",
-        "🇫🇷 法国 (France) 08 ⚠R",
+        "🇫🇷 法国 (France) 06",
+        "🇫🇷 法国 (France) 07 R41",
+        "🇫🇷 法国 (France) 08",
         "🇫🇷 法国 (France) 09 R41",
-        "🇫🇷 法国 (France) 10",
-        "🇫🇷 法国 (France) 11",
-        "🇫🇷 法国 (France) 12",
-        "🇫🇷 法国 (France) 13",
-        "🇫🇷 法国 (France) 14 R41",
-        "🇫🇷 法国 (France) 15 R41",
-        "🇫🇷 法国 (France) 16 R41",
-        "🇫🇷 法国 (France) 17"
+        "🇫🇷 法国 (France) 10 ⚠R"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
