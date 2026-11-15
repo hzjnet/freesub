@@ -5,17 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
-  server: saar-est3.lalibobi.online
+  server: hy2-eee-1.aloranode.top
   port: 443
   udp: true
-  type: vless
-  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Oc8iFCgfl2hRU3yCf2aaZOxiuK5GLwxct3lYy6sw7nk
-  servername: saar-est3.lalibobi.online
-  client-fingerprint: firefox
+  type: hysteria2
+  password: b36a14f8-fc3f-4142-968f-48031cf5f330
+  sni: hy2-eee-1.aloranode.top
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01
-  server: amasoid.ddns.net
+  server: 35.236.180.222
   port: 14514
   udp: true
   type: ss

@@ -4,24 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
-      "server": "saar-est3.lalibobi.online",
+      "server": "hy2-eee-1.aloranode.top",
       "server_port": 443,
-      "uuid": "7d718630-7a1a-4af8-9332-aa0610634e8a",
-      "flow": "xtls-rprx-vision",
+      "password": "b36a14f8-fc3f-4142-968f-48031cf5f330",
       "tls": {
         "enabled": true,
-        "server_name": "saar-est3.lalibobi.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Oc8iFCgfl2hRU3yCf2aaZOxiuK5GLwxct3lYy6sw7nk",
-          "short_id": ""
-        }
+        "server_name": "hy2-eee-1.aloranode.top",
+        "insecure": false
       }
     },
     {

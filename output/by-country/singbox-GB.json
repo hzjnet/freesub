@@ -41,17 +41,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇬🇧 英国 (United Kingdom) 04",
-      "server": "193.188.21.253",
-      "server_port": 14430,
-      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "193.188.21.253"
-        }
+      "server": "50.7.193.146",
+      "server_port": 443,
+      "password": "2bc6428196efb899f544d750bea0c06d",
+      "tls": {
+        "enabled": true,
+        "server_name": "promo2.betust.net",
+        "insecure": false
       }
     },
     {
@@ -71,6 +69,111 @@
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 06",
+      "server": "193.188.21.253",
+      "server_port": 10444,
+      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "video.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 ⚠R",
+      "server": "51.38.71.147",
+      "server_port": 443,
+      "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
+      "tls": {
+        "enabled": true,
+        "server_name": "uk1.connectsuite.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn-cgi/ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 08",
+      "server": "193.163.203.170",
+      "server_port": 443,
+      "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o",
+          "short_id": "b28db60d77c50b4f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 09",
+      "server": "34.39.80.57",
+      "server_port": 50818,
+      "uuid": "408c814e-f70a-4d16-b3b3-8182bb70211d",
+      "tls": {
+        "enabled": true,
+        "server_name": "yingguo.rymaker.cn",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 10",
+      "server": "wandering-river-cd33.mramezanian1375.workers.dev",
+      "server_port": 443,
+      "uuid": "443b1e88-41fa-43bb-ff6c-982544254b74",
+      "tls": {
+        "enabled": true,
+        "server_name": "wandering-river-cd33.mramezanian1375.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/87fab74555d6e093",
+        "headers": {
+          "Host": "wandering-river-cd33.mramezanian1375.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 11",
       "server": "104.222.183.180",
       "server_port": 443,
       "uuid": "a1cf2f59-ffe0-4cb3-8c68-e6abf44726fc",
@@ -99,7 +202,12 @@
         "🇬🇧 英国 (United Kingdom) 03 R63",
         "🇬🇧 英国 (United Kingdom) 04",
         "🇬🇧 英国 (United Kingdom) 05",
-        "🇬🇧 英国 (United Kingdom) 06"
+        "🇬🇧 英国 (United Kingdom) 06",
+        "🇬🇧 英国 (United Kingdom) 07 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 08",
+        "🇬🇧 英国 (United Kingdom) 09",
+        "🇬🇧 英国 (United Kingdom) 10",
+        "🇬🇧 英国 (United Kingdom) 11"
       ]
     },
     {
@@ -111,7 +219,12 @@
         "🇬🇧 英国 (United Kingdom) 03 R63",
         "🇬🇧 英国 (United Kingdom) 04",
         "🇬🇧 英国 (United Kingdom) 05",
-        "🇬🇧 英国 (United Kingdom) 06"
+        "🇬🇧 英国 (United Kingdom) 06",
+        "🇬🇧 英国 (United Kingdom) 07 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 08",
+        "🇬🇧 英国 (United Kingdom) 09",
+        "🇬🇧 英国 (United Kingdom) 10",
+        "🇬🇧 英国 (United Kingdom) 11"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
