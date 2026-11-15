@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 02
-  server: 115.161.136.145
-  port: 10099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: '12242'
-- name: 🇰🇷 韩国 (South Korea) 03
   server: 129.154.61.196
   port: 800
   udp: true
@@ -32,15 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01
-  - 🇰🇷 韩国 (South Korea) 02
-  - 🇰🇷 韩国 (South Korea) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01
-  - 🇰🇷 韩国 (South Korea) 02
-  - 🇰🇷 韩国 (South Korea) 03
 rules:
 - MATCH,PROXIES

@@ -4,34 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16115
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 (Germany) 02 (移动家宽)
-  server: 8.211.38.49
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽)
+  server: 49.254.204.133
+  port: 1774
   udp: true
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: aes-256-cfb
+  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)
-  - 🇩🇪 德国 (Germany) 02 (移动家宽)
+  - 🇰🇷 韩国 (South Korea) 01 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)
-  - 🇩🇪 德国 (Germany) 02 (移动家宽)
+  - 🇰🇷 韩国 (South Korea) 01 (家宽)
 rules:
 - MATCH,PROXIES

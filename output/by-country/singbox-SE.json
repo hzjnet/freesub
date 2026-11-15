@@ -12,8 +12,16 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02",
+      "server": "62.182.193.228",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "2e555e46dbc421452416834962fd014f"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -23,7 +31,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -32,34 +40,45 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03",
-      "server": "104.21.0.87",
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 04",
+      "server": "95.143.196.97",
       "server_port": 443,
-      "uuid": "5da16620-0386-4da3-a252-12a6380ed1a6",
+      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
       "tls": {
         "enabled": true,
-        "server_name": "server3.pegibol940.workers.dev",
+        "server_name": "connect-se.mimowhat.online",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "server3.pegibol940.workers.dev"
-        }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 04",
-      "server": "62.182.193.228",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2e555e46dbc421452416834962fd014f"
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05",
+      "server": "3fb2b6t.se1.h1clayd.click",
+      "server_port": 443,
+      "uuid": "632cd343-1e8f-4bf6-a9a2-20ada1f6970f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "3fb2b6t.se1.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XQWaIMBPo0mpWs3MooxxkjWNSgxnkIESd_2PnR8_2HA",
+          "short_id": "1061f1b1cdaad3ad"
+        }
+      }
     },
     {
       "type": "selector",
@@ -69,7 +88,8 @@
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
         "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04"
+        "🇸🇪 瑞典 (Sweden) 04",
+        "🇸🇪 瑞典 (Sweden) 05"
       ]
     },
     {
@@ -79,7 +99,8 @@
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
         "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04"
+        "🇸🇪 瑞典 (Sweden) 04",
+        "🇸🇪 瑞典 (Sweden) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

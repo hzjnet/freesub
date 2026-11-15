@@ -5,22 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: dog-hk.kunlun01dns.com
-  port: 21020
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16112
   udp: true
   type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: dog-hk.kunlun01dns.com
-  port: 21041
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03
   server: 8.217.1.203
   port: 8443
   udp: true
@@ -33,30 +25,6 @@ proxies:
     short-id: 0bf55f64
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 45.192.194.104
-  port: 35600
-  udp: true
-  type: vless
-  uuid: d34c4e7c-3eac-4a26-adb9-9004b6981ad8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zHmC_LkSMSrRHcetzsRJZvu6irqviiG3vf9VuXRL6FE
-  servername: www.iij.ad.jp
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 45.192.193.54
-  port: 35600
-  udp: true
-  type: vless
-  uuid: 8614bde7-34cf-4413-8360-e96f1b960528
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fJwbUNPAxu-CcoWnzWrvtDkX7QMDvJwFGWzJ3lDcFC4
-  servername: www.iij.ad.jp
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,9 +32,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
-  - 🇭🇰 中国香港 (Hong Kong) 03
-  - 🇭🇰 中国香港 (Hong Kong) 04
-  - 🇭🇰 中国香港 (Hong Kong) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,8 +39,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
-  - 🇭🇰 中国香港 (Hong Kong) 03
-  - 🇭🇰 中国香港 (Hong Kong) 04
-  - 🇭🇰 中国香港 (Hong Kong) 05
 rules:
 - MATCH,PROXIES
