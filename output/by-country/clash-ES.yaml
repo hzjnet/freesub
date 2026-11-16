@@ -5,7 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01
-  server: 153.56.228.244
+  server: 153.56.229.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: b082567f-6291-4abf-be72-acdda82d4351
+  tls: true
+  reality-opts:
+    public-key: cxyrz3HGwHEptrO2fvz6EiikFoEDgTl0SQkrNyj5yRc
+    short-id: 74f848c51d8139d1
+  servername: b6d267t.es10.h1clayd.shop
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 02
+  server: 49930ag.es8.h1clayd.click
   port: 443
   udp: true
   type: vless
@@ -19,17 +31,36 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 61c20be08f4f
+- name: 🇪🇸 西班牙 (Spain) 03
+  server: 195.206.235.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  reality-opts:
+    public-key: 7efBhLzPwoTtEC1GlukCdiTllobUfa2_XuAKNSLJx30
+    short-id: e7cffac9f8cfb434
+  servername: b3cd32g.es1.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01
+  - 🇪🇸 西班牙 (Spain) 02
+  - 🇪🇸 西班牙 (Spain) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇸 西班牙 (Spain) 01
+  - 🇪🇸 西班牙 (Spain) 02
+  - 🇪🇸 西班牙 (Spain) 03
 rules:
 - MATCH,PROXIES
