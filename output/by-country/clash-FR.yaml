@@ -4,70 +4,77 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇷 法国 (France) 01 ⚠R
-  server: 198.244.201.129
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 02
-  server: 54.36.174.140
+- name: 🇫🇷 法国 (France) 01
+  server: 51.44.170.122
   port: 443
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eetk7pw
-- name: 🇫🇷 法国 (France) 03 R46
-  server: 57.129.76.233
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇫🇷 法国 (France) 02 R41
+  server: 79.137.99.183
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 04 R41
-  server: 51.83.61.102
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 29irqk0paakcx19v
-- name: 🇫🇷 法国 (France) 05 R46
+- name: 🇫🇷 法国 (France) 03 R46
   server: 57.129.83.85
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 06
-  server: 54.36.174.134
+- name: 🇫🇷 法国 (France) 04
+  server: 54.36.174.140
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: eetk7pw
-- name: 🇫🇷 法国 (France) 07 ⚠R
+- name: 🇫🇷 法国 (France) 05 ⚠R
+  server: 198.244.201.129
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 06 ⚠R
   server: 198.244.202.215
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 08 ⚠R
-  server: 57.129.138.142
-  port: 8080
+- name: 🇫🇷 法国 (France) 07 R46
+  server: 57.129.76.233
+  port: 19999
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: fwxkzn0tmurzsvrw
-- name: 🇫🇷 法国 (France) 09
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 08
   server: 13.38.12.246
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇫🇷 法国 (France) 09
+  server: 57.131.21.102
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: n4uygjtq54pz1oiv
 - name: 🇫🇷 法国 (France) 10 R41
+  server: 51.77.144.182
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: x19py0a8ipglqkbe
+- name: 🇫🇷 法国 (France) 11 R41
   server: 79.137.99.183
   port: 1270
   udp: true
@@ -78,14 +85,19 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 11
-  server: 57.131.4.13
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: mx81glqbtlwuhcjo
 - name: 🇫🇷 法国 (France) 12
+  server: 161.97.66.16
+  port: 443
+  udp: true
+  type: vless
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+  tls: true
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+    short-id: 086bf957
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 13
   server: 20.19.83.143
   port: 2083
   udp: true
@@ -98,46 +110,12 @@ proxies:
     short-id: 0123456789abcdef
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 13 R41
-  server: 91.134.35.72
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
 - name: 🇫🇷 法国 (France) 14
-  server: 161.97.66.16
-  port: 443
-  udp: true
-  type: vless
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  tls: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-    short-id: 086bf957
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 15 R41
-  server: 46.105.222.155
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 16
-  server: 141.227.160.61
+  server: 141.227.170.220
   port: 8443
   udp: true
   type: vless
-  uuid: f59fdac3-5842-449b-8c8d-d5ebcdbf1768
+  uuid: 6c077993-952c-4318-9e93-89056a207a9b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -145,21 +123,7 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 17 R41
-  server: 79.137.99.183
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 18
-  server: 15.237.53.254
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 (France) 19 R41
+- name: 🇫🇷 法国 (France) 15 R41
   server: 162.19.82.57
   port: 1270
   udp: true
@@ -170,8 +134,8 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 20 R41
-  server: 46.105.222.157
+- name: 🇫🇷 法国 (France) 16 R41
+  server: 46.105.222.155
   port: 1270
   udp: true
   type: vmess
@@ -181,72 +145,82 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 21
-  server: 5.75.195.83
-  port: 56879
+- name: 🇫🇷 法国 (France) 17 R41
+  server: 91.134.35.72
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 18
+  server: suh.cryptofront.uk
+  port: 80
   udp: true
   type: vless
-  uuid: f8847ac2-e586-400f-841b-00081ea4592e
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+      Host: suh.cryptofront.uk
+- name: 🇫🇷 法国 (France) 19 ⚠R
+  server: 54.37.240.40
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 8nrpt2il04ptci2j
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇷 法国 (France) 01 ⚠R
-  - 🇫🇷 法国 (France) 02
+  - 🇫🇷 法国 (France) 01
+  - 🇫🇷 法国 (France) 02 R41
   - 🇫🇷 法国 (France) 03 R46
-  - 🇫🇷 法国 (France) 04 R41
-  - 🇫🇷 法国 (France) 05 R46
-  - 🇫🇷 法国 (France) 06
-  - 🇫🇷 法国 (France) 07 ⚠R
-  - 🇫🇷 法国 (France) 08 ⚠R
+  - 🇫🇷 法国 (France) 04
+  - 🇫🇷 法国 (France) 05 ⚠R
+  - 🇫🇷 法国 (France) 06 ⚠R
+  - 🇫🇷 法国 (France) 07 R46
+  - 🇫🇷 法国 (France) 08
   - 🇫🇷 法国 (France) 09
   - 🇫🇷 法国 (France) 10 R41
-  - 🇫🇷 法国 (France) 11
+  - 🇫🇷 法国 (France) 11 R41
   - 🇫🇷 法国 (France) 12
-  - 🇫🇷 法国 (France) 13 R41
+  - 🇫🇷 法国 (France) 13
   - 🇫🇷 法国 (France) 14
   - 🇫🇷 法国 (France) 15 R41
-  - 🇫🇷 法国 (France) 16
+  - 🇫🇷 法国 (France) 16 R41
   - 🇫🇷 法国 (France) 17 R41
   - 🇫🇷 法国 (France) 18
-  - 🇫🇷 法国 (France) 19 R41
-  - 🇫🇷 法国 (France) 20 R41
-  - 🇫🇷 法国 (France) 21
+  - 🇫🇷 法国 (France) 19 ⚠R
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇷 法国 (France) 01 ⚠R
-  - 🇫🇷 法国 (France) 02
+  - 🇫🇷 法国 (France) 01
+  - 🇫🇷 法国 (France) 02 R41
   - 🇫🇷 法国 (France) 03 R46
-  - 🇫🇷 法国 (France) 04 R41
-  - 🇫🇷 法国 (France) 05 R46
-  - 🇫🇷 法国 (France) 06
-  - 🇫🇷 法国 (France) 07 ⚠R
-  - 🇫🇷 法国 (France) 08 ⚠R
+  - 🇫🇷 法国 (France) 04
+  - 🇫🇷 法国 (France) 05 ⚠R
+  - 🇫🇷 法国 (France) 06 ⚠R
+  - 🇫🇷 法国 (France) 07 R46
+  - 🇫🇷 法国 (France) 08
   - 🇫🇷 法国 (France) 09
   - 🇫🇷 法国 (France) 10 R41
-  - 🇫🇷 法国 (France) 11
+  - 🇫🇷 法国 (France) 11 R41
   - 🇫🇷 法国 (France) 12
-  - 🇫🇷 法国 (France) 13 R41
+  - 🇫🇷 法国 (France) 13
   - 🇫🇷 法国 (France) 14
   - 🇫🇷 法国 (France) 15 R41
-  - 🇫🇷 法国 (France) 16
+  - 🇫🇷 法国 (France) 16 R41
   - 🇫🇷 法国 (France) 17 R41
   - 🇫🇷 法国 (France) 18
-  - 🇫🇷 法国 (France) 19 R41
-  - 🇫🇷 法国 (France) 20 R41
-  - 🇫🇷 法国 (France) 21
+  - 🇫🇷 法国 (France) 19 ⚠R
 rules:
 - MATCH,PROXIES
