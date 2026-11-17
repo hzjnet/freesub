@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01",
-      "server": "85.237.207.221",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
+      "server": "fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com",
       "server_port": 443,
-      "uuid": "b59bcb5b-5150-4c6b-9227-681886197014",
-      "flow": "xtls-rprx-vision",
+      "uuid": "3ee091ca-ab9c-11ef-a791-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "dl.google.com",
+        "server_name": "download.windowsupdate.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "lJz7AGWUC-ZTEIJaU5y1GRrROWJ9J_VzQRyrYPmOygs",
-          "short_id": "fd2fa5e06670120b"
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "short_id": ""
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

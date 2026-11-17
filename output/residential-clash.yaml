@@ -18,6 +18,17 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  server: fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  tls: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +36,7 @@ proxy-groups:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽)
   - 🇰🇷 韩国 (South Korea) 02 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -32,5 +44,6 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽)
   - 🇰🇷 韩国 (South Korea) 02 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
 rules:
 - MATCH,PROXIES

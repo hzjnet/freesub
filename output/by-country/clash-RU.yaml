@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
+  server: 185.79.19.8
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YLcEO7lE6TeHKOMwRMkzLwaka7JOCbV8WCQ15eQVWEE
+    short-id: 1d482377da
+  servername: fazuno.net
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 02
   server: 81.171.14.72
   port: 443
   udp: true
@@ -17,17 +30,34 @@ proxies:
     short-id: 2237b916
   servername: zovira.me
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 03
+  server: 185.231.101.94
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: eiTR0q65sQ8SUwFSxHY1IXHKkNb-_QTQnambcVxnUFU
+    short-id: 51057fb54d2364f4
+  servername: fuzora.net
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01
+  - 🇷🇺 俄罗斯 (Russia) 02
+  - 🇷🇺 俄罗斯 (Russia) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01
+  - 🇷🇺 俄罗斯 (Russia) 02
+  - 🇷🇺 俄罗斯 (Russia) 03
 rules:
 - MATCH,PROXIES

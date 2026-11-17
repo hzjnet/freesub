@@ -20,12 +20,33 @@
       "password": "1234!@#$"
     },
     {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽)",
+      "server": "fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "3ee091ca-ab9c-11ef-a791-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.windowsupdate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇩🇪 德国 (Germany) 01 (移动家宽)",
-        "🇰🇷 韩国 (South Korea) 02 (家宽)"
+        "🇰🇷 韩国 (South Korea) 02 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)"
       ]
     },
     {
@@ -33,7 +54,8 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 德国 (Germany) 01 (移动家宽)",
-        "🇰🇷 韩国 (South Korea) 02 (家宽)"
+        "🇰🇷 韩国 (South Korea) 02 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

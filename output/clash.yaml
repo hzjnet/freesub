@@ -18,69 +18,32 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇺🇸 美国 (United States) 03 R50
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  server: fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  tls: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 04 R50
   server: 198.98.53.130
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: eDfN7SODQceIOmIAbtJJtK
-- name: 🇨🇦 加拿大 (Canada) 04
-  server: 99.79.32.21
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇨🇦 加拿大 (Canada) 05
-  server: 15.156.192.45
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 06
-  server: 38.145.220.193
-  port: 8443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: jUbDNsFamcyDfpm+rI3Zyw==
-- name: 🇨🇦 加拿大 (Canada) 07 R50
-  server: 15.235.57.6
+- name: 🇨🇦 加拿大 (Canada) 05 R52
+  server: 54.39.96.233
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: kxhnt5jtykd328cg
-- name: 🇺🇸 美国 (United States) 08
-  server: 3.16.78.3
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 09
-  server: 147.224.54.25
-  port: 2053
-  udp: true
-  type: vless
-  uuid: cdb7fa1d-6e7a-467c-da9c-da363c7bf779
-  tls: true
-  reality-opts:
-    public-key: DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk
-    short-id: '68'
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 10 R67
-  server: 84.17.41.2
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 (United States) 11
+  password: 2cvhpvdg4x7mvbps
+- name: 🇺🇸 美国 (United States) 06
   server: 172.233.201.244
   port: 61635
   udp: true
@@ -93,94 +56,163 @@ proxies:
     short-id: 1f2519bb96e5589c
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 12 R64
-  server: 5.34.178.120
+- name: 🇨🇦 加拿大 (Canada) 07 R52
+  server: 15.235.57.6
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: kxhnt5jtykd328cg
+- name: 🇺🇸 美国 (United States) 08 R53
+  server: 138.197.89.234
+  port: 28960
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: DZRy4Q3QH0jUGfKFl2jDCZ
+- name: 🇨🇦 加拿大 (Canada) 09
+  server: 23.155.44.105
   port: 443
   udp: true
   type: vless
-  uuid: 23b848b7-93e5-4d96-b36d-ed704912e5b7
+  uuid: 128ce9ab-63bc-48dc-92ca-1b5426a9eb46
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4RaNuv9yehmcfpdzvRxCWWzEWERWzZSIHqcgg3l35Cw
-    short-id: e16bbf1a5bee2321
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 13
+    public-key: HE1CGzI0QBqhMRUsHqq_9v4Mj3M5dkluFmfyMBH_7kM
+    short-id: 70f75668dc5914b3
+  servername: app.flyprotect.ca
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 10
   server: 104.238.140.45
   port: 11051
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: JUXsy78dSs6ROkasikmoaL
-- name: 🇺🇸 美国 (United States) 14 R63
-  server: 136.176.65.251
-  port: 443
-  udp: true
-  type: vless
-  uuid: 39826f32-f5ca-42a5-ab33-188f7d199478
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: O5NcKiTtNcJZiLMJhxT5d0Pn8KjVBvXGmztGd4_D-RI
-    short-id: cdac1a856b81390f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 15
-  server: 156.229.167.109
-  port: 8443
-  udp: true
-  type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  tls: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 16
-  server: 195.123.240.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
-    short-id: 19296c9f1bf9c7b1
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 17
-  server: 15.204.97.219
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 18 R60
-  server: 170.101.101.112
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.explorecreativejobsandenhanceyourcareerportfolio.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 19
-  server: 3.145.49.43
+- name: 🇺🇸 美国 (United States) 11
+  server: 3.16.78.3
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇺🇸 美国 (United States) 20 ⚠R
-  server: 15.204.97.198
+- name: 🇩🇪 德国 (Germany) 12
+  server: 162.159.153.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rayan-007.maxima.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇫🇷 法国 (France) 13 ⚠R
+  server: 198.244.201.129
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 (United States) 14
+  server: 172.235.37.168
+  port: 443
+  udp: true
+  type: vless
+  uuid: dbac71f3-ab05-4194-985b-f07088bf1a4a
+  tls: true
+  reality-opts:
+    public-key: 1iwAzh_XzSCYWZEVZ0lfczKFd--jXx3coCt5le58gEM
+    short-id: c52e85fe
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 15
+  server: 95.215.201.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 16 R46
+  server: 57.129.83.85
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇨🇦 加拿大 (Canada) 17
+  server: 99.79.32.21
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇳🇱 荷兰 (Netherlands) 18
+  server: 188.116.27.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 441caaf2-aae6-4883-8af9-1e5770395ae8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: mprwTEsQ9nJ78qG7BJskAWXaVfDxeMHBkQHbReVfMnc
+    short-id: '1174'
+  servername: www.sony.co.uk
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 19
+  server: 34.94.152.229
+  port: 443
+  udp: true
+  type: trojan
+  password: '123456'
+  sni: us.ctt25.uk
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 20
+  server: 64.186.233.233
+  port: 443
+  udp: true
+  type: vless
+  uuid: d006ef4a-d235-4691-bf05-abbe0d14055c
+  tls: true
+  servername: clash.ddm4.cn
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: clash.ddm4.cn
+- name: 🇬🇧 英国 (United Kingdom) 21
+  server: 16.60.30.137
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 22 ⚠R
+  server: 172.111.36.147
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 23 ⚠R
+  server: 15.204.97.195
   port: 23576
   udp: true
   type: vless
@@ -191,20 +223,15 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 21 R63
-  server: 15.204.97.214
-  port: 23576
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 24
+  server: 57.131.4.13
+  port: 8080
   udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  servername: fuck.rkn
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 22 ⚠R
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: mx81glqbtlwuhcjo
+- name: 🇺🇸 美国 (United States) 25 ⚠R
   server: 15.204.97.216
   port: 23576
   udp: true
@@ -217,33 +244,43 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 23 R67
-  server: 15.204.97.206
-  port: 23576
+- name: 🇺🇸 美国 (United States) 26
+  server: 172.233.142.149
+  port: 443
   udp: true
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
+  uuid: 61e3954d-0d66-4b69-b6cd-9b4fc2352303
   tls: true
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
+    public-key: f9D1ZzG6vP1HgjCaCIutbykWkab8VEDuitwuwaeuBgY
+    short-id: 4206512a
+  servername: itunes.apple.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 24 ⚠R
-  server: 15.204.97.195
-  port: 23576
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇫🇷 法国 (France) 27
+  server: 13.38.12.246
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇺🇸 美国 (United States) 28
+  server: panel.apexkey.store
+  port: 2053
   udp: true
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
+  uuid: cdb7fa1d-6e7a-467c-da9c-da363c7bf779
   tls: true
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
+    public-key: DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk
+    short-id: '68'
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 25
+- name: 🇺🇸 美国 (United States) 29
   server: 143.246.60.254
   port: 443
   udp: true
@@ -256,93 +293,16 @@ proxies:
     short-id: eb68848e2575a1f4
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 26
-  server: 107.174.50.37
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 98530c82-0c84-4d30-bebf-0f10f032eca3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gvTO758wlsVaA4ZVZ_A0Ee_5XcnZfbZUJZiqOpXfrEw
-    short-id: 6219103f017a0851
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 27 ⚠R
-  server: 172.111.36.126
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 28
-  server: 104.168.109.213
+- name: 🇺🇸 美国 (United States) 30
+  server: 172.233.129.179
   port: 443
   udp: true
   type: vless
-  uuid: 74b86103-0a6e-4a0e-8430-2aa84af805fc
-  flow: xtls-rprx-vision
+  uuid: 8d602a84-d258-4953-8ef7-d64afff2e879
   tls: true
   reality-opts:
-    public-key: rU4-ii54LkmEWBaliTQHvi3jc0fDTlSmutVtzedMNRM
-    short-id: 6ba7b8
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 29 ⚠R
-  server: 15.204.97.197
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 30 R63
-  server: 170.101.101.53
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.explorecreativejobsandenhanceyourcareerportfolio.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 31 ⚠R
-  server: 15.204.97.209
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 32
-  server: 159.195.207.238
-  port: 49313
-  udp: true
-  type: vless
-  uuid: 855c7aaa-e7d6-463e-971e-d36032744428
-- name: 🇺🇸 美国 (United States) 33
-  server: 172.239.67.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: b0d814b5-7232-4fe9-9ce9-e552c9abbae8
-  tls: true
-  reality-opts:
-    public-key: Knpni0SBmL6d1nGWtqmHRDsOQvQxcD2Wd0eOf2KZtgs
-    short-id: ba356a45
+    public-key: 5UVOUoMBYxyWuF-FCbXoEt8LHFkj7iZqZOABlvyvXV8
+    short-id: 955c702b
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -350,272 +310,253 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇫🇷 法国 (France) 34
-  server: 51.44.170.122
-  port: 443
+- name: 🇺🇸 美国 (United States) 31
+  server: 172.66.167.186
+  port: 2053
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 (France) 35 R41
-  server: 79.137.99.183
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 36 R46
-  server: 57.129.83.85
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 37
-  server: 54.36.174.140
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: eetk7pw
-- name: 🇫🇷 法国 (France) 38 ⚠R
-  server: 198.244.201.129
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 39 ⚠R
-  server: 198.244.202.215
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 40 R46
-  server: 57.129.76.233
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇺🇸 美国 (United States) 41
-  server: 198.247.127.131
-  port: 443
-  udp: true
-  type: vless
-  uuid: 59548d2d-5d7c-4328-aa81-0d5614da0c1b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vmHHRwA9ER6c8dfgtL-gh2HBMCvjySy1xLimqYpLiCI
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 42
-  server: 23.230.52.119
-  port: 42878
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
-- name: 🇩🇪 德国 (Germany) 43
+  type: trojan
+  password: IDgAbZbs8cZw
+  sni: rAyan02-1d7cmk9v-t3.rayAn-02.worKers.dEV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+- name: 🇩🇪 德国 (Germany) 32
   server: 51.38.127.93
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 03y5gbnyl4o1hc2n
-- name: 🇫🇷 法国 (France) 44
-  server: 13.38.12.246
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇺🇸 美国 (United States) 45
-  server: 216.172.144.199
-  port: 40643
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Xd4G9xn7AgT88msCYC9MZfavMUqd3dWFNAvswi6KfaD9YcexptMbPn4cSECEMzDgvAMomAWJHyweqJer99ssMVYGH6TK8k4c
-- name: 🇺🇸 美国 (United States) 46 ⚠R
-  server: 167.88.62.134
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 47
-  server: 138.199.55.243
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 48
-  server: 57.131.21.102
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: n4uygjtq54pz1oiv
-- name: 🇸🇪 瑞典 (Sweden) 49
-  server: 62.182.193.228
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
-- name: 🇬🇧 英国 (United Kingdom) 50
-  server: 16.60.30.137
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇩🇪 德国 (Germany) 51
-  server: 45.157.235.218
+- name: 🇺🇸 美国 (United States) 33
+  server: 172.233.139.212
   port: 443
   udp: true
   type: vless
-  uuid: 4618cebd-e1e9-45c3-be98-d9d6e3ee8bef
+  uuid: b21a60ef-9042-42c8-bb13-160528ea19c6
   tls: true
   reality-opts:
-    public-key: C_DlyXDDS4fWcAlxb-6O7LBKtq28fg2slCrH5tPaTQ4
-    short-id: 16cea10606a4e401
-  servername: a566d1g.de18.h1clayd.click
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 98b9c56e8ebb
-- name: 🇯🇵 日本 (Japan) 52
-  server: 168.138.205.100
-  port: 53758
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-- name: 🇫🇷 法国 (France) 53 R41
-  server: 51.77.144.182
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: x19py0a8ipglqkbe
-- name: 🇺🇸 美国 (United States) 54
-  server: 162.35.101.168
-  port: 44333
-  udp: true
-  type: vless
-  uuid: 256eab05-abfc-4747-8671-01e92fb95192
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vhtQBb9x0bXClfNSSGals7dBBUEDZ7PuW0sllAsyzDM
-    short-id: a1b2c3d4
-  servername: www.apple.com
+    public-key: bRB-Z_UOQ_sk8UFczAjrpkgKIg6cVdTNGnsyC7vAoyg
+    short-id: 7a87386b
+  servername: itunes.apple.com
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 55
-  server: 150.241.87.52
-  port: 443
-  udp: true
-  type: vless
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-  servername: pl.galacticworld.online
-  client-fingerprint: qq
-- name: 🇳🇱 荷兰 (Netherlands) 56
-  server: 188.116.27.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: fbc74c2d-d749-47b6-bedc-1c3f7b23eca3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mprwTEsQ9nJ78qG7BJskAWXaVfDxeMHBkQHbReVfMnc
-    short-id: '1174'
-  servername: www.sony.co.uk
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 57 R41
-  server: 79.137.99.183
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 58
-  server: 95.215.201.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 59
-  server: 202.50.253.36
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇨🇭 瑞士 (Switzerland) 60 R53
-  server: 45.90.59.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 61
-  server: 130.12.242.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 62
-  server: 161.97.66.16
-  port: 443
-  udp: true
-  type: vless
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  tls: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-    short-id: 086bf957
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 63
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇮🇹 意大利 (Italy) 34
   server: 202.50.253.18
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇷🇺 俄罗斯 (Russia) 64
+- name: 🇺🇸 美国 (United States) 35
+  server: 172.233.140.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: 82b258c9-f4ae-46f6-8c1a-322b316a2e0d
+  tls: true
+  reality-opts:
+    public-key: l1Tts2VQAnD1We9lPKqw9GqnMAHiIlYhsaw5ASVrTGM
+    short-id: 5c298270
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇮🇹 意大利 (Italy) 36
+  server: 202.50.253.27
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 (United States) 37
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: vless
+  uuid: ec24cde1-6bd9-4b69-baf7-270e8aabd6dd
+  tls: true
+  servername: rayAN21-6yU73878-v3.raYAn-21.woRKers.dEV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560fp=unsafe
+    headers:
+      Host: rayAN21-6yU73878-v3.raYAn-21.woRKers.dEV
+- name: 🇫🇷 法国 (France) 38 R40
+  server: 51.83.61.102
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 29irqk0paakcx19v
+- name: 🇺🇸 美国 (United States) 39 R58
+  server: 15.204.97.214
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 40
+  server: 172.235.63.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: d95f222c-3a63-47f8-8e61-af83e1f143f5
+  tls: true
+  reality-opts:
+    public-key: oxf_WPNwjjrO2uknpE9vbM9uwiQ4vbasL-Bgy3lwCHg
+    short-id: dd78b5c3
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 41
+  server: 172.233.129.46
+  port: 443
+  udp: true
+  type: vless
+  uuid: 325a2d32-286c-44d8-8bf7-d6dc85ecfd53
+  tls: true
+  reality-opts:
+    public-key: Z0yUixOaVZhwnYyI9XtSSqgxBCerCWqticoYPmwPzzA
+    short-id: dd282cb2
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 42 R51
+  server: fast.145779.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
+  tls: true
+  servername: fast.145779.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-tesla
+- name: 🇺🇸 美国 (United States) 43
+  server: 104.20.26.192
+  port: 2053
+  udp: true
+  type: trojan
+  password: IDgAbZbs8cZw
+  sni: rAyan02-1d7cmk9v-t3.rayAn-02.worKers.dEV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+- name: 🇺🇸 美国 (United States) 44
+  server: 172.235.53.103
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38ae2bc6-577c-4e0a-b49c-81c44a0b4383
+  tls: true
+  reality-opts:
+    public-key: YS1T3hKkZSWZBej5I1O2s3QQ-jf5JOAY24EZbp9faX8
+    short-id: 60e39a7e
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇷🇺 俄罗斯 (Russia) 45
+  server: 185.79.19.8
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YLcEO7lE6TeHKOMwRMkzLwaka7JOCbV8WCQ15eQVWEE
+    short-id: 1d482377da
+  servername: fazuno.net
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 46 ⚠R
+  server: 198.244.202.215
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 47
+  server: 54.36.174.134
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: eetk7pw
+- name: 🇺🇸 美国 (United States) 48
+  server: 107.191.58.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4444e77e-3d2a-4dc9-bf31-936f038f5570
+  tls: true
+  reality-opts:
+    public-key: ZZwZGoX0Us8t6nLvckDWskC1c25F9rL0_nUXmd8BFxQ
+    short-id: 8dd324c1
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 49
+  server: 45.32.70.42
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8c392beb-524d-4d0a-a3a6-4d542d54a1ff
+  tls: true
+  reality-opts:
+    public-key: cQZ-dTY4QSQteDYpngP2PavOsn9yY9lIP-OscwzwAio
+    short-id: 4dda4608
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 50 R59
+  server: 15.204.97.206
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 51
   server: 81.171.14.72
   port: 443
   udp: true
@@ -628,17 +569,188 @@ proxies:
     short-id: 2237b916
   servername: zovira.me
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 65 R50
-  server: 91.107.169.224
+- name: 🇩🇪 德国 (Germany) 52
+  server: 153.56.229.188
+  port: 443
+  udp: true
+  type: vless
+  uuid: 55458d10-24ab-4ea6-a522-13741b546f2a
+  tls: true
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+    short-id: 23732d14a527990d
+  servername: 345739t.de15.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 53
+  server: 172.233.156.229
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bc6f6c-09b7-43ce-b9c7-312d37f1a312
+  tls: true
+  reality-opts:
+    public-key: jTnoGvXzAIa2lsfioHHRJ1lAj1xqjowhcCwGcfme8QY
+    short-id: 826efd30
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 54
+  server: 172.233.139.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 62b5a30a-89de-4da7-b1c0-08abfad0cd1d
+  tls: true
+  reality-opts:
+    public-key: ZtWVf2gAix3etGziWVZ9apsWfWb5UOepCWQqVyIGxHI
+    short-id: 4d3f31a1
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 55
+  server: 104.168.109.213
+  port: 443
+  udp: true
+  type: vless
+  uuid: 74b86103-0a6e-4a0e-8430-2aa84af805fc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rU4-ii54LkmEWBaliTQHvi3jc0fDTlSmutVtzedMNRM
+    short-id: 6ba7b8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 56
+  server: www.speedtest.net
   port: 80
   udp: true
   type: vmess
-  uuid: 014f8bf6-9221-4f99-838f-4c16ca90334f
+  uuid: 6fa9def2-edcb-4348-b012-6622c959a620
   alterId: 0
   cipher: auto
-  network: httpupgrade
-- name: 🇫🇷 法国 (France) 66
-  server: 20.19.83.143
+  network: ws
+  ws-opts:
+    path: /@ferdolans7
+    headers:
+      Host: prairie-formats-holland-bundle.trycloudflare.com
+- name: 🇬🇧 英国 (United Kingdom) 57 R63
+  server: 136.176.68.34
+  port: 443
+  udp: true
+  type: vless
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Jcm0TjP_kw-KmJoiG5EGyY5sQ9RGeqlX9Ajd3ZCnSAo
+    short-id: a6040129ad7f4b74
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 58
+  server: 172.235.51.71
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c17ead6-201a-4fba-8246-6327b911a1be
+  tls: true
+  reality-opts:
+    public-key: rzeXNEmuocvPVMnmettRsJbHQGjQGaZoH7jNw_3GUD8
+    short-id: 4bf84b30
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇫🇷 法国 (France) 59
+  server: 54.36.174.140
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: eetk7pw
+- name: 🇺🇸 美国 (United States) 60
+  server: 172.233.157.18
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9a10a216-c8db-48d5-bb91-cf1ef245bd1d
+  tls: true
+  reality-opts:
+    public-key: 4DL3ZveBq9TIQbtIp2ZtIPI6zRFHGdcVAW-poC0UqDA
+    short-id: 30aa62c5
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇸🇪 瑞典 (Sweden) 61
+  server: 88.216.214.159
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: api-svc-mgr.galioncc.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 62
+  server: 159.195.207.238
+  port: 49313
+  udp: true
+  type: vless
+  uuid: 855c7aaa-e7d6-463e-971e-d36032744428
+- name: 🇺🇸 美国 (United States) 63
+  server: 15.204.97.219
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 64 R40
+  server: 91.134.35.72
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 65
+  server: 153.52.85.198
+  port: 443
+  udp: true
+  type: vless
+  uuid: 26843758-24de-4f76-b5d0-624038e353c4
+  tls: true
+  reality-opts:
+    public-key: xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4
+    short-id: c71118d9399fb8c2
+  servername: 15d7fft.nl11.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 66
+  server: 172.213.24.16
   port: 2083
   udp: true
   type: vless
@@ -650,74 +762,196 @@ proxies:
     short-id: 0123456789abcdef
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 67
-  server: 43.130.234.128
-  port: 443
-  udp: true
-  type: vless
-  uuid: a2d4ddd8-4d3f-49f5-b78b-bdb3eebab9a6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DLYP4CSy4Ey15aYSzcYdwfW4XIuiw3_DuKunNLEDgS4
-  servername: www.microsoft.com
-  client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 68
-  server: 82.118.16.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: 29f178f7-f96f-46ba-8fc0-bbcd690ba788
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zmo2VkZkfjh2kWjaRghXUs39ImQo87LmPhjvzbX3yB4
-    short-id: 1e9a49dd374c1191
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 69
-  server: 50.7.38.243
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 70 R47
-  server: 149.88.106.73
+- name: 🇫🇷 法国 (France) 67 R40
+  server: 79.137.99.183
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 71 R52
-  server: 68.183.227.236
+- name: 🇺🇸 美国 (United States) 68
+  server: 198.247.127.131
+  port: 443
+  udp: true
+  type: vless
+  uuid: 59548d2d-5d7c-4328-aa81-0d5614da0c1b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vmHHRwA9ER6c8dfgtL-gh2HBMCvjySy1xLimqYpLiCI
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 69
+  server: 104.21.43.115
+  port: 443
+  udp: true
+  type: vless
+  uuid: ccaa9413-2163-466e-a915-29c215b0be0a
+  tls: true
+  servername: nETra-28E601.rUzgarsiS053GmaiLCoMSAccOunT.wOrKErs.DEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/77fpEQtFkK8EbA8c6?ed=2560
+    headers:
+      Host: netra-28e601.ruzgarsis053gmailcomsaccount.workers.dev
+- name: 🇸🇪 瑞典 (Sweden) 70
+  server: 88.216.60.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 71
+  server: s1.berluno.ir
+  port: 1155
+  udp: true
+  type: vless
+  uuid: 7f4a7b46-c436-4bc4-8699-c34aa8368caf
+  tls: true
+  reality-opts:
+    public-key: o6UTWdONnTOvDOWmhfxXUoeOEtlw7VUkoAWkmOk_FWI
+    short-id: 4e4aaad65cc07da8
+  servername: tgju.org
+  client-fingerprint: edge
+- name: 🇳🇱 荷兰 (Netherlands) 72 R53
+  server: 188.166.81.135
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 73
+  server: 37.49.225.92
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: ns-gw-mgr.galioncc.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 74
+  server: 48.102.168.211
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
+    short-id: 8f3c6e2a1b5d4f09
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 75 R70
+  server: 15.204.97.198
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 76 R56
+  server: 104.17.147.208
+  port: 443
+  udp: true
+  type: vless
+  uuid: 258ca28a-d982-4a40-b620-7c1c81108060
+  tls: true
+  servername: b.rack.sxsc.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: b.rack.sxsc.dpdns.org
+- name: 🇷🇺 俄罗斯 (Russia) 77
+  server: 185.231.101.94
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: eiTR0q65sQ8SUwFSxHY1IXHKkNb-_QTQnambcVxnUFU
+    short-id: 51057fb54d2364f4
+  servername: fuzora.net
+  client-fingerprint: edge
+- name: 🇩🇪 德国 (Germany) 78
+  server: 217.60.27.117
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ
+  servername: music.3apes.online
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 79
+  server: 104.27.109.16
+  port: 443
+  udp: true
+  type: vless
+  uuid: 67ab86b7-69fb-41bf-8967-290cbd08f0ac
+  tls: true
+  servername: jLDmwA9CfRug7b03Cr1vs.paGes.DEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/43gYvFJEPmUtPFSZ?ed=2560
+    headers:
+      Host: jldmwa9cfrug7b03cr1vs.pages.dev
+- name: 🇫🇷 法国 (France) 80 ⚠R
+  server: 54.37.240.40
   port: 8080
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 72 R41
-  server: 51.79.228.131
+  cipher: chacha20-ietf-poly1305
+  password: 8nrpt2il04ptci2j
+- name: 🇮🇹 意大利 (Italy) 81
+  server: 202.50.253.36
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇯🇵 日本 (Japan) 73
-  server: 158.101.151.157
+- name: 🇺🇸 美国 (United States) 82
+  server: ld.235231.xyz
   port: 443
   udp: true
   type: vless
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  flow: xtls-rprx-vision
+  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
   tls: true
-  reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  servername: www.microsoft.com
+  servername: ld.235231.xyz
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 74
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇫🇮 芬兰 (Finland) 83
   server: 157.180.98.124
   port: 49659
   udp: true
@@ -730,127 +964,31 @@ proxies:
     short-id: 81959fce
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 75
-  server: 141.227.170.220
-  port: 8443
+- name: 🇺🇸 美国 (United States) 84
+  server: pl.galacticworld.online
+  port: 443
   udp: true
   type: vless
-  uuid: 6c077993-952c-4318-9e93-89056a207a9b
+  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: apple.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 76 R41
-  server: 15.235.182.183
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 77 R41
-  server: 162.19.82.57
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 78 R41
-  server: 46.105.222.155
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 79 R41
-  server: 15.235.164.133
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 80 R47
-  server: 149.88.106.74
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇪 瑞典 (Sweden) 81
-  server: 136.148.213.149
+    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
+  servername: pl.galacticworld.online
+  client-fingerprint: qq
+- name: 🇳🇱 荷兰 (Netherlands) 85
+  server: 179.254.115.118
   port: 443
   udp: true
   type: vless
-  uuid: 4618cebd-e1e9-45c3-be98-d9d6e3ee8bef
-  tls: true
-  reality-opts:
-    public-key: BLhS7fE4Yh6kAADw7yRIn2PzKun-JDagJHJNOePYRSY
-    short-id: bee802ae4ab66496
-  servername: 362c1eg.se1.h1clayd.click
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇳🇱 荷兰 (Netherlands) 82
-  server: 94.183.164.176
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12776e55-6230-48b9-b069-1bb8a04b4237
-  tls: true
-  reality-opts:
-    public-key: _KeOS5u_irk1547CMVB3RdwQzz1SzrQZk-IV-btF7TU
-  servername: optim.tildacdn.pub
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ebl
-- name: 🇳🇱 荷兰 (Netherlands) 83 R52
-  server: 188.166.81.135
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 84
-  server: 153.52.85.198
-  port: 443
-  udp: true
-  type: vless
-  uuid: 26843758-24de-4f76-b5d0-624038e353c4
-  tls: true
-  reality-opts:
-    public-key: xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4
-    short-id: c71118d9399fb8c2
-  servername: 15d7fft.nl11.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 85
-  server: 195.63.128.21
-  port: 2443
-  udp: true
-  type: vless
-  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: q_MJ5Zo2vcnePWq3KY653QUPX8mNSvapLpqXU4NuPho
-    short-id: 464db718e17e4107
-  servername: germany.cloudhouse1.ru
-  client-fingerprint: chrome
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 86
   server: 82.118.16.187
   port: 443
@@ -864,8 +1002,170 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 87 R41
-  server: 91.134.35.72
+- name: 🇳🇱 荷兰 (Netherlands) 87
+  server: 72.56.19.142
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app.streamru5.net
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 88
+  server: 74.161.152.237
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 89
+  server: jpa.123069.xyz
+  port: 53758
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+- name: 🇩🇪 德国 (Germany) 90
+  server: netra-28e601.ruzgarsis053gmailcomsaccount.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: ccaa9413-2163-466e-a915-29c215b0be0a
+  tls: true
+  servername: nEtRa-28e601.rUZgArSiS053GmAIlCoMsaccOunT.WORKERs.DEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/D1utewa490l8iCymueVABy77F5t?ed=2560
+    headers:
+      Host: netra-28e601.ruzgarsis053gmailcomsaccount.workers.dev
+- name: 🇺🇸 美国 (United States) 91 R60
+  server: 170.101.101.131
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.explorecreativejobsandenhanceyourcareerportfolio.com
+  skip-cert-verify: false
+- name: 🇱🇹 立陶宛 (Lithuania) 92
+  server: 84.32.83.197
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7d309e4c16b825f
+  servername: api-dns-gw.galioncc.com
+  client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 93
+  server: 195.123.213.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 94
+  server: 195.63.128.21
+  port: 2443
+  udp: true
+  type: vless
+  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: q_MJ5Zo2vcnePWq3KY653QUPX8mNSvapLpqXU4NuPho
+    short-id: 464db718e17e4107
+  servername: germany.cloudhouse1.ru
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 95 R66
+  server: 193.108.119.96
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 96
+  server: 31.77.28.173
+  port: 443
+  udp: true
+  type: vless
+  uuid: 372931d3-91c5-4564-b79c-041302de9a17
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9UG9zvrDpiPgY_J0dvB-n10ygEw3FzJ2qT8PFtITUBE
+    short-id: e06e30590f288e0f
+  servername: nl4.soshelper.space
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 97
+  server: 130.12.242.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇭🇺 匈牙利 (Hungary) 98 R50
+  server: 172.67.131.125
+  port: 2083
+  udp: true
+  type: vless
+  uuid: f418674e-f518-4318-8ff9-e10000000046
+  tls: true
+  servername: smart-edge-424.arti98399-1905.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: smart-edge-424.arti98399-1905.workers.dev
+- name: 🇪🇸 西班牙 (Spain) 99
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 100 R63
+  server: 66.163.127.9
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 101 R40
+  server: 79.137.99.183
   port: 1270
   udp: true
   type: vmess
@@ -875,53 +1175,136 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 88
-  server: 34.94.152.229
-  port: 443
-  udp: true
-  type: trojan
-  password: '123456'
-  sni: us.ctt25.uk
-  skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 89
-  server: 213.176.92.168
-  port: 14430
+- name: 🇫🇷 法国 (France) 102
+  server: 141.227.170.220
+  port: 8443
   udp: true
   type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 213.176.92.168
-- name: 🇺🇸 美国 (United States) 90 R52
-  server: 172.67.208.118
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7e0e7ca3-7aab-420e-9b40-c15a228ef33a
+  uuid: 6c077993-952c-4318-9e93-89056a207a9b
+  flow: xtls-rprx-vision
   tls: true
-  servername: ws137.mydosss.ccwu.cc
-  skip-cert-verify: false
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 103
+  server: 172.236.241.130
+  port: 443
+  udp: true
+  type: vless
+  uuid: 21117a67-21c2-4e2a-ba8f-bc49e23b0ae8
+  tls: true
+  reality-opts:
+    public-key: ibi0jOH5SfYhh7ycxdBrqq5oN4ajN3-dNiHKWC2VYWs
+    short-id: 51ecfe9e
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /3b575ddc8596
+    path: /ws
     headers:
-      Host: ws137.mydosss.ccwu.cc
-- name: 🇩🇪 德国 (Germany) 91
+      Host: itunes.apple.com
+- name: 🇸🇪 瑞典 (Sweden) 104 R40
+  server: 138.199.55.243
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇪 瑞典 (Sweden) 105 R50
+  server: 143.246.195.46
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5311859f-0b5d-4c26-a8bf-2648f113e4ea
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 453QgfqoHVVQ-M7xjfH-bUu0HXz1mdWGuR3vNoBoeCM
+    short-id: 4e1682
+  servername: sweden13.clearorbitllc.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 106
   server: 153.56.229.218
   port: 443
   udp: true
   type: vless
-  uuid: 26843758-24de-4f76-b5d0-624038e353c4
+  uuid: ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b
   tls: true
   reality-opts:
     public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
     short-id: e572b6579ea525d4
   servername: 71b840t.de7.h1clayd.click
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 92
+- name: 🇨🇭 瑞士 (Switzerland) 107 R56
+  server: 208.69.78.60
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 108 R63
+  server: 66.163.127.215
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 109 R50
+  server: 45.90.59.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇺🇸 美国 (United States) 110
+  server: 172.236.227.60
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c8a110d-f04d-4f0e-9579-fd00631b8830
+  tls: true
+  reality-opts:
+    public-key: BHBzo_I0M-sChoOqTyOczYBP8l1L_dkmB6u3ijAOaGo
+    short-id: 664c1530
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇳🇱 荷兰 (Netherlands) 111
+  server: 48.102.170.205
+  port: 8443
+  udp: true
+  type: vless
+  uuid: e07a6d05-f665-4811-91f0-9b3dc1094e4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
+    short-id: 8f3c6e2a1b5d4f09
+  servername: tradingview.com
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 112 R63
+  server: 66.163.127.107
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 113
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -930,96 +1313,119 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇬 新加坡 (Singapore) 93 R52
-  server: 68.183.235.240
-  port: 8080
+- name: 🇨🇭 瑞士 (Switzerland) 114 R56
+  server: 208.69.78.222
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 94
-  server: 31.76.32.122
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇬🇧 英国 (United Kingdom) 115
+  server: 193.188.21.253
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇸🇪 瑞典 (Sweden) 116
+  server: 132.243.67.225
   port: 443
   udp: true
   type: vless
-  uuid: 71b566cb-78c4-48e4-af5b-720e4f7884f2
-  flow: xtls-rprx-vision
+  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
   tls: true
   reality-opts:
-    public-key: O35Np_ugrc3mUDIEO4UnViEwRobM2r9kqQCdcdCHjEI
-    short-id: cb33163cf9c03ab1
-  servername: p1.xvanta.online
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 95 R42
-  server: US032012.westmgreen.com
+    public-key: BLhS7fE4Yh6kAADw7yRIn2PzKun-JDagJHJNOePYRSY
+    short-id: bee802ae4ab66496
+  servername: 362c1eg.se1.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇵🇱 波兰 (Poland) 117
+  server: 557e58g.pl8.h1clayd.click
   port: 443
+  udp: true
+  type: vless
+  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
+  tls: true
+  reality-opts:
+    public-key: ms5yeTlBCbAEEeWIbn_bV72Q9SQfpcJz6_VqNgF7ABY
+    short-id: 43a5ba8f49a5e91a
+  servername: 557e58g.pl8.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇯🇵 日本 (Japan) 118
+  server: 168.110.63.247
+  port: 8081
   udp: true
   type: vmess
-  uuid: fbc990c5-c62e-4e31-a9a5-db3a4fe42741
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
   alterId: 0
   cipher: auto
-  tls: true
-  servername: US032012.westmgreen.com
-  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /wes
-    headers:
-      Host: US032012.westmgreen.com
-- name: 🇸🇬 新加坡 (Singapore) 96 R52
-  server: 68.183.227.4
-  port: 8080
+    path: /vless
+- name: 🇸🇬 新加坡 (Singapore) 119 R47
+  server: 149.88.106.73
+  port: 19999
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 97
-  server: 187.7.206.176
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 美国 (United States) 120 R67
+  server: 167.88.61.20
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 121
+  server: app.streamru4.net
   port: 443
   udp: true
   type: vless
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
   flow: xtls-rprx-vision
   tls: true
-  servername: 1fw71dc.virtual-network.lol
+  servername: app.streamru4.net
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 98 R52
-  server: 68.183.235.122
-  port: 8080
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 122 R40
+  server: 51.79.228.131
+  port: 19999
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 99
-  server: 50.7.193.146
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2bc6428196efb899f544d750bea0c06d
-  sni: promo2.betust.net
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 100 R57
-  server: 139.162.91.239
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇳🇱 荷兰 (Netherlands) 123
+  server: 94.183.164.176
   port: 443
   udp: true
   type: vless
-  uuid: b0dc852a-97ec-4d4e-9179-f0e5c2ef1489
+  uuid: b4192dfb-f458-4303-b877-29a41a6d8416
   tls: true
   reality-opts:
-    public-key: 7PBmAR6CGAh2naIi09rlP_PtmLmqhlXF_toZEdAHmRo
-    short-id: 7c6d6833
-  servername: itunes.apple.com
+    public-key: _KeOS5u_irk1547CMVB3RdwQzz1SzrQZk-IV-btF7TU
+  servername: optim.tildacdn.pub
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-- name: 🇺🇸 美国 (United States) 101
-  server: 172.67.190.164
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ebl
+- name: 🇺🇸 美国 (United States) 124
+  server: www.shopify.com
   port: 443
   udp: true
   type: vmess
@@ -1034,83 +1440,378 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇳🇱 荷兰 (Netherlands) 102
-  server: 9.247.54.188
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 103
-  server: 185.246.155.91
-  port: 10103
-  udp: true
-  type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko
-    short-id: 6859f5b59e55aa30
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 104
-  server: 150.251.143.235
+- name: 🇳🇱 荷兰 (Netherlands) 125
+  server: 130.78.30.147
   port: 443
   udp: true
   type: vless
   uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
   flow: xtls-rprx-vision
   tls: true
-  servername: fsos4kac.virtual-network.lol
+  servername: 105ky37.virtual-network.lol
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 105
-  server: 202.50.253.27
+- name: 🇩🇪 德国 (Germany) 126
+  server: 91.107.255.63
+  port: 39653
+  udp: true
+  type: vless
+  uuid: baded307-189c-4ffc-a271-9acdab51a324
+  tls: true
+  servername: online.shop.ir.eeso.cc
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 127 R40
+  server: 15.235.164.133
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇳🇱 荷兰 (Netherlands) 106
-  server: 72.56.19.142
+- name: 🇩🇪 德国 (Germany) 128
+  server: 187.7.206.176
+  port: 443
+  udp: true
+  type: vless
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 1fw71dc.virtual-network.lol
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 129 R46
+  server: support.zoom.us
+  port: 80
+  udp: true
+  type: vless
+  uuid: f028d829-249a-4692-b45f-1b4cde8ef0c7
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.com
+- name: 🇺🇸 美国 (United States) 130 ⚠R
+  server: 15.204.97.197
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 131 R53
+  server: 68.183.227.236
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇩🇪 德国 (Germany) 132
+  server: 187.7.206.179
+  port: 443
+  udp: true
+  type: vless
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 1fw71df.virtual-network.lol
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 133
+  server: 23.230.52.119
+  port: 42878
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
+- name: 🇸🇪 瑞典 (Sweden) 134
+  server: 84.32.154.74
   port: 443
   udp: true
   type: vless
   uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
   flow: xtls-rprx-vision
   tls: true
-  servername: app.streamru5.net
+  servername: app.streamru10.net
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 107
-  server: 84.32.100.247
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 135
+  server: 172.237.14.205
   port: 443
   udp: true
   type: vless
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
+  uuid: 4796e022-f377-4a97-bc03-fbf525d7913c
+  tls: true
+  reality-opts:
+    public-key: dllB1KTn7oiEqa6OlmZl-j2kF5GN9bAQeoBinYV2cUQ
+    short-id: da26e5a2
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇬🇧 英国 (United Kingdom) 136
+  server: 193.163.203.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
   flow: xtls-rprx-vision
   tls: true
-  servername: app.streamru4.net
-  skip-cert-verify: false
-  client-fingerprint: edge
-- name: 🇺🇸 美国 (United States) 108
-  server: bl1.nexfile.net
-  port: 4444
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 137
+  server: 206.237.11.17
+  port: 50376
+  udp: true
+  type: vmess
+  uuid: 9091fd64-7e8e-4b7a-8ae7-84474f234926
+  alterId: 0
+  cipher: auto
+- name: 🇫🇮 芬兰 (Finland) 138
+  server: 177.202.75.56
+  port: 443
   udp: true
   type: hysteria2
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: bl1.nexfile.net
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 109
-  server: 195.63.128.21
-  port: 5443
+- name: 🇨🇭 瑞士 (Switzerland) 139 R56
+  server: 208.69.78.33
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 140 R53
+  server: 68.183.235.122
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇳🇱 荷兰 (Netherlands) 141 R57
+  server: 171.22.183.159
+  port: 443
+  udp: true
+  type: vless
+  uuid: 24fb9b5b-43b7-4058-a7e5-a0499ada1fda
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 171.22.183.159
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 142
+  server: zibanabz.jonsonvip.ir
+  port: 3939
+  udp: true
+  type: vless
+  uuid: 92e598b8-014a-4232-952b-3ac6d00da498
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA
+    short-id: d9a2600fdecd7be2
+  servername: ai.android
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 143 R57
+  server: 139.162.89.151
+  port: 443
+  udp: true
+  type: vless
+  uuid: dbca719d-2cfb-48a2-8bc6-8c658a24b142
+  tls: true
+  reality-opts:
+    public-key: Q_HUTa9IpIBeTmm71KVwJrzdgBag_PpMtTKoH2fY3Qo
+    short-id: 07febec7
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇩🇪 德国 (Germany) 144
+  server: 82.139.235.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: 45fbaffc-0737-4fd7-bef1-3f0af83330be
+  tls: true
+  reality-opts:
+    public-key: IXRlHf-YEhBbvFahvvyQD173TUy2UfKNjZljrZw5NHA
+    short-id: 52ac85a27935
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 145
+  server: 195.206.235.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
+    short-id: 8956c57cb4c4f8d2
+  servername: f0d7aft.nl13.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 146 R66
+  server: 193.108.119.134
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 147
+  server: promo.betust.net
+  port: 443
   udp: true
   type: hysteria2
-  password: fa937345-6d3e-4ff4-8127-1a836987a0db
-  sni: germany.cloudhouse1.ru
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
   skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 110
+- name: 🇯🇵 日本 (Japan) 148 R57
+  server: 139.162.91.200
+  port: 443
+  udp: true
+  type: vless
+  uuid: 847bdd83-9e2f-4708-81ed-729a2ca6eeec
+  tls: true
+  reality-opts:
+    public-key: -g20lzrrmgQb5wbq0vJ2OkZo_-j4KcFq_JDGVp5n_TQ
+    short-id: 7bae4b22
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 149 R73
+  server: 15.204.97.209
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 150
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 151 R51
+  server: 172.105.212.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1f08d52f-126e-46e3-929a-4b6a58e21168
+  tls: true
+  reality-opts:
+    public-key: jb8kqeM_3z0NW3huxWLD0ma2eUCFRsiwapF9I_O3Ei8
+    short-id: '17676229'
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇸🇪 瑞典 (Sweden) 152
+  server: 95.143.196.97
+  port: 443
+  udp: true
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 153
+  server: d58daft.plp1.h1cloud.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: c82031be-e90f-4b15-ab4f-7ccef236d3ca
+  tls: true
+  reality-opts:
+    public-key: ixnCbdlT5sAVd-ilp2nG11CvnNsBCf9xPD56TlXxlR4
+    short-id: a91531ad58c8611c
+  servername: d58daft.plp1.h1cloud.net
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 154 R51
+  server: 172.104.86.181
+  port: 443
+  udp: true
+  type: vless
+  uuid: 010431f3-04f6-4404-a801-b93bf2e3c2b2
+  tls: true
+  reality-opts:
+    public-key: ujYDprigWFLxcj4BtitDNa-hoPjIbpSzrnEcqp3cgjk
+    short-id: c8559ca1
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 155 R51
+  server: 172.105.197.24
+  port: 443
+  udp: true
+  type: vless
+  uuid: 81f4e114-5a60-41b5-9038-8d742380c84f
+  tls: true
+  reality-opts:
+    public-key: EfNOl6-YAuW-WSg7Op-1YOqKZV9emIuLwH8YPhzc7ms
+    short-id: 772bef67
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇫🇷 法国 (France) 156 R40
+  server: 162.19.82.57
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇮🇳 印度 (India) 157
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇳🇱 荷兰 (Netherlands) 158
   server: ams2.shtil.io
   port: 444
   udp: true
@@ -1120,57 +1821,101 @@ proxies:
   tls: true
   servername: ams2.shtil.io
   skip-cert-verify: false
-- name: 🇱🇻 拉脱维亚 (Latvia) 111
-  server: 195.123.213.28
+- name: 🇺🇸 美国 (United States) 159
+  server: 48.102.209.71
   port: 443
   udp: true
   type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  uuid: dfe50e18-28ce-459e-a6b9-0f2585bcc3b6
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 112
-  server: 85.237.207.221
-  port: 443
-  udp: true
-  type: vless
-  uuid: b59bcb5b-5150-4c6b-9227-681886197014
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lJz7AGWUC-ZTEIJaU5y1GRrROWJ9J_VzQRyrYPmOygs
-    short-id: fd2fa5e06670120b
-  servername: dl.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 113
-  server: 177.202.75.56
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
+  servername: ee.point.cookie-line.cc
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 114
-  server: 91.107.255.63
-  port: 39653
-  udp: true
-  type: vless
-  uuid: baded307-189c-4ffc-a271-9acdab51a324
-  tls: true
-  servername: online.shop.ir.eeso.cc
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 115 R55
-  server: 128.1.186.132
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 160 R53
+  server: 68.183.235.240
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇺🇸 美国 (United States) 116
+- name: 🇸🇬 新加坡 (Singapore) 161 R53
+  server: 128.199.172.224
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇯🇵 日本 (Japan) 162 R57
+  server: 139.162.91.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5e6575a1-459c-4077-ac3d-92dea966ad7c
+  tls: true
+  reality-opts:
+    public-key: 4LfX16VwHkHQzoZ04o2VnO85N1o_Y8OcoJwfYdfaIGw
+    short-id: 0c0c806b
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 163 R57
+  server: 139.162.91.224
+  port: 443
+  udp: true
+  type: vless
+  uuid: ff3038b1-a2f5-428f-89cd-5d5e4efba8e7
+  tls: true
+  reality-opts:
+    public-key: wmbc3kcjbG9-A9Fi7zaHuRVPH7A7UQkKNNvqyqJtMEk
+    short-id: e5b03494
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 164
+  server: djj.zjlo.top
+  port: 23169
+  udp: true
+  type: vless
+  uuid: 7318caa1-93d1-4a9d-c481-504599902700
+  flow: xtls-rprx-vision
+  tls: true
+  servername: djj.zjlo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 165 R40
+  server: 15.235.182.183
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇯🇵 日本 (Japan) 166 R51
+  server: 172.105.203.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: c8c9b995-b4b9-4915-9c7d-dee94aa733ba
+  tls: true
+  reality-opts:
+    public-key: HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA
+    short-id: 0784b134
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 167
   server: 148.135.86.162
   port: 10000
   udp: true
@@ -1183,127 +1928,90 @@ proxies:
     short-id: a1b2c3d4
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 117
-  server: suh.cryptofront.uk
+- name: 🇺🇸 美国 (United States) 168 R60
+  server: 103.133.1.160
   port: 80
   udp: true
   type: vless
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: soft-shadow-1e33.xicav73335.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 169
+  server: 172.255.210.24
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: net-cfg-api.galioncc.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 170
+  server: 91.107.247.173
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
+  tls: true
+  servername: sino.bestsellers1.site
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
+- name: 🇬🇧 英国 (United Kingdom) 171
+  server: 34.39.80.57
+  port: 50818
+  udp: true
+  type: vless
+  uuid: 408c814e-f70a-4d16-b3b3-8182bb70211d
+  tls: true
+  servername: yingguo.rymaker.cn
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /GunService
     headers:
-      Host: suh.cryptofront.uk
-- name: 🇩🇪 德国 (Germany) 118
-  server: 201.8.71.59
+      Host: yingguo.rymaker.cn
+- name: 🇺🇸 美国 (United States) 172 R53
+  server: 172.67.208.118
   port: 443
   udp: true
-  type: hysteria2
-  password: 23c82941-70f4-4381-90db-bd28e9a902e9
-  sni: steel7.hadsvpn.com
+  type: vless
+  uuid: 7e0e7ca3-7aab-420e-9b40-c15a228ef33a
+  tls: true
+  servername: ws137.mydosss.ccwu.cc
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 119 R55
-  server: 128.1.186.73
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /3b575ddc8596
+    headers:
+      Host: ws137.mydosss.ccwu.cc
+- name: 🇸🇬 新加坡 (Singapore) 173
+  server: 140.245.62.225
+  port: 36442
+  udp: true
+  type: vless
+  uuid: b743c868-b35c-4d91-b88b-d9efd7060b5c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: xjpp.zjlo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 174 R53
+  server: 68.183.227.4
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 120
-  server: 193.163.203.170
-  port: 443
-  udp: true
-  type: vless
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 121
-  server: 95.143.196.97
-  port: 443
-  udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 122
-  server: 91.213.186.45
-  port: 46986
-  udp: true
-  type: vless
-  uuid: 71327a90-b9c4-4385-b850-4d3c5832d9cc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5Uk63lFOn1Z3gmImXWrXbvQ0b9gXTOiY_VWuI898Vmk
-  servername: www.paypal.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 123 R54
-  server: 208.69.78.19
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 124
-  server: 187.7.206.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 1fw71df.virtual-network.lol
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 125
-  server: 167.17.179.175
-  port: 443
-  udp: true
-  type: hysteria2
-  password: SW_COSMOS:sYcUMf7G9g67Zuho
-  sni: spacearea.onthewifi.com
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 126 R63
-  server: 66.163.127.44
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.indyourperfectremotetechjobfromthecomfortofhome.com
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 127 R41
-  server: 15.235.144.92
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 128
-  server: 132.243.66.234
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
-  tls: true
-  reality-opts:
-    public-key: nwdvbnPAo7PyzB7zUJFU-6F0d6dIPO1mSVGdIKoQ_To
-    short-id: 36aa133397bf5a6d
-  servername: 21bd48g.us14.h1clayd.click
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇰🇷 韩国 (South Korea) 129
+- name: 🇰🇷 韩国 (South Korea) 175
   server: 158.247.253.243
   port: 443
   udp: true
@@ -1311,42 +2019,24 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: connectgraduateswithjobopeningsandgrowprofessionally.com
   skip-cert-verify: false
-- name: 🇨🇦 加拿大 (Canada) 130
-  server: 103.106.229.37
-  port: 21004
+- name: 🇯🇵 日本 (Japan) 176 R57
+  server: 139.162.101.74
+  port: 443
   udp: true
   type: vless
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  uuid: 1e709d98-d4c3-45c1-bdcc-4268cf83eff8
   tls: true
   reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: 2df2bd9d8366cef1
-  servername: www.cloudflare.com
+    public-key: jd8UNLpim43LVV-iEzIXlUgTVuvi9Pf7E0kgQb3o0CI
+    short-id: 7e1e09f4
+  servername: itunes.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 131
-  server: 140.245.62.225
-  port: 36442
-  udp: true
-  type: vless
-  uuid: c6624b96-e346-490b-9145-74c2543a9483
-  flow: xtls-rprx-vision
-  tls: true
-  servername: xjpp.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 132
-  server: 103.106.229.37
-  port: 21001
-  udp: true
-  type: vless
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  tls: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: ab39fc68ab3dee81
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 133
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇵🇱 波兰 (Poland) 177
   server: 54.37.131.126
   port: 80
   udp: true
@@ -1359,141 +2049,35 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇺🇸 美国 (United States) 134 R52
-  server: 138.197.89.234
-  port: 28960
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: DZRy4Q3QH0jUGfKFl2jDCZ
-- name: 🇭🇰 中国香港 (Hong Kong) 135
-  server: 45.192.194.104
-  port: 35600
+- name: 🇸🇪 瑞典 (Sweden) 178
+  server: 56.228.115.67
+  port: 2087
   udp: true
   type: vless
-  uuid: d34c4e7c-3eac-4a26-adb9-9004b6981ad8
+  uuid: f39ff3a5-cf86-4514-88ee-006aa4b6f883
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: zHmC_LkSMSrRHcetzsRJZvu6irqviiG3vf9VuXRL6FE
-  servername: www.iij.ad.jp
-  client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 136 R54
-  server: 208.69.78.208
+    public-key: HjBtew1EYyAA5EnDBuZu4GR2u0OvitC5xp2fvqiYOwQ
+    short-id: 4c36b466
+  servername: dl.google.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 179
+  server: a2c.ir
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.yourultimateprofessionalcareerhub.com
+  type: vless
+  uuid: bc591bd5-3fc9-9f3e-b194-939100000004
+  tls: true
+  servername: flow-turbo-727.deloy10120.workers.dev
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 137
-  server: 170.168.25.39
-  port: 443
-  udp: true
-  type: vless
-  uuid: 21c24d1c-d938-495a-b33f-957bc65d301f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZwMEL1FEHRGDKBNqSLnpHwSiEUPvY7vTk_cUIczPnEQ
-    short-id: b21d9c9270653002
-  servername: detectportal.firefox.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 138 ⚠R
-  server: 54.37.240.40
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8nrpt2il04ptci2j
-- name: 🇮🇷 IR 139
-  server: 198.16.113.218
-  port: 8443
-  udp: true
-  type: vless
-  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
-    short-id: 69984b9e02545831
-  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 140
-  server: 510.150333.xyz
-  port: 21001
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: a51c3ccb2320024a
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 141
-  server: 510.150333.xyz
-  port: 21002
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: d9a6b52e98121db2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 142
-  server: 179.254.115.118
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 143
-  server: 510.150333.xyz
-  port: 21003
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: f3602a3a1cf928b7
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇷 IR 144
-  server: 50.7.245.202
-  port: 8443
-  udp: true
-  type: vless
-  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
-    short-id: 69984b9e02545831
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 145
-  server: 511.150333.xyz
-  port: 21003
-  udp: true
-  type: vless
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  tls: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: bab49aa4c2a88d27
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇷 IR 146
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: flow-turbo-727.deloy10120.workers.dev
+- name: 🇮🇷 IR 180
   server: 198.16.113.222
   port: 8443
   udp: true
@@ -1506,37 +2090,334 @@ proxies:
     short-id: 69984b9e02545831
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 147
-  server: 164.37.224.245
+- name: 🇸🇬 新加坡 (Singapore) 181 R56
+  server: 128.1.186.73
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇳🇱 荷兰 (Netherlands) 182
+  server: 146.103.118.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: e5d062f0-7bad-4c80-9417-ae083eef61c1
+  tls: true
+  servername: nl2.574ck.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: nl2.574ck.xyz
+- name: 🇳🇱 荷兰 (Netherlands) 183
+  server: 195.206.235.48
   port: 443
   udp: true
   type: vless
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
   reality-opts:
-    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
-    short-id: 6d289ff0f47c0aac
-  servername: 961ec0g.nl13.h1clayd.click
-  client-fingerprint: edge
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: 7d5abcd7d8a1
-- name: 🇮🇳 印度 (India) 148
-  server: xray-dmr3b3hy-calm-maple-7.cloady.io
+    grpc-service-name: 204adda7e3da
+- name: 🇩🇪 德国 (Germany) 184
+  server: 91.107.188.129
+  port: 2083
+  udp: true
+  type: vless
+  uuid: bd6c11e0-0233-4fb1-ba97-8d5f16d7155f
+  tls: true
+  servername: site.check-looks.space
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇳🇱 荷兰 (Netherlands) 185
+  server: 9.163.235.73
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 186 R60
+  server: 104.18.151.231
   port: 443
   udp: true
   type: vless
-  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
   tls: true
-  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
+  servername: delicate-hall-bf16.vpndkah.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /0175469f14317d82
+    path: /ws
     headers:
-      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
-- name: 🇬🇧 英国 (United Kingdom) 149
+      Host: delicate-hall-bf16.vpndkah.workers.dev
+- name: 🇩🇪 德国 (Germany) 187
+  server: 194.124.251.104
+  port: 443
+  udp: true
+  type: vless
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  tls: true
+  servername: clover.filnex.baby
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: clover.filnex.baby
+- name: 🇨🇦 加拿大 (Canada) 188
+  server: 103.106.229.37
+  port: 21004
+  udp: true
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 2df2bd9d8366cef1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 189
+  server: 103.106.229.37
+  port: 21001
+  udp: true
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: ab39fc68ab3dee81
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 190
+  server: 139.180.215.25
+  port: 443
+  udp: true
+  type: vless
+  uuid: bbc20d3e-0391-48f1-ad72-90a6802f728e
+  tls: true
+  reality-opts:
+    public-key: ybu5pFdSV23WsnMNhbpa8TwV6TJd6NLZ6HX-ggww61A
+    short-id: 83f673ba
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇳🇱 荷兰 (Netherlands) 191
+  server: 146.19.254.171
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 24fb9b5b-43b7-4058-a7e5-a0499ada1fda
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 146.19.254.171
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 192
+  server: 153.76.122.48
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 44193780-ae4c-4fbc-9979-38b1937395f8
+  tls: true
+  reality-opts:
+    public-key: wqqTIvXXxRXZlNPT8igJOsheLCNaXX_it05_EXRriEo
+    short-id: 6b5f4adcca7294b5
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇮🇷 IR 193
+  server: 198.16.113.218
+  port: 8443
+  udp: true
+  type: vless
+  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 194 R51
+  server: 172.104.48.194
+  port: 443
+  udp: true
+  type: vless
+  uuid: a28d0884-193d-4591-aa64-8638ba1481ce
+  tls: true
+  reality-opts:
+    public-key: u_4r8NRmRsN5Ndbt0koyC73DLC7mCcK4wAA0YiIR4ko
+    short-id: b0af872e
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇸🇬 新加坡 (Singapore) 195 R47
+  server: 149.88.106.74
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 196
+  server: 15.235.184.127
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: exploredigitaljobplatformandfindonlinework.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 197
+  server: 199.7.140.201
+  port: 443
+  udp: true
+  type: vless
+  uuid: a52ac672-0f5f-4070-b8fd-6b5685fc8004
+  tls: true
+  reality-opts:
+    public-key: LRAkgKlj5BPtVAGEIZfO5LvDZ5Eg91X0CBKIYhBC1jE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 198 R40
+  server: 15.235.144.92
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 199
+  server: 149.28.152.20
+  port: 443
+  udp: true
+  type: vless
+  uuid: e17ca473-bd02-4fe6-873f-5866d729b0a3
+  tls: true
+  reality-opts:
+    public-key: sli7AT0WEhYMVMARhHh-ZQMK7zHHn0cGsxw2gPhoBis
+    short-id: 107ff148
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 200
+  server: ce5afbt.us14.h1clayd.click
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: h1RM4xbCSspYaSwNHFIeECHKJ0gdvE6ezCqlAuFiC04
+    short-id: d475b402ccbe2ff9
+  servername: ce5afbt.us14.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 201
+  server: 510.150333.xyz
+  port: 21003
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: f3602a3a1cf928b7
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 202
+  server: 510.150333.xyz
+  port: 21004
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: 4e0418d648f86141
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 203
+  server: 511.150333.xyz
+  port: 21002
+  udp: true
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 3ab8d93dd9b1a5be
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 204
+  server: 511.150333.xyz
+  port: 21003
+  udp: true
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: bab49aa4c2a88d27
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇷 IR 205
+  server: 50.7.245.202
+  port: 8443
+  udp: true
+  type: vless
+  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 206
+  server: 510.150333.xyz
+  port: 21001
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: a51c3ccb2320024a
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 207
   server: 104.222.183.180
   port: 443
   udp: true
@@ -1549,33 +2430,114 @@ proxies:
     short-id: 705f0a232571
   servername: www.tradingview.com
   client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 150
-  server: 48.102.170.205
-  port: 8443
+- name: 🇺🇸 美国 (United States) 208
+  server: 2.24.124.64
+  port: 443
   udp: true
   type: vless
-  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
+  uuid: 719b9354-45e2-4718-8709-d965b64554db
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-    short-id: 8f3c6e2a1b5d4f09
-  servername: tradingview.com
+    public-key: zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls
+    short-id: 9f1fc5a631ef3126
+  servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 151
-  server: 91.107.188.129
-  port: 2083
+- name: 🇨🇦 加拿大 (Canada) 209
+  server: 510.150333.xyz
+  port: 21002
   udp: true
   type: vless
-  uuid: bd6c11e0-0233-4fb1-ba97-8d5f16d7155f
+  uuid: 67952583-8572-42e1-943d-0602794f885b
   tls: true
-  servername: site.check-looks.space
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: d9a6b52e98121db2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 210
+  server: 56.228.115.67
+  port: 443
+  udp: true
+  type: vless
+  uuid: f39ff3a5-cf86-4514-88ee-006aa4b6f883
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HjBtew1EYyAA5EnDBuZu4GR2u0OvitC5xp2fvqiYOwQ
+    short-id: 4c36b466
+  servername: dl.google.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 211
+  server: 129.154.61.196
+  port: 800
+  udp: true
+  type: vmess
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 212
+  server: 88.216.211.36
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: c4e7a1902b8d6f35
+  servername: de8.galioncc.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 213
+  server: 45.76.191.30
+  port: 443
+  udp: true
+  type: vless
+  uuid: d8aaaf9a-cea4-4c5a-975b-68ddc26f9891
+  tls: true
+  reality-opts:
+    public-key: -KlJUCwLvYy2pz5jR2RgmYMEhacPNPhwvlbdiKkAh1Y
+    short-id: 6cc51755
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇸🇬 新加坡 (Singapore) 214 R51
+  server: 172.104.186.205
+  port: 443
+  udp: true
+  type: vless
+  uuid: eafa7d0d-db1c-4c91-8fd8-587cd218008e
+  tls: true
+  reality-opts:
+    public-key: dT50iKOzQz2utAi1tcwsU86hbaS78JeDY_xST0nP5D4
+    short-id: aea01663
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇺🇸 美国 (United States) 215 R60
+  server: 104.18.151.231
+  port: 2053
+  udp: true
+  type: vless
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  tls: true
+  servername: twilight-frost-15b0.yigom67484.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 (Singapore) 152
+    path: /ws
+    headers:
+      Host: twilight-frost-15b0.yigom67484.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 216
   server: news.zoom.us
   port: 8443
   udp: true
@@ -1591,56 +2553,21 @@ proxies:
     path: /
     headers:
       Host: matrix.phonicsindia.mobi
-- name: 🇪🇸 西班牙 (Spain) 153
-  server: 68.221.177.135
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 154
-  server: 2.24.124.64
+- name: 🇲🇾 马来西亚 (Malaysia) 217
+  server: 382218.xyz
   port: 443
   udp: true
   type: vless
-  uuid: 719b9354-45e2-4718-8709-d965b64554db
-  flow: xtls-rprx-vision
+  uuid: d801d4d9-111a-46e8-91fc-e2fb39ef2d22
   tls: true
-  reality-opts:
-    public-key: zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls
-    short-id: 9f1fc5a631ef3126
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 155
-  server: 511.150333.xyz
-  port: 21002
-  udp: true
-  type: vless
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  tls: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: 3ab8d93dd9b1a5be
-  servername: www.cloudflare.com
+  servername: 382218.xyz
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 156
-  server: 82.139.235.73
-  port: 443
-  udp: true
-  type: vless
-  uuid: 45fbaffc-0737-4fd7-bef1-3f0af83330be
-  tls: true
-  reality-opts:
-    public-key: IXRlHf-YEhBbvFahvvyQD173TUy2UfKNjZljrZw5NHA
-    short-id: 52ac85a27935
-  servername: cloudflare.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: 382218.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1648,160 +2575,221 @@ proxy-groups:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽)
   - 🇰🇷 韩国 (South Korea) 02 (家宽)
-  - 🇺🇸 美国 (United States) 03 R50
-  - 🇨🇦 加拿大 (Canada) 04
-  - 🇨🇦 加拿大 (Canada) 05
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  - 🇺🇸 美国 (United States) 04 R50
+  - 🇨🇦 加拿大 (Canada) 05 R52
   - 🇺🇸 美国 (United States) 06
-  - 🇨🇦 加拿大 (Canada) 07 R50
-  - 🇺🇸 美国 (United States) 08
-  - 🇺🇸 美国 (United States) 09
-  - 🇺🇸 美国 (United States) 10 R67
+  - 🇨🇦 加拿大 (Canada) 07 R52
+  - 🇺🇸 美国 (United States) 08 R53
+  - 🇨🇦 加拿大 (Canada) 09
+  - 🇺🇸 美国 (United States) 10
   - 🇺🇸 美国 (United States) 11
-  - 🇺🇸 美国 (United States) 12 R64
-  - 🇺🇸 美国 (United States) 13
-  - 🇺🇸 美国 (United States) 14 R63
+  - 🇩🇪 德国 (Germany) 12
+  - 🇫🇷 法国 (France) 13 ⚠R
+  - 🇺🇸 美国 (United States) 14
   - 🇺🇸 美国 (United States) 15
-  - 🇺🇸 美国 (United States) 16
-  - 🇺🇸 美国 (United States) 17
-  - 🇺🇸 美国 (United States) 18 R60
+  - 🇫🇷 法国 (France) 16 R46
+  - 🇨🇦 加拿大 (Canada) 17
+  - 🇳🇱 荷兰 (Netherlands) 18
   - 🇺🇸 美国 (United States) 19
-  - 🇺🇸 美国 (United States) 20 ⚠R
-  - 🇺🇸 美国 (United States) 21 R63
+  - 🇺🇸 美国 (United States) 20
+  - 🇬🇧 英国 (United Kingdom) 21
   - 🇺🇸 美国 (United States) 22 ⚠R
-  - 🇺🇸 美国 (United States) 23 R67
-  - 🇺🇸 美国 (United States) 24 ⚠R
-  - 🇺🇸 美国 (United States) 25
+  - 🇺🇸 美国 (United States) 23 ⚠R
+  - 🇫🇷 法国 (France) 24
+  - 🇺🇸 美国 (United States) 25 ⚠R
   - 🇺🇸 美国 (United States) 26
-  - 🇺🇸 美国 (United States) 27 ⚠R
+  - 🇫🇷 法国 (France) 27
   - 🇺🇸 美国 (United States) 28
-  - 🇺🇸 美国 (United States) 29 ⚠R
-  - 🇺🇸 美国 (United States) 30 R63
-  - 🇺🇸 美国 (United States) 31 ⚠R
+  - 🇺🇸 美国 (United States) 29
+  - 🇺🇸 美国 (United States) 30
+  - 🇺🇸 美国 (United States) 31
   - 🇩🇪 德国 (Germany) 32
   - 🇺🇸 美国 (United States) 33
-  - 🇫🇷 法国 (France) 34
-  - 🇫🇷 法国 (France) 35 R41
-  - 🇫🇷 法国 (France) 36 R46
-  - 🇫🇷 法国 (France) 37
-  - 🇫🇷 法国 (France) 38 ⚠R
-  - 🇫🇷 法国 (France) 39 ⚠R
-  - 🇫🇷 法国 (France) 40 R46
+  - 🇮🇹 意大利 (Italy) 34
+  - 🇺🇸 美国 (United States) 35
+  - 🇮🇹 意大利 (Italy) 36
+  - 🇺🇸 美国 (United States) 37
+  - 🇫🇷 法国 (France) 38 R40
+  - 🇺🇸 美国 (United States) 39 R58
+  - 🇺🇸 美国 (United States) 40
   - 🇺🇸 美国 (United States) 41
-  - 🇺🇸 美国 (United States) 42
-  - 🇩🇪 德国 (Germany) 43
-  - 🇫🇷 法国 (France) 44
-  - 🇺🇸 美国 (United States) 45
-  - 🇺🇸 美国 (United States) 46 ⚠R
-  - 🇸🇪 瑞典 (Sweden) 47
-  - 🇫🇷 法国 (France) 48
-  - 🇸🇪 瑞典 (Sweden) 49
-  - 🇬🇧 英国 (United Kingdom) 50
-  - 🇩🇪 德国 (Germany) 51
-  - 🇯🇵 日本 (Japan) 52
-  - 🇫🇷 法国 (France) 53 R41
+  - 🇺🇸 美国 (United States) 42 R51
+  - 🇺🇸 美国 (United States) 43
+  - 🇺🇸 美国 (United States) 44
+  - 🇷🇺 俄罗斯 (Russia) 45
+  - 🇫🇷 法国 (France) 46 ⚠R
+  - 🇫🇷 法国 (France) 47
+  - 🇺🇸 美国 (United States) 48
+  - 🇺🇸 美国 (United States) 49
+  - 🇺🇸 美国 (United States) 50 R59
+  - 🇷🇺 俄罗斯 (Russia) 51
+  - 🇩🇪 德国 (Germany) 52
+  - 🇺🇸 美国 (United States) 53
   - 🇺🇸 美国 (United States) 54
   - 🇺🇸 美国 (United States) 55
-  - 🇳🇱 荷兰 (Netherlands) 56
-  - 🇫🇷 法国 (France) 57 R41
+  - 🇺🇸 美国 (United States) 56
+  - 🇬🇧 英国 (United Kingdom) 57 R63
   - 🇺🇸 美国 (United States) 58
-  - 🇮🇹 意大利 (Italy) 59
-  - 🇨🇭 瑞士 (Switzerland) 60 R53
-  - 🇳🇱 荷兰 (Netherlands) 61
-  - 🇫🇷 法国 (France) 62
-  - 🇮🇹 意大利 (Italy) 63
-  - 🇷🇺 俄罗斯 (Russia) 64
-  - 🇩🇪 德国 (Germany) 65 R50
-  - 🇫🇷 法国 (France) 66
-  - 🇯🇵 日本 (Japan) 67
-  - 🇮🇹 意大利 (Italy) 68
-  - 🇺🇸 美国 (United States) 69
-  - 🇸🇬 新加坡 (Singapore) 70 R47
-  - 🇸🇬 新加坡 (Singapore) 71 R52
-  - 🇸🇬 新加坡 (Singapore) 72 R41
-  - 🇯🇵 日本 (Japan) 73
-  - 🇫🇮 芬兰 (Finland) 74
-  - 🇫🇷 法国 (France) 75
-  - 🇸🇬 新加坡 (Singapore) 76 R41
-  - 🇫🇷 法国 (France) 77 R41
-  - 🇫🇷 法国 (France) 78 R41
-  - 🇸🇬 新加坡 (Singapore) 79 R41
-  - 🇸🇬 新加坡 (Singapore) 80 R47
-  - 🇸🇪 瑞典 (Sweden) 81
-  - 🇳🇱 荷兰 (Netherlands) 82
-  - 🇳🇱 荷兰 (Netherlands) 83 R52
-  - 🇳🇱 荷兰 (Netherlands) 84
-  - 🇩🇪 德国 (Germany) 85
+  - 🇫🇷 法国 (France) 59
+  - 🇺🇸 美国 (United States) 60
+  - 🇸🇪 瑞典 (Sweden) 61
+  - 🇩🇪 德国 (Germany) 62
+  - 🇺🇸 美国 (United States) 63
+  - 🇫🇷 法国 (France) 64 R40
+  - 🇳🇱 荷兰 (Netherlands) 65
+  - 🇮🇹 意大利 (Italy) 66
+  - 🇫🇷 法国 (France) 67 R40
+  - 🇺🇸 美国 (United States) 68
+  - 🇩🇪 德国 (Germany) 69
+  - 🇸🇪 瑞典 (Sweden) 70
+  - 🇩🇪 德国 (Germany) 71
+  - 🇳🇱 荷兰 (Netherlands) 72 R53
+  - 🇳🇱 荷兰 (Netherlands) 73
+  - 🇺🇸 美国 (United States) 74
+  - 🇺🇸 美国 (United States) 75 R70
+  - 🇸🇬 新加坡 (Singapore) 76 R56
+  - 🇷🇺 俄罗斯 (Russia) 77
+  - 🇩🇪 德国 (Germany) 78
+  - 🇩🇪 德国 (Germany) 79
+  - 🇫🇷 法国 (France) 80 ⚠R
+  - 🇮🇹 意大利 (Italy) 81
+  - 🇺🇸 美国 (United States) 82
+  - 🇫🇮 芬兰 (Finland) 83
+  - 🇺🇸 美国 (United States) 84
+  - 🇳🇱 荷兰 (Netherlands) 85
   - 🇮🇹 意大利 (Italy) 86
-  - 🇫🇷 法国 (France) 87 R41
-  - 🇺🇸 美国 (United States) 88
-  - 🇬🇧 英国 (United Kingdom) 89
-  - 🇺🇸 美国 (United States) 90 R52
-  - 🇩🇪 德国 (Germany) 91
-  - 🇸🇪 瑞典 (Sweden) 92
-  - 🇸🇬 新加坡 (Singapore) 93 R52
-  - 🇺🇸 美国 (United States) 94
-  - 🇺🇸 美国 (United States) 95 R42
-  - 🇸🇬 新加坡 (Singapore) 96 R52
-  - 🇩🇪 德国 (Germany) 97
-  - 🇸🇬 新加坡 (Singapore) 98 R52
-  - 🇬🇧 英国 (United Kingdom) 99
-  - 🇯🇵 日本 (Japan) 100 R57
-  - 🇺🇸 美国 (United States) 101
-  - 🇳🇱 荷兰 (Netherlands) 102
-  - 🇹🇷 土耳其 (Turkey) 103
-  - 🇳🇱 荷兰 (Netherlands) 104
-  - 🇮🇹 意大利 (Italy) 105
-  - 🇳🇱 荷兰 (Netherlands) 106
-  - 🇩🇪 德国 (Germany) 107
-  - 🇺🇸 美国 (United States) 108
-  - 🇩🇪 德国 (Germany) 109
-  - 🇳🇱 荷兰 (Netherlands) 110
-  - 🇱🇻 拉脱维亚 (Latvia) 111
-  - 🇹🇼 中国台湾 (Taiwan) 112
-  - 🇫🇮 芬兰 (Finland) 113
-  - 🇩🇪 德国 (Germany) 114
-  - 🇸🇬 新加坡 (Singapore) 115 R55
-  - 🇺🇸 美国 (United States) 116
-  - 🇫🇷 法国 (France) 117
-  - 🇩🇪 德国 (Germany) 118
-  - 🇸🇬 新加坡 (Singapore) 119 R55
-  - 🇬🇧 英国 (United Kingdom) 120
-  - 🇸🇪 瑞典 (Sweden) 121
-  - 🇭🇰 中国香港 (Hong Kong) 122
-  - 🇨🇭 瑞士 (Switzerland) 123 R54
-  - 🇩🇪 德国 (Germany) 124
-  - 🇯🇵 日本 (Japan) 125
-  - 🇳🇱 荷兰 (Netherlands) 126 R63
-  - 🇸🇬 新加坡 (Singapore) 127 R41
-  - 🇺🇸 美国 (United States) 128
-  - 🇰🇷 韩国 (South Korea) 129
-  - 🇨🇦 加拿大 (Canada) 130
-  - 🇸🇬 新加坡 (Singapore) 131
-  - 🇨🇦 加拿大 (Canada) 132
-  - 🇵🇱 波兰 (Poland) 133
-  - 🇺🇸 美国 (United States) 134 R52
-  - 🇭🇰 中国香港 (Hong Kong) 135
-  - 🇨🇭 瑞士 (Switzerland) 136 R54
-  - 🇩🇪 德国 (Germany) 137
-  - 🇫🇷 法国 (France) 138 ⚠R
-  - 🇮🇷 IR 139
-  - 🇨🇦 加拿大 (Canada) 140
-  - 🇨🇦 加拿大 (Canada) 141
-  - 🇳🇱 荷兰 (Netherlands) 142
-  - 🇨🇦 加拿大 (Canada) 143
-  - 🇮🇷 IR 144
-  - 🇨🇦 加拿大 (Canada) 145
-  - 🇮🇷 IR 146
-  - 🇳🇱 荷兰 (Netherlands) 147
-  - 🇮🇳 印度 (India) 148
-  - 🇬🇧 英国 (United Kingdom) 149
-  - 🇳🇱 荷兰 (Netherlands) 150
-  - 🇩🇪 德国 (Germany) 151
-  - 🇸🇬 新加坡 (Singapore) 152
-  - 🇪🇸 西班牙 (Spain) 153
-  - 🇺🇸 美国 (United States) 154
-  - 🇨🇦 加拿大 (Canada) 155
-  - 🇩🇪 德国 (Germany) 156
+  - 🇳🇱 荷兰 (Netherlands) 87
+  - 🇨🇭 瑞士 (Switzerland) 88
+  - 🇯🇵 日本 (Japan) 89
+  - 🇩🇪 德国 (Germany) 90
+  - 🇺🇸 美国 (United States) 91 R60
+  - 🇱🇹 立陶宛 (Lithuania) 92
+  - 🇱🇻 拉脱维亚 (Latvia) 93
+  - 🇩🇪 德国 (Germany) 94
+  - 🇩🇪 德国 (Germany) 95 R66
+  - 🇳🇱 荷兰 (Netherlands) 96
+  - 🇳🇱 荷兰 (Netherlands) 97
+  - 🇭🇺 匈牙利 (Hungary) 98 R50
+  - 🇪🇸 西班牙 (Spain) 99
+  - 🇳🇱 荷兰 (Netherlands) 100 R63
+  - 🇫🇷 法国 (France) 101 R40
+  - 🇫🇷 法国 (France) 102
+  - 🇺🇸 美国 (United States) 103
+  - 🇸🇪 瑞典 (Sweden) 104 R40
+  - 🇸🇪 瑞典 (Sweden) 105 R50
+  - 🇩🇪 德国 (Germany) 106
+  - 🇨🇭 瑞士 (Switzerland) 107 R56
+  - 🇳🇱 荷兰 (Netherlands) 108 R63
+  - 🇨🇭 瑞士 (Switzerland) 109 R50
+  - 🇺🇸 美国 (United States) 110
+  - 🇳🇱 荷兰 (Netherlands) 111
+  - 🇳🇱 荷兰 (Netherlands) 112 R63
+  - 🇸🇪 瑞典 (Sweden) 113
+  - 🇨🇭 瑞士 (Switzerland) 114 R56
+  - 🇬🇧 英国 (United Kingdom) 115
+  - 🇸🇪 瑞典 (Sweden) 116
+  - 🇵🇱 波兰 (Poland) 117
+  - 🇯🇵 日本 (Japan) 118
+  - 🇸🇬 新加坡 (Singapore) 119 R47
+  - 🇺🇸 美国 (United States) 120 R67
+  - 🇩🇪 德国 (Germany) 121
+  - 🇸🇬 新加坡 (Singapore) 122 R40
+  - 🇳🇱 荷兰 (Netherlands) 123
+  - 🇺🇸 美国 (United States) 124
+  - 🇳🇱 荷兰 (Netherlands) 125
+  - 🇩🇪 德国 (Germany) 126
+  - 🇸🇬 新加坡 (Singapore) 127 R40
+  - 🇩🇪 德国 (Germany) 128
+  - 🇩🇪 德国 (Germany) 129 R46
+  - 🇺🇸 美国 (United States) 130 ⚠R
+  - 🇸🇬 新加坡 (Singapore) 131 R53
+  - 🇩🇪 德国 (Germany) 132
+  - 🇺🇸 美国 (United States) 133
+  - 🇸🇪 瑞典 (Sweden) 134
+  - 🇯🇵 日本 (Japan) 135
+  - 🇬🇧 英国 (United Kingdom) 136
+  - 🇭🇰 中国香港 (Hong Kong) 137
+  - 🇫🇮 芬兰 (Finland) 138
+  - 🇨🇭 瑞士 (Switzerland) 139 R56
+  - 🇸🇬 新加坡 (Singapore) 140 R53
+  - 🇳🇱 荷兰 (Netherlands) 141 R57
+  - 🇩🇪 德国 (Germany) 142
+  - 🇯🇵 日本 (Japan) 143 R57
+  - 🇩🇪 德国 (Germany) 144
+  - 🇳🇱 荷兰 (Netherlands) 145
+  - 🇩🇪 德国 (Germany) 146 R66
+  - 🇺🇸 美国 (United States) 147
+  - 🇯🇵 日本 (Japan) 148 R57
+  - 🇺🇸 美国 (United States) 149 R73
+  - 🇫🇮 芬兰 (Finland) 150
+  - 🇯🇵 日本 (Japan) 151 R51
+  - 🇸🇪 瑞典 (Sweden) 152
+  - 🇵🇱 波兰 (Poland) 153
+  - 🇯🇵 日本 (Japan) 154 R51
+  - 🇯🇵 日本 (Japan) 155 R51
+  - 🇫🇷 法国 (France) 156 R40
+  - 🇮🇳 印度 (India) 157
+  - 🇳🇱 荷兰 (Netherlands) 158
+  - 🇺🇸 美国 (United States) 159
+  - 🇸🇬 新加坡 (Singapore) 160 R53
+  - 🇸🇬 新加坡 (Singapore) 161 R53
+  - 🇯🇵 日本 (Japan) 162 R57
+  - 🇯🇵 日本 (Japan) 163 R57
+  - 🇯🇵 日本 (Japan) 164
+  - 🇸🇬 新加坡 (Singapore) 165 R40
+  - 🇯🇵 日本 (Japan) 166 R51
+  - 🇺🇸 美国 (United States) 167
+  - 🇺🇸 美国 (United States) 168 R60
+  - 🇸🇬 新加坡 (Singapore) 169
+  - 🇩🇪 德国 (Germany) 170
+  - 🇬🇧 英国 (United Kingdom) 171
+  - 🇺🇸 美国 (United States) 172 R53
+  - 🇸🇬 新加坡 (Singapore) 173
+  - 🇸🇬 新加坡 (Singapore) 174 R53
+  - 🇰🇷 韩国 (South Korea) 175
+  - 🇯🇵 日本 (Japan) 176 R57
+  - 🇵🇱 波兰 (Poland) 177
+  - 🇸🇪 瑞典 (Sweden) 178
+  - 🇺🇸 美国 (United States) 179
+  - 🇮🇷 IR 180
+  - 🇸🇬 新加坡 (Singapore) 181 R56
+  - 🇳🇱 荷兰 (Netherlands) 182
+  - 🇳🇱 荷兰 (Netherlands) 183
+  - 🇩🇪 德国 (Germany) 184
+  - 🇳🇱 荷兰 (Netherlands) 185
+  - 🇺🇸 美国 (United States) 186 R60
+  - 🇩🇪 德国 (Germany) 187
+  - 🇨🇦 加拿大 (Canada) 188
+  - 🇨🇦 加拿大 (Canada) 189
+  - 🇸🇬 新加坡 (Singapore) 190
+  - 🇳🇱 荷兰 (Netherlands) 191
+  - 🇳🇱 荷兰 (Netherlands) 192
+  - 🇮🇷 IR 193
+  - 🇸🇬 新加坡 (Singapore) 194 R51
+  - 🇸🇬 新加坡 (Singapore) 195 R47
+  - 🇸🇬 新加坡 (Singapore) 196
+  - 🇺🇸 美国 (United States) 197
+  - 🇸🇬 新加坡 (Singapore) 198 R40
+  - 🇸🇬 新加坡 (Singapore) 199
+  - 🇺🇸 美国 (United States) 200
+  - 🇨🇦 加拿大 (Canada) 201
+  - 🇨🇦 加拿大 (Canada) 202
+  - 🇨🇦 加拿大 (Canada) 203
+  - 🇨🇦 加拿大 (Canada) 204
+  - 🇮🇷 IR 205
+  - 🇨🇦 加拿大 (Canada) 206
+  - 🇬🇧 英国 (United Kingdom) 207
+  - 🇺🇸 美国 (United States) 208
+  - 🇨🇦 加拿大 (Canada) 209
+  - 🇸🇪 瑞典 (Sweden) 210
+  - 🇰🇷 韩国 (South Korea) 211
+  - 🇩🇪 德国 (Germany) 212
+  - 🇸🇬 新加坡 (Singapore) 213
+  - 🇸🇬 新加坡 (Singapore) 214 R51
+  - 🇺🇸 美国 (United States) 215 R60
+  - 🇸🇬 新加坡 (Singapore) 216
+  - 🇲🇾 马来西亚 (Malaysia) 217
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1809,159 +2797,220 @@ proxy-groups:
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽)
   - 🇰🇷 韩国 (South Korea) 02 (家宽)
-  - 🇺🇸 美国 (United States) 03 R50
-  - 🇨🇦 加拿大 (Canada) 04
-  - 🇨🇦 加拿大 (Canada) 05
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  - 🇺🇸 美国 (United States) 04 R50
+  - 🇨🇦 加拿大 (Canada) 05 R52
   - 🇺🇸 美国 (United States) 06
-  - 🇨🇦 加拿大 (Canada) 07 R50
-  - 🇺🇸 美国 (United States) 08
-  - 🇺🇸 美国 (United States) 09
-  - 🇺🇸 美国 (United States) 10 R67
+  - 🇨🇦 加拿大 (Canada) 07 R52
+  - 🇺🇸 美国 (United States) 08 R53
+  - 🇨🇦 加拿大 (Canada) 09
+  - 🇺🇸 美国 (United States) 10
   - 🇺🇸 美国 (United States) 11
-  - 🇺🇸 美国 (United States) 12 R64
-  - 🇺🇸 美国 (United States) 13
-  - 🇺🇸 美国 (United States) 14 R63
+  - 🇩🇪 德国 (Germany) 12
+  - 🇫🇷 法国 (France) 13 ⚠R
+  - 🇺🇸 美国 (United States) 14
   - 🇺🇸 美国 (United States) 15
-  - 🇺🇸 美国 (United States) 16
-  - 🇺🇸 美国 (United States) 17
-  - 🇺🇸 美国 (United States) 18 R60
+  - 🇫🇷 法国 (France) 16 R46
+  - 🇨🇦 加拿大 (Canada) 17
+  - 🇳🇱 荷兰 (Netherlands) 18
   - 🇺🇸 美国 (United States) 19
-  - 🇺🇸 美国 (United States) 20 ⚠R
-  - 🇺🇸 美国 (United States) 21 R63
+  - 🇺🇸 美国 (United States) 20
+  - 🇬🇧 英国 (United Kingdom) 21
   - 🇺🇸 美国 (United States) 22 ⚠R
-  - 🇺🇸 美国 (United States) 23 R67
-  - 🇺🇸 美国 (United States) 24 ⚠R
-  - 🇺🇸 美国 (United States) 25
+  - 🇺🇸 美国 (United States) 23 ⚠R
+  - 🇫🇷 法国 (France) 24
+  - 🇺🇸 美国 (United States) 25 ⚠R
   - 🇺🇸 美国 (United States) 26
-  - 🇺🇸 美国 (United States) 27 ⚠R
+  - 🇫🇷 法国 (France) 27
   - 🇺🇸 美国 (United States) 28
-  - 🇺🇸 美国 (United States) 29 ⚠R
-  - 🇺🇸 美国 (United States) 30 R63
-  - 🇺🇸 美国 (United States) 31 ⚠R
+  - 🇺🇸 美国 (United States) 29
+  - 🇺🇸 美国 (United States) 30
+  - 🇺🇸 美国 (United States) 31
   - 🇩🇪 德国 (Germany) 32
   - 🇺🇸 美国 (United States) 33
-  - 🇫🇷 法国 (France) 34
-  - 🇫🇷 法国 (France) 35 R41
-  - 🇫🇷 法国 (France) 36 R46
-  - 🇫🇷 法国 (France) 37
-  - 🇫🇷 法国 (France) 38 ⚠R
-  - 🇫🇷 法国 (France) 39 ⚠R
-  - 🇫🇷 法国 (France) 40 R46
+  - 🇮🇹 意大利 (Italy) 34
+  - 🇺🇸 美国 (United States) 35
+  - 🇮🇹 意大利 (Italy) 36
+  - 🇺🇸 美国 (United States) 37
+  - 🇫🇷 法国 (France) 38 R40
+  - 🇺🇸 美国 (United States) 39 R58
+  - 🇺🇸 美国 (United States) 40
   - 🇺🇸 美国 (United States) 41
-  - 🇺🇸 美国 (United States) 42
-  - 🇩🇪 德国 (Germany) 43
-  - 🇫🇷 法国 (France) 44
-  - 🇺🇸 美国 (United States) 45
-  - 🇺🇸 美国 (United States) 46 ⚠R
-  - 🇸🇪 瑞典 (Sweden) 47
-  - 🇫🇷 法国 (France) 48
-  - 🇸🇪 瑞典 (Sweden) 49
-  - 🇬🇧 英国 (United Kingdom) 50
-  - 🇩🇪 德国 (Germany) 51
-  - 🇯🇵 日本 (Japan) 52
-  - 🇫🇷 法国 (France) 53 R41
+  - 🇺🇸 美国 (United States) 42 R51
+  - 🇺🇸 美国 (United States) 43
+  - 🇺🇸 美国 (United States) 44
+  - 🇷🇺 俄罗斯 (Russia) 45
+  - 🇫🇷 法国 (France) 46 ⚠R
+  - 🇫🇷 法国 (France) 47
+  - 🇺🇸 美国 (United States) 48
+  - 🇺🇸 美国 (United States) 49
+  - 🇺🇸 美国 (United States) 50 R59
+  - 🇷🇺 俄罗斯 (Russia) 51
+  - 🇩🇪 德国 (Germany) 52
+  - 🇺🇸 美国 (United States) 53
   - 🇺🇸 美国 (United States) 54
   - 🇺🇸 美国 (United States) 55
-  - 🇳🇱 荷兰 (Netherlands) 56
-  - 🇫🇷 法国 (France) 57 R41
+  - 🇺🇸 美国 (United States) 56
+  - 🇬🇧 英国 (United Kingdom) 57 R63
   - 🇺🇸 美国 (United States) 58
-  - 🇮🇹 意大利 (Italy) 59
-  - 🇨🇭 瑞士 (Switzerland) 60 R53
-  - 🇳🇱 荷兰 (Netherlands) 61
-  - 🇫🇷 法国 (France) 62
-  - 🇮🇹 意大利 (Italy) 63
-  - 🇷🇺 俄罗斯 (Russia) 64
-  - 🇩🇪 德国 (Germany) 65 R50
-  - 🇫🇷 法国 (France) 66
-  - 🇯🇵 日本 (Japan) 67
-  - 🇮🇹 意大利 (Italy) 68
-  - 🇺🇸 美国 (United States) 69
-  - 🇸🇬 新加坡 (Singapore) 70 R47
-  - 🇸🇬 新加坡 (Singapore) 71 R52
-  - 🇸🇬 新加坡 (Singapore) 72 R41
-  - 🇯🇵 日本 (Japan) 73
-  - 🇫🇮 芬兰 (Finland) 74
-  - 🇫🇷 法国 (France) 75
-  - 🇸🇬 新加坡 (Singapore) 76 R41
-  - 🇫🇷 法国 (France) 77 R41
-  - 🇫🇷 法国 (France) 78 R41
-  - 🇸🇬 新加坡 (Singapore) 79 R41
-  - 🇸🇬 新加坡 (Singapore) 80 R47
-  - 🇸🇪 瑞典 (Sweden) 81
-  - 🇳🇱 荷兰 (Netherlands) 82
-  - 🇳🇱 荷兰 (Netherlands) 83 R52
-  - 🇳🇱 荷兰 (Netherlands) 84
-  - 🇩🇪 德国 (Germany) 85
+  - 🇫🇷 法国 (France) 59
+  - 🇺🇸 美国 (United States) 60
+  - 🇸🇪 瑞典 (Sweden) 61
+  - 🇩🇪 德国 (Germany) 62
+  - 🇺🇸 美国 (United States) 63
+  - 🇫🇷 法国 (France) 64 R40
+  - 🇳🇱 荷兰 (Netherlands) 65
+  - 🇮🇹 意大利 (Italy) 66
+  - 🇫🇷 法国 (France) 67 R40
+  - 🇺🇸 美国 (United States) 68
+  - 🇩🇪 德国 (Germany) 69
+  - 🇸🇪 瑞典 (Sweden) 70
+  - 🇩🇪 德国 (Germany) 71
+  - 🇳🇱 荷兰 (Netherlands) 72 R53
+  - 🇳🇱 荷兰 (Netherlands) 73
+  - 🇺🇸 美国 (United States) 74
+  - 🇺🇸 美国 (United States) 75 R70
+  - 🇸🇬 新加坡 (Singapore) 76 R56
+  - 🇷🇺 俄罗斯 (Russia) 77
+  - 🇩🇪 德国 (Germany) 78
+  - 🇩🇪 德国 (Germany) 79
+  - 🇫🇷 法国 (France) 80 ⚠R
+  - 🇮🇹 意大利 (Italy) 81
+  - 🇺🇸 美国 (United States) 82
+  - 🇫🇮 芬兰 (Finland) 83
+  - 🇺🇸 美国 (United States) 84
+  - 🇳🇱 荷兰 (Netherlands) 85
   - 🇮🇹 意大利 (Italy) 86
-  - 🇫🇷 法国 (France) 87 R41
-  - 🇺🇸 美国 (United States) 88
-  - 🇬🇧 英国 (United Kingdom) 89
-  - 🇺🇸 美国 (United States) 90 R52
-  - 🇩🇪 德国 (Germany) 91
-  - 🇸🇪 瑞典 (Sweden) 92
-  - 🇸🇬 新加坡 (Singapore) 93 R52
-  - 🇺🇸 美国 (United States) 94
-  - 🇺🇸 美国 (United States) 95 R42
-  - 🇸🇬 新加坡 (Singapore) 96 R52
-  - 🇩🇪 德国 (Germany) 97
-  - 🇸🇬 新加坡 (Singapore) 98 R52
-  - 🇬🇧 英国 (United Kingdom) 99
-  - 🇯🇵 日本 (Japan) 100 R57
-  - 🇺🇸 美国 (United States) 101
-  - 🇳🇱 荷兰 (Netherlands) 102
-  - 🇹🇷 土耳其 (Turkey) 103
-  - 🇳🇱 荷兰 (Netherlands) 104
-  - 🇮🇹 意大利 (Italy) 105
-  - 🇳🇱 荷兰 (Netherlands) 106
-  - 🇩🇪 德国 (Germany) 107
-  - 🇺🇸 美国 (United States) 108
-  - 🇩🇪 德国 (Germany) 109
-  - 🇳🇱 荷兰 (Netherlands) 110
-  - 🇱🇻 拉脱维亚 (Latvia) 111
-  - 🇹🇼 中国台湾 (Taiwan) 112
-  - 🇫🇮 芬兰 (Finland) 113
-  - 🇩🇪 德国 (Germany) 114
-  - 🇸🇬 新加坡 (Singapore) 115 R55
-  - 🇺🇸 美国 (United States) 116
-  - 🇫🇷 法国 (France) 117
-  - 🇩🇪 德国 (Germany) 118
-  - 🇸🇬 新加坡 (Singapore) 119 R55
-  - 🇬🇧 英国 (United Kingdom) 120
-  - 🇸🇪 瑞典 (Sweden) 121
-  - 🇭🇰 中国香港 (Hong Kong) 122
-  - 🇨🇭 瑞士 (Switzerland) 123 R54
-  - 🇩🇪 德国 (Germany) 124
-  - 🇯🇵 日本 (Japan) 125
-  - 🇳🇱 荷兰 (Netherlands) 126 R63
-  - 🇸🇬 新加坡 (Singapore) 127 R41
-  - 🇺🇸 美国 (United States) 128
-  - 🇰🇷 韩国 (South Korea) 129
-  - 🇨🇦 加拿大 (Canada) 130
-  - 🇸🇬 新加坡 (Singapore) 131
-  - 🇨🇦 加拿大 (Canada) 132
-  - 🇵🇱 波兰 (Poland) 133
-  - 🇺🇸 美国 (United States) 134 R52
-  - 🇭🇰 中国香港 (Hong Kong) 135
-  - 🇨🇭 瑞士 (Switzerland) 136 R54
-  - 🇩🇪 德国 (Germany) 137
-  - 🇫🇷 法国 (France) 138 ⚠R
-  - 🇮🇷 IR 139
-  - 🇨🇦 加拿大 (Canada) 140
-  - 🇨🇦 加拿大 (Canada) 141
-  - 🇳🇱 荷兰 (Netherlands) 142
-  - 🇨🇦 加拿大 (Canada) 143
-  - 🇮🇷 IR 144
-  - 🇨🇦 加拿大 (Canada) 145
-  - 🇮🇷 IR 146
-  - 🇳🇱 荷兰 (Netherlands) 147
-  - 🇮🇳 印度 (India) 148
-  - 🇬🇧 英国 (United Kingdom) 149
-  - 🇳🇱 荷兰 (Netherlands) 150
-  - 🇩🇪 德国 (Germany) 151
-  - 🇸🇬 新加坡 (Singapore) 152
-  - 🇪🇸 西班牙 (Spain) 153
-  - 🇺🇸 美国 (United States) 154
-  - 🇨🇦 加拿大 (Canada) 155
-  - 🇩🇪 德国 (Germany) 156
+  - 🇳🇱 荷兰 (Netherlands) 87
+  - 🇨🇭 瑞士 (Switzerland) 88
+  - 🇯🇵 日本 (Japan) 89
+  - 🇩🇪 德国 (Germany) 90
+  - 🇺🇸 美国 (United States) 91 R60
+  - 🇱🇹 立陶宛 (Lithuania) 92
+  - 🇱🇻 拉脱维亚 (Latvia) 93
+  - 🇩🇪 德国 (Germany) 94
+  - 🇩🇪 德国 (Germany) 95 R66
+  - 🇳🇱 荷兰 (Netherlands) 96
+  - 🇳🇱 荷兰 (Netherlands) 97
+  - 🇭🇺 匈牙利 (Hungary) 98 R50
+  - 🇪🇸 西班牙 (Spain) 99
+  - 🇳🇱 荷兰 (Netherlands) 100 R63
+  - 🇫🇷 法国 (France) 101 R40
+  - 🇫🇷 法国 (France) 102
+  - 🇺🇸 美国 (United States) 103
+  - 🇸🇪 瑞典 (Sweden) 104 R40
+  - 🇸🇪 瑞典 (Sweden) 105 R50
+  - 🇩🇪 德国 (Germany) 106
+  - 🇨🇭 瑞士 (Switzerland) 107 R56
+  - 🇳🇱 荷兰 (Netherlands) 108 R63
+  - 🇨🇭 瑞士 (Switzerland) 109 R50
+  - 🇺🇸 美国 (United States) 110
+  - 🇳🇱 荷兰 (Netherlands) 111
+  - 🇳🇱 荷兰 (Netherlands) 112 R63
+  - 🇸🇪 瑞典 (Sweden) 113
+  - 🇨🇭 瑞士 (Switzerland) 114 R56
+  - 🇬🇧 英国 (United Kingdom) 115
+  - 🇸🇪 瑞典 (Sweden) 116
+  - 🇵🇱 波兰 (Poland) 117
+  - 🇯🇵 日本 (Japan) 118
+  - 🇸🇬 新加坡 (Singapore) 119 R47
+  - 🇺🇸 美国 (United States) 120 R67
+  - 🇩🇪 德国 (Germany) 121
+  - 🇸🇬 新加坡 (Singapore) 122 R40
+  - 🇳🇱 荷兰 (Netherlands) 123
+  - 🇺🇸 美国 (United States) 124
+  - 🇳🇱 荷兰 (Netherlands) 125
+  - 🇩🇪 德国 (Germany) 126
+  - 🇸🇬 新加坡 (Singapore) 127 R40
+  - 🇩🇪 德国 (Germany) 128
+  - 🇩🇪 德国 (Germany) 129 R46
+  - 🇺🇸 美国 (United States) 130 ⚠R
+  - 🇸🇬 新加坡 (Singapore) 131 R53
+  - 🇩🇪 德国 (Germany) 132
+  - 🇺🇸 美国 (United States) 133
+  - 🇸🇪 瑞典 (Sweden) 134
+  - 🇯🇵 日本 (Japan) 135
+  - 🇬🇧 英国 (United Kingdom) 136
+  - 🇭🇰 中国香港 (Hong Kong) 137
+  - 🇫🇮 芬兰 (Finland) 138
+  - 🇨🇭 瑞士 (Switzerland) 139 R56
+  - 🇸🇬 新加坡 (Singapore) 140 R53
+  - 🇳🇱 荷兰 (Netherlands) 141 R57
+  - 🇩🇪 德国 (Germany) 142
+  - 🇯🇵 日本 (Japan) 143 R57
+  - 🇩🇪 德国 (Germany) 144
+  - 🇳🇱 荷兰 (Netherlands) 145
+  - 🇩🇪 德国 (Germany) 146 R66
+  - 🇺🇸 美国 (United States) 147
+  - 🇯🇵 日本 (Japan) 148 R57
+  - 🇺🇸 美国 (United States) 149 R73
+  - 🇫🇮 芬兰 (Finland) 150
+  - 🇯🇵 日本 (Japan) 151 R51
+  - 🇸🇪 瑞典 (Sweden) 152
+  - 🇵🇱 波兰 (Poland) 153
+  - 🇯🇵 日本 (Japan) 154 R51
+  - 🇯🇵 日本 (Japan) 155 R51
+  - 🇫🇷 法国 (France) 156 R40
+  - 🇮🇳 印度 (India) 157
+  - 🇳🇱 荷兰 (Netherlands) 158
+  - 🇺🇸 美国 (United States) 159
+  - 🇸🇬 新加坡 (Singapore) 160 R53
+  - 🇸🇬 新加坡 (Singapore) 161 R53
+  - 🇯🇵 日本 (Japan) 162 R57
+  - 🇯🇵 日本 (Japan) 163 R57
+  - 🇯🇵 日本 (Japan) 164
+  - 🇸🇬 新加坡 (Singapore) 165 R40
+  - 🇯🇵 日本 (Japan) 166 R51
+  - 🇺🇸 美国 (United States) 167
+  - 🇺🇸 美国 (United States) 168 R60
+  - 🇸🇬 新加坡 (Singapore) 169
+  - 🇩🇪 德国 (Germany) 170
+  - 🇬🇧 英国 (United Kingdom) 171
+  - 🇺🇸 美国 (United States) 172 R53
+  - 🇸🇬 新加坡 (Singapore) 173
+  - 🇸🇬 新加坡 (Singapore) 174 R53
+  - 🇰🇷 韩国 (South Korea) 175
+  - 🇯🇵 日本 (Japan) 176 R57
+  - 🇵🇱 波兰 (Poland) 177
+  - 🇸🇪 瑞典 (Sweden) 178
+  - 🇺🇸 美国 (United States) 179
+  - 🇮🇷 IR 180
+  - 🇸🇬 新加坡 (Singapore) 181 R56
+  - 🇳🇱 荷兰 (Netherlands) 182
+  - 🇳🇱 荷兰 (Netherlands) 183
+  - 🇩🇪 德国 (Germany) 184
+  - 🇳🇱 荷兰 (Netherlands) 185
+  - 🇺🇸 美国 (United States) 186 R60
+  - 🇩🇪 德国 (Germany) 187
+  - 🇨🇦 加拿大 (Canada) 188
+  - 🇨🇦 加拿大 (Canada) 189
+  - 🇸🇬 新加坡 (Singapore) 190
+  - 🇳🇱 荷兰 (Netherlands) 191
+  - 🇳🇱 荷兰 (Netherlands) 192
+  - 🇮🇷 IR 193
+  - 🇸🇬 新加坡 (Singapore) 194 R51
+  - 🇸🇬 新加坡 (Singapore) 195 R47
+  - 🇸🇬 新加坡 (Singapore) 196
+  - 🇺🇸 美国 (United States) 197
+  - 🇸🇬 新加坡 (Singapore) 198 R40
+  - 🇸🇬 新加坡 (Singapore) 199
+  - 🇺🇸 美国 (United States) 200
+  - 🇨🇦 加拿大 (Canada) 201
+  - 🇨🇦 加拿大 (Canada) 202
+  - 🇨🇦 加拿大 (Canada) 203
+  - 🇨🇦 加拿大 (Canada) 204
+  - 🇮🇷 IR 205
+  - 🇨🇦 加拿大 (Canada) 206
+  - 🇬🇧 英国 (United Kingdom) 207
+  - 🇺🇸 美国 (United States) 208
+  - 🇨🇦 加拿大 (Canada) 209
+  - 🇸🇪 瑞典 (Sweden) 210
+  - 🇰🇷 韩国 (South Korea) 211
+  - 🇩🇪 德国 (Germany) 212
+  - 🇸🇬 新加坡 (Singapore) 213
+  - 🇸🇬 新加坡 (Singapore) 214 R51
+  - 🇺🇸 美国 (United States) 215 R60
+  - 🇸🇬 新加坡 (Singapore) 216
+  - 🇲🇾 马来西亚 (Malaysia) 217
 rules:
 - MATCH,PROXIES
