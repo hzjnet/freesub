@@ -16,18 +16,22 @@ proxies:
   ws-opts:
     path: /vless
 - name: 🇯🇵 日本 (Japan) 02
-  server: 158.101.151.157
+  server: 45.76.106.69
   port: 443
   udp: true
   type: vless
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  flow: xtls-rprx-vision
+  uuid: db102c51-5f7f-4283-b9c1-942c5c6e2616
   tls: true
   reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  servername: www.microsoft.com
+    public-key: nZzY--8K_-mm8x4JDzkUFt1be1SQzriGIOmYkbpq1C8
+    short-id: 034f5d5a
+  servername: itunes.apple.com
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 03
   server: 45.77.8.233
   port: 443
@@ -46,40 +50,14 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 04
-  server: djj.zjlo.top
-  port: 23169
+  server: 141.11.139.102
+  port: 32515
   udp: true
-  type: vless
-  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
-  flow: xtls-rprx-vision
-  tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 081dbf5a-d8b6-40c8-96f8-3c4ca9f50442
+  alterId: 0
+  cipher: auto
 - name: 🇯🇵 日本 (Japan) 05
-  server: 45.76.106.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: db102c51-5f7f-4283-b9c1-942c5c6e2616
-  tls: true
-  reality-opts:
-    public-key: nZzY--8K_-mm8x4JDzkUFt1be1SQzriGIOmYkbpq1C8
-    short-id: 034f5d5a
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 06
-  server: 168.110.21.56
-  port: 18453
-  udp: true
-  type: vless
-  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
-- name: 🇯🇵 日本 (Japan) 07
   server: 45.76.222.108
   port: 443
   udp: true
@@ -96,16 +74,8 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 08
-  server: 141.11.139.102
-  port: 32515
-  udp: true
-  type: vmess
-  uuid: 081dbf5a-d8b6-40c8-96f8-3c4ca9f50442
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 09
-  server: 168.138.205.100
+- name: 🇯🇵 日本 (Japan) 06
+  server: jpa.123069.xyz
   port: 53758
   udp: true
   type: ss
@@ -122,9 +92,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 04
   - 🇯🇵 日本 (Japan) 05
   - 🇯🇵 日本 (Japan) 06
-  - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08
-  - 🇯🇵 日本 (Japan) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -136,8 +103,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 04
   - 🇯🇵 日本 (Japan) 05
   - 🇯🇵 日本 (Japan) 06
-  - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08
-  - 🇯🇵 日本 (Japan) 09
 rules:
 - MATCH,PROXIES
