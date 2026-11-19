@@ -12,26 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: 138.124.86.230
-  port: 48115
-  udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 03
-  server: creator.morteza1388m1122.ir
-  port: 29206
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: fQUUCljoCc
-- name: 🇸🇪 瑞典 (Sweden) 04
   server: 88.216.214.159
   port: 443
   udp: true
@@ -43,6 +23,39 @@ proxies:
     short-id: a7c92e4b10d6f835
   servername: api-svc-mgr.galioncc.com
   client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 03
+  server: 88.216.60.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 04
+  server: 138.124.86.230
+  port: 48115
+  udp: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  tls: true
+  servername: 138-124-86-230.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 05
+  server: 95.143.196.32
+  port: 443
+  udp: true
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +65,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02
   - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
+  - 🇸🇪 瑞典 (Sweden) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +75,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02
   - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
+  - 🇸🇪 瑞典 (Sweden) 05
 rules:
 - MATCH,PROXIES

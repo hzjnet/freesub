@@ -4,22 +4,35 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 ⚠R
-  server: 51.38.71.147
+- name: 🇬🇧 英国 (United Kingdom) 01 R63
+  server: 136.176.68.34
   port: 443
   udp: true
   type: vless
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  flow: xtls-rprx-vision
   tls: true
-  servername: uk1.connectsuite.org
+  reality-opts:
+    public-key: Jcm0TjP_kw-KmJoiG5EGyY5sQ9RGeqlX9Ajd3ZCnSAo
+    short-id: a6040129ad7f4b74
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 02
+  server: 94.72.100.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: b004e898-f6cf-54a5-d281-f063d741ad53
+  tls: true
+  servername: xray-ckc68nno-swift-harbor-8.cloady.io
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /cdn-cgi/ws
+    path: /3e0261245277336d
     headers:
-      Host: uk1.connectsuite.org
-- name: 🇬🇧 英国 (United Kingdom) 02
+      Host: xray-ckc68nno-swift-harbor-8.cloady.io
+- name: 🇬🇧 英国 (United Kingdom) 03
   server: 104.222.183.180
   port: 443
   udp: true
@@ -32,49 +45,21 @@ proxies:
     short-id: 705f0a232571
   servername: www.tradingview.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 03
-  server: 144.31.219.238
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 12910384-1ef8-40a3-818a-57277063ea66
-  tls: true
-  servername: kk-331e6a.testkknegr.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vlgrpc
-- name: 🇬🇧 英国 (United Kingdom) 04
-  server: 144.31.214.68
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 12910384-1ef8-40a3-818a-57277063ea66
-  tls: true
-  servername: kk-fr2-21468.testkknegr.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vlgrpc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 01 R63
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 ⚠R
+  - 🇬🇧 英国 (United Kingdom) 01 R63
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04
 rules:
 - MATCH,PROXIES

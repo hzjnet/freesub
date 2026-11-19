@@ -5,13 +5,34 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 ⚠R",
-      "server": "51.38.71.147",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 R63",
+      "server": "136.176.68.34",
       "server_port": 443,
-      "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "uk1.connectsuite.org",
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Jcm0TjP_kw-KmJoiG5EGyY5sQ9RGeqlX9Ajd3ZCnSAo",
+          "short_id": "a6040129ad7f4b74"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 02",
+      "server": "94.72.100.12",
+      "server_port": 443,
+      "uuid": "b004e898-f6cf-54a5-d281-f063d741ad53",
+      "tls": {
+        "enabled": true,
+        "server_name": "xray-ckc68nno-swift-harbor-8.cloady.io",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,15 +41,15 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/cdn-cgi/ws",
+        "path": "/3e0261245277336d",
         "headers": {
-          "Host": "uk1.connectsuite.org"
+          "Host": "xray-ckc68nno-swift-harbor-8.cloady.io"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 02",
+      "tag": "🇬🇧 英国 (United Kingdom) 03",
       "server": "104.222.183.180",
       "server_port": 443,
       "uuid": "a1cf2f59-ffe0-4cb3-8c68-e6abf44726fc",
@@ -48,70 +69,22 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 03",
-      "server": "144.31.219.238",
-      "server_port": 8443,
-      "uuid": "12910384-1ef8-40a3-818a-57277063ea66",
-      "tls": {
-        "enabled": true,
-        "server_name": "kk-331e6a.testkknegr.online",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "vlgrpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 04",
-      "server": "144.31.214.68",
-      "server_port": 8443,
-      "uuid": "12910384-1ef8-40a3-818a-57277063ea66",
-      "tls": {
-        "enabled": true,
-        "server_name": "kk-fr2-21468.testkknegr.online",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "vlgrpc"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 01 R63",
         "🇬🇧 英国 (United Kingdom) 02",
-        "🇬🇧 英国 (United Kingdom) 03",
-        "🇬🇧 英国 (United Kingdom) 04"
+        "🇬🇧 英国 (United Kingdom) 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 ⚠R",
+        "🇬🇧 英国 (United Kingdom) 01 R63",
         "🇬🇧 英国 (United Kingdom) 02",
-        "🇬🇧 英国 (United Kingdom) 03",
-        "🇬🇧 英国 (United Kingdom) 04"
+        "🇬🇧 英国 (United Kingdom) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
