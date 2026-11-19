@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: 91.217.10.237
+- name: 🇪🇸 西班牙 (Spain) 01
+  server: 46.28.71.247
   port: 443
   udp: true
   type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  servername: api-ns-mgr.galioncc.com
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
+  - 🇪🇸 西班牙 (Spain) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
+  - 🇪🇸 西班牙 (Spain) 01
 rules:
 - MATCH,PROXIES

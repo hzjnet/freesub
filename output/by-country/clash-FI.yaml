@@ -26,7 +26,19 @@ proxies:
   sni: lakes.blog-forme.ru
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03
-  server: 198.202.24.142
+  server: 45.144.53.18
+  port: 443
+  udp: true
+  type: vless
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yC04w5WKddcvv6EPSHnqv8uHLaSNK8JFCuRtIJhL1Xc
+  servername: gsdfmb.wey-land.net
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04
+  server: 104.17.145.145
   port: 2083
   udp: true
   type: vless
@@ -40,6 +52,18 @@ proxies:
     path: /
     headers:
       Host: vipfree.dr-ping.ir
+- name: 🇫🇮 芬兰 (Finland) 05
+  server: 45.144.52.252
+  port: 443
+  udp: true
+  type: vless
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -GuGq2rg6lgl4LcxHBFhBZCKKEtES2EGeD2qwXilrXI
+  servername: wergmb.wey-land.net
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +72,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +82,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
 rules:
 - MATCH,PROXIES

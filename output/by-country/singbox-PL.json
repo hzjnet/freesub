@@ -4,8 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01",
+      "server": "13.143.197.74",
+      "server_port": 8443,
+      "uuid": "12910384-1ef8-40a3-818a-57277063ea66",
+      "tls": {
+        "enabled": true,
+        "server_name": "kk-tr-74.testkknegr.online",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vlgrpc"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 02",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
@@ -23,14 +46,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01"
+        "🇵🇱 波兰 (Poland) 01",
+        "🇵🇱 波兰 (Poland) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01"
+        "🇵🇱 波兰 (Poland) 01",
+        "🇵🇱 波兰 (Poland) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
