@@ -5,20 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 172.67.174.37
-  port: 443
+  server: 2.26.204.46
+  port: 31001
   udp: true
   type: vless
-  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
+  uuid: 12a4f736-2238-49ee-831f-5516f15cc951
+  flow: xtls-rprx-vision
   tls: true
-  servername: ave-qualifications-choices-populations.trycloudflare.com
-  skip-cert-verify: false
+  reality-opts:
+    public-key: lzpIiMqHXas_qayw-HvrySb78FNkVroBOqniwqPXPzY
+    short-id: 39793bc4708abbbb
+  servername: mensura.cdn-apple.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /a8b8606819ef
-    headers:
-      Host: ave-qualifications-choices-populations.trycloudflare.com
 proxy-groups:
 - name: PROXIES
   type: select

@@ -12,24 +12,12 @@
       "password": "3h3hb2gptqz6suyt"
     },
     {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 02",
-      "server": "103.106.229.37",
-      "server_port": 21001,
-      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
-          "short_id": "ab39fc68ab3dee81"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 02 R52",
+      "server": "leviko-ca4857.shopingggg.ir",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "575hiopq2h28yao6"
     },
     {
       "type": "vless",
@@ -54,48 +42,8 @@
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 04",
-      "server": "510.150333.xyz",
-      "server_port": 21003,
-      "uuid": "67952583-8572-42e1-943d-0602794f885b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
-          "short_id": "f3602a3a1cf928b7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 05",
-      "server": "510.150333.xyz",
-      "server_port": 21004,
-      "uuid": "67952583-8572-42e1-943d-0602794f885b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
-          "short_id": "4e0418d648f86141"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 06",
-      "server": "511.150333.xyz",
-      "server_port": 21003,
+      "server": "103.106.229.37",
+      "server_port": 21001,
       "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
       "tls": {
         "enabled": true,
@@ -107,7 +55,47 @@
         "reality": {
           "enabled": true,
           "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
-          "short_id": "bab49aa4c2a88d27"
+          "short_id": "ab39fc68ab3dee81"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 05",
+      "server": "510.150333.xyz",
+      "server_port": 21003,
+      "uuid": "67952583-8572-42e1-943d-0602794f885b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
+          "short_id": "f3602a3a1cf928b7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 06",
+      "server": "510.150333.xyz",
+      "server_port": 21004,
+      "uuid": "67952583-8572-42e1-943d-0602794f885b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
+          "short_id": "4e0418d648f86141"
         }
       }
     },
@@ -134,9 +122,9 @@
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 08",
-      "server": "510.150333.xyz",
-      "server_port": 21001,
-      "uuid": "67952583-8572-42e1-943d-0602794f885b",
+      "server": "511.150333.xyz",
+      "server_port": 21003,
+      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -146,8 +134,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
-          "short_id": "a51c3ccb2320024a"
+          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
+          "short_id": "bab49aa4c2a88d27"
         }
       }
     },
@@ -172,12 +160,24 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 10 R52",
-      "server": "15.235.121.109",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "575hiopq2h28yao6"
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 10",
+      "server": "510.150333.xyz",
+      "server_port": 21001,
+      "uuid": "67952583-8572-42e1-943d-0602794f885b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
+          "short_id": "a51c3ccb2320024a"
+        }
+      }
     },
     {
       "type": "selector",
@@ -185,7 +185,7 @@
       "outbounds": [
         "auto",
         "🇨🇦 加拿大 (Canada) 01 R52",
-        "🇨🇦 加拿大 (Canada) 02",
+        "🇨🇦 加拿大 (Canada) 02 R52",
         "🇨🇦 加拿大 (Canada) 03",
         "🇨🇦 加拿大 (Canada) 04",
         "🇨🇦 加拿大 (Canada) 05",
@@ -193,7 +193,7 @@
         "🇨🇦 加拿大 (Canada) 07",
         "🇨🇦 加拿大 (Canada) 08",
         "🇨🇦 加拿大 (Canada) 09",
-        "🇨🇦 加拿大 (Canada) 10 R52"
+        "🇨🇦 加拿大 (Canada) 10"
       ]
     },
     {
@@ -201,7 +201,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇦 加拿大 (Canada) 01 R52",
-        "🇨🇦 加拿大 (Canada) 02",
+        "🇨🇦 加拿大 (Canada) 02 R52",
         "🇨🇦 加拿大 (Canada) 03",
         "🇨🇦 加拿大 (Canada) 04",
         "🇨🇦 加拿大 (Canada) 05",
@@ -209,7 +209,7 @@
         "🇨🇦 加拿大 (Canada) 07",
         "🇨🇦 加拿大 (Canada) 08",
         "🇨🇦 加拿大 (Canada) 09",
-        "🇨🇦 加拿大 (Canada) 10 R52"
+        "🇨🇦 加拿大 (Canada) 10"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
