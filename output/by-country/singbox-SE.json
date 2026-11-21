@@ -22,7 +22,7 @@
         "server_name": "api-svc-mgr.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -64,29 +64,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05",
-      "server": "2.27.14.247",
-      "server_port": 2096,
-      "uuid": "fbe22815-0718-4eae-816f-e91c67d15b54",
-      "tls": {
-        "enabled": true,
-        "server_name": "st2a695.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "st2a695.rumedia-cdn.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -94,8 +71,7 @@
         "🇸🇪 瑞典 (Sweden) 01 R40",
         "🇸🇪 瑞典 (Sweden) 02",
         "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05"
+        "🇸🇪 瑞典 (Sweden) 04"
       ]
     },
     {
@@ -105,8 +81,7 @@
         "🇸🇪 瑞典 (Sweden) 01 R40",
         "🇸🇪 瑞典 (Sweden) 02",
         "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05"
+        "🇸🇪 瑞典 (Sweden) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

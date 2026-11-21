@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01
-  server: 46.28.71.247
+  server: 194.76.168.133
   port: 443
   udp: true
   type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
+  uuid: ef5a57c7-84d5-4f86-b99c-875a16da485f
   tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: nemicro487.gangtype.com
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /realtime/client/connect
+    headers:
+      Host: nemicro487.gangtype.com
 proxy-groups:
 - name: PROXIES
   type: select

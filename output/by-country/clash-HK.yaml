@@ -25,22 +25,6 @@ proxies:
     short-id: 39793bc4708abbbb
   servername: mensura.cdn-apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: bYWXdhIRqKJj8XAZ.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 234a80412b4d44a3a8d8523cbfd58dc4
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: bYWXdhIRqKJj8XAZ.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: bYWXdhIRqKJj8XAZ.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
-  - 🇭🇰 中国香港 (Hong Kong) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
-  - 🇭🇰 中国香港 (Hong Kong) 03
 rules:
 - MATCH,PROXIES

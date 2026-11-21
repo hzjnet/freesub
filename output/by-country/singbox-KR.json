@@ -20,7 +20,11 @@
       "tls": {
         "enabled": true,
         "server_name": "connectgraduateswithjobopeningsandgrowprofessionally.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {

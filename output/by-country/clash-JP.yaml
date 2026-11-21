@@ -5,27 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01
-  server: 64.176.34.102
-  port: 46130
-  udp: true
-  type: vmess
-  uuid: 477350b2-7536-4f38-ee21-020efdde2d1d
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 02
   server: 168.110.21.56
-  port: 18453
+  port: 18454
   udp: true
   type: vless
-  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
-- name: 🇯🇵 日本 (Japan) 03
+  uuid: ff8fc3f9-0c1b-4a6f-97cb-ed1cde4de62d
+- name: 🇯🇵 日本 (Japan) 02
   server: 168.138.205.100
   port: 53758
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 04
+- name: 🇯🇵 日本 (Japan) 03
   server: 158.101.151.157
   port: 443
   udp: true
@@ -38,24 +30,15 @@ proxies:
     short-id: 684c7531e599dec0
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 05
-  server: 198.13.53.39
+- name: 🇯🇵 日本 (Japan) 04
+  server: 167.17.179.207
   port: 443
   udp: true
-  type: vless
-  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
-  tls: true
-  reality-opts:
-    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
-    short-id: 7a7cc838
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 06 R46
+  type: hysteria2
+  password: SW_COSMOS:sYcUMf7G9g67Zuho
+  sni: spacearea.onthewifi.com
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 05 R46
   server: 94.177.131.113
   port: 443
   udp: true
@@ -64,16 +47,16 @@ proxies:
   tls: true
   servername: kuruish.org
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 07 R57
-  server: 139.162.125.126
+- name: 🇯🇵 日本 (Japan) 06
+  server: 45.76.222.108
   port: 443
   udp: true
   type: vless
-  uuid: eb6cf336-03bd-4dac-9f2a-3e456389279e
+  uuid: bd95a04e-e3e1-460e-b89d-e9a693d393e0
   tls: true
   reality-opts:
-    public-key: mMLchVbQzhQ2bGV6wkg1LP5Q7eqL2hCVHHMT0B03dwg
-    short-id: bd6e3e70
+    public-key: -_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE
+    short-id: b5c85d2d
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -81,7 +64,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 08 R51
+- name: 🇯🇵 日本 (Japan) 07 R51
   server: 172.105.203.15
   port: 443
   udp: true
@@ -98,16 +81,33 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 09
-  server: 45.76.222.108
+- name: 🇯🇵 日本 (Japan) 08
+  server: 149.28.29.156
   port: 443
   udp: true
   type: vless
-  uuid: bd95a04e-e3e1-460e-b89d-e9a693d393e0
+  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
   tls: true
   reality-opts:
-    public-key: -_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE
-    short-id: b5c85d2d
+    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
+    short-id: e535df57
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 09
+  server: 198.13.53.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
+  tls: true
+  reality-opts:
+    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
+    short-id: 7a7cc838
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -132,37 +132,6 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 11
-  server: 149.28.29.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
-  tls: true
-  reality-opts:
-    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
-    short-id: e535df57
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 12
-  server: 167.17.179.207
-  port: 443
-  udp: true
-  type: hysteria2
-  password: SW_COSMOS:sYcUMf7G9g67Zuho
-  sni: spacearea.onthewifi.com
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 13
-  server: 168.110.21.56
-  port: 18454
-  udp: true
-  type: vless
-  uuid: ff8fc3f9-0c1b-4a6f-97cb-ed1cde4de62d
 proxy-groups:
 - name: PROXIES
   type: select
@@ -172,15 +141,12 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02
   - 🇯🇵 日本 (Japan) 03
   - 🇯🇵 日本 (Japan) 04
-  - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06 R46
-  - 🇯🇵 日本 (Japan) 07 R57
-  - 🇯🇵 日本 (Japan) 08 R51
+  - 🇯🇵 日本 (Japan) 05 R46
+  - 🇯🇵 日本 (Japan) 06
+  - 🇯🇵 日本 (Japan) 07 R51
+  - 🇯🇵 日本 (Japan) 08
   - 🇯🇵 日本 (Japan) 09
   - 🇯🇵 日本 (Japan) 10 R51
-  - 🇯🇵 日本 (Japan) 11
-  - 🇯🇵 日本 (Japan) 12
-  - 🇯🇵 日本 (Japan) 13
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -190,14 +156,11 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02
   - 🇯🇵 日本 (Japan) 03
   - 🇯🇵 日本 (Japan) 04
-  - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06 R46
-  - 🇯🇵 日本 (Japan) 07 R57
-  - 🇯🇵 日本 (Japan) 08 R51
+  - 🇯🇵 日本 (Japan) 05 R46
+  - 🇯🇵 日本 (Japan) 06
+  - 🇯🇵 日本 (Japan) 07 R51
+  - 🇯🇵 日本 (Japan) 08
   - 🇯🇵 日本 (Japan) 09
   - 🇯🇵 日本 (Japan) 10 R51
-  - 🇯🇵 日本 (Japan) 11
-  - 🇯🇵 日本 (Japan) 12
-  - 🇯🇵 日本 (Japan) 13
 rules:
 - MATCH,PROXIES

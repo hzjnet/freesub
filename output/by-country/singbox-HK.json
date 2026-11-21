@@ -33,33 +33,12 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03",
-      "server": "bYWXdhIRqKJj8XAZ.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "234a80412b4d44a3a8d8523cbfd58dc4",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "bYWXdhIRqKJj8XAZ.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "bYWXdhIRqKJj8XAZ.v.3dns.vip"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01",
-        "🇭🇰 中国香港 (Hong Kong) 02",
-        "🇭🇰 中国香港 (Hong Kong) 03"
+        "🇭🇰 中国香港 (Hong Kong) 02"
       ]
     },
     {
@@ -67,8 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01",
-        "🇭🇰 中国香港 (Hong Kong) 02",
-        "🇭🇰 中国香港 (Hong Kong) 03"
+        "🇭🇰 中国香港 (Hong Kong) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
