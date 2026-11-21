@@ -22,7 +22,7 @@
         "server_name": "api-svc-mgr.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -52,39 +52,37 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 04",
       "server": "95.143.196.97",
       "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
+      "password": "769f34f0-1500-488f-b414-03bc90666502",
       "tls": {
         "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "se.mimowhat.online",
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 05",
-      "server": "81.90.21.163",
-      "server_port": 2053,
+      "server": "2.27.14.247",
+      "server_port": 2096,
       "uuid": "fbe22815-0718-4eae-816f-e91c67d15b54",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "81.90.21.163",
+        "server_name": "st2a695.rumedia-cdn.com",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "st2a695.rumedia-cdn.com"
         }
       }
     },

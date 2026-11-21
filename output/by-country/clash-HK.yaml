@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: dog-hk.kunlun01dns.com
-  port: 21020
+  server: 206.237.11.17
+  port: 50376
   udp: true
   type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  uuid: 9091fd64-7e8e-4b7a-8ae7-84474f234926
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02
@@ -25,6 +25,22 @@ proxies:
     short-id: 39793bc4708abbbb
   servername: mensura.cdn-apple.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: bYWXdhIRqKJj8XAZ.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 234a80412b4d44a3a8d8523cbfd58dc4
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: bYWXdhIRqKJj8XAZ.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: bYWXdhIRqKJj8XAZ.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +48,7 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
+  - 🇭🇰 中国香港 (Hong Kong) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +56,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
+  - 🇭🇰 中国香港 (Hong Kong) 03
 rules:
 - MATCH,PROXIES

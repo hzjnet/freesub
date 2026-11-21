@@ -4,17 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇧 英国 (United Kingdom) 01 R53
-  server: 161.35.37.106
+- name: 🇬🇧 英国 (United Kingdom) 01
+  server: 104.18.79.242
   port: 443
   udp: true
   type: vless
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-  network: h2
-  h2-opts:
-    host: []
-    path: /
+  uuid: bb2a729c-6185-4170-8769-6f5b9f64d5b8
+  tls: true
+  servername: cloud-sync-3d1512-gw.maziarkish.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /11290579a72cdb4e
+    headers:
+      Host: cloud-sync-3d1512-gw.maziarkish.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 02
+  server: 193.188.21.253
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇬🇧 英国 (United Kingdom) 03
   server: 213.176.92.168
   port: 14430
   udp: true
@@ -25,66 +41,35 @@ proxies:
     path: /vless
     headers:
       Host: 213.176.92.168
-- name: 🇬🇧 英国 (United Kingdom) 03
-  server: 193.188.21.253
-  port: 10444
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 04
-  server: 193.163.203.170
+  server: 13.143.187.220
   port: 443
   udp: true
   type: vless
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  uuid: 66c78912-4e2d-41dc-8742-aaae2590804e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 05
-  server: 94.72.100.12
-  port: 443
-  udp: true
-  type: vless
-  uuid: b004e898-f6cf-54a5-d281-f063d741ad53
-  tls: true
-  servername: xray-ckc68nno-swift-harbor-8.cloady.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /3e0261245277336d
-    headers:
-      Host: xray-ckc68nno-swift-harbor-8.cloady.io
+    public-key: eDzVz3bxkv3IoN3BUCa_aA-RicoeG7ACylYSnmS2Pgg
+  servername: fi-s1.kadrhub.tech
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇧 英国 (United Kingdom) 01 R53
+  - 🇬🇧 英国 (United Kingdom) 01
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
   - 🇬🇧 英国 (United Kingdom) 04
-  - 🇬🇧 英国 (United Kingdom) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇧 英国 (United Kingdom) 01 R53
+  - 🇬🇧 英国 (United Kingdom) 01
   - 🇬🇧 英国 (United Kingdom) 02
   - 🇬🇧 英国 (United Kingdom) 03
   - 🇬🇧 英国 (United Kingdom) 04
-  - 🇬🇧 英国 (United Kingdom) 05
 rules:
 - MATCH,PROXIES
