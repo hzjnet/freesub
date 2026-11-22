@@ -5,70 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01
-  server: 8.208.101.215
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3112c3f2-7172-417d-bce6-d168135d1603
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: U6FtussjhSb81ka0z9IDf1n80syjsczIDrRTdmzyeGM
-    short-id: 5a6f99962a27cdbc
-  servername: www.ebay.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 02
-  server: 104.26.0.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
-  tls: true
-  servername: ezaccess-project-f62c30.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: ezaccess-project-f62c30.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 03
-  server: 13.143.187.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: 66c78912-4e2d-41dc-8742-aaae2590804e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: eDzVz3bxkv3IoN3BUCa_aA-RicoeG7ACylYSnmS2Pgg
-  servername: fi-s1.kadrhub.tech
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 04
-  server: 193.188.21.253
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
-- name: 🇬🇧 英国 (United Kingdom) 05
-  server: 213.176.92.168
-  port: 10444
-  udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
-- name: 🇬🇧 英国 (United Kingdom) 06
   server: 213.176.92.168
   port: 14430
   udp: true
@@ -79,8 +15,8 @@ proxies:
     path: /vless
     headers:
       Host: 213.176.92.168
-- name: 🇬🇧 英国 (United Kingdom) 07 ⚠R
-  server: uk1.connectsuite.org
+- name: 🇬🇧 英国 (United Kingdom) 02 ⚠R
+  server: 51.38.71.147
   port: 443
   udp: true
   type: vless
@@ -88,48 +24,22 @@ proxies:
   tls: true
   servername: uk1.connectsuite.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /cdn-cgi/ws
-- name: 🇬🇧 英国 (United Kingdom) 08
-  server: 45.43.153.33
-  port: 443
-  udp: true
-  type: vless
-  uuid: d6752c6b-80ae-4a91-b446-bb330f7f8177
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg
-    short-id: 88a13cf2655c
-  servername: www.foxsports.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇬🇧 英国 (United Kingdom) 01
-  - 🇬🇧 英国 (United Kingdom) 02
-  - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04
-  - 🇬🇧 英国 (United Kingdom) 05
-  - 🇬🇧 英国 (United Kingdom) 06
-  - 🇬🇧 英国 (United Kingdom) 07 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 08
+  - 🇬🇧 英国 (United Kingdom) 02 ⚠R
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇬🇧 英国 (United Kingdom) 01
-  - 🇬🇧 英国 (United Kingdom) 02
-  - 🇬🇧 英国 (United Kingdom) 03
-  - 🇬🇧 英国 (United Kingdom) 04
-  - 🇬🇧 英国 (United Kingdom) 05
-  - 🇬🇧 英国 (United Kingdom) 06
-  - 🇬🇧 英国 (United Kingdom) 07 ⚠R
-  - 🇬🇧 英国 (United Kingdom) 08
+  - 🇬🇧 英国 (United Kingdom) 02 ⚠R
 rules:
 - MATCH,PROXIES

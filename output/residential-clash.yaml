@@ -5,41 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 (移动家宽)
-  server: 18.175.136.46
-  port: 443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
-- name: 🇩🇪 德国 (Germany) 02 (移动家宽)
-  server: 8.211.57.86
+  server: 47.254.175.2
   port: 443
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽)
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽)
-  - 🇩🇪 德国 (Germany) 02 (移动家宽)
-  - 🇰🇷 韩国 (South Korea) 03 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽)
-  - 🇩🇪 德国 (Germany) 02 (移动家宽)
-  - 🇰🇷 韩国 (South Korea) 03 (家宽)
 rules:
 - MATCH,PROXIES

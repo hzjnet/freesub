@@ -5,47 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01
-  server: 116.213.43.43
-  port: 11102
-  udp: true
-  type: vless
-  uuid: 530d31fc-2690-49e4-bfc9-3f991e145008
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oW6HMjniDmBJdjGKwhBAIS2zMS1VvHORubh9vdazqQ0
-    short-id: ed571d022f7bc3bf
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 02
-  server: terutrrj.ghmkdty.top
-  port: 443
+  server: 162.19.192.89
+  port: 16616
   udp: true
   type: vmess
-  uuid: 42a7cb20-e771-442c-b04e-70bb079d780e
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
   alterId: 0
   cipher: auto
-  tls: true
-  servername: terutrrj.ghmkdty.top
-  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: terutrrj.ghmkdty.top
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01
-  - 🇹🇼 中国台湾 (Taiwan) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01
-  - 🇹🇼 中国台湾 (Taiwan) 02
 rules:
 - MATCH,PROXIES

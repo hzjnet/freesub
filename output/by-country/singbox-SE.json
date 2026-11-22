@@ -14,6 +14,27 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02",
+      "server": "swe.srv.hiddenmedia.pw",
+      "server_port": 443,
+      "uuid": "e54fc748-c657-4820-b593-87d333e8d137",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swe.srv.hiddenmedia.pw",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "T-qDypPpfavzWteKpx1KjpW1USCjkBvNc6mzpRglw00",
+          "short_id": "e496f788cd4b7402"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -37,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 R40",
-        "🇸🇪 瑞典 (Sweden) 02"
+        "🇸🇪 瑞典 (Sweden) 02",
+        "🇸🇪 瑞典 (Sweden) 03"
       ]
     },
     {
@@ -45,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 R40",
-        "🇸🇪 瑞典 (Sweden) 02"
+        "🇸🇪 瑞典 (Sweden) 02",
+        "🇸🇪 瑞典 (Sweden) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

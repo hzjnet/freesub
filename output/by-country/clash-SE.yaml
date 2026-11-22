@@ -12,6 +12,19 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02
+  server: swe.srv.hiddenmedia.pw
+  port: 443
+  udp: true
+  type: vless
+  uuid: e54fc748-c657-4820-b593-87d333e8d137
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: T-qDypPpfavzWteKpx1KjpW1USCjkBvNc6mzpRglw00
+    short-id: e496f788cd4b7402
+  servername: swe.srv.hiddenmedia.pw
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 03
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -31,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 R40
   - 🇸🇪 瑞典 (Sweden) 02
+  - 🇸🇪 瑞典 (Sweden) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 R40
   - 🇸🇪 瑞典 (Sweden) 02
+  - 🇸🇪 瑞典 (Sweden) 03
 rules:
 - MATCH,PROXIES
