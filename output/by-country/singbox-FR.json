@@ -5,7 +5,15 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 01 ⚠R",
+      "tag": "🇫🇷 法国 (France) 01",
+      "server": "107.161.160.28",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "itzvpn@321"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 02 ⚠R",
       "server": "198.244.202.215",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -13,55 +21,26 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 02 R46",
-      "server": "57.129.76.233",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 03 ⚠R",
-      "server": "198.244.201.129",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 04 R46",
-      "server": "57.129.83.85",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 05 R40",
-      "server": "51.77.144.182",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "mfhq1kdsuyy55inq"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 06 R40",
+      "tag": "🇫🇷 法国 (France) 03 R40",
       "server": "79.137.99.183",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 07",
-      "server": "107.161.160.28",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 04 R40",
+      "server": "54.36.102.152",
+      "server_port": 2083,
+      "uuid": "51a6ab93-e805-4b8b-89d1-d3ab85a118ce",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-kulo"
+      }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 08",
+      "tag": "🇫🇷 法国 (France) 05",
       "server": "141.227.170.220",
       "server_port": 8443,
       "uuid": "6c077993-952c-4318-9e93-89056a207a9b",
@@ -71,7 +50,7 @@
         "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -81,8 +60,24 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 06 R46",
+      "server": "57.129.83.85",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 07 ⚠R",
+      "server": "198.244.201.129",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
       "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 09 R40",
+      "tag": "🇫🇷 法国 (France) 08 R40",
       "server": "162.19.82.57",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -95,8 +90,8 @@
     },
     {
       "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 10 R40",
-      "server": "46.105.222.157",
+      "tag": "🇫🇷 法国 (France) 09 R40",
+      "server": "79.137.99.183",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -107,9 +102,23 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 10",
+      "server": "leviko-fr7730.shopingggg.ir",
+      "server_port": 80,
+      "uuid": "c762af05-2e92-4133-bc30-8cf45dd40a28",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "suh.cryptofront.uk"
+        }
+      }
+    },
+    {
       "type": "vmess",
       "tag": "🇫🇷 法国 (France) 11 R40",
-      "server": "79.137.99.183",
+      "server": "46.105.222.155",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -122,20 +131,7 @@
     {
       "type": "vmess",
       "tag": "🇫🇷 法国 (France) 12 R40",
-      "server": "91.134.35.72",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 13 R40",
-      "server": "46.105.222.155",
+      "server": "46.105.222.157",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -147,15 +143,53 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 14",
-      "server": "suh.cryptofront.uk",
-      "server_port": 80,
-      "uuid": "c762af05-2e92-4133-bc30-8cf45dd40a28",
+      "tag": "🇫🇷 法国 (France) 13",
+      "server": "92.53.190.167",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-ccc0e8cd3a83",
+      "tls": {
+        "enabled": true,
+        "server_name": "fgzb39ezu86s.ycz7syeeu3is.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/stream/PANEL_ZEUS/ccc0e8cd3a83fp=unsafe",
         "headers": {
-          "Host": "suh.cryptofront.uk"
+          "Host": "fgzb39ezu86s.ycz7syeeu3is.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 14 R46",
+      "server": "57.129.76.233",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 15",
+      "server": "161.97.160.224",
+      "server_port": 443,
+      "uuid": "b81b4d1b-7f20-48f1-82dc-d24bef898cab",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "passport.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0",
+          "short_id": "e6"
         }
       }
     },
@@ -164,40 +198,42 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇷 法国 (France) 01 ⚠R",
-        "🇫🇷 法国 (France) 02 R46",
-        "🇫🇷 法国 (France) 03 ⚠R",
-        "🇫🇷 法国 (France) 04 R46",
-        "🇫🇷 法国 (France) 05 R40",
-        "🇫🇷 法国 (France) 06 R40",
-        "🇫🇷 法国 (France) 07",
-        "🇫🇷 法国 (France) 08",
+        "🇫🇷 法国 (France) 01",
+        "🇫🇷 法国 (France) 02 ⚠R",
+        "🇫🇷 法国 (France) 03 R40",
+        "🇫🇷 法国 (France) 04 R40",
+        "🇫🇷 法国 (France) 05",
+        "🇫🇷 法国 (France) 06 R46",
+        "🇫🇷 法国 (France) 07 ⚠R",
+        "🇫🇷 法国 (France) 08 R40",
         "🇫🇷 法国 (France) 09 R40",
-        "🇫🇷 法国 (France) 10 R40",
+        "🇫🇷 法国 (France) 10",
         "🇫🇷 法国 (France) 11 R40",
         "🇫🇷 法国 (France) 12 R40",
-        "🇫🇷 法国 (France) 13 R40",
-        "🇫🇷 法国 (France) 14"
+        "🇫🇷 法国 (France) 13",
+        "🇫🇷 法国 (France) 14 R46",
+        "🇫🇷 法国 (France) 15"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇷 法国 (France) 01 ⚠R",
-        "🇫🇷 法国 (France) 02 R46",
-        "🇫🇷 法国 (France) 03 ⚠R",
-        "🇫🇷 法国 (France) 04 R46",
-        "🇫🇷 法国 (France) 05 R40",
-        "🇫🇷 法国 (France) 06 R40",
-        "🇫🇷 法国 (France) 07",
-        "🇫🇷 法国 (France) 08",
+        "🇫🇷 法国 (France) 01",
+        "🇫🇷 法国 (France) 02 ⚠R",
+        "🇫🇷 法国 (France) 03 R40",
+        "🇫🇷 法国 (France) 04 R40",
+        "🇫🇷 法国 (France) 05",
+        "🇫🇷 法国 (France) 06 R46",
+        "🇫🇷 法国 (France) 07 ⚠R",
+        "🇫🇷 法国 (France) 08 R40",
         "🇫🇷 法国 (France) 09 R40",
-        "🇫🇷 法国 (France) 10 R40",
+        "🇫🇷 法国 (France) 10",
         "🇫🇷 法国 (France) 11 R40",
         "🇫🇷 法国 (France) 12 R40",
-        "🇫🇷 法国 (France) 13 R40",
-        "🇫🇷 法国 (France) 14"
+        "🇫🇷 法国 (France) 13",
+        "🇫🇷 法国 (France) 14 R46",
+        "🇫🇷 法国 (France) 15"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

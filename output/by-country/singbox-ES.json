@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 01",
+      "server": "46.28.71.247",
+      "server_port": 443,
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 02",
       "server": "194.76.168.133",
       "server_port": 443,
       "uuid": "ef5a57c7-84d5-4f86-b99c-875a16da485f",
@@ -13,12 +34,9 @@
         "enabled": true,
         "server_name": "nemicro487.gangtype.com",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -34,14 +52,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01"
+        "🇪🇸 西班牙 (Spain) 01",
+        "🇪🇸 西班牙 (Spain) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01"
+        "🇪🇸 西班牙 (Spain) 01",
+        "🇪🇸 西班牙 (Spain) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

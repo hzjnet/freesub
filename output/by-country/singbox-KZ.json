@@ -6,17 +6,21 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-      "server": "170.168.100.54",
-      "server_port": 443,
-      "uuid": "d3fa965e-74d2-4908-ae9b-f6e1fbc95845",
+      "server": "blog-asia.livemusic.ac",
+      "server_port": 8445,
+      "uuid": "cac10246-5b76-4809-9fd0-417c58a3ca90",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "kz.volgasystems.tech",
-        "insecure": false,
+        "server_name": "portal.gifmems.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "32eua16pKE179lLHv-VNZGrX287qQFMXA3n0VgEzNTQ",
+          "short_id": "b3a633bc754b648d"
         }
       }
     },
