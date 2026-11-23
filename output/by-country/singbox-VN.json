@@ -4,28 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 01",
-      "server": "104.21.43.115",
+      "type": "trojan",
+      "tag": "🇻🇳 越南 (Vietnam) 01",
+      "server": "43.255.157.222",
       "server_port": 443,
-      "uuid": "ccaa9413-2163-466e-a915-29c215b0be0a",
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "tls": {
         "enabled": true,
-        "server_name": "nEtRa-28e601.rUZgArSiS053GmAIlCoMsaccOunT.WORKERs.DEV",
+        "server_name": "xvxn1hkzf.mateflora.com",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/D1utewa490l8iCymueVABy77F5t?ed=2560",
-        "headers": {
-          "Host": "netra-28e601.ruzgarsis053gmailcomsaccount.workers.dev"
         }
       }
     },
@@ -34,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01"
+        "🇻🇳 越南 (Vietnam) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01"
+        "🇻🇳 越南 (Vietnam) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

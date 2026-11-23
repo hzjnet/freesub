@@ -4,25 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇷 IR 01",
-      "server": "87.82.59.60",
-      "server_port": 837,
-      "uuid": "d8b42cd5-b149-4356-9e61-444444444444"
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽)",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01"
+        "🇰🇷 韩国 (South Korea) 01 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01"
+        "🇰🇷 韩国 (South Korea) 01 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -12,8 +12,32 @@
       "password": "Bwlqh7GcFB"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇯🇵 日本 (Japan) 02",
+      "server": "161.33.20.255",
+      "server_port": 8880,
+      "uuid": "e0856508-d693-450a-a099-455091dc4f25",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "e0856508-d693-450a-a099-455091dc4f25-vm"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 03 R46",
+      "server": "94.177.131.113",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "tls": {
+        "enabled": true,
+        "server_name": "kuruish.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 04",
       "server": "158.101.151.157",
       "server_port": 443,
       "uuid": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
@@ -33,39 +57,30 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 03",
-      "server": "168.110.63.247",
-      "server_port": 8081,
-      "uuid": "c3bde296-8e44-4b8c-a325-577d5b3cc7c8",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 04",
-      "server": "161.33.20.255",
-      "server_port": 8880,
-      "uuid": "e0856508-d693-450a-a099-455091dc4f25",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/e0856508-d693-450a-a099-455091dc4f25-vm"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 R46",
-      "server": "94.177.131.113",
+      "tag": "🇯🇵 日本 (Japan) 05",
+      "server": "45.76.222.108",
       "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "uuid": "bd95a04e-e3e1-460e-b89d-e9a693d393e0",
       "tls": {
         "enabled": true,
-        "server_name": "kuruish.org",
-        "insecure": false
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE",
+          "short_id": "b5c85d2d"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
       }
     },
     {
@@ -123,36 +138,21 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇯🇵 日本 (Japan) 08",
-      "server": "45.76.222.108",
-      "server_port": 443,
-      "uuid": "bd95a04e-e3e1-460e-b89d-e9a693d393e0",
-      "tls": {
-        "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE",
-          "short_id": "b5c85d2d"
-        }
-      },
+      "server": "168.110.63.247",
+      "server_port": 8081,
+      "uuid": "c3bde296-8e44-4b8c-a325-577d5b3cc7c8",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
+        "path": "/vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 09",
-      "server": "djj.zjlo.top",
+      "server": "155.248.175.201",
       "server_port": 23169,
       "uuid": "3eb053cb-d6f8-4b31-8180-222e1cc6f8ff",
       "flow": "xtls-rprx-vision",
@@ -162,8 +162,20 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 10",
+      "server": "xinbulongdong.com",
+      "server_port": 443,
+      "password": "+vuY9gGdZ/h7Yk4Q",
+      "tls": {
+        "enabled": true,
+        "server_name": "xinbulongdong.com",
+        "insecure": false
       }
     },
     {
@@ -173,13 +185,14 @@
         "auto",
         "🇯🇵 日本 (Japan) 01",
         "🇯🇵 日本 (Japan) 02",
-        "🇯🇵 日本 (Japan) 03",
+        "🇯🇵 日本 (Japan) 03 R46",
         "🇯🇵 日本 (Japan) 04",
-        "🇯🇵 日本 (Japan) 05 R46",
+        "🇯🇵 日本 (Japan) 05",
         "🇯🇵 日本 (Japan) 06",
         "🇯🇵 日本 (Japan) 07",
         "🇯🇵 日本 (Japan) 08",
-        "🇯🇵 日本 (Japan) 09"
+        "🇯🇵 日本 (Japan) 09",
+        "🇯🇵 日本 (Japan) 10"
       ]
     },
     {
@@ -188,13 +201,14 @@
       "outbounds": [
         "🇯🇵 日本 (Japan) 01",
         "🇯🇵 日本 (Japan) 02",
-        "🇯🇵 日本 (Japan) 03",
+        "🇯🇵 日本 (Japan) 03 R46",
         "🇯🇵 日本 (Japan) 04",
-        "🇯🇵 日本 (Japan) 05 R46",
+        "🇯🇵 日本 (Japan) 05",
         "🇯🇵 日本 (Japan) 06",
         "🇯🇵 日本 (Japan) 07",
         "🇯🇵 日本 (Japan) 08",
-        "🇯🇵 日本 (Japan) 09"
+        "🇯🇵 日本 (Japan) 09",
+        "🇯🇵 日本 (Japan) 10"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

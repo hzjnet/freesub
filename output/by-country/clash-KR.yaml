@@ -5,22 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01
-  server: 115.161.136.145
-  port: 10099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: '12242'
-- name: 🇰🇷 韩国 (South Korea) 02
-  server: 158.247.253.243
+  server: 43.108.109.112
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 03
-  server: 168.107.51.32
+  type: vless
+  uuid: 4ded3111-b418-475a-93de-0360932508b2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vrFq4-k-eiTSyRF3T3e7Fqmlv4XSKmByKYsw55zeX3w
+    short-id: b79a86e2b1a586a0
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 02
+  server: ikr200.zxom.eu.org
   port: 20045
   udp: true
   type: trojan
@@ -34,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01
   - 🇰🇷 韩国 (South Korea) 02
-  - 🇰🇷 韩国 (South Korea) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01
   - 🇰🇷 韩国 (South Korea) 02
-  - 🇰🇷 韩国 (South Korea) 03
 rules:
 - MATCH,PROXIES

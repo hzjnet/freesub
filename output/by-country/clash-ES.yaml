@@ -13,7 +13,7 @@ proxies:
   tls: true
   servername: nemicro487.gangtype.com
   skip-cert-verify: false
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /realtime/client/connect
