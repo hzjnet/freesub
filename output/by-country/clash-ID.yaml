@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01
-  server: 147.139.197.200
+  server: kozel.cc.cd
   port: 443
   udp: true
   type: vless
-  uuid: a197af05-7048-478e-8d99-c3151adb4064
-  flow: xtls-rprx-vision
+  uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6
   tls: true
-  reality-opts:
-    public-key: ulPGCwIg38AVGww0FBfCNROmu_0N1hykbHbhcAFgcl0
-    short-id: 6135361d11cc2b31
-  servername: www.ebay.com
+  servername: kozel.cc.cd
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /118.151.222.66=17317
+    headers:
+      Host: kozel.cc.cd
 proxy-groups:
 - name: PROXIES
   type: select

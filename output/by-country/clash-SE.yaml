@@ -12,18 +12,16 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: swe.srv.hiddenmedia.pw
+  server: sajed.kdns.fr
   port: 443
   udp: true
   type: vless
-  uuid: e54fc748-c657-4820-b593-87d333e8d137
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: T-qDypPpfavzWteKpx1KjpW1USCjkBvNc6mzpRglw00
-    short-id: e496f788cd4b7402
-  servername: swe.srv.hiddenmedia.pw
-  client-fingerprint: firefox
+  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
+  network: ws
+  ws-opts:
+    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
+    headers:
+      Host: sajed.kdns.fr
 - name: 🇸🇪 瑞典 (Sweden) 03
   server: 138.124.86.230
   port: 48115
@@ -33,10 +31,21 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 04
+  server: sw100.marshonet.store
+  port: 8228
+  udp: true
+  type: trojan
+  password: pHLdtRnEC5stYZvt9GqMyMYx215AskPW
+  sni: sw100.marshonet.store
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trgrpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +54,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 R40
   - 🇸🇪 瑞典 (Sweden) 02
   - 🇸🇪 瑞典 (Sweden) 03
+  - 🇸🇪 瑞典 (Sweden) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +63,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 R40
   - 🇸🇪 瑞典 (Sweden) 02
   - 🇸🇪 瑞典 (Sweden) 03
+  - 🇸🇪 瑞典 (Sweden) 04
 rules:
 - MATCH,PROXIES

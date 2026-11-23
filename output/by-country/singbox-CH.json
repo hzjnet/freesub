@@ -6,6 +6,22 @@
     {
       "type": "trojan",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 R56",
+      "server": "208.69.78.158",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.yourultimateprofessionalcareerhub.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 R56",
       "server": "208.69.78.208",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -16,18 +32,23 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 R56",
-      "server": "leviko-ch0171.shopingggg.ir",
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 R50",
+      "server": "45.90.59.15",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.yourultimateprofessionalcareerhub.com",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
+          "short_id": "19253fae84102271"
         }
       }
     },
@@ -37,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 R56",
-        "🇨🇭 瑞士 (Switzerland) 02 R56"
+        "🇨🇭 瑞士 (Switzerland) 02 R56",
+        "🇨🇭 瑞士 (Switzerland) 03 R50"
       ]
     },
     {
@@ -45,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 R56",
-        "🇨🇭 瑞士 (Switzerland) 02 R56"
+        "🇨🇭 瑞士 (Switzerland) 02 R56",
+        "🇨🇭 瑞士 (Switzerland) 03 R50"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

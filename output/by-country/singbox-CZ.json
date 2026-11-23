@@ -5,22 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇭 菲律宾 (Philippines) 01",
-      "server": "47.80.76.105",
+      "tag": "🇨🇿 捷克 (Czech) 01",
+      "server": "104.21.43.115",
       "server_port": 443,
-      "uuid": "ecdcc5d3-644a-4606-9e9e-130315da68cd",
-      "flow": "xtls-rprx-vision",
+      "uuid": "ccaa9413-2163-466e-a915-29c215b0be0a",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "nEtRa-28e601.rUZgArSiS053GmAIlCoMsaccOunT.WORKERs.DEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "T7_XLYoPP1_kxIaOov9SovRMk-P1mS-FRhdWueHxaR0",
-          "short_id": "58aa532948cab4a4"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/D1utewa490l8iCymueVABy77F5t?ed=2560",
+        "headers": {
+          "Host": "netra-28e601.ruzgarsis053gmailcomsaccount.workers.dev"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01"
+        "🇨🇿 捷克 (Czech) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01"
+        "🇨🇿 捷克 (Czech) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
