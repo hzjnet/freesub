@@ -5,46 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01
-  server: 104.21.209.174
-  port: 443
-  udp: true
-  type: vless
-  uuid: 92720ee3-27b3-4204-ad2f-d5c8570a4404
-  tls: true
-  servername: auth-api-fbb93f-gw.dev-team-63276e.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /0df6c30383d404f8
-    headers:
-      Host: auth-api-fbb93f-gw.dev-team-63276e.workers.dev
-- name: 🇩🇪 德国 (Germany) 02
-  server: 189.24.115.30
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
-  tls: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 03
-  server: leviko-de1011.shopingggg.ir
-  port: 50955
-  udp: true
-  type: vless
-  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
-- name: 🇩🇪 德国 (Germany) 04
-  server: 144.31.217.18
-  port: 554
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: eDmysaMyRZh7JTEka6eOtgCOcA+T7tmC5DnaTZBRQgg=:2lo8BX5+46yIl+u8fGL9fRHcCBuriEW+0q5xd8ABjkM=
-- name: 🇩🇪 德国 (Germany) 05
   server: 217.60.94.115
   port: 443
   udp: true
@@ -56,27 +16,7 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   servername: de13-r.bankai.party
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 06
-  server: 193.111.248.54
-  port: 443
-  udp: true
-  type: vless
-  uuid: a8e5585a-6020-4649-a364-c1ebf3a40548
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0KDql59THS-DXg30wMR0QGgFB6rXARDhr8WoWyfVA2M
-    short-id: 6f0091ebe3029ebb
-  servername: tagderdeutscheneinheit.de
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 07
-  server: 144.31.217.18
-  port: 1883
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: IqYm/a1m3w3gmmXd9Jji+o4Mzb5YR2HWsYcruSGECXI=:evS5UrA2kUBmeVXGrcY4bN1nZSKln3oE/ja9ppCbxN0=
-- name: 🇩🇪 德国 (Germany) 08 R46
+- name: 🇩🇪 德国 (Germany) 02 R46
   server: 51.195.91.135
   port: 8443
   udp: true
@@ -89,30 +29,55 @@ proxies:
     short-id: 992f9f92ddfa5056
   servername: cloudflare.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 09
-  server: 153.56.229.218
+- name: 🇩🇪 德国 (Germany) 03
+  server: 189.24.82.30
   port: 443
   udp: true
   type: vless
-  uuid: ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b
+  uuid: b354463f-ac84-422e-9a26-556c81ba001c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
-    short-id: e572b6579ea525d4
-  servername: 71b840t.de7.h1clayd.click
+    public-key: 77HTpkO_F3cUfA5Trka3eSh8V18atRMLyclGqZ__8C8
+    short-id: b73c53b18b65dd90
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 10
-  server: 94.159.98.82
+- name: 🇩🇪 德国 (Germany) 04
+  server: 48.103.231.2
+  port: 443
+  udp: true
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  servername: ee1-r.bankai.party
+  client-fingerprint: qq
+- name: 🇩🇪 德国 (Germany) 05
+  server: 191.217.215.228
   port: 2053
   udp: true
   type: vless
   uuid: fbe22815-0718-4eae-816f-e91c67d15b54
   flow: xtls-rprx-vision
   tls: true
-  servername: 94.159.98.82
+  servername: 191.217.215.228
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 11 R50
+- name: 🇩🇪 德国 (Germany) 06
+  server: render.com
+  port: 2095
+  udp: true
+  type: vless
+  uuid: ed809ef1-338d-4355-b9e8-2de0e522202f
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /
+    headers:
+      Host: xn--alspeedtest.net.onlinewebsite24.ir
+- name: 🇩🇪 德国 (Germany) 07 R50
   server: 146.103.42.119
   port: 9543
   udp: true
@@ -125,73 +90,14 @@ proxies:
     short-id: 123abcdf
   servername: storage.yandexcloud.net
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 12
-  server: 191.217.215.228
-  port: 2053
+- name: 🇩🇪 德国 (Germany) 08
+  server: leviko-de1011.shopingggg.ir
+  port: 50955
   udp: true
   type: vless
-  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 191.217.215.228
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 13
-  server: 88.216.70.125
-  port: 443
-  udp: true
-  type: vless
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
-  tls: true
-  servername: o685y.save-node.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
-    headers:
-      Host: o685y.save-node.com
-- name: 🇩🇪 德国 (Germany) 14
-  server: 191.217.215.228
-  port: 2096
-  udp: true
-  type: vless
-  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
-  tls: true
-  servername: st3b6e5.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st3b6e5.rumedia-cdn.com
-- name: 🇩🇪 德国 (Germany) 15
-  server: render.com
-  port: 2095
-  udp: true
-  type: vless
-  uuid: ed809ef1-338d-4355-b9e8-2de0e522202f
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /
-    headers:
-      Host: xn--alspeedtest.net.onlinewebsite24.ir
-- name: 🇩🇪 德国 (Germany) 16
-  server: leviko-nl4680.shopingggg.ir
-  port: 443
-  udp: true
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: ee1-r.bankai.party
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 17
-  server: 185.255.115.103
+  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
+- name: 🇩🇪 德国 (Germany) 09
+  server: 4935e4t.de25.h1clayd.click
   port: 443
   udp: true
   type: vless
@@ -203,64 +109,46 @@ proxies:
     short-id: 6976d670818644cc
   servername: 4935e4t.de25.h1clayd.click
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 18
-  server: 91.107.188.129
-  port: 2083
+- name: 🇩🇪 德国 (Germany) 10
+  server: 159.246.55.228
+  port: 443
   udp: true
-  type: vless
-  uuid: bd6c11e0-0233-4fb1-ba97-8d5f16d7155f
-  tls: true
-  servername: site.check-looks.space
+  type: trojan
+  password: 1vkFHbQX_gN1U8V8jVc
+  sni: mhpanel.kigaping.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /trojan-ws
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01
-  - 🇩🇪 德国 (Germany) 02
+  - 🇩🇪 德国 (Germany) 02 R46
   - 🇩🇪 德国 (Germany) 03
   - 🇩🇪 德国 (Germany) 04
   - 🇩🇪 德国 (Germany) 05
   - 🇩🇪 德国 (Germany) 06
-  - 🇩🇪 德国 (Germany) 07
-  - 🇩🇪 德国 (Germany) 08 R46
+  - 🇩🇪 德国 (Germany) 07 R50
+  - 🇩🇪 德国 (Germany) 08
   - 🇩🇪 德国 (Germany) 09
   - 🇩🇪 德国 (Germany) 10
-  - 🇩🇪 德国 (Germany) 11 R50
-  - 🇩🇪 德国 (Germany) 12
-  - 🇩🇪 德国 (Germany) 13
-  - 🇩🇪 德国 (Germany) 14
-  - 🇩🇪 德国 (Germany) 15
-  - 🇩🇪 德国 (Germany) 16
-  - 🇩🇪 德国 (Germany) 17
-  - 🇩🇪 德国 (Germany) 18
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01
-  - 🇩🇪 德国 (Germany) 02
+  - 🇩🇪 德国 (Germany) 02 R46
   - 🇩🇪 德国 (Germany) 03
   - 🇩🇪 德国 (Germany) 04
   - 🇩🇪 德国 (Germany) 05
   - 🇩🇪 德国 (Germany) 06
-  - 🇩🇪 德国 (Germany) 07
-  - 🇩🇪 德国 (Germany) 08 R46
+  - 🇩🇪 德国 (Germany) 07 R50
+  - 🇩🇪 德国 (Germany) 08
   - 🇩🇪 德国 (Germany) 09
   - 🇩🇪 德国 (Germany) 10
-  - 🇩🇪 德国 (Germany) 11 R50
-  - 🇩🇪 德国 (Germany) 12
-  - 🇩🇪 德国 (Germany) 13
-  - 🇩🇪 德国 (Germany) 14
-  - 🇩🇪 德国 (Germany) 15
-  - 🇩🇪 德国 (Germany) 16
-  - 🇩🇪 德国 (Germany) 17
-  - 🇩🇪 德国 (Germany) 18
 rules:
 - MATCH,PROXIES
