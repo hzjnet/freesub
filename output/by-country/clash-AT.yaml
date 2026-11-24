@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 AL 01
-  server: dns22.m3hrzd.ir
-  port: 1348
+- name: 🇦🇹 奥地利 (Austria) 01 R67
+  server: 152.53.1.57
+  port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr
+  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇱 AL 01
+  - 🇦🇹 奥地利 (Austria) 01 R67
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL 01
+  - 🇦🇹 奥地利 (Austria) 01 R67
 rules:
 - MATCH,PROXIES

@@ -26,22 +26,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 ⚠R",
-      "server": "51.38.71.147",
+      "tag": "🇬🇧 英国 (United Kingdom) 02",
+      "server": "a80b5386.fi2.h1clayd.click",
       "server_port": 443,
-      "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
+      "uuid": "2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df",
       "tls": {
         "enabled": true,
-        "server_name": "uk1.connectsuite.org",
-        "insecure": false,
+        "server_name": "a80b5386.fi2.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc",
+          "short_id": "cc678f10161992a9"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn-cgi/ws"
       }
     },
     {
@@ -50,7 +50,7 @@
       "outbounds": [
         "auto",
         "🇬🇧 英国 (United Kingdom) 01 R63",
-        "🇬🇧 英国 (United Kingdom) 02 ⚠R"
+        "🇬🇧 英国 (United Kingdom) 02"
       ]
     },
     {
@@ -58,7 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 英国 (United Kingdom) 01 R63",
-        "🇬🇧 英国 (United Kingdom) 02 ⚠R"
+        "🇬🇧 英国 (United Kingdom) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

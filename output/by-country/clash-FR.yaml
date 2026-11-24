@@ -11,36 +11,40 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 02 R40
-  server: 79.137.99.183
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 03 ⚠R
-  server: 198.244.202.215
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 04 R46
-  server: 57.129.76.233
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 05 R46
+- name: 🇫🇷 法国 (France) 02 R46
   server: 57.129.83.85
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 03 R46
+  server: 57.129.76.233
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 04 ⚠R
+  server: 198.244.202.215
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 05 R40
+  server: 46.105.222.157
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
 - name: 🇫🇷 法国 (France) 06 R40
-  server: 162.19.82.57
+  server: 46.105.222.156
   port: 1270
   udp: true
   type: vmess
@@ -51,7 +55,7 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇫🇷 法国 (France) 07 R40
-  server: 79.137.99.183
+  server: 91.134.35.72
   port: 1270
   udp: true
   type: vmess
@@ -84,7 +88,7 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇫🇷 法国 (France) 10 R40
-  server: 91.134.35.72
+  server: 162.19.82.57
   port: 1270
   udp: true
   type: vmess
@@ -94,59 +98,44 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 11 R40
-  server: 54.36.102.152
-  port: 2083
+- name: 🇫🇷 法国 (France) 11
+  server: 2.59.58.32
+  port: 1883
   udp: true
-  type: vless
-  uuid: 51a6ab93-e805-4b8b-89d1-d3ab85a118ce
-  network: ws
-  ws-opts:
-    path: /vless-kulo
-- name: 🇫🇷 法国 (France) 12
-  server: 158.220.113.176
-  port: 80
-  udp: true
-  type: vless
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: suh.cryptofront.uk
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: QF6wGXmPQ8VkiafXxmIR70yvQG7TD43W+FTrM3oFogE=:kUGV+ktCkRQQrrECd9egvrRBsm60oZL7SIDDBjXUcMw=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇷 法国 (France) 01 ⚠R
-  - 🇫🇷 法国 (France) 02 R40
-  - 🇫🇷 法国 (France) 03 ⚠R
-  - 🇫🇷 法国 (France) 04 R46
-  - 🇫🇷 法国 (France) 05 R46
+  - 🇫🇷 法国 (France) 02 R46
+  - 🇫🇷 法国 (France) 03 R46
+  - 🇫🇷 法国 (France) 04 ⚠R
+  - 🇫🇷 法国 (France) 05 R40
   - 🇫🇷 法国 (France) 06 R40
   - 🇫🇷 法国 (France) 07 R40
   - 🇫🇷 法国 (France) 08 R40
   - 🇫🇷 法国 (France) 09 R40
   - 🇫🇷 法国 (France) 10 R40
-  - 🇫🇷 法国 (France) 11 R40
-  - 🇫🇷 法国 (France) 12
+  - 🇫🇷 法国 (France) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇷 法国 (France) 01 ⚠R
-  - 🇫🇷 法国 (France) 02 R40
-  - 🇫🇷 法国 (France) 03 ⚠R
-  - 🇫🇷 法国 (France) 04 R46
-  - 🇫🇷 法国 (France) 05 R46
+  - 🇫🇷 法国 (France) 02 R46
+  - 🇫🇷 法国 (France) 03 R46
+  - 🇫🇷 法国 (France) 04 ⚠R
+  - 🇫🇷 法国 (France) 05 R40
   - 🇫🇷 法国 (France) 06 R40
   - 🇫🇷 法国 (France) 07 R40
   - 🇫🇷 法国 (France) 08 R40
   - 🇫🇷 法国 (France) 09 R40
   - 🇫🇷 法国 (France) 10 R40
-  - 🇫🇷 法国 (France) 11 R40
-  - 🇫🇷 法国 (France) 12
+  - 🇫🇷 法国 (France) 11
 rules:
 - MATCH,PROXIES
