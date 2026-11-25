@@ -4,30 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 波兰 (Poland) 01
-  server: 54.37.131.126
-  port: 80
+- name: 🇲🇾 马来西亚 (Malaysia) 01
+  server: 47.250.135.244
+  port: 10000
   udp: true
   type: vmess
-  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 波兰 (Poland) 01
+  - 🇲🇾 马来西亚 (Malaysia) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 波兰 (Poland) 01
+  - 🇲🇾 马来西亚 (Malaysia) 01
 rules:
 - MATCH,PROXIES

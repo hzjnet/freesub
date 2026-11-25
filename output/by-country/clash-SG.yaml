@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 新加坡 (Singapore) 01 R40
-  server: 15.235.164.133
+- name: 🇸🇬 新加坡 (Singapore) 01 R47
+  server: 149.88.106.74
   port: 19999
   udp: true
   type: ss
@@ -19,38 +19,38 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 03 R52
-  server: 68.183.227.236
+  server: 68.183.235.122
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 04
+- name: 🇸🇬 新加坡 (Singapore) 04 R40
+  server: 15.235.164.133
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 05
   server: 15.235.182.183
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 05 R47
-  server: 149.88.106.74
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 06
-  server: 43.163.112.174
-  port: 443
+  server: 43.153.222.240
+  port: 16709
   udp: true
   type: vless
-  uuid: 0dedd47d-47b9-4ed1-9c9f-cbeecad57a68
+  uuid: 3c81494e-7168-4583-84e0-02310212102e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: mXQudYHNu0pebcdk1_qn-UgcmwhjaV7y9UrYu3HX7Rg
-    short-id: 0123456789abcdef
-  servername: www.cloudflare.com
+    public-key: 680Dfvs1S9eB2k9LS_jUELdt4TKnaHXfYErBWMgOlCM
+    short-id: 879a738590e3db33
+  servername: itunes.apple.com
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 07 R56
   server: 128.1.186.73
@@ -59,89 +59,57 @@ proxies:
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 08 R40
-  server: 15.235.144.92
-  port: 1270
+- name: 🇸🇬 新加坡 (Singapore) 08 R52
+  server: 68.183.235.240
+  port: 8080
   udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 09
-  server: support.zoom.us
-  port: 80
+  server: 139.180.221.53
+  port: 443
   udp: true
   type: vless
-  uuid: 9ce32242-557a-4d18-864d-c9c385b3dfa4
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: matrix.learnpodedu.com
-- name: 🇸🇬 新加坡 (Singapore) 10
-  server: 43.159.41.66
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  uuid: 2b30d0df-6ebe-4aed-9bad-b7c554e35e1d
   tls: true
-  servername: senflarelink-node-il65vh.pages.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: plfXwkb-ewI6iibJBTRmPnf8eqPId1BfdArMIm3_mB4
+    short-id: 2f6f6f87
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /flow=
+    path: /ws
     headers:
-      Host: senflarelink-node-il65vh.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 11 R56
-  server: 139.162.27.96
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  tls: true
-  servername: free-server.techsonic.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
+      Host: itunes.apple.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 新加坡 (Singapore) 01 R40
+  - 🇸🇬 新加坡 (Singapore) 01 R47
   - 🇸🇬 新加坡 (Singapore) 02 R47
   - 🇸🇬 新加坡 (Singapore) 03 R52
-  - 🇸🇬 新加坡 (Singapore) 04
-  - 🇸🇬 新加坡 (Singapore) 05 R47
+  - 🇸🇬 新加坡 (Singapore) 04 R40
+  - 🇸🇬 新加坡 (Singapore) 05
   - 🇸🇬 新加坡 (Singapore) 06
   - 🇸🇬 新加坡 (Singapore) 07 R56
-  - 🇸🇬 新加坡 (Singapore) 08 R40
+  - 🇸🇬 新加坡 (Singapore) 08 R52
   - 🇸🇬 新加坡 (Singapore) 09
-  - 🇸🇬 新加坡 (Singapore) 10
-  - 🇸🇬 新加坡 (Singapore) 11 R56
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 (Singapore) 01 R40
+  - 🇸🇬 新加坡 (Singapore) 01 R47
   - 🇸🇬 新加坡 (Singapore) 02 R47
   - 🇸🇬 新加坡 (Singapore) 03 R52
-  - 🇸🇬 新加坡 (Singapore) 04
-  - 🇸🇬 新加坡 (Singapore) 05 R47
+  - 🇸🇬 新加坡 (Singapore) 04 R40
+  - 🇸🇬 新加坡 (Singapore) 05
   - 🇸🇬 新加坡 (Singapore) 06
   - 🇸🇬 新加坡 (Singapore) 07 R56
-  - 🇸🇬 新加坡 (Singapore) 08 R40
+  - 🇸🇬 新加坡 (Singapore) 08 R52
   - 🇸🇬 新加坡 (Singapore) 09
-  - 🇸🇬 新加坡 (Singapore) 10
-  - 🇸🇬 新加坡 (Singapore) 11 R56
 rules:
 - MATCH,PROXIES
