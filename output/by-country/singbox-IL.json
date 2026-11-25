@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 01",
-      "server": "201.8.64.253",
+      "server": "9.247.54.228",
       "server_port": 443,
       "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "tls": {
@@ -14,7 +14,7 @@
         "server_name": "717252g.nl8.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

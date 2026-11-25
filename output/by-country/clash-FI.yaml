@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 157.180.98.124
-  port: 49659
-  udp: true
-  type: vless
-  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
-    short-id: 81959fce
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02
   server: 94.183.164.119
   port: 24433
   udp: true
@@ -25,6 +12,19 @@ proxies:
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   sni: lakes.blog-forme.ru
   skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 02
+  server: 31.76.77.231
+  port: 443
+  udp: true
+  type: vless
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PMtmgfkxpREXi51S_EUUi3KbYauQLjGD6c_llKRk8H4
+    short-id: cc85fc7134024405
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 03
   server: 196.196.208.22
   port: 443
@@ -39,13 +39,20 @@ proxies:
   servername: 8a0f3at.fi-p1b.h1clayd.click
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04
-  server: 65.108.240.210
-  port: 39018
+  server: Ip4.ipspanel.ir
+  port: 2053
   udp: true
-  type: vmess
-  uuid: 96c987c9-c2d9-4993-b9bd-c9bc36255ee1
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 37df2d23-a4d0-40ca-9dd0-c791d1ff94be
+  tls: true
+  servername: T.panel001.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@TurboVpn10
+    headers:
+      Host: T.panel001.ir
 proxy-groups:
 - name: PROXIES
   type: select

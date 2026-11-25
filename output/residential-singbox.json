@@ -4,36 +4,69 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 01 (家宽)",
+      "server": "172.64.88.98",
+      "server_port": 443,
+      "uuid": "afa524de-2b93-4be9-b846-6bc88d8a2ce1",
+      "tls": {
+        "enabled": true,
+        "server_name": "1v5Vp5jsQ611A5dsm.PAges.dEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/fbo164EXEqNcjQ9WdWcK",
+        "headers": {
+          "Host": "1v5vp5jsq611a5dsm.pages.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 01 (移动家宽)",
-      "server": "47.254.167.157",
+      "tag": "🇩🇪 德国 (Germany) 02 (移动家宽)",
+      "server": "18.197.131.255",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽)",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 03 (移动家宽)",
-      "server": "47.254.175.2",
+      "server": "gr3.xt-game.top",
       "server_port": 443,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+      "uuid": "0209fe17-f29e-4384-93bc-a7d7ca83decb",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gr3.xt-game.top",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (移动家宽)",
-        "🇰🇷 韩国 (South Korea) 02 (家宽)",
+        "🇩🇪 德国 (Germany) 01 (家宽)",
+        "🇩🇪 德国 (Germany) 02 (移动家宽)",
         "🇩🇪 德国 (Germany) 03 (移动家宽)"
       ]
     },
@@ -41,8 +74,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (移动家宽)",
-        "🇰🇷 韩国 (South Korea) 02 (家宽)",
+        "🇩🇪 德国 (Germany) 01 (家宽)",
+        "🇩🇪 德国 (Germany) 02 (移动家宽)",
         "🇩🇪 德国 (Germany) 03 (移动家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"

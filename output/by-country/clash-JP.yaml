@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01
-  server: 168.138.205.100
-  port: 53758
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 02
   server: 64.176.34.102
   port: 46130
   udp: true
@@ -19,17 +12,22 @@ proxies:
   uuid: 477350b2-7536-4f38-ee21-020efdde2d1d
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 (Japan) 03
-  server: 161.33.20.255
-  port: 8880
+- name: 🇯🇵 日本 (Japan) 02 R43
+  server: 94.177.131.113
+  port: 443
   udp: true
-  type: vmess
-  uuid: e0856508-d693-450a-a099-455091dc4f25
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e0856508-d693-450a-a099-455091dc4f25-vm
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: kuruish.org
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 03
+  server: jpa.123069.xyz
+  port: 53758
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
 - name: 🇯🇵 日本 (Japan) 04
   server: 158.101.151.157
   port: 443
@@ -44,6 +42,45 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 05
+  server: 161.33.20.255
+  port: 8880
+  udp: true
+  type: vmess
+  uuid: e0856508-d693-450a-a099-455091dc4f25
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /e0856508-d693-450a-a099-455091dc4f25-vm
+- name: 🇯🇵 日本 (Japan) 06 R56
+  server: 139.162.91.182
+  port: 443
+  udp: true
+  type: vless
+  uuid: b4ec7f6b-b41e-4018-9f76-19204e138db9
+  tls: true
+  reality-opts:
+    public-key: k0o_QkU2gSE5m1a6tWbkkZ-Z28GTj30UHW8cHWCulzU
+    short-id: db1a5f5e
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 07
+  server: 155.248.175.201
+  port: 23169
+  udp: true
+  type: vless
+  uuid: 7318caa1-93d1-4a9d-c481-504599902700
+  flow: xtls-rprx-vision
+  tls: true
+  servername: djj.zjlo.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 08
   server: 168.110.63.247
   port: 8081
   udp: true
@@ -54,87 +91,31 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇯🇵 日本 (Japan) 06
-  server: 198.13.53.39
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
-  tls: true
-  reality-opts:
-    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
-    short-id: 7a7cc838
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 07
-  server: 149.28.29.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
-  tls: true
-  reality-opts:
-    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
-    short-id: e535df57
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 08 R43
-  server: 94.177.131.113
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: kuruish.org
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 09
-  server: djj.zjlo.top
-  port: 23169
-  udp: true
-  type: vless
-  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
-  flow: xtls-rprx-vision
-  tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇯🇵 日本 (Japan) 01
-  - 🇯🇵 日本 (Japan) 02
+  - 🇯🇵 日本 (Japan) 02 R43
   - 🇯🇵 日本 (Japan) 03
   - 🇯🇵 日本 (Japan) 04
   - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06
+  - 🇯🇵 日本 (Japan) 06 R56
   - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08 R43
-  - 🇯🇵 日本 (Japan) 09
+  - 🇯🇵 日本 (Japan) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇯🇵 日本 (Japan) 01
-  - 🇯🇵 日本 (Japan) 02
+  - 🇯🇵 日本 (Japan) 02 R43
   - 🇯🇵 日本 (Japan) 03
   - 🇯🇵 日本 (Japan) 04
   - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06
+  - 🇯🇵 日本 (Japan) 06 R56
   - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08 R43
-  - 🇯🇵 日本 (Japan) 09
+  - 🇯🇵 日本 (Japan) 08
 rules:
 - MATCH,PROXIES

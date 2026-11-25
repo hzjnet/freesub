@@ -27,21 +27,21 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02",
-      "server": "45.192.193.54",
-      "server_port": 35600,
-      "uuid": "8614bde7-34cf-4413-8360-e96f1b960528",
+      "server": "116.213.43.43",
+      "server_port": 11106,
+      "uuid": "2e7bd251-52be-4ffa-b79e-108e1fe07185",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.iij.ad.jp",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fJwbUNPAxu-CcoWnzWrvtDkX7QMDvJwFGWzJ3lDcFC4",
-          "short_id": ""
+          "public_key": "-13uTSuqk44pCU0x6yvldaskzyRIlO2ihmDvM0FsBns",
+          "short_id": "da12e31124830d42"
         }
       }
     },
