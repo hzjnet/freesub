@@ -21,18 +21,20 @@ proxies:
   sni: ikr200.zxom.eu.org
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 03
-  server: dddz-4-z.473221.xyz
-  port: 43118
+  server: 104.25.128.15
+  port: 443
   udp: true
   type: vless
-  uuid: 5807f1c4-b50e-4ec0-8d01-274045da0da5
-  flow: xtls-rprx-vision
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
   tls: true
-  reality-opts:
-    public-key: p0crO-ZNRjb07T_GGy9JdkXTjei3-D9f6s2ZzCo2gx8
-    short-id: 1a70fe8d4b05
-  servername: v1-dy.ixigua.com
+  servername: krc.80782636.xyz
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
 proxy-groups:
 - name: PROXIES
   type: select

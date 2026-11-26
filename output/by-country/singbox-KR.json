@@ -30,21 +30,23 @@
     {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 03",
-      "server": "dddz-4-z.473221.xyz",
-      "server_port": 43118,
-      "uuid": "5807f1c4-b50e-4ec0-8d01-274045da0da5",
-      "flow": "xtls-rprx-vision",
+      "server": "104.25.128.15",
+      "server_port": 443,
+      "uuid": "db906786-8c49-4b17-9182-cea680ef954d",
       "tls": {
         "enabled": true,
-        "server_name": "v1-dy.ixigua.com",
+        "server_name": "krc.80782636.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "p0crO-ZNRjb07T_GGy9JdkXTjei3-D9f6s2ZzCo2gx8",
-          "short_id": "1a70fe8d4b05"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/kw7x2mq9",
+        "headers": {
+          "Host": "krc.80782636.xyz"
         }
       }
     },
