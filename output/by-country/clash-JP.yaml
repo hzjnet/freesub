@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01
-  server: jpa.123069.xyz
-  port: 53758
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 02
   server: 161.33.20.255
   port: 8880
   udp: true
@@ -22,7 +15,46 @@ proxies:
   network: ws
   ws-opts:
     path: /e0856508-d693-450a-a099-455091dc4f25-vm
+- name: 🇯🇵 日本 (Japan) 02
+  server: 168.110.63.247
+  port: 8081
+  udp: true
+  type: vmess
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vless
 - name: 🇯🇵 日本 (Japan) 03
+  server: dog-jp.kunlun01dns.com
+  port: 21017
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 04
+  server: 156.231.117.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
+  tls: true
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  servername: navi.bankrate.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 05
+  server: zfd-jpv2.kunlun01dns.com
+  port: 16120
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 06
   server: 158.101.151.157
   port: 443
   udp: true
@@ -35,59 +67,17 @@ proxies:
     short-id: 684c7531e599dec0
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 04
-  server: 168.110.63.247
-  port: 8081
-  udp: true
-  type: vmess
-  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇯🇵 日本 (Japan) 05
-  server: zfd-jpv2.kunlun01dns.com
-  port: 16121
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 (Japan) 06 R56
-  server: 139.162.91.182
-  port: 443
+- name: 🇯🇵 日本 (Japan) 07
+  server: 155.248.175.201
+  port: 23169
   udp: true
   type: vless
-  uuid: b4ec7f6b-b41e-4018-9f76-19204e138db9
+  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: k0o_QkU2gSE5m1a6tWbkkZ-Z28GTj30UHW8cHWCulzU
-    short-id: db1a5f5e
-  servername: itunes.apple.com
+  servername: djj.zjlo.top
+  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 07 R52
-  server: 172.104.86.181
-  port: 443
-  udp: true
-  type: vless
-  uuid: 010431f3-04f6-4404-a801-b93bf2e3c2b2
-  tls: true
-  reality-opts:
-    public-key: ujYDprigWFLxcj4BtitDNa-hoPjIbpSzrnEcqp3cgjk
-    short-id: c8559ca1
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 08
   server: 149.28.29.156
   port: 443
@@ -115,8 +105,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 03
   - 🇯🇵 日本 (Japan) 04
   - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06 R56
-  - 🇯🇵 日本 (Japan) 07 R52
+  - 🇯🇵 日本 (Japan) 06
+  - 🇯🇵 日本 (Japan) 07
   - 🇯🇵 日本 (Japan) 08
 - name: AUTO
   type: url-test
@@ -128,8 +118,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 03
   - 🇯🇵 日本 (Japan) 04
   - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06 R56
-  - 🇯🇵 日本 (Japan) 07 R52
+  - 🇯🇵 日本 (Japan) 06
+  - 🇯🇵 日本 (Japan) 07
   - 🇯🇵 日本 (Japan) 08
 rules:
 - MATCH,PROXIES

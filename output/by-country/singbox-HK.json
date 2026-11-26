@@ -4,37 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21021,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02",
-      "server": "8.210.92.38",
-      "server_port": 443,
-      "uuid": "4fc9dc3d-0d57-49e7-9bc0-e323165241bf",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.ebay.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vhu6gifBQ8-hRzW1gqKFkEXDlQbf6Ex8kKj1FcxhmzA",
-          "short_id": "d78318845237d9a9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03",
       "server": "2.26.204.46",
       "server_port": 31001,
       "uuid": "12a4f736-2238-49ee-831f-5516f15cc951",
@@ -58,18 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01",
-        "🇭🇰 中国香港 (Hong Kong) 02",
-        "🇭🇰 中国香港 (Hong Kong) 03"
+        "🇭🇰 中国香港 (Hong Kong) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01",
-        "🇭🇰 中国香港 (Hong Kong) 02",
-        "🇭🇰 中国香港 (Hong Kong) 03"
+        "🇭🇰 中国香港 (Hong Kong) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,68 +5,87 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 R47
-  server: 149.88.106.74
+  server: leviko-sg2619.shopingggg.ir
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 02 R47
-  server: 149.88.106.73
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 03 R52
-  server: 68.183.235.122
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 04 R40
+- name: 🇸🇬 新加坡 (Singapore) 02 R40
   server: 15.235.164.133
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 05
+- name: 🇸🇬 新加坡 (Singapore) 03
   server: 15.235.182.183
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 06
-  server: 43.153.222.240
-  port: 16709
+- name: 🇸🇬 新加坡 (Singapore) 04 R47
+  server: 149.88.106.73
+  port: 19999
   udp: true
-  type: vless
-  uuid: 3c81494e-7168-4583-84e0-02310212102e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 680Dfvs1S9eB2k9LS_jUELdt4TKnaHXfYErBWMgOlCM
-    short-id: 879a738590e3db33
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 07 R56
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 05 R52
+  server: 68.183.227.236
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 06 R56
   server: 128.1.186.73
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 08 R52
+- name: 🇸🇬 新加坡 (Singapore) 07 R52
   server: 68.183.235.240
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 08 R56
+  server: 139.162.27.96
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
 - name: 🇸🇬 新加坡 (Singapore) 09
+  server: 139.180.215.25
+  port: 443
+  udp: true
+  type: vless
+  uuid: bbc20d3e-0391-48f1-ad72-90a6802f728e
+  tls: true
+  reality-opts:
+    public-key: ybu5pFdSV23WsnMNhbpa8TwV6TJd6NLZ6HX-ggww61A
+    short-id: 83f673ba
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇸🇬 新加坡 (Singapore) 10
   server: 139.180.221.53
   port: 443
   udp: true
@@ -89,27 +108,29 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 R47
-  - 🇸🇬 新加坡 (Singapore) 02 R47
-  - 🇸🇬 新加坡 (Singapore) 03 R52
-  - 🇸🇬 新加坡 (Singapore) 04 R40
-  - 🇸🇬 新加坡 (Singapore) 05
-  - 🇸🇬 新加坡 (Singapore) 06
-  - 🇸🇬 新加坡 (Singapore) 07 R56
-  - 🇸🇬 新加坡 (Singapore) 08 R52
+  - 🇸🇬 新加坡 (Singapore) 02 R40
+  - 🇸🇬 新加坡 (Singapore) 03
+  - 🇸🇬 新加坡 (Singapore) 04 R47
+  - 🇸🇬 新加坡 (Singapore) 05 R52
+  - 🇸🇬 新加坡 (Singapore) 06 R56
+  - 🇸🇬 新加坡 (Singapore) 07 R52
+  - 🇸🇬 新加坡 (Singapore) 08 R56
   - 🇸🇬 新加坡 (Singapore) 09
+  - 🇸🇬 新加坡 (Singapore) 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 R47
-  - 🇸🇬 新加坡 (Singapore) 02 R47
-  - 🇸🇬 新加坡 (Singapore) 03 R52
-  - 🇸🇬 新加坡 (Singapore) 04 R40
-  - 🇸🇬 新加坡 (Singapore) 05
-  - 🇸🇬 新加坡 (Singapore) 06
-  - 🇸🇬 新加坡 (Singapore) 07 R56
-  - 🇸🇬 新加坡 (Singapore) 08 R52
+  - 🇸🇬 新加坡 (Singapore) 02 R40
+  - 🇸🇬 新加坡 (Singapore) 03
+  - 🇸🇬 新加坡 (Singapore) 04 R47
+  - 🇸🇬 新加坡 (Singapore) 05 R52
+  - 🇸🇬 新加坡 (Singapore) 06 R56
+  - 🇸🇬 新加坡 (Singapore) 07 R52
+  - 🇸🇬 新加坡 (Singapore) 08 R56
   - 🇸🇬 新加坡 (Singapore) 09
+  - 🇸🇬 新加坡 (Singapore) 10
 rules:
 - MATCH,PROXIES
