@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇧🇷 巴西 (Brazil) 01",
+      "server": "147.15.115.239",
+      "server_port": 59319,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "ufRQNoVmSBchwcY7p814u5uoMZKgu/hJMN9RgfLrR7I="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 02",
       "server": "150.230.229.100",
       "server_port": 20000,
       "password": "CyG0RFxMjzs41uQD4OLuHQ==",
@@ -20,18 +28,43 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 03",
+      "server": "dddz-4-z.473221.xyz",
+      "server_port": 33161,
+      "uuid": "5807f1c4-b50e-4ec0-8d01-274045da0da5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "v1-dy.ixigua.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BECARsUsTAoGzHFcGEquyFHKnI_LVL5FL6s1jZbLhVk",
+          "short_id": "6dbd86dc61ccb46d"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01"
+        "🇧🇷 巴西 (Brazil) 01",
+        "🇧🇷 巴西 (Brazil) 02",
+        "🇧🇷 巴西 (Brazil) 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01"
+        "🇧🇷 巴西 (Brazil) 01",
+        "🇧🇷 巴西 (Brazil) 02",
+        "🇧🇷 巴西 (Brazil) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

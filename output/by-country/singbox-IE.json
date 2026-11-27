@@ -4,26 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01",
-      "server": "149.88.23.202",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "type": "shadowsocks",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 01",
+      "server": "3.248.201.197",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01"
+        "🇮🇪 爱尔兰 (Ireland) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01"
+        "🇮🇪 爱尔兰 (Ireland) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

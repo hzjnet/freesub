@@ -4,31 +4,69 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇱 荷兰 (Netherlands) 01 R52
-  server: 188.166.81.135
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 02
-  server: 147.45.61.144
+- name: 🇳🇱 荷兰 (Netherlands) 01
+  server: 172.67.155.222
   port: 443
   udp: true
   type: vless
-  uuid: 04812b68-47ad-48ee-b96d-ab9127679634
-  flow: xtls-rprx-vision
+  uuid: 82b279c6-5cba-3a96-f8bd-780a00000035
   tls: true
-  reality-opts:
-    public-key: tmiOsPsVgiWU7usQWetCpVdEp3ZTWl9tPY-r399JdCs
-    short-id: b725584749527b07
-  servername: s2.frenchymyrsep.click
+  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 03
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+- name: 🇳🇱 荷兰 (Netherlands) 02 R63
+  server: 104.21.94.203
+  port: 443
+  udp: true
+  type: vless
+  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  tls: true
+  servername: fr-free.fastestrelay.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /700gvl
+    headers:
+      Host: fr-free.fastestrelay.com
+- name: 🇳🇱 荷兰 (Netherlands) 03 R63
+  server: 66.163.127.154
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 04 R63
+  server: 66.163.127.215
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 05 R63
+  server: 66.163.127.44
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.indyourperfectremotetechjobfromthecomfortofhome.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 06
+  server: 185.200.199.179
+  port: 54706
+  udp: true
+  type: hysteria2
+  password: Cqx5aT9Zux
+  sni: 185.200.199.179
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 07
   server: 51.194.118.38
   port: 443
   udp: true
@@ -41,29 +79,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 50a5f706c8ea4433838a207d435fbf031b008a9a
-- name: 🇳🇱 荷兰 (Netherlands) 04
-  server: 185.134.203.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3af3f8f0-569f-4dd3-be99-2ef4bfe7867c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: api.vk.me
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 05
-  server: 185.200.199.179
-  port: 54706
-  udp: true
-  type: hysteria2
-  password: Cqx5aT9Zux
-  sni: 185.200.199.179
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 06
-  server: 79.182.70.192
+- name: 🇳🇱 荷兰 (Netherlands) 08
+  server: 153.52.85.198
   port: 443
   udp: true
   type: vless
@@ -73,8 +90,32 @@ proxies:
     public-key: xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4
     short-id: c71118d9399fb8c2
   servername: 15d7fft.nl11.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 09 R52
+  server: 188.166.81.135
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 10
+  server: 147.45.61.144
+  port: 443
+  udp: true
+  type: vless
+  uuid: 04812b68-47ad-48ee-b96d-ab9127679634
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tmiOsPsVgiWU7usQWetCpVdEp3ZTWl9tPY-r399JdCs
+    short-id: b725584749527b07
+  servername: s2.frenchymyrsep.click
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 07 R58
+- name: 🇳🇱 荷兰 (Netherlands) 11 R60
   server: 171.22.183.158
   port: 42848
   udp: true
@@ -82,23 +123,31 @@ proxies:
   password: 04920673-035c-410d-94e4-5b1469d3fb6f
   sni: 171.22.183.158
   skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 08 R63
-  server: 66.163.127.154
+- name: 🇳🇱 荷兰 (Netherlands) 12 R45
+  server: 98.98.132.110
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.indyourperfectremotetechjobfromthecomfortofhome.com
+  type: vless
+  uuid: e2f43a75-e683-4d09-96e8-3ad1f2e57100
+  tls: true
+  servername: a1116.afl7t8f.com
   skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 09
-  server: 31.58.234.101
-  port: 30443
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 2e7d5cf6a7e50c564bfddf62c87e02e1
+- name: 🇳🇱 荷兰 (Netherlands) 13 R60
+  server: 171.22.183.167
+  port: 443
   udp: true
-  type: hysteria2
-  password: ad80d93f-8b35-4b0e-861d-128813efc7d1
-  sni: sync46.lernkino.online
+  type: vless
+  uuid: 04920673-035c-410d-94e4-5b1469d3fb6f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 171.22.183.167
   skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 10
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 14
   server: 130.12.242.106
   port: 443
   udp: true
@@ -111,35 +160,88 @@ proxies:
     short-id: 15affa0af66dfc79
   servername: deepl.com
   client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 15
+  server: 130.78.30.147
+  port: 443
+  udp: true
+  type: vless
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 105ky37.virtual-network.lol
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 16
+  server: 179.254.115.118
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 17
+  server: 201.8.64.253
+  port: 443
+  udp: true
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇱 荷兰 (Netherlands) 01 R52
-  - 🇳🇱 荷兰 (Netherlands) 02
-  - 🇳🇱 荷兰 (Netherlands) 03
-  - 🇳🇱 荷兰 (Netherlands) 04
-  - 🇳🇱 荷兰 (Netherlands) 05
+  - 🇳🇱 荷兰 (Netherlands) 01
+  - 🇳🇱 荷兰 (Netherlands) 02 R63
+  - 🇳🇱 荷兰 (Netherlands) 03 R63
+  - 🇳🇱 荷兰 (Netherlands) 04 R63
+  - 🇳🇱 荷兰 (Netherlands) 05 R63
   - 🇳🇱 荷兰 (Netherlands) 06
-  - 🇳🇱 荷兰 (Netherlands) 07 R58
-  - 🇳🇱 荷兰 (Netherlands) 08 R63
-  - 🇳🇱 荷兰 (Netherlands) 09
+  - 🇳🇱 荷兰 (Netherlands) 07
+  - 🇳🇱 荷兰 (Netherlands) 08
+  - 🇳🇱 荷兰 (Netherlands) 09 R52
   - 🇳🇱 荷兰 (Netherlands) 10
+  - 🇳🇱 荷兰 (Netherlands) 11 R60
+  - 🇳🇱 荷兰 (Netherlands) 12 R45
+  - 🇳🇱 荷兰 (Netherlands) 13 R60
+  - 🇳🇱 荷兰 (Netherlands) 14
+  - 🇳🇱 荷兰 (Netherlands) 15
+  - 🇳🇱 荷兰 (Netherlands) 16
+  - 🇳🇱 荷兰 (Netherlands) 17
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 (Netherlands) 01 R52
-  - 🇳🇱 荷兰 (Netherlands) 02
-  - 🇳🇱 荷兰 (Netherlands) 03
-  - 🇳🇱 荷兰 (Netherlands) 04
-  - 🇳🇱 荷兰 (Netherlands) 05
+  - 🇳🇱 荷兰 (Netherlands) 01
+  - 🇳🇱 荷兰 (Netherlands) 02 R63
+  - 🇳🇱 荷兰 (Netherlands) 03 R63
+  - 🇳🇱 荷兰 (Netherlands) 04 R63
+  - 🇳🇱 荷兰 (Netherlands) 05 R63
   - 🇳🇱 荷兰 (Netherlands) 06
-  - 🇳🇱 荷兰 (Netherlands) 07 R58
-  - 🇳🇱 荷兰 (Netherlands) 08 R63
-  - 🇳🇱 荷兰 (Netherlands) 09
+  - 🇳🇱 荷兰 (Netherlands) 07
+  - 🇳🇱 荷兰 (Netherlands) 08
+  - 🇳🇱 荷兰 (Netherlands) 09 R52
   - 🇳🇱 荷兰 (Netherlands) 10
+  - 🇳🇱 荷兰 (Netherlands) 11 R60
+  - 🇳🇱 荷兰 (Netherlands) 12 R45
+  - 🇳🇱 荷兰 (Netherlands) 13 R60
+  - 🇳🇱 荷兰 (Netherlands) 14
+  - 🇳🇱 荷兰 (Netherlands) 15
+  - 🇳🇱 荷兰 (Netherlands) 16
+  - 🇳🇱 荷兰 (Netherlands) 17
 rules:
 - MATCH,PROXIES

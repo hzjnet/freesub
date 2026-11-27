@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 01 R63",
+      "server": "66.163.117.141",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "n87cM0Lv7Y3T"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 R63",
       "server": "136.176.68.34",
       "server_port": 443,
       "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
@@ -26,16 +34,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 02",
-      "server": "193.188.21.253",
-      "server_port": 14430,
-      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
+      "tag": "🇬🇧 英国 (United Kingdom) 03 ⚠R",
+      "server": "51.38.71.147",
+      "server_port": 443,
+      "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
+      "tls": {
+        "enabled": true,
+        "server_name": "uk1.connectsuite.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "193.188.21.253"
-        }
+        "path": "/cdn-cgi/ws"
       }
     },
     {
@@ -44,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇬🇧 英国 (United Kingdom) 01 R63",
-        "🇬🇧 英国 (United Kingdom) 02"
+        "🇬🇧 英国 (United Kingdom) 02 R63",
+        "🇬🇧 英国 (United Kingdom) 03 ⚠R"
       ]
     },
     {
@@ -52,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇧 英国 (United Kingdom) 01 R63",
-        "🇬🇧 英国 (United Kingdom) 02"
+        "🇬🇧 英国 (United Kingdom) 02 R63",
+        "🇬🇧 英国 (United Kingdom) 03 ⚠R"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
