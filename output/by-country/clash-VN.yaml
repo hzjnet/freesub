@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01
-  server: Kir3.crackerbinam.org
+  server: 103.163.24.22
   port: 56026
   udp: true
   type: vless
@@ -15,7 +15,7 @@ proxies:
     public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
     short-id: 99676967e6867063
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

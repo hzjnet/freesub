@@ -4,32 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01",
-      "server": "116.213.43.43",
-      "server_port": 11103,
-      "uuid": "bb836d81-d0c5-4f01-a584-806cdf65e36a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5NNdXPMTBLP-xeDKFwcG-j6u-c4DhXIfnlHMqMJZ4n4",
-          "short_id": "9564e1a7a1cf8b3a"
-        }
-      }
+      "server": "waic.pro.main.sys-metric-report.com",
+      "server_port": 28014,
+      "method": "chacha20-ietf-poly1305",
+      "password": "abc62f00-95a8-4c2e-a85d-36a2cdc977da"
     },
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02",
-      "server": "8.217.1.203",
-      "server_port": 8443,
-      "uuid": "8b17beac-b143-447d-aa68-14cbb121a602",
+      "server": "116.213.43.43",
+      "server_port": 11102,
+      "uuid": "530d31fc-2690-49e4-bfc9-3f991e145008",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -40,8 +27,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38",
-          "short_id": "0bf55f64"
+          "public_key": "oW6HMjniDmBJdjGKwhBAIS2zMS1VvHORubh9vdazqQ0",
+          "short_id": "ed571d022f7bc3bf"
         }
       }
     },
@@ -67,55 +54,13 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04",
-      "server": "47.86.90.31",
-      "server_port": 443,
-      "uuid": "234a8041-2b4d-44a3-a8d8-523cbfd58dc4",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "bywxdhirqkjj8xaz.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "bywxdhirqkjj8xaz.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05",
-      "server": "209.9.200.147",
-      "server_port": 443,
-      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
-      "tls": {
-        "enabled": true,
-        "server_name": "navi.bankrate.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
-          "short_id": "2da72ce6"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01",
         "🇭🇰 中国香港 (Hong Kong) 02",
-        "🇭🇰 中国香港 (Hong Kong) 03",
-        "🇭🇰 中国香港 (Hong Kong) 04",
-        "🇭🇰 中国香港 (Hong Kong) 05"
+        "🇭🇰 中国香港 (Hong Kong) 03"
       ]
     },
     {
@@ -124,9 +69,7 @@
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01",
         "🇭🇰 中国香港 (Hong Kong) 02",
-        "🇭🇰 中国香港 (Hong Kong) 03",
-        "🇭🇰 中国香港 (Hong Kong) 04",
-        "🇭🇰 中国香港 (Hong Kong) 05"
+        "🇭🇰 中国香港 (Hong Kong) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

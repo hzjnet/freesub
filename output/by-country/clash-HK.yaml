@@ -5,29 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 116.213.43.43
-  port: 11103
+  server: waic.pro.main.sys-metric-report.com
+  port: 28014
   udp: true
-  type: vless
-  uuid: bb836d81-d0c5-4f01-a584-806cdf65e36a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5NNdXPMTBLP-xeDKFwcG-j6u-c4DhXIfnlHMqMJZ4n4
-    short-id: 9564e1a7a1cf8b3a
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: abc62f00-95a8-4c2e-a85d-36a2cdc977da
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 8.217.1.203
-  port: 8443
+  server: 116.213.43.43
+  port: 11102
   udp: true
   type: vless
-  uuid: 8b17beac-b143-447d-aa68-14cbb121a602
+  uuid: 530d31fc-2690-49e4-bfc9-3f991e145008
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38
-    short-id: 0bf55f64
+    public-key: oW6HMjniDmBJdjGKwhBAIS2zMS1VvHORubh9vdazqQ0
+    short-id: ed571d022f7bc3bf
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03
@@ -43,34 +37,6 @@ proxies:
     short-id: 39793bc4708abbbb
   servername: mensura.cdn-apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 47.86.90.31
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 234a8041-2b4d-44a3-a8d8-523cbfd58dc4
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: bywxdhirqkjj8xaz.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: bywxdhirqkjj8xaz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 209.9.200.147
-  port: 443
-  udp: true
-  type: vless
-  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
-  tls: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,8 +45,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
-  - 🇭🇰 中国香港 (Hong Kong) 04
-  - 🇭🇰 中国香港 (Hong Kong) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,7 +53,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
-  - 🇭🇰 中国香港 (Hong Kong) 04
-  - 🇭🇰 中国香港 (Hong Kong) 05
 rules:
 - MATCH,PROXIES

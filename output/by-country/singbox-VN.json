@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇻🇳 越南 (Vietnam) 01",
-      "server": "Kir3.crackerbinam.org",
+      "server": "103.163.24.22",
       "server_port": 56026,
       "uuid": "a1f0cbb8-c74a-4c27-b881-7b14d96aece1",
       "tls": {
@@ -14,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

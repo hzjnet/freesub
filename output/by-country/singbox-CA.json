@@ -14,26 +14,6 @@
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 02",
-      "server": "510.150333.xyz",
-      "server_port": 21001,
-      "uuid": "67952583-8572-42e1-943d-0602794f885b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
-          "short_id": "a51c3ccb2320024a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 03",
       "server": "103.106.229.177",
       "server_port": 21004,
       "uuid": "67952583-8572-42e1-943d-0602794f885b",
@@ -53,27 +33,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 04",
-      "server": "510.150333.xyz",
-      "server_port": 21003,
-      "uuid": "67952583-8572-42e1-943d-0602794f885b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
-          "short_id": "f3602a3a1cf928b7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 05",
+      "tag": "🇨🇦 加拿大 (Canada) 03",
       "server": "510.150333.xyz",
       "server_port": 21002,
       "uuid": "67952583-8572-42e1-943d-0602794f885b",
@@ -92,6 +52,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 04",
+      "server": "510.150333.xyz",
+      "server_port": 21003,
+      "uuid": "67952583-8572-42e1-943d-0602794f885b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
+          "short_id": "f3602a3a1cf928b7"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -99,8 +79,7 @@
         "🇨🇦 加拿大 (Canada) 01",
         "🇨🇦 加拿大 (Canada) 02",
         "🇨🇦 加拿大 (Canada) 03",
-        "🇨🇦 加拿大 (Canada) 04",
-        "🇨🇦 加拿大 (Canada) 05"
+        "🇨🇦 加拿大 (Canada) 04"
       ]
     },
     {
@@ -110,8 +89,7 @@
         "🇨🇦 加拿大 (Canada) 01",
         "🇨🇦 加拿大 (Canada) 02",
         "🇨🇦 加拿大 (Canada) 03",
-        "🇨🇦 加拿大 (Canada) 04",
-        "🇨🇦 加拿大 (Canada) 05"
+        "🇨🇦 加拿大 (Canada) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
