@@ -1,0 +1,35 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇺 澳大利亚 (Australia) 01
+  server: 46.250.246.11
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 591e7de6-f2dd-4ff9-ae21-8e00d5affa2a
+  tls: true
+  servername: 46-250-246-11.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vpn-live
+    headers:
+      Host: 46-250-246-11.sslip.io
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇺 澳大利亚 (Australia) 01
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇺 澳大利亚 (Australia) 01
+rules:
+- MATCH,PROXIES

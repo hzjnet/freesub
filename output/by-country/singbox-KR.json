@@ -12,8 +12,16 @@
       "security": "auto"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 02",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 03",
       "server": "8.220.198.29",
       "server_port": 443,
       "uuid": "91d2a8f3-6eb0-4b6a-a8f7-0beabcf06fb7",
@@ -34,13 +42,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 03",
-      "server": "104.25.128.15",
+      "tag": "🇰🇷 韩国 (South Korea) 04",
+      "server": "krd.80782636.xyz",
       "server_port": 443,
       "uuid": "db906786-8c49-4b17-9182-cea680ef954d",
       "tls": {
         "enabled": true,
-        "server_name": "krc.80782636.xyz",
+        "server_name": "krd.80782636.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -51,7 +59,39 @@
         "type": "ws",
         "path": "/kw7x2mq9",
         "headers": {
-          "Host": "krc.80782636.xyz"
+          "Host": "krd.80782636.xyz"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 05",
+      "server": "8.220.244.33",
+      "server_port": 7788,
+      "password": "c8aa4ba6a243ddfdeb67515aa849624b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ddsos.cc",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 06",
+      "server": "130.94.30.242",
+      "server_port": 443,
+      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
+      "tls": {
+        "enabled": true,
+        "server_name": "navi.bankrate.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
+          "short_id": "2da72ce6"
         }
       }
     },
@@ -62,7 +102,10 @@
         "auto",
         "🇰🇷 韩国 (South Korea) 01",
         "🇰🇷 韩国 (South Korea) 02",
-        "🇰🇷 韩国 (South Korea) 03"
+        "🇰🇷 韩国 (South Korea) 03",
+        "🇰🇷 韩国 (South Korea) 04",
+        "🇰🇷 韩国 (South Korea) 05",
+        "🇰🇷 韩国 (South Korea) 06"
       ]
     },
     {
@@ -71,7 +114,10 @@
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01",
         "🇰🇷 韩国 (South Korea) 02",
-        "🇰🇷 韩国 (South Korea) 03"
+        "🇰🇷 韩国 (South Korea) 03",
+        "🇰🇷 韩国 (South Korea) 04",
+        "🇰🇷 韩国 (South Korea) 05",
+        "🇰🇷 韩国 (South Korea) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

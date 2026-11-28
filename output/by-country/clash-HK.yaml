@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: waic.pro.main.sys-metric-report.com
-  port: 28014
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: abc62f00-95a8-4c2e-a85d-36a2cdc977da
-- name: 🇭🇰 中国香港 (Hong Kong) 02
   server: 116.213.43.43
   port: 11102
   udp: true
@@ -24,8 +17,21 @@ proxies:
     short-id: ed571d022f7bc3bf
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: 116.213.43.43
+  port: 11106
+  udp: true
+  type: vless
+  uuid: 2e7bd251-52be-4ffa-b79e-108e1fe07185
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -13uTSuqk44pCU0x6yvldaskzyRIlO2ihmDvM0FsBns
+    short-id: da12e31124830d42
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 2.26.204.46
+  server: leviko-hk5202.shopingggg.ir
   port: 31001
   udp: true
   type: vless
@@ -37,6 +43,20 @@ proxies:
     short-id: 39793bc4708abbbb
   servername: mensura.cdn-apple.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: 212.192.13.240
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: AiepJULF227ZNsjC
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: 143.20.71.68
+  port: 28014
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: abc62f00-95a8-4c2e-a85d-36a2cdc977da
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +65,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
+  - 🇭🇰 中国香港 (Hong Kong) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +75,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01
   - 🇭🇰 中国香港 (Hong Kong) 02
   - 🇭🇰 中国香港 (Hong Kong) 03
+  - 🇭🇰 中国香港 (Hong Kong) 04
+  - 🇭🇰 中国香港 (Hong Kong) 05
 rules:
 - MATCH,PROXIES

@@ -5,21 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (移动家宽)",
-      "server": "130.94.30.242",
-      "server_port": 443,
-      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
+      "tag": "🇦🇺 澳大利亚 (Australia) 01",
+      "server": "46.250.246.11",
+      "server_port": 8443,
+      "uuid": "591e7de6-f2dd-4ff9-ae21-8e00d5affa2a",
       "tls": {
         "enabled": true,
-        "server_name": "navi.bankrate.com",
+        "server_name": "46-250-246-11.sslip.io",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
-          "short_id": "2da72ce6"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpn-live",
+        "headers": {
+          "Host": "46-250-246-11.sslip.io"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (移动家宽)"
+        "🇦🇺 澳大利亚 (Australia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (移动家宽)"
+        "🇦🇺 澳大利亚 (Australia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

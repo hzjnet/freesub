@@ -4,26 +4,106 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇳🇱 荷兰 (Netherlands) 01 R52
-  server: 188.166.81.135
-  port: 1270
+- name: 🇳🇱 荷兰 (Netherlands) 01
+  server: 188.114.96.9
+  port: 443
   udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
   tls: true
-  servername: xmfhlpy.com
+  servername: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
   skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 02
-  server: 185.200.199.179
-  port: 54706
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
+    headers:
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+- name: 🇳🇱 荷兰 (Netherlands) 02 ⚠R
+  server: 51.158.26.27
+  port: 15104
   udp: true
-  type: hysteria2
-  password: Cqx5aT9Zux
-  sni: 185.200.199.179
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-128-gcm
+  password: vldolmlmzmypc36okhum
 - name: 🇳🇱 荷兰 (Netherlands) 03
+  server: 144.31.203.145
+  port: 443
+  udp: true
+  type: vless
+  uuid: f4b08bf1-d9bd-4755-aa88-ba922282c608
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MAcch2LXcj3xo0ZZQIBvxS4GptpZ9ipzFNNn2BUa6mg
+    short-id: a54ec85c94547b17
+  servername: nemicro543.aidating.am
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 04
+  server: 147.45.61.144
+  port: 443
+  udp: true
+  type: vless
+  uuid: 04812b68-47ad-48ee-b96d-ab9127679634
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tmiOsPsVgiWU7usQWetCpVdEp3ZTWl9tPY-r399JdCs
+    short-id: b725584749527b07
+  servername: s2.frenchymyrsep.click
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 05
+  server: 5.255.127.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: ba373a70-295f-482d-a471-8bc17b54e23b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
+  servername: nle.899themes.pro
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 06
+  server: 130.12.242.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  servername: deepl.com
+  client-fingerprint: random
+- name: 🇳🇱 荷兰 (Netherlands) 07
+  server: 37.16.74.36
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b58564f3-bcc4-4af9-8a47-7ad8039cba93
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: u8QY55NuwaED8-IEG2dw5G-VhmB6D5VSxfWhM38_XkA
+    short-id: 8807cf28
+  servername: www.funda.nl
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 08
+  server: 179.254.115.118
+  port: 443
+  udp: true
+  type: vless
+  uuid: 26843758-24de-4f76-b5d0-624038e353c4
+  tls: true
+  reality-opts:
+    public-key: xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4
+    short-id: c71118d9399fb8c2
+  servername: 15d7fft.nl11.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 09
   server: 51.194.118.38
   port: 443
   udp: true
@@ -36,7 +116,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 50a5f706c8ea4433838a207d435fbf031b008a9a
-- name: 🇳🇱 荷兰 (Netherlands) 04 R60
+- name: 🇳🇱 荷兰 (Netherlands) 10 R60
   server: 171.22.183.158
   port: 42848
   udp: true
@@ -44,7 +124,7 @@ proxies:
   password: 04920673-035c-410d-94e4-5b1469d3fb6f
   sni: 171.22.183.158
   skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 05 R63
+- name: 🇳🇱 荷兰 (Netherlands) 11 R63
   server: fr-free.fastestrelay.com
   port: 443
   udp: true
@@ -59,21 +139,95 @@ proxies:
     path: /700gvl
     headers:
       Host: fr-free.fastestrelay.com
-- name: 🇳🇱 荷兰 (Netherlands) 06
-  server: 130.12.242.106
+- name: 🇳🇱 荷兰 (Netherlands) 12
+  server: 185.200.199.179
+  port: 54706
+  udp: true
+  type: hysteria2
+  password: Cqx5aT9Zux
+  sni: 185.200.199.179
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 13 R60
+  server: 171.22.183.167
   port: 443
   udp: true
   type: vless
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  uuid: 04920673-035c-410d-94e4-5b1469d3fb6f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 171.22.183.167
+  skip-cert-verify: false
+- name: 🇳🇱 荷兰 (Netherlands) 14
+  server: 172.67.155.222
+  port: 443
+  udp: true
+  type: vless
+  uuid: 82b279c6-5cba-3a96-f8bd-780a00000035
+  tls: true
+  servername: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: pi7ews-woj41w-7wx0gk.ho3ein13-3af.workers.dev
+- name: 🇳🇱 荷兰 (Netherlands) 15
+  server: 141.193.213.21
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c9b4fb55-1634-436f-beb7-3b1db5b0131d
+  tls: true
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇳🇱 荷兰 (Netherlands) 16
+  server: 13.141.37.2
+  port: 443
+  udp: true
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- name: 🇳🇱 荷兰 (Netherlands) 17
+  server: 13.141.36.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
+    public-key: p35RUaaaItuoyNiCrLpGeStBUpEJMSiZ2AajdfhhmiM
+    short-id: 92aee92130b46fe2
+  servername: 6bf329t.nl18.h1clayd.click
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 07
-  server: 195.206.235.215
+- name: 🇳🇱 荷兰 (Netherlands) 18
+  server: 130.78.30.147
+  port: 443
+  udp: true
+  type: vless
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 105ky37.virtual-network.lol
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 19
+  server: 153.52.85.198
   port: 443
   udp: true
   type: vless
@@ -84,45 +238,54 @@ proxies:
     public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
     short-id: 8d0d0679f42ffd98
   servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: ios
-- name: 🇳🇱 荷兰 (Netherlands) 08
-  server: 13.141.37.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: p35RUaaaItuoyNiCrLpGeStBUpEJMSiZ2AajdfhhmiM
-    short-id: 92aee92130b46fe2
-  servername: 6bf329t.nl22.h1clayd.shop
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇳🇱 荷兰 (Netherlands) 01 R52
-  - 🇳🇱 荷兰 (Netherlands) 02
+  - 🇳🇱 荷兰 (Netherlands) 01
+  - 🇳🇱 荷兰 (Netherlands) 02 ⚠R
   - 🇳🇱 荷兰 (Netherlands) 03
-  - 🇳🇱 荷兰 (Netherlands) 04 R60
-  - 🇳🇱 荷兰 (Netherlands) 05 R63
+  - 🇳🇱 荷兰 (Netherlands) 04
+  - 🇳🇱 荷兰 (Netherlands) 05
   - 🇳🇱 荷兰 (Netherlands) 06
   - 🇳🇱 荷兰 (Netherlands) 07
   - 🇳🇱 荷兰 (Netherlands) 08
+  - 🇳🇱 荷兰 (Netherlands) 09
+  - 🇳🇱 荷兰 (Netherlands) 10 R60
+  - 🇳🇱 荷兰 (Netherlands) 11 R63
+  - 🇳🇱 荷兰 (Netherlands) 12
+  - 🇳🇱 荷兰 (Netherlands) 13 R60
+  - 🇳🇱 荷兰 (Netherlands) 14
+  - 🇳🇱 荷兰 (Netherlands) 15
+  - 🇳🇱 荷兰 (Netherlands) 16
+  - 🇳🇱 荷兰 (Netherlands) 17
+  - 🇳🇱 荷兰 (Netherlands) 18
+  - 🇳🇱 荷兰 (Netherlands) 19
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇳🇱 荷兰 (Netherlands) 01 R52
-  - 🇳🇱 荷兰 (Netherlands) 02
+  - 🇳🇱 荷兰 (Netherlands) 01
+  - 🇳🇱 荷兰 (Netherlands) 02 ⚠R
   - 🇳🇱 荷兰 (Netherlands) 03
-  - 🇳🇱 荷兰 (Netherlands) 04 R60
-  - 🇳🇱 荷兰 (Netherlands) 05 R63
+  - 🇳🇱 荷兰 (Netherlands) 04
+  - 🇳🇱 荷兰 (Netherlands) 05
   - 🇳🇱 荷兰 (Netherlands) 06
   - 🇳🇱 荷兰 (Netherlands) 07
   - 🇳🇱 荷兰 (Netherlands) 08
+  - 🇳🇱 荷兰 (Netherlands) 09
+  - 🇳🇱 荷兰 (Netherlands) 10 R60
+  - 🇳🇱 荷兰 (Netherlands) 11 R63
+  - 🇳🇱 荷兰 (Netherlands) 12
+  - 🇳🇱 荷兰 (Netherlands) 13 R60
+  - 🇳🇱 荷兰 (Netherlands) 14
+  - 🇳🇱 荷兰 (Netherlands) 15
+  - 🇳🇱 荷兰 (Netherlands) 16
+  - 🇳🇱 荷兰 (Netherlands) 17
+  - 🇳🇱 荷兰 (Netherlands) 18
+  - 🇳🇱 荷兰 (Netherlands) 19
 rules:
 - MATCH,PROXIES

@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 01",
-      "server": "103.163.24.22",
-      "server_port": 56026,
-      "uuid": "a1f0cbb8-c74a-4c27-b881-7b14d96aece1",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01",
+      "server": "85.237.207.221",
+      "server_port": 443,
+      "uuid": "b59bcb5b-5150-4c6b-9227-681886197014",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls",
-          "short_id": "99676967e6867063"
+          "public_key": "lJz7AGWUC-ZTEIJaU5y1GRrROWJ9J_VzQRyrYPmOygs",
+          "short_id": "fd2fa5e06670120b"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

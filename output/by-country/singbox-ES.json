@@ -4,11 +4,19 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 01",
+      "server": "85.155.226.213",
+      "server_port": 2089,
+      "method": "chacha20-ietf-poly1305",
+      "password": "DVlt-OeAV4RiLMwT9e0T72nnFtMG2W3o"
+    },
+    {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 R54",
-      "server": "45.90.59.15",
+      "tag": "🇪🇸 西班牙 (Spain) 02",
+      "server": "46.28.71.247",
       "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -19,8 +27,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
         }
       }
     },
@@ -29,14 +37,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 瑞士 (Switzerland) 01 R54"
+        "🇪🇸 西班牙 (Spain) 01",
+        "🇪🇸 西班牙 (Spain) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 瑞士 (Switzerland) 01 R54"
+        "🇪🇸 西班牙 (Spain) 01",
+        "🇪🇸 西班牙 (Spain) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
