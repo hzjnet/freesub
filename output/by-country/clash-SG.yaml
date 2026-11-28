@@ -12,41 +12,69 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 02 R52
-  server: 68.183.227.236
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 03 R47
-  server: 149.88.106.73
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 04 R52
-  server: 68.183.227.45
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 05 R52
   server: 68.183.235.240
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 06 R52
+- name: 🇸🇬 新加坡 (Singapore) 03 R52
   server: 128.199.172.224
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 07
+- name: 🇸🇬 新加坡 (Singapore) 04 R47
+  server: 149.88.106.73
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 05 R52
+  server: 68.183.235.122
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 06 R52
+  server: 68.183.227.45
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 07 R52
+  server: 68.183.227.4
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 08 R52
+  server: 68.183.227.236
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 09 R56
+  server: 128.1.186.73
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 10 R56
+  server: 128.1.186.132
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 11
   server: 47.84.226.221
   port: 443
   udp: true
@@ -59,21 +87,18 @@ proxies:
     short-id: e1c483f9d4437d42
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 08 R52
-  server: 68.183.227.4
-  port: 8080
+- name: 🇸🇬 新加坡 (Singapore) 12
+  server: 8.222.172.146
+  port: 54327
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 09 R52
-  server: 68.183.235.122
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 10
+  type: vmess
+  uuid: 8a3d03bc-9b35-43b4-d901-c8531f2bbc6d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /pages
+- name: 🇸🇬 新加坡 (Singapore) 13
   server: 140.245.113.33
   port: 443
   udp: true
@@ -86,7 +111,7 @@ proxies:
     short-id: c940a3b6d60b8611
   servername: learn.microsoft.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 11
+- name: 🇸🇬 新加坡 (Singapore) 14
   server: support.zoom.us
   port: 80
   udp: true
@@ -97,49 +122,7 @@ proxies:
     path: /
     headers:
       Host: highspeed.sahanwickramasinghe.com
-- name: 🇸🇬 新加坡 (Singapore) 12
-  server: 170.114.46.6
-  port: 80
-  udp: true
-  type: vless
-  uuid: 9ce32242-557a-4d18-864d-c9c385b3dfa4
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: matrix.learnpodedu.com
-- name: 🇸🇬 新加坡 (Singapore) 13 R56
-  server: 128.1.186.73
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 14 R56
-  server: 128.1.186.132
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 15
-  server: 139.180.221.53
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2b30d0df-6ebe-4aed-9bad-b7c554e35e1d
-  tls: true
-  reality-opts:
-    public-key: plfXwkb-ewI6iibJBTRmPnf8eqPId1BfdArMIm3_mB4
-    short-id: 2f6f6f87
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇸🇬 新加坡 (Singapore) 16 R53
+- name: 🇸🇬 新加坡 (Singapore) 15 R53
   server: 172.104.186.185
   port: 443
   udp: true
@@ -149,6 +132,23 @@ proxies:
   reality-opts:
     public-key: xGPjO2ukRsGiMm-vAzcLcFYu5ivYe2paztFS64q3Bkw
     short-id: b29516da
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇸🇬 新加坡 (Singapore) 16 R53
+  server: 172.104.48.162
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0dbe84f8-74fd-4bd1-99fe-e67eb7eaff85
+  tls: true
+  reality-opts:
+    public-key: 8yWkbzkxKDySkY_xUKZCb7z-XnoNIvq7bJpa_-8BiX8
+    short-id: 9360f0d0
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -174,20 +174,22 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇸🇬 新加坡 (Singapore) 18
-  server: 46.101.46.169
-  port: 486
+  server: 139.180.221.53
+  port: 443
   udp: true
   type: vless
-  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
+  uuid: 2b30d0df-6ebe-4aed-9bad-b7c554e35e1d
   tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: plfXwkb-ewI6iibJBTRmPnf8eqPId1BfdArMIm3_mB4
+    short-id: 2f6f6f87
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /ws
     headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+      Host: itunes.apple.com
 - name: 🇸🇬 新加坡 (Singapore) 19
   server: 139.180.215.25
   port: 443
@@ -222,33 +224,6 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇸🇬 新加坡 (Singapore) 21
-  server: 147.93.173.45
-  port: 10444
-  udp: true
-  type: vless
-  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 22
-  server: 141.193.213.21
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
-  tls: true
-  servername: matrix.learnpodedu.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: matrix.learnpodedu.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -256,26 +231,24 @@ proxy-groups:
   - AUTO
   - 🇸🇬 新加坡 (Singapore) 01 R47
   - 🇸🇬 新加坡 (Singapore) 02 R52
-  - 🇸🇬 新加坡 (Singapore) 03 R47
-  - 🇸🇬 新加坡 (Singapore) 04 R52
+  - 🇸🇬 新加坡 (Singapore) 03 R52
+  - 🇸🇬 新加坡 (Singapore) 04 R47
   - 🇸🇬 新加坡 (Singapore) 05 R52
   - 🇸🇬 新加坡 (Singapore) 06 R52
-  - 🇸🇬 新加坡 (Singapore) 07
+  - 🇸🇬 新加坡 (Singapore) 07 R52
   - 🇸🇬 新加坡 (Singapore) 08 R52
-  - 🇸🇬 新加坡 (Singapore) 09 R52
-  - 🇸🇬 新加坡 (Singapore) 10
+  - 🇸🇬 新加坡 (Singapore) 09 R56
+  - 🇸🇬 新加坡 (Singapore) 10 R56
   - 🇸🇬 新加坡 (Singapore) 11
   - 🇸🇬 新加坡 (Singapore) 12
-  - 🇸🇬 新加坡 (Singapore) 13 R56
-  - 🇸🇬 新加坡 (Singapore) 14 R56
-  - 🇸🇬 新加坡 (Singapore) 15
+  - 🇸🇬 新加坡 (Singapore) 13
+  - 🇸🇬 新加坡 (Singapore) 14
+  - 🇸🇬 新加坡 (Singapore) 15 R53
   - 🇸🇬 新加坡 (Singapore) 16 R53
   - 🇸🇬 新加坡 (Singapore) 17
   - 🇸🇬 新加坡 (Singapore) 18
   - 🇸🇬 新加坡 (Singapore) 19
   - 🇸🇬 新加坡 (Singapore) 20 R46
-  - 🇸🇬 新加坡 (Singapore) 21
-  - 🇸🇬 新加坡 (Singapore) 22
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -283,25 +256,23 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 (Singapore) 01 R47
   - 🇸🇬 新加坡 (Singapore) 02 R52
-  - 🇸🇬 新加坡 (Singapore) 03 R47
-  - 🇸🇬 新加坡 (Singapore) 04 R52
+  - 🇸🇬 新加坡 (Singapore) 03 R52
+  - 🇸🇬 新加坡 (Singapore) 04 R47
   - 🇸🇬 新加坡 (Singapore) 05 R52
   - 🇸🇬 新加坡 (Singapore) 06 R52
-  - 🇸🇬 新加坡 (Singapore) 07
+  - 🇸🇬 新加坡 (Singapore) 07 R52
   - 🇸🇬 新加坡 (Singapore) 08 R52
-  - 🇸🇬 新加坡 (Singapore) 09 R52
-  - 🇸🇬 新加坡 (Singapore) 10
+  - 🇸🇬 新加坡 (Singapore) 09 R56
+  - 🇸🇬 新加坡 (Singapore) 10 R56
   - 🇸🇬 新加坡 (Singapore) 11
   - 🇸🇬 新加坡 (Singapore) 12
-  - 🇸🇬 新加坡 (Singapore) 13 R56
-  - 🇸🇬 新加坡 (Singapore) 14 R56
-  - 🇸🇬 新加坡 (Singapore) 15
+  - 🇸🇬 新加坡 (Singapore) 13
+  - 🇸🇬 新加坡 (Singapore) 14
+  - 🇸🇬 新加坡 (Singapore) 15 R53
   - 🇸🇬 新加坡 (Singapore) 16 R53
   - 🇸🇬 新加坡 (Singapore) 17
   - 🇸🇬 新加坡 (Singapore) 18
   - 🇸🇬 新加坡 (Singapore) 19
   - 🇸🇬 新加坡 (Singapore) 20 R46
-  - 🇸🇬 新加坡 (Singapore) 21
-  - 🇸🇬 新加坡 (Singapore) 22
 rules:
 - MATCH,PROXIES

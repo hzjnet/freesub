@@ -25,21 +25,6 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03
-  server: 79.141.174.144
-  port: 443
-  udp: true
-  type: vless
-  uuid: ba373a70-295f-482d-a471-8bc17b54e23b
-  tls: true
-  reality-opts:
-    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
-    short-id: 27350908de933e09
-  servername: seb.899themes.pro
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: neurex
-- name: 🇸🇪 瑞典 (Sweden) 04
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -48,11 +33,11 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 05
+- name: 🇸🇪 瑞典 (Sweden) 04
   server: ws.dhafhdtjdti.site
   port: 2053
   udp: true
@@ -74,7 +59,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02
   - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
-  - 🇸🇪 瑞典 (Sweden) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,6 +68,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02
   - 🇸🇪 瑞典 (Sweden) 03
   - 🇸🇪 瑞典 (Sweden) 04
-  - 🇸🇪 瑞典 (Sweden) 05
 rules:
 - MATCH,PROXIES

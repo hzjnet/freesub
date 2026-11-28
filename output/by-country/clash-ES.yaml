@@ -5,25 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01
-  server: 85.155.226.213
+  server: s23.fusetea.ir
   port: 2089
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: DVlt-OeAV4RiLMwT9e0T72nnFtMG2W3o
+  password: R02KmzzSD7PeZ_DosF87xZ7zIn8jLtyP
 - name: 🇪🇸 西班牙 (Spain) 02
-  server: 46.28.71.247
+  server: 8.6.112.0
   port: 443
   udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select

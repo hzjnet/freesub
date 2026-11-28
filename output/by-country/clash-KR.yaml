@@ -20,6 +20,19 @@ proxies:
   cipher: aes-256-cfb
   password: 1234!@#$
 - name: 🇰🇷 韩国 (South Korea) 03
+  server: 43.155.208.90
+  port: 443
+  udp: true
+  type: vless
+  uuid: 21096a6d-88df-49c7-8882-d09e73b4da95
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J2yp_4F_8h4hHTntLf3URZRrdScOhOPOt1ct9LZJ5n4
+    short-id: 9cab9354c40d5f68
+  servername: w.fugui.us
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 04
   server: 8.220.198.29
   port: 443
   udp: true
@@ -32,7 +45,7 @@ proxies:
     short-id: ad9e6079
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 04
+- name: 🇰🇷 韩国 (South Korea) 05
   server: krd.80782636.xyz
   port: 443
   udp: true
@@ -47,26 +60,6 @@ proxies:
     path: /kw7x2mq9
     headers:
       Host: krd.80782636.xyz
-- name: 🇰🇷 韩国 (South Korea) 05
-  server: 8.220.244.33
-  port: 7788
-  udp: true
-  type: hysteria2
-  password: c8aa4ba6a243ddfdeb67515aa849624b
-  sni: www.ddsos.cc
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 06
-  server: 130.94.30.242
-  port: 443
-  udp: true
-  type: vless
-  uuid: ed94398f-893f-40c6-b14c-bf02b5f6be16
-  tls: true
-  reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  servername: navi.bankrate.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,7 +70,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03
   - 🇰🇷 韩国 (South Korea) 04
   - 🇰🇷 韩国 (South Korea) 05
-  - 🇰🇷 韩国 (South Korea) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,6 +80,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03
   - 🇰🇷 韩国 (South Korea) 04
   - 🇰🇷 韩国 (South Korea) 05
-  - 🇰🇷 韩国 (South Korea) 06
 rules:
 - MATCH,PROXIES
